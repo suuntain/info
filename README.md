@@ -1,1 +1,1 @@
-Tietoa Suuntain sovelluksesta
+Suuntain sovellus tai äppi
