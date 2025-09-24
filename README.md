@@ -1,1 +1,2 @@
-Suuntain sovellus tai äppi
+Suuntain sovellus
+tämä on tehty paikallisesti
