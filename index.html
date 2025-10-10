@@ -1,15 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dark Mode Detection</title>
+  <meta charset="utf-8">
+  <title></title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>Welcome!</h1>
-    <p>This page automatically adapts to your system's dark mode preference.</p>
+    <h1 id="suuntain">Suuntain</h1>
+    <p>Tämä käyttöohje on tarkoitettu Suuntain 1.0(34) Beta -version
+    käyttäjille.</p>
+    <h2 id="yleistä">Yleistä</h2>
+    <p>Suuntain on iPhonelle tehty iOS-sovellus (äppi), joka on
+    suunniteltu helpottamaan luonnossa ja luontopoluilla
+    liikkumista. </p>
+    <p>Suuntain puhuu etäisyyden ja suunnan valitsemaasi
+    paikkaan. Etäisyys ja suunta lasketaan suorinta reittiä eli
+    linnuntietä pitkin.</p>
+    <p>Suuntain-sovelluksen näytöllä on myös suuntanuoli ja etäisyys
+    metreinä.</p>
+    <p>Kun olet kävellyt lähelle valittua paikkaa, Suuntain puhuu “olet
+    perillä”.</p>
+    <p>Sovellus on suunniteltu erityisesti sokeille ja näkövammaisille.
+    Siitä on apua myös kenelle tahansa, joka haluaa tietää, miten löytää
+    takaisin autolle tai hyvään marjapaikkaan. </p>
+    <h2 id="pikaohje">Pikaohje</h2>
+    <ol type="1">
+    <li>Talleta nykyinen sijainti Lisää paikka -painikkeella. Paikan
+    nimeksi tulee Uusi paikka.</li>
+    <li>Siirry Paikat -sivulle ja muuta paikan nimeksi esimerkiksi
+    Kauppa.</li>
+    <li>Valitse <strong>Kauppa</strong> valinta -painikkeella.</li>
+    <li>Suuntain puhuu etäisyyden ja suunnan paikkaan nimeltä “kauppa”
+    tyyliin “Kauppa, 350 metriä, kello 13”. Eli kauppa on noin 350
+    metrin päässä edessä hieman oikealle.</li>
+    </ol>
+    <h2 id="käyttöliittymä">Käyttöliittymä</h2>
+    <p>Kun Suuntain käynnistyy, olet <strong>Koti</strong>-sivulla.
+    Käyttöliittymässä on myös kolme muuta sivua: 1) Paikat, 2) Kartta ja
+    3) Asetukset.</p>
+    <h2 id="koti--sivu"><strong>Koti</strong> -sivu</h2>
+    <ul>
+    <li>Yläpalkki</li>
+    <li>Lista talletetuista paikoista (esimerkiksi Koti, Kauppa ja
+    Laavu).</li>
+    <li>Suuntanuoli ja etäisyys. Suuntain näyttää ne, jos olet valinnut
+    vain yhden paikan listalta.</li>
+    <li>Alapalkki</li>
+    </ul>
+    <p>Kun haluat mennä johonkin paikkaan, valitse kyseinen paikka Koti
+    -sivun listalta vaihto -painikkeella. Nyt Suuntain puhuu etäisyyden
+    ja suunnan valittuun paikkaan. Kun olet lähellä valittua paikkaa,
+    Suuntain puhuu “olet perillä”. Suuntain kertoo suunnat kellotaulun
+    (1-12) mukaisesti tai puolen tunnin tarkkuudella (esimerkiksi klo
+    12.30).</p>
+    <h2 id="yläpalkki"><strong>Yläpalkki</strong></h2>
+    <ul>
+    <li>GPS ja kompassin tiedot.</li>
+    <li><strong>Sijainnin hallinta</strong> -painike.</li>
+    <li><strong>Jakso</strong> -painike.</li>
+    <li><strong>Lisää paikka</strong> -painike.</li>
+    </ul>
+    <p><strong>GPS ja kompassin tiedot</strong> osio kertoo GPS:n tämän
+    hetkisen tarkkuuden (esimerkiksi +/- 10 metriä) ja kompassin suunnan
+    (Etelä 180 astetta).</p>
+    <p><strong>Sijainnin hallinta</strong> -painikkeella voit pysäyttää
+    tai käynnistää seurannan. Seurannan pysäytys lopettaa GPS:n käytön
+    muutaman sekunnin sisällä, mikä säästää puhelimen akkua. Jos
+    pysähdyt ulkona pitemmäksi aikaa, kannattaa pysäyttää seuranta
+    siihen asti, kunnes jatkat liikkumista uudestaan.</p>
+    <p><strong>Jakso</strong> -painikkeella voit valita, miten usein
+    Suuntain puhuu etäisyyden ja suunnan. Oletusarvo on 10 sekuntia.
+    Aikaa voi muuttaa 10 minuuttiin asti.  Kun vaihdat Jakso
+    -painikkeella puheen jaksotusta, Suuntain muistaa valinnan.</p>
+    <p><strong>Lisää paikka</strong> -painike tallentaa nykyisen
+    sijainnin nimellä <strong>Uusi paikka</strong> tai jos se on jo
+    olemassa, nimellä <strong>Uusi paikka 1</strong> jne. Lisätty paikka
+    ilmestyy heti <strong>Koti</strong> -sivun ja
+    <strong>Paikat</strong> -sivun listalle. </p>
+    <h2 id="paikat--sivu"><strong>Paikat</strong> -sivu</h2>
+    <ul>
+    <li>Lista talletuista paikoista (esimerkiksi Koti, Kauppa ja Uusi
+    paikka)</li>
+    <li>voit valita paikan tai paikkoja vaihtopainikkeen avulla</li>
+    <li>voit muuttaa paikan nimeä tai koordinaatteja. </li>
+    <li>koordinaatit voivat olla muodossa (64.12345, 25.12345) tai 
+    ilman sulkeita 64.12345, 25.12345.</li>
+    <li>koordinaateissa on käytössä desimaalipiste eli sama formaatti
+    kuin Google Mapsissä ja monissa muissa sovelluksissa</li>
+    </ul>
+    <h2 id="kartta--sivu"><strong>Kartta</strong> -sivu</h2>
+    <ul>
+    <li>kartta-näkymä näyttää puhelimen sijainnin tekstillä “Minun
+    sijainti” ja talletut paikat niiden nimillä.</li>
+    <li>karttaa voi selata voiceover eleillä.</li>
+    <li>“Minun sijainti” on merkitty sinisellä merkillä ja punaiset
+    merkit ovat tallettuja paikkoja kuten Koti tai Kauppa.</li>
+    <li>kartan avulla sinä tai näkevä avustaja näkee, missä päin Suomea
+    paikat sijaitsevat.</li>
+    <li>kartan oikeassa reunassa  on painikkeita, joilla muutetaan
+    kartan sijaintia ja tarkkuutta.</li>
+    <li>kartan kautta voi lisätä myös uuden paikan Paikat listalle, kun
+    Voiceover ei ole käytössä.</li>
+    <li>paikan lisäys aktivoituu, kun sormella näpäytetään karttaa.
+    Suuntain kysyy haluatko lisätä paikan ja antaa sille nimen.</li>
+    </ul>
+    <h2 id="asetukset--sivu"><strong>Asetukset</strong> -sivu</h2>
+    <ul>
+    <li>voit vaihtaa sovelluksen värimaailmaa: puhelimen värimaailma,
+    tumma värimaailman ja vaalea värimaailma</li>
+    <li>voit vaihtaa automaattisen seurannan käynnistämisen pois päältä
+    ja takaisin päälle. Oletuksena seuranta käynnistyy
+    automaattisesti.</li>
+    <li>voit vaihtaa kellosuunnan 30 min tarkkuudelle.</li>
+    <li>voit laittaa <strong>U-käännös</strong> ehdotus päälle tai pois.
+    Jos U-käännös ehdotus on päällä, Suuntain puhuu “Tee U-käännös”, jos
+    kuljet kellosuuntaan 5 - 7. Eli valittu paikka on sinun
+    takapuolella.</li>
+    <li>voit valita, milloin Suuntain käyttää kompassia suunnan
+    laskemiseen. Esimerkiksi valinta “&lt; 1 km/h” tarkoittaa sitä, että
+    Suuntain käyttää kompassia, kun nopeus on alle 1 kilometri tunnissa
+    eli kävelet aika hitaasti.</li>
+    <li>lisäksi Beta-versiossa on asetuksia, joilla voi laittaa
+    logger-tiedon näkyviin ja gps-tietoja näkyviin.</li>
+    </ul>
+    <h2 id="suuntaimen-ominaisuuksia"><strong>Suuntaimen
+    ominaisuuksia</strong></h2>
+    <ul>
+    <li>Suuntain puhuu “olet perillä”, kun olet kävellyt lähelle
+    valittua paikkaa, ja poistaa automaattisesti tämän paikan
+    valinnan.</li>
+    <li>kun käynnistät Suuntaimen tai valitsen jonkun paikan Paikat
+    listalla, Suuntain puhuu valitun paikan tiedot mutta etsii paikka
+    vasta, kun olet siirtynyt puhelimen kanssa tarpeeksi kauas valitusta
+    paikasta.</li>
+    <li>Suuntain toimii myös taustamoodissa eli kun näyttö on sammutettu
+    tai joku toinen sovellus on valittu.</li>
+    <li>Suuntain toimii myös lentokone -tilassa eli ei tarvitse
+    matkapuhelinverkkoa tai internet-yhteyttä toimiakseen. Myös kartta
+    toimii lentokone -tilassa puhelimeen latautuneiden tietojen
+    pohjalla.</li>
+    <li>Suuntain toimii myös vaaka-asennossa.</li>
+    <li>Suuntain tukee dynaamista tekstin kokoa eli sovelluksen tekstien
+    kokoa voi vaihtaa käyttöavun kautta.</li>
+    </ul>
+    <h2 id="suunnat-kellotaulun-mukaan">Suunnat kellotaulun mukaan</h2>
+    <ul>
+    <li>Suuntain kertoo suunnat sinun (puhelimen) liikkumissuuntaan
+    verrattuna kellotaulun mukaisesti</li>
+    <li>Suunta kello 12: paikka on sinun edessä.</li>
+    <li>Suunta kello 6: paikka on sinun takana</li>
+    <li>Suunta kello 3: paikka on sinusta oikealle.</li>
+    <li>Suunta kello 9: paikka on sinusta vasemmalle.</li>
+    <li>Suunta kello 1: paikka on edessä hieman oikealle.</li>
+    <li>jos olet valinnut 30 minuutin tarkkuuden kellosuunnille, kello
+    12.30 tarkoittaa, että paikka on edessä hieman oikealle.</li>
+    </ul>
+    <h2 id="suuntaimen-ottaminen-käyttöön-ensimmäistä-kertaa">Suuntaimen
+    ottaminen käyttöön ensimmäistä kertaa</h2>
+    <ol type="1">
+    <li>Käynnistä Suuntain sovellus iPhonessa.</li>
+    <li>Hyväksy sijaintitietojen käyttö “Aina”. Tämä valinta tarvitaan,
+    jotta Suuntain voi toimia, kun se on taskussa tai näyttö ei ole
+    päällä.</li>
+    <li>Lisää nykyinen sijainta Paikat-listalle “Lisää paikka” 
+    -painikkeella. </li>
+    <li>Siirry Paikat-sivulle.</li>
+    <li>Valitse rivi nimeltä “Uusi paikka”.</li>
+    <li>Muuta paikan nimi (esimerkiksi Koti).</li>
+    <li>Paina Talleta.</li>
+    <li>Valitse Koti valinta- painikkeella.</li>
+    <li>Nyt Suuntain alkaa kertoa puhelimen etäisyyden ja suunnan
+    paikkaan Koti 10s välein.</li>
+    <li>Muuta puheen jaksotusta Jakso -painikkeella.</li>
+    <li>Valitse 1 min.</li>
+    <li>Kun alat kävelemään, Suuntain käyttää puheiimen liikkumissuuntaa
+    ja paikkaa etäisyyden ja suunnan laskemiseen.</li>
+    <li>Kun pysähdyt, Suuntain hyödyntää puhelimen kompassia puhelimen
+    suunnan laskemiseen. </li>
+    </ol>
+    <h2 id="tietojen-kerääminen">Tietojen kerääminen</h2>
+    <p>Suuntain ei kerää mitää tietoja käyttäjästä tai sovelluksen
+    käyttämisestä.</p>
+    <h2 id="tekninen-tuki">Tekninen tuki</h2>
+    <p>Jos sinulla on ongelmia Suuntain sovelluksen käytössä, voit
+    lähettää sähköpostia suuntain@proton.me . Vastaan niihin
+    mahdollisimman pian.</p>
   </div>
 </body>
 </html>
