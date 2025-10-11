@@ -69,21 +69,24 @@ Kun vaihdat Jakso -painikkeella puheen jaksotusta, Suuntain muistaa valinnan.
 - paikan lisäys aktivoituu, kun sormella näpäytetään karttaa. Suuntain kysyy haluatko lisätä paikan ja antaa sille nimen.
 
 ## **Asetukset** -sivu
-- voit vaihtaa sovelluksen värimaailmaa: puhelimen värimaailma, tumma värimaailman ja vaalea värimaailma
-- voit vaihtaa automaattisen seurannan käynnistämisen pois päältä ja takaisin päälle. Oletuksena seuranta käynnistyy automaattisesti.
-- voit vaihtaa kellosuunnan 30 min tarkkuudelle. 
-- voit laittaa **U-käännös** ehdotus päälle tai pois. Jos U-käännös ehdotus on päällä, Suuntain puhuu “Tee U-käännös”, jos kuljet kellosuuntaan 5 - 7. Eli valittu paikka on sinun takapuolella.
-- voit valita, milloin Suuntain käyttää kompassia suunnan laskemiseen. Esimerkiksi valinta “< 1 km/h” tarkoittaa sitä, että Suuntain käyttää kompassia, kun nopeus on alle 1 kilometri tunnissa eli kävelet aika hitaasti.
-- lisäksi Beta-versiossa on asetuksia, joilla voi laittaa logger-tiedon näkyviin ja gps-tietoja näkyviin.
+- Asetukset sivulla voi muuttaa Suuntain sovelluksen asetuksia. Suuntain muistaa asetukset.
+- S**ovelluksen ulkoasu**: voit vaihtaa sovelluksen värimaailmaa **Puhelin**, **Tumma** ja **Vaalea** värimaailmojen välillä.
+- **Käynnistys**: jos laitat **Automaattisesti** valinnan pois päältä, Suuntain ei käynnistä sijainnin seurantaa eli GPS:ää päälle automaattisesti, kun sovellus käynnistyy.
+- **Kellosuunta**: jos valitset **30 min tarkkuudella**, Suuntain puhuu kellosuunnat 30 minuutin tarkkuudella, kuten 12.30 ja 15.30.
+- **U-käännös**: jos valitset **Ehdota**, Suuntain puhuu “Tee U-käännös”, jos kuljet kellosuuntaan 5 - 7. Eli valittu paikka on sinun takapuolella.
+- **Kompassi käytössä**: voit muuttaa, milloin Suuntain käyttää kompassia suunnan laskemiseen. Oletuksena **0,75 km/h** on valittu eli Suuntain käyttää kompassia, kun nopeus on alle 0,75 kilometri tunnissa eli kävelet aika hitaasti tai olet pysähtynyt.
+- Näiden lisäksi **Beta**-versiossa on **Logger** ja **Debug** -osiot.
+- **Logger**: jos **Näytä** on valittu. Suuntain lisää **Logger** -sivun alapalkkiin ja kirjoittaa logitietoa Suuntain-nimiseen hakemistoon. Logger -sivulla näkee Suuntain -äpin sisäisiä viestejä.
+- **Debug**: jos **Näytä debug tietoa** on valittu, Suuntain näyttää näytöllä debug-tietoa. Jos **Näytä GPS tiedot** on valittu, Suuntain näyttää Koti-näytöllä GPS:n tietoja, jos yhtään paikkaa ei ole valittu.
 
 ## **Suuntaimen ominaisuuksia**
 - Suuntain puhuu “olet perillä”, kun olet kävellyt lähelle valittua paikkaa, ja poistaa automaattisesti tämän paikan valinnan.
-- kun käynnistät Suuntaimen tai valitsen jonkun paikan Paikat listalla, Suuntain puhuu valitun paikan tiedot mutta etsii paikka vasta, kun olet siirtynyt puhelimen kanssa tarpeeksi kauas valitusta paikasta. 
-- Suuntain toimii myös taustamoodissa eli kun näyttö on sammutettu tai joku toinen sovellus on valittu.
-- Suuntain toimii myös lentokone -tilassa eli ei tarvitse matkapuhelinverkkoa tai internet-yhteyttä toimiakseen. Myös kartta toimii lentokone -tilassa puhelimeen latautuneiden tietojen pohjalla.
-- Suuntain toimii myös vaaka-asennossa.
+- kun käynnistät Suuntaimen tai valitsen jonkun paikan **Koti** tai **Paikat** sivulla, Suuntain puhuu valitun paikan tiedot mutta etsii paikka vasta, kun olet siirtynyt puhelimen kanssa tarpeeksi kauas valitusta paikasta. 
+- Suuntain toimii myös taustamoodissa eli kun puhelin on taskussa, näyttö on sammutettu tai joku toinen sovellus on valittu.
+- Suuntain toimii myös **lentokone** -tilassa eli ei tarvitse matkapuhelinverkkoa tai internet-yhteyttä toimiakseen. Myös kartta -sivu toimii lentokone -tilassa puhelimeen latautuneiden tietojen pohjalla.
+- Suuntain toimii myös vaaka -asennossa.
 - Suuntain tukee dynaamista tekstin kokoa eli sovelluksen tekstien kokoa voi vaihtaa käyttöavun kautta.
-- Suuntain toimii bluetooth kuulokkeiden kanssa ja pitää yhteyden päällä, kun puheen jaksotus on pitempi kuin 10 sekuntia.
+- Suuntain toimii **Bluetooth**-kuulokkeiden kanssa ja pitää yhteyden päällä, kun puheen jaksotus on pitempi kuin 10 sekuntia.
 
 ## Suunnat kellotaulun mukaan
 - Suuntain kertoo suunnat sinun (puhelimen) liikkumissuuntaan verrattuna kellotaulun mukaisesti
@@ -92,27 +95,26 @@ Kun vaihdat Jakso -painikkeella puheen jaksotusta, Suuntain muistaa valinnan.
 - Suunta kello 3: paikka on sinusta oikealle.
 - Suunta kello 9: paikka on sinusta vasemmalle.
 - Suunta kello 1: paikka on edessä hieman oikealle.
-- jos olet valinnut 30 minuutin tarkkuuden kellosuunnille, kello 12.30 tarkoittaa, että paikka on edessä hieman oikealle. 
+- Suunta kello 12.30: paikka on edessä hieman oikealle. 
 
 ## Suuntaimen ottaminen käyttöön ensimmäistä kertaa
 1) Käynnistä Suuntain sovellus iPhonessa.
-2) Hyväksy sijaintitietojen käyttö "Aina". Tämä valinta tarvitaan, jotta Suuntain voi toimia, kun se on taskussa tai näyttö ei ole päällä.
-3) Lisää nykyinen sijainta Paikat-listalle “Lisää paikka”  -painikkeella. 
-4) Siirry Paikat-sivulle.
+2) Hyväksy sijaintitietojen käyttö **Aina**. Tämä valinta tarvitaan, jotta Suuntain voi puhua etäisyyden ja suunnan, kun se on taskussa tai näyttö ei ole päällä.
+3) Lisää nykyinen sijainti Paikat-listalle **Lisää paikka**  -painikkeella. 
+4) Siirry **Paikat**-sivulle.
 5) Valitse rivi nimeltä “Uusi paikka”.
 6) Muuta paikan nimi (esimerkiksi Koti).
-7) Paina Talleta.
-8) Valitse Koti valinta- painikkeella.
+7) Paina **Talleta**.
+8) Valitse rivi, jonka nimi on **Koti** valinta- painikkeella.
 9) Nyt Suuntain alkaa kertoa puhelimen etäisyyden ja suunnan paikkaan Koti 10s välein.
-10) Muuta puheen jaksotusta Jakso -painikkeella.
-11) Valitse 1 min.
-12) Kun alat kävelemään, Suuntain käyttää puheiimen liikkumissuuntaa ja paikkaa etäisyyden ja suunnan laskemiseen.
-13) Kun pysähdyt, Suuntain hyödyntää puhelimen kompassia puhelimen suunnan laskemiseen. 
+10) Muuta puheen jaksotusta **Jakso** -painikkeella.
+11) Valitse **1 min**.
+12) Kun alat kävelemään, Suuntain käyttää puhelimen sijainti- eli GPS-tietoja puhelimen suunnan ja etäisyyden laskemiseen.
+13) Kun pysähdyt, Suuntain käyttää puhelimen kompassia puhelimen suunnan laskemiseen. 
 
 ## Tietojen kerääminen
 
 Suuntain ei kerää mitää tietoja käyttäjästä tai sovelluksen käyttämisestä.
 
 ## Tekninen tuki
-Jos sinulla on ongelmia Suuntain sovelluksen käytössä, voit lähettää sähköpostia suuntain@proton.me . Vastaan niihin mahdollisimman pian.
-
+Jos sinulla on ongelmia Suuntain sovelluksen käytössä, voit ottaa yhteyttä tekniseen tukeen lähettämällä sähköpostia osoitteeseen suuntain@proton.me
