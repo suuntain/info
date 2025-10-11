@@ -37,14 +37,14 @@ Kun olet lähellä valittua paikkaa, Suuntain puhuu “olet perillä”.
 Suuntain kertoo suunnat kellotaulun (1-12) mukaisesti tai puolen tunnin tarkkuudella (esimerkiksi klo 12.30).
 
 ## **Yläpalkki**
-- GPS ja kompassin tiedot.
+- kompassin suunta.
 - **Sijainnin hallinta** -painike.
 - **Jakso** -painike.
 - **Lisää paikka** -painike.
 
-**GPS ja kompassin tiedot** osio kertoo GPS:n tämän hetkisen tarkkuuden (esimerkiksi +/- 10 metriä) ja kompassin suunnan (Etelä 180 astetta).
+Kun kompassi -kenttä on valittuna voiceoverilla, kuulet kompassin suunnan asteina. Se päivittyy kahden sekunnin välein.
 
-**Sijainnin hallinta** -painikkeella voit pysäyttää tai käynnistää seurannan. Seurannan pysäytys lopettaa GPS:n käytön muutaman sekunnin sisällä, mikä säästää puhelimen akkua. Jos pysähdyt ulkona pitemmäksi aikaa, kannattaa pysäyttää seuranta siihen asti, kunnes jatkat liikkumista uudestaan.
+**Sijainnin hallinta** -painikkeella voit pysäyttää tai käynnistää seurannan. Seurannan pysäytys lopettaa puhelimen GPS:n käytön muutaman sekunnin sisällä, mikä säästää puhelimen akkua. Jos pysähdyt ulkona pitemmäksi aikaa, pysäytä seuranta siihen asti, kunnes jatkat liikkumista uudestaan.
 
 **Jakso** -painikkeella voit valita, miten usein Suuntain puhuu etäisyyden ja suunnan.
 Oletusarvo on 10 sekuntia. Aikaa voi muuttaa 10 minuuttiin asti. 
