@@ -83,6 +83,7 @@ Kun vaihdat Jakso -painikkeella puheen jaksotusta, Suuntain muistaa valinnan.
 - Suuntain toimii myös lentokone -tilassa eli ei tarvitse matkapuhelinverkkoa tai internet-yhteyttä toimiakseen. Myös kartta toimii lentokone -tilassa puhelimeen latautuneiden tietojen pohjalla.
 - Suuntain toimii myös vaaka-asennossa.
 - Suuntain tukee dynaamista tekstin kokoa eli sovelluksen tekstien kokoa voi vaihtaa käyttöavun kautta.
+- Suuntain toimii bluetooth kuulokkeiden kanssa ja pitää yhteyden päällä, kun puheen jaksotus on pitempi kuin 10 sekuntia.
 
 ## Suunnat kellotaulun mukaan
 - Suuntain kertoo suunnat sinun (puhelimen) liikkumissuuntaan verrattuna kellotaulun mukaisesti
