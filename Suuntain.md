@@ -10,7 +10,9 @@ Suuntain-sovelluksen näytöllä on myös suuntanuoli ja etäisyys metreinä.
 
 Kun olet kävellyt lähelle valittua paikkaa, Suuntain puhuu “olet perillä”.
 
-Sovellus on suunniteltu erityisesti sokeille ja näkövammaisille. Siitä on apua myös kenelle tahansa, joka haluaa tietää, miten löytää takaisin autolle tai hyvään marjapaikkaan. 
+Sovellus on suunniteltu erityisesti sokeille ja näkövammaisille. Siitä on apua myös kenelle tahansa, joka haluaa helpommin löytää takaisin autolle tai "siihen hyvään marjapaikkaan". 
+
+Sovelluksen käyttäjä on itse vastuussa turvallisesta liikkumisesta. Jos käytät sovellusta kuulokkeilla, pystyt paremmin keskittymään hyvän reitin etsimiseen ja luonnon seuraamiseen.
 
 ## Pikaohje
 1) Talleta nykyinen sijainti Lisää paikka -painikkeella. Paikan nimeksi tulee Uusi paikka.
@@ -66,30 +68,34 @@ Kun vaihdat Jakso -painikkeella puheen jaksotusta, valittu aika pysyy muistissa.
 - kartta-näkymä näyttää puhelimen sijainnin tekstillä "Minun sijainti" ja talletetut paikat niiden nimillä.
 - karttaa voi selata voiceover eleillä.
 - “Minun sijainti” on merkitty sinisellä merkillä ja punaiset merkit ovat tallettuja paikkoja kuten Koti tai Kauppa.
-- kartan avulla sinä tai näkevä avustaja näkee, missä päin Suomea paikat sijaitsevat.
+- kartta näyttää, missä päin Suomea tai maailmaa paikat sijaitsevat.
 - kartan oikeassa reunassa  on painikkeita, joilla muutetaan kartan sijaintia ja tarkkuutta.
 - kartan kautta voi lisätä myös uuden paikan Paikat listalle, kun Voiceover ei ole käytössä. 
-- paikan lisäys aktivoituu, kun sormella näpäytetään karttaa. Suuntain kysyy haluatko lisätä paikan ja antaa sille nimen.
+- paikan lisäys aktivoituu, kun sormella näpäytät karttaa. Suuntain kysyy haluatko lisätä paikan ja antaa sille nimen.
 
 ## **Asetukset** -sivu
 - Asetukset sivulla voi muuttaa Suuntain sovelluksen asetuksia. Suuntain muistaa asetukset.
 - S**ovelluksen ulkoasu**: voit vaihtaa sovelluksen värimaailmaa **Puhelin**, **Tumma** ja **Vaalea** värimaailmojen välillä.
 - **Käynnistys**: jos laitat **Automaattisesti** valinnan pois päältä, Suuntain ei käynnistä sijainnin seurantaa eli GPS:ää päälle automaattisesti, kun sovellus käynnistyy.
 - **Kellosuunta**: jos valitset **30 min tarkkuudella**, Suuntain puhuu kellosuunnat 30 minuutin tarkkuudella, kuten 12.30 ja 15.30.
+- **Näyttö**: jos valitse **Päällä**, puhelimen näyttö pysyy päällä.
 - **U-käännös**: jos valitset **Ehdota**, Suuntain puhuu “Tee U-käännös”, jos kuljet kellosuuntaan 5 - 7. Eli valittu paikka on sinun takapuolella.
 - **Kompassi käytössä**: voit muuttaa, milloin Suuntain käyttää kompassia suunnan laskemiseen. Oletuksena **0,75 km/h** on valittu eli Suuntain käyttää kompassia, kun nopeus on alle 0,75 kilometri tunnissa eli kävelet aika hitaasti tai olet pysähtynyt.
+- **Varmuuskopiointi**: **Varmuuskopioi paikat** ja **Palauta paikat varmuuskopiosta** -painikkeiden kautta voit tallettaa kopion sinun paikoista JSON tiedostoon ja palauttaa paikat sinun tallettamasta JSON tiedostosta. Huom! Varmuuskopiota ei kannata talletaa Suuntain -nimiseen kansioon, koska kyseinen kansio häviää kokonaan, jos poistat Suuntain-sovelluksen ja asennat sen myöhemmin uudelleen.
 - Näiden lisäksi **Beta**-versiossa on **Logger** ja **Debug** -osiot.
 - **Logger**: jos **Näytä** on valittu. Suuntain lisää **Logger** -sivun alapalkkiin ja kirjoittaa logitietoa Suuntain-nimiseen hakemistoon. Logger -sivulla näkee Suuntain -äpin sisäisiä viestejä.
 - **Debug**: jos **Näytä debug tietoa** on valittu, Suuntain näyttää näytöllä debug-tietoa. Jos **Näytä GPS tiedot** on valittu, Suuntain näyttää Koti-näytöllä GPS:n tietoja, jos yhtään paikkaa ei ole valittu.
 
 ## **Suuntaimen ominaisuuksia**
-- Suuntain puhuu “olet perillä”, kun olet kävellyt lähelle valittua paikkaa, ja poistaa automaattisesti tämän paikan valinnan.
-- kun käynnistät Suuntaimen tai valitsen jonkun paikan **Koti** tai **Paikat** sivulla, Suuntain puhuu valitun paikan tiedot mutta etsii paikka vasta, kun olet siirtynyt puhelimen kanssa tarpeeksi kauas valitusta paikasta. 
+- Suuntain puhuu “olet perillä”, kun olet kävellyt lähelle valittua paikkaa, ja poistaa automaattisesti tämän paikan valinnan Koti-listalta.
+- kun käynnistät Suuntaimen tai valitsen jonkun paikan **Koti** tai **Paikat** sivulla, Suuntain puhuu valitun paikan tiedot mutta etsii tätä paikkaa vasta, kun olet siirtynyt puhelimen kanssa tarpeeksi kauas valitusta paikasta. 
 - Suuntain toimii myös taustamoodissa eli kun puhelin on taskussa, näyttö on sammutettu tai joku toinen sovellus on valittu.
 - Suuntain toimii myös **lentokone** -tilassa eli ei tarvitse matkapuhelinverkkoa tai internet-yhteyttä toimiakseen. Myös kartta -sivu toimii lentokone -tilassa puhelimeen latautuneiden tietojen pohjalla.
 - Suuntain toimii myös vaaka -asennossa.
 - Suuntain tukee dynaamista tekstin kokoa eli sovelluksen tekstien kokoa voi vaihtaa käyttöavun kautta.
 - Suuntain toimii **Bluetooth**-kuulokkeiden kanssa ja pitää yhteyden päällä, kun puheen jaksotus on pitempi kuin 10 sekuntia.
+- Suuntain pysäyttää ja uudelleen käynnistää GPS:n liikkeen perusteella.
+- Uusia paikkoja voi lisätä Lisää paikka -painikkeella tai luomalla uuden paikan Kartta -sivulla.
 
 ## Suunnat kellotaulun mukaan
 - Suuntain kertoo suunnat sinun (puhelimen) liikkumissuuntaan verrattuna kellotaulun mukaisesti
