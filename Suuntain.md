@@ -1,5 +1,5 @@
 # Suuntain
-Tämä käyttöohje on tarkoitettu Suuntain 1.0(34) Beta -version käyttäjille.
+Tämä käyttöohje on tarkoitettu Suuntain 1.0(42) Beta -version käyttäjille.
 
 ## Yleistä
 Suuntain on iPhonelle tehty iOS-sovellus (äppi), joka on suunniteltu helpottamaan luonnossa ja luontopoluilla liikkumista. 
@@ -16,7 +16,8 @@ Sovellus on suunniteltu erityisesti sokeille ja näkövammaisille. Siitä on apu
 1) Talleta nykyinen sijainti Lisää paikka -painikkeella. Paikan nimeksi tulee Uusi paikka.
 2) Siirry Paikat -sivulle ja muuta paikan nimeksi esimerkiksi Kauppa.
 3) Valitse **Kauppa** valinta -painikkeella.
-4) Suuntain puhuu etäisyyden ja suunnan paikkaan nimeltä "kauppa" tyyliin “Kauppa, 350 metriä, kello 13”. Eli kauppa on noin 350 metrin päässä edessä hieman oikealle.
+4) Suuntain alkaa puhumaan etäisyyden ja suunnan valittuun paikkaan 10 sekunnin välen, esimerkiksi “Kauppa, 350 metriä, kello 13”. Eli kauppa on noin 350 metrin päässä edessä hieman oikealle.
+5) Muuta puheen jaksotusta Jakso -painikkeen avulla esimerkiksi 1 minuutiksi.
 
 ## Käyttöliittymä
 Kun Suuntain käynnistyy, olet **Koti**-sivulla.
@@ -37,18 +38,20 @@ Kun olet lähellä valittua paikkaa, Suuntain puhuu “olet perillä”.
 Suuntain kertoo suunnat kellotaulun (1-12) mukaisesti tai puolen tunnin tarkkuudella (esimerkiksi klo 12.30).
 
 ## **Yläpalkki**
-- kompassin suunta.
+- **Lisää paikka** -painike.
 - **Sijainnin hallinta** -painike.
 - **Jakso** -painike.
-- **Lisää paikka** -painike.
+- Kompassin suunta.
 
 Kun kompassi -kenttä on valittuna voiceoverilla, kuulet kompassin suunnan asteina. Se päivittyy kahden sekunnin välein.
 
-**Sijainnin hallinta** -painikkeella voit pysäyttää tai käynnistää seurannan. Seurannan pysäytys lopettaa puhelimen GPS:n käytön muutaman sekunnin sisällä, mikä säästää puhelimen akkua. Jos pysähdyt ulkona pitemmäksi aikaa, pysäytä seuranta siihen asti, kunnes jatkat liikkumista uudestaan.
+**Sijainnin hallinta** -painikkeella voit pysäyttää tai käynnistää seurannan. Seurannan pysäytys lopettaa puhelimen GPS:n käytön muutaman sekunnin sisällä, mikä säästää puhelimen akkua. 
+
+Jos puhelin on taskussa tai näyttö on sammutettu, Suuntain tunnistaa puhelimen liikkeen ja pysäyttää GPS:n käytön, jos puhelin on liikkumatta viiden minuutin ajan. Kun jatkat kävelyä, Suuntain käynnistää GPS:n automaattisesti uudelleen.
 
 **Jakso** -painikkeella voit valita, miten usein Suuntain puhuu etäisyyden ja suunnan.
 Oletusarvo on 10 sekuntia. Aikaa voi muuttaa 10 minuuttiin asti. 
-Kun vaihdat Jakso -painikkeella puheen jaksotusta, Suuntain muistaa valinnan.
+Kun vaihdat Jakso -painikkeella puheen jaksotusta, valittu aika pysyy muistissa.
 
 **Lisää paikka** -painike tallentaa nykyisen sijainnin nimellä **Uusi paikka** tai jos se on jo olemassa, nimellä **Uusi paikka 1** jne. Lisätty paikka ilmestyy heti **Koti** -sivun ja **Paikat** -sivun listalle. 
 
@@ -60,7 +63,7 @@ Kun vaihdat Jakso -painikkeella puheen jaksotusta, Suuntain muistaa valinnan.
 - koordinaateissa on käytössä desimaalipiste eli sama formaatti kuin Google Mapsissä ja monissa muissa sovelluksissa
 
 ## **Kartta** -sivu
-- kartta-näkymä näyttää puhelimen sijainnin tekstillä "Minun sijainti" ja talletut paikat niiden nimillä.
+- kartta-näkymä näyttää puhelimen sijainnin tekstillä "Minun sijainti" ja talletetut paikat niiden nimillä.
 - karttaa voi selata voiceover eleillä.
 - “Minun sijainti” on merkitty sinisellä merkillä ja punaiset merkit ovat tallettuja paikkoja kuten Koti tai Kauppa.
 - kartan avulla sinä tai näkevä avustaja näkee, missä päin Suomea paikat sijaitsevat.
