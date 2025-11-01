@@ -24,10 +24,9 @@ Sovelluksen käyttäjä on itse vastuussa turvallisesta liikkumisesta. Jos käyt
 ## Käyttöliittymä
 Kun Suuntain käynnistyy, olet **Koti**-sivulla.
 Käyttöliittymässä on myös kolme muuta sivua:
-1) Paikat, 
-2) Kartta ja 
-3) Asetukset.
-
+- Paikat, 
+- Kartta ja 
+- Asetukset.
 ## **Koti** -sivu
 - Yläpalkki
 - Lista talletetuista paikoista (esimerkiksi Koti, Kauppa ja Laavu).
