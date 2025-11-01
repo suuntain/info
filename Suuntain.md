@@ -6,7 +6,7 @@ Suuntain on iPhonelle tehty iOS-sovellus (äppi), joka on suunniteltu helpottama
 
 Suuntain puhuu etäisyyden ja suunnan valitsemaasi paikkaan. Etäisyys ja suunta lasketaan suorinta reittiä eli linnuntietä pitkin.
 
-Suuntain-sovelluksen näytöllä on myös suuntanuoli ja etäisyys metreinä.
+Näytöllä on myös suuntanuoli ja etäisyys.
 
 Kun olet kävellyt lähelle valittua paikkaa, Suuntain puhuu “olet perillä”.
 
@@ -23,10 +23,8 @@ Sovelluksen käyttäjä on itse vastuussa turvallisesta liikkumisesta. Jos käyt
 
 ## Käyttöliittymä
 Kun Suuntain käynnistyy, olet **Koti**-sivulla.
-Käyttöliittymässä on myös kolme muuta sivua:
-- Paikat, 
-- Kartta ja 
-- Asetukset.
+Käyttöliittymässä on myös kolme muuta sivua: Paikat,  Kartta ja Asetukset.
+
 ## **Koti** -sivu
 - Yläpalkki
 - Lista talletetuista paikoista (esimerkiksi Koti, Kauppa ja Laavu).
