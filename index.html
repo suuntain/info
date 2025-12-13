@@ -8,7 +8,7 @@
 <body>
   <div class="container">
     <h1 id="suuntain">Suuntain</h1>
-    <p>Tämä käyttöohje on tarkoitettu Suuntain 1.0(52) Beta -version
+    <p>Tämä käyttöohje on tarkoitettu Suuntain 1.0(54) Beta -version
     käyttäjille.</p>
     <h2 id="yleistä">Yleistä</h2>
     <p>Suuntain on iPhonelle tehty iOS-sovellus (äppi), joka on
@@ -23,9 +23,10 @@
     <p>Sovellus on suunniteltu erityisesti sokeille ja näkövammaisille.
     Siitä on apua myös kenelle tahansa, joka haluaa helpommin löytää
     takaisin autolle tai “siihen hyvään marjapaikkaan”. </p>
-    <p>Sovelluksen käyttäjä on itse vastuussa turvallisesta
-    liikkumisesta. Jos käytät sovellusta kuulokkeilla, pystyt paremmin
-    keskittymään hyvän reitin etsimiseen ja luonnon seuraamiseen.</p>
+    <p><strong>Sovelluksen käyttäjä on itse vastuussa turvallisesta
+    liikkumisesta.</strong> Jos käytät sovellusta kuulokkeilla, pystyt
+    paremmin keskittymään hyvän reitin etsimiseen ja luonnon
+    seuraamiseen.</p>
     <h2 id="pikaohje">Pikaohje</h2>
     <ol type="1">
     <li>Talleta nykyinen sijainti Lisää paikka -painikkeella. Paikan
@@ -34,9 +35,9 @@
     Kauppa.</li>
     <li>Valitse <strong>Kauppa</strong> valinta -painikkeella tai
     tuplaklikkauksella VoiceOver moodissa.</li>
-    <li>Suuntain alkaa puhumaan etäisyyden ja suunnan valittuun paikkaan
-    10 sekunnin välen, esimerkiksi “Kauppa, 350 metriä, kello 13”. Eli
-    kauppa on noin 350 metrin päässä edessä hieman oikealle.</li>
+    <li>Suuntain alkaa puhumaan etäisyyden ja suunnan valittuun
+    paikkaan, esimerkiksi “Kauppa, 350 metriä, kello 13”. Eli kauppa on
+    noin 350 metrin päässä edessä hieman oikealle.</li>
     <li>Muuta puheen jaksotusta Jakso -painikkeen avulla esimerkiksi 1
     minuutiksi.</li>
     </ol>
@@ -110,6 +111,11 @@
     Koti - Kauppa) ja valitse Talleta.</li>
     <li>voit muuttaa olemassa olevan reitin sisältöä: voit lisätä uusia
     paikkoja, poistaa paikkoja reitistä ja muuttaa reitin nimeä.</li>
+    <li><strong>Nauhoita uusi reitti</strong> -painikkeella voit
+    aloittaa uuden reitin nauhoittamisen. Lisää reittipisteitä
+    <strong>Lisää reittipisteitä</strong> -painikkeella. Kun reitti on
+    valmis, <strong>Lopeta nauhoitus</strong> -painike lopettaa
+    nauhoituksen. Anna reitille nimi ja talleta.</li>
     </ul>
     <h2 id="kartta--välilehti"><strong>Kartta</strong> -välilehti</h2>
     <ul>
@@ -147,18 +153,23 @@
     <li><strong>U-käännös</strong>: jos valitset
     <strong>Ehdota</strong>, Suuntain puhuu “Tee U-käännös”, jos kuljet
     kellosuuntaan 5 - 7. Eli valittu paikka on sinun takapuolella.</li>
+    <li><strong>Puheprofiilit</strong>: voit valinta puheprofiin
+    paikkoja ja reittejä varten. Lisäksi voi muuttaa puheprofiilien
+    asetuksia ja luoda uusia. Oletus, Kävely ja Pyöräily ovat Suuntaimen
+    mukana tulevat profiilit.</li>
     <li><strong>Kompassi käytössä</strong>: voit muuttaa, milloin
     Suuntain käyttää kompassia suunnan laskemiseen. Oletuksena
     <strong>0,75 km/h</strong> on valittu eli Suuntain käyttää
     kompassia, kun nopeus on alle 0,75 kilometri tunnissa eli kävelet
     aika hitaasti tai olet pysähtynyt.</li>
     <li><strong>Varmuuskopiointi</strong>: <strong>Varmuuskopioi
-    paikat</strong> ja <strong>Palauta paikat varmuuskopiosta</strong>
-    -painikkeiden kautta voit tallettaa kopion sinun paikoista JSON
-    tiedostoon ja palauttaa paikat sinun tallettamasta JSON tiedostosta.
-    Huom! Varmuuskopiota ei kannata talletaa Suuntain -nimiseen
-    kansioon, koska kyseinen kansio häviää kokonaan, jos poistat
-    Suuntain-sovelluksen ja asennat sen myöhemmin uudelleen.</li>
+    paikat</strong> ja reitt ja <strong>Palauta paikat ja reitit
+    varmuuskopiosta</strong> -painikkeiden kautta voit tallettaa kopion
+    sinun paikoista ja reiteistä JSON tiedostoon tai palauttaa paikat ja
+    reitit sinun tallettamasta JSON tiedostosta. Huom! Varmuuskopiota ei
+    kannata talletaa Suuntain -nimiseen kansioon, koska kyseinen kansio
+    häviää kokonaan, jos poistat Suuntain-sovelluksen ja asennat sen
+    myöhemmin uudelleen.</li>
     <li>Näiden lisäksi <strong>Beta</strong>-versiossa on
     <strong>Logger</strong> ja <strong>Debug</strong> -osiot.</li>
     <li><strong>Logger</strong>: jos <strong>Näytä</strong> on valittu.
@@ -187,6 +198,8 @@
     <li>Suuntain tukee VoiceOver moodia.</li>
     <li>Suuntain toimii taustamoodissa eli kun puhelin on taskussa,
     näyttö on sammutettu tai joku toinen sovellus on valittu.</li>
+    <li>Käyttäjä voi muuttaa, milloin ja miten usein Suuntain puhuu.
+    Lisätietoa puheprofiilit kohdassa.</li>
     <li>Suuntain toimii <strong>lentokone</strong> -tilassa eli ei
     tarvitse matkapuhelinverkkoa tai internet-yhteyttä toimiakseen. Myös
     kartta -välilehti toimii lentokone -tilassa, jos olet käyttänyt
@@ -201,6 +214,7 @@
     pitkään paikallaan.</li>
     <li>Uusia paikkoja voi lisätä Lisää paikka -painikkeella tai
     näpäyttämällä haluttua kohtaa kartasta Kartta -välilehdellä.</li>
+    <li>Paikkojen, reittien ja asetuksien JSON varmuuskopiointi.</li>
     </ul>
     <h2 id="suunnat-kellotaulun-mukaan">Suunnat kellotaulun mukaan</h2>
     <ul>
@@ -213,6 +227,16 @@
     <li>Suunta kello 1: paikka on edessä hieman oikealle.</li>
     <li>Suunta kello 12.30: paikka on edessä hieman oikealle.</li>
     </ul>
+    <h2 id="puheprofiilit">Puheprofiilit</h2>
+    <p>Suuntain puhuu ohjeet ns. valitun puheprofiilin mukaan. Käyttäjä
+    voi muokata profiileja ja luoda uusia. Oletusprofiilissa on
+    määritelty puhe seuraavasti: - kun olet Hyvin lähellä eli alle 30
+    metrin päässä paikasta, puhejakso on sekuntia - kun olet Lähellä eli
+    alle 100 metrin päässä paikasta, puhejakso on 10 sekuntia - kun olen
+    Keski -etäisyydellä eli alle 500 metrin päässä paikasta, puhejakso
+    on 30 sekuntia. - kun olet Kaukana eli yli 500 metrin päässä
+    paikasta, puhejakso on 60 sekuntia. Voit muokata metrejä ja
+    sekunteja.</p>
     <h2
     id="suuntain-sovelluksen-ottaminen-käyttöön-ensimmäistä-kertaa">Suuntain
     sovelluksen ottaminen käyttöön ensimmäistä kertaa</h2>
