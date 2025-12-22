@@ -8,7 +8,7 @@
 <body>
   <div class="container">
     <h1 id="suuntain">Suuntain</h1>
-    <p>Tämä käyttöohje on tarkoitettu Suuntain 1.0(54) Beta -version
+    <p>Tämä käyttöohje on tarkoitettu Suuntain 1.0(637) Beta -version
     käyttäjille.</p>
     <h2 id="yleistä">Yleistä</h2>
     <p>Suuntain on iPhonelle tehty iOS-sovellus (äppi), joka on
@@ -19,7 +19,8 @@
     linnuntietä pitkin.</p>
     <p>Näytöllä on myös suuntanuoli ja etäisyys.</p>
     <p>Kun olet kävellyt lähelle valittua paikkaa, Suuntain puhuu “olet
-    perillä” tai “olet reitillä paikassa”, jos olet valinnut reitin.</p>
+    perillä” tai “paikka”, “risteys”, “tarkistuspiste”, “aloituspiste”
+    jos olet valinnut reitin.</p>
     <p>Sovellus on suunniteltu erityisesti sokeille ja näkövammaisille.
     Siitä on apua myös kenelle tahansa, joka haluaa helpommin löytää
     takaisin autolle tai “siihen hyvään marjapaikkaan”. </p>
@@ -38,8 +39,6 @@
     <li>Suuntain alkaa puhumaan etäisyyden ja suunnan valittuun
     paikkaan, esimerkiksi “Kauppa, 350 metriä, kello 13”. Eli kauppa on
     noin 350 metrin päässä edessä hieman oikealle.</li>
-    <li>Muuta puheen jaksotusta Jakso -painikkeen avulla esimerkiksi 1
-    minuutiksi.</li>
     </ol>
     <h2 id="käyttöliittymä">Käyttöliittymä</h2>
     <p>Kun Suuntain käynnistyy, olet <strong>Koti</strong>-välilehdellä.
@@ -65,7 +64,6 @@
     <ul>
     <li><strong>Lisää paikka</strong> -painike.</li>
     <li><strong>Sijainnin hallinta</strong> -painike.</li>
-    <li><strong>Jakso</strong> -painike.</li>
     <li>Paikat / Reitit -valinta.</li>
     <li>Kompassin suunta.</li>
     </ul>
@@ -78,10 +76,6 @@
     <p>Jos puhelin on taskussa tai näyttö on sammutettu, Suuntain seuraa
     puhelimen liikkumista ja pysäyttää GPS:n käytön automaattisesti, jos
     puhelin on liikkumatta viidentoista minuutin ajan.</p>
-    <p><strong>Jakso</strong> -painikkeella voit valita, miten usein
-    Suuntain puhuu etäisyyden ja suunnan. Oletusarvo on 10 sekuntia.
-    Aikaa voi muuttaa 10 minuuttiin asti. Valittu aika pysyy
-    muistissa.</p>
     <p>Paikat / Reitit -valinta muuttaa koti -välilehden näkymää. Kun
     Paikat on valittu, koti -välilehti näyttää listaa paikoista ja
     Reitit -valinta näyttää listaa reiteistä.</p>
@@ -214,6 +208,9 @@
     pitkään paikallaan.</li>
     <li>Uusia paikkoja voi lisätä Lisää paikka -painikkeella tai
     näpäyttämällä haluttua kohtaa kartasta Kartta -välilehdellä.</li>
+    <li>Voit jatkaa paikan tai reitin.</li>
+    <li>Voit vaihtaa puheääntä Asetuksien kautta. Vaihtoehtoina on Satu
+    ja Onni.</li>
     <li>Paikkojen, reittien ja asetuksien JSON varmuuskopiointi.</li>
     </ul>
     <h2 id="suunnat-kellotaulun-mukaan">Suunnat kellotaulun mukaan</h2>
@@ -237,38 +234,35 @@
     on 30 sekuntia. - kun olet Kaukana eli yli 500 metrin päässä
     paikasta, puhejakso on 60 sekuntia. Voit muokata metrejä ja
     sekunteja.</p>
-    <h2
-    id="suuntain-sovelluksen-ottaminen-käyttöön-ensimmäistä-kertaa">Suuntain
-    sovelluksen ottaminen käyttöön ensimmäistä kertaa</h2>
-    <ol type="1">
-    <li>Käynnistä <strong>Suuntain</strong> sovellus iPhonessa.</li>
-    <li>Hyväksy sijaintitietojen käyttö <strong>Salli
-    käytettäessä</strong>.</li>
-    <li>Siirry iPhone <strong>Asetukset</strong> sovellukseen.
-    Asetuksien <strong>Apit</strong> kohdassa valitse
-    <strong>Suuntain</strong> ja muuta <strong>Sijainti</strong>
-    -asetukseksi <strong>Aina</strong>. Tämä asetus tarvitaan, jotta
-    Suuntain voi puhua etäisyyden ja suunnan, kun se on taskussa tai
-    näyttö ei ole päällä.</li>
-    <li>Siirry takaisin Suuntain sovellukseen.</li>
-    <li>Lisää nykyinen sijainti Paikat-listalle <strong>Lisää
-    paikka</strong>  -painikkeella. </li>
-    <li>Siirry <strong>Paikat</strong>-välilehdelle.</li>
-    <li>Valitse rivi nimeltä “Uusi paikka”.</li>
-    <li>Muuta paikan nimi (esimerkiksi Koti).</li>
-    <li>Paina <strong>Talleta</strong>.</li>
-    <li>Valitse rivi, jonka nimi on <strong>Koti</strong> valinta-
-    painikkeella.</li>
-    <li>Nyt Suuntain alkaa kertoa puhelimen etäisyyden ja suunnan
-    paikkaan Koti 10s välein.</li>
-    <li>Muuta puheen jaksotusta <strong>Jakso</strong>
-    -painikkeella.</li>
-    <li>Valitse <strong>1 min</strong>.</li>
-    <li>Kun alat kävelemään, Suuntain käyttää puhelimen sijainti- eli
-    GPS-tietoja puhelimen suunnan ja etäisyyden laskemiseen.</li>
-    <li>Kun pysähdyt, Suuntain käyttää puhelimen kompassia puhelimen
-    suunnan laskemiseen. </li>
-    </ol>
+    <h2 id="paikan-tai-reitin-jakaminen">Paikan tai reitin
+    jakaminen</h2>
+    <p>Voit jakaa eli lähettää paikan tai reitin.</p>
+    <p>Paikan jakaminen on mahdollista, kun olet paikan tiedoissa
+    <strong>Jaa sijaint</strong>i -painikeella. Vastaavasti reitin
+    jakaminen on mahdollista, kun olet reitin tiedoissa <strong>Jaa
+    reitti</strong> -painikkeella.</p>
+    <p>JSON-tiedostoon talletetun paikan tai reitin voi tuoda sisään
+    Suuntain sovellukseen Tiedostot -sovelluksen kautta. ## Suuntain
+    sovelluksen ottaminen käyttöön ensimmäistä kertaa 1) Käynnistä
+    <strong>Suuntain</strong> sovellus iPhonessa. 2) Hyväksy
+    sijaintitietojen käyttö <strong>Salli käytettäessä</strong>. 3)
+    Siirry iPhone <strong>Asetukset</strong> sovellukseen. Asetuksien
+    <strong>Apit</strong> kohdassa valitse <strong>Suuntain</strong> ja
+    muuta <strong>Sijainti</strong> -asetukseksi <strong>Aina</strong>.
+    Tämä asetus tarvitaan, jotta Suuntain voi puhua etäisyyden ja
+    suunnan, kun se on taskussa tai näyttö ei ole päällä. 4) Siirry
+    takaisin Suuntain sovellukseen. 5) Lisää nykyinen sijainti
+    Paikat-listalle <strong>Lisää paikka</strong>  -painikkeella.  6)
+    Siirry <strong>Paikat</strong>-välilehdelle. 7) Valitse rivi nimeltä
+    “Uusi paikka”. 8) Muuta paikan nimi (esimerkiksi Koti). 9) Paina
+    <strong>Talleta</strong>. 10) Valitse rivi, jonka nimi on
+    <strong>Koti</strong> valinta- painikkeella. 11) Nyt Suuntain alkaa
+    kertoa puhelimen etäisyyden ja suunnan paikkaan Koti 10s välein. 12)
+    Muuta puheen jaksotusta <strong>Jakso</strong> -painikkeella. 13)
+    Valitse <strong>1 min</strong>. 14) Kun alat kävelemään, Suuntain
+    käyttää puhelimen sijainti- eli GPS-tietoja puhelimen suunnan ja
+    etäisyyden laskemiseen. 15) Kun pysähdyt, Suuntain käyttää puhelimen
+    kompassia puhelimen suunnan laskemiseen. </p>
     <h2 id="tietojen-kerääminen">Tietojen kerääminen</h2>
     <p>Suuntain ei kerää mitää tietoja käyttäjästä tai sovelluksen
     käyttämisestä.</p>
