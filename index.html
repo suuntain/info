@@ -8,7 +8,7 @@
 <body>
   <div class="container">
     <h1 id="suuntain">Suuntain</h1>
-    <p>Tämä käyttöohje on tarkoitettu Suuntain 1.0(10775) Beta -version
+    <p>Tämä käyttöohje on tarkoitettu Suuntain 1.0(10945) Beta -version
     käyttäjille.</p>
     <h2 id="yleistä">Yleistä</h2>
     <p>Suuntain on iPhonelle tehty iOS-sovellus (äppi), joka on
@@ -29,36 +29,50 @@
     voit keskittyä hyvän reitin etsimiseen ja luonnon seuraamiseen.</p>
     <h2 id="pikaohje">Pikaohje</h2>
     <ol type="1">
-    <li>Talleta nykyinen sijainti Lisää paikka -painikkeella. Paikan
-    nimeksi tulee Uusi paikka.</li>
-    <li>Siirry Paikat -välilehdelle ja muuta paikan nimeksi esimerkiksi
-    Koti.</li>
-    <li>Valitse <strong>Koti</strong> valinta -painikkeella tai
+    <li>Käynnistä Suuntain sovellus.</li>
+    <li>Suuntain tallettaa nykyisen sijainnin nimellä Aloituspaikka, jos
+    et tallettanut yhtään paikkaa.</li>
+    <li>Valitse <strong>Aloituspaikka</strong> valinta -painikkeella tai
     tuplaklikkauksella VoiceOver moodissa.</li>
-    <li>Suuntain alkaa puhumaan etäisyyden ja suunnan tähän paikkaan,
-    esimerkiksi “Koti, 350 metriä, kello 13”. Eli koti on noin 350
-    metrin päässä edessä hieman oikealle.</li>
+    <li>Suuntain alkaa puhumaan etäisyyden ja suunnan Aloituspaikkaan.
+    Kun lähdet kävelemään, kuulet esimerkiksi “Aloituspaikka, 350
+    metriä, kello 6”. Eli aloituspaikka on noin 350 metrin päässä sinun
+    takana.</li>
     </ol>
     <h2 id="käyttöliittymä">Käyttöliittymä</h2>
     <p>Kun Suuntain käynnistyy, olet sovelluksen <strong>Koti</strong>
     -välilehdellä. Käyttöliittymässä on myös neljä muuta välilehteä:
-    Paikat, Reitit, Kartta ja Asetukset.</p>
+    Paikat, Reitit, Kartta ja Asetukset, joiden pääset alapalkin
+    kautta.</p>
     <h2 id="koti--välilehti"><strong>Koti</strong> -välilehti</h2>
     <ul>
     <li>Yläpalkki</li>
-    <li>Lista talletetuista paikoista (esimerkiksi Koti, Risteys ja
-    Laavu) tai reiteistä. Valitse yläpalkista Paikat tai Reitit.
-    Sovelluksen käynnistyessä <strong>Paikat</strong> on valittuna.</li>
-    <li>Suuntanuoli ja etäisyys. Suuntain näyttää ne, jos olet valinnut
-    vain yhden paikan tai reitin.</li>
-    <li>Alapalkki</li>
+    <li>Lista sinun paikoista (esimerkiksi Koti, Risteys ja Laavu) tai
+    reiteistä. Valitse yläpalkista Paikat tai Reitit. Sovelluksen
+    käynnistyessä <strong>Paikat</strong> on valittuna.</li>
+    <li>Suuntanuoli ja etäisyys näkyvät, jos olet valinnut vain yhden
+    paikan tai reitin.</li>
     </ul>
-    <p>Kun haluat mennä johonkin paikkaan, valitse kyseinen paikka
-    <strong>Koti</strong> -välilehden listalta vaihto -painikkeella. Nyt
-    Suuntain puhuu etäisyyden ja suunnan valittuun paikkaan. Kun olet
-    lähellä valittua paikkaa, Suuntain puhuu “olet perillä”. Suuntain
-    kertoo suunnat kellotaulun (1-12) mukaisesti tai puolen tunnin
-    tarkkuudella (esimerkiksi klo 12.30).</p>
+    <p>Kun haluat mennä johonkin paikkaan, siirry <strong>Koti</strong>
+    -välilehden <strong>Paikat</strong> näkymään ja valitse listalta
+    haluttu paikka vaihto -painikkeella. Nyt Suuntain puhuu etäisyyden
+    ja suunnan valittuun paikkaan. Kun olet lähellä valittua paikkaa,
+    Suuntain puhuu “olet perillä”. Suuntain kertoo suunnat kellotaulun
+    (1-12) mukaisesti tai puolen tunnin tarkkuudella (esimerkiksi klo
+    12.30).</p>
+    <p>Kun haluat kulkea reittiä pitkin, siirry <strong>Koti</strong>
+    -välilehden <strong>Reitit</strong> näkymään ja valitse listalta
+    haluttu reitti vaihto -painikkeella. Suuntain valitsee ensimmäisen
+    reittipisteen ja puhuu etäisyyden ja suunnan. Kun olet päässyt
+    reittipisteen lähelle, Suuntain valitsee automaattisesti seuraavan
+    reittipisteen.</p>
+    <p>Jos haluat kulkea reitin loppupäästä alkupäähän, valitse
+    <strong>Käänteinen reitti</strong> valinta- painikeen avulla. Nyt
+    Suuntain opastaa reitin viimeisestä reittipisteestä alkaen
+    ensimmäiseen reittipisteeseen. Esimerkiksi jos sinulla on reitti
+    “Koti - Kauppa”, voit käyttää sitä kun olet lähdössä kaupalta
+    kotiin: laita <strong>Käänteinen reitti</strong> päälle ja valitse
+    “Koti - Kauppa”.</p>
     <h2 id="yläpalkki"><strong>Yläpalkki</strong></h2>
     <ul>
     <li><strong>Lisää paikka</strong> -painike.</li>
@@ -87,7 +101,11 @@
     <ul>
     <li>lista sinun paikoista (esimerkiksi Koti, Kauppa ja Uusi
     paikka).</li>
-    <li>voit valita paikan tai paikkoja vaihtopainikkeen avulla.</li>
+    <li><strong>Näytä automaattiset paikat</strong> -vaihtopainikeella
+    saat näkyviin tai pois näkyvistä automaattisesti talletut
+    paikat.</li>
+    <li>voit valita paikan tai paikkoja kullakin rivillä olevan
+    vaihtopainikkeen avulla.</li>
     <li>voit muuttaa paikan nimeä tai koordinaatteja. </li>
     <li>koordinaatit voivat olla muodossa (64.12345, 25.12345) tai 
     ilman sulkeita 64.12345, 25.12345.</li>
@@ -101,7 +119,10 @@
     valittuna kerrallaan.</li>
     <li>Lisää reitti -painikkeella aloitat uuden reitin tekemisen. Lisää
     halutut paikat reitille, muuta reitin nimi halutuksi (esimerkiksi
-    Koti - Kauppa) ja valitse Talleta.</li>
+    Koti - Kauppa) ja valitse Talleta. kun valitset paikkoja reitille,
+    <strong>Näytä automaattiset paikat</strong> -valintapainikkeen
+    avulla saat automaattisesti talletetut paikat piiloon tai
+    näkyviin.</li>
     <li>voit muuttaa olemassa olevan reitin sisältöä: voit lisätä uusia
     paikkoja, poistaa paikkoja reitistä ja muuttaa reitin nimeä.</li>
     <li><strong>Nauhoita uusi reitti</strong> -painikkeella voit
@@ -183,6 +204,10 @@
     <li>Voit määritellä paikkojen avulla reittejä. Reitillä Suuntain
     puhuu automaattisesti reitin paikat ja valitsee automaattisesti
     reitin seuraavan välipisteen.</li>
+    <li>Kun käynnistät Suuntaimen, se tallettaa automaattisesti nykyisen
+    paikan, jos sama paikka ei ole ennestään tallessa.</li>
+    <li>Voit käyttää yksisuuntaisia reittejä myös käänteisessä
+    järjestyksessä eli viimeisestä reittipisteestä käsin.</li>
     <li>kun käynnistät Suuntaimen tai valitsen jonkun paikan
     <strong>Koti</strong> tai <strong>Paikat</strong> välilehdellä,
     Suuntain puhuu valitun paikan tiedot mutta etsii tätä paikkaa vasta,
