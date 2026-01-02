@@ -8,7 +8,7 @@
 <body>
   <div class="container">
     <h1 id="suuntain">Suuntain</h1>
-    <p>Tämä käyttöohje on tarkoitettu Suuntain 1.0(10946) Beta -version
+    <p>Tämä käyttöohje on tarkoitettu Suuntain 1.0(10982) Beta -version
     käyttäjille.</p>
     <h2 id="yleistä">Yleistä</h2>
     <p>Suuntain on iPhonelle tehty iOS-sovellus (äppi), joka on
@@ -30,14 +30,15 @@
     <h2 id="pikaohje">Pikaohje</h2>
     <ol type="1">
     <li>Käynnistä Suuntain sovellus.</li>
-    <li>Suuntain tallettaa nykyisen sijainnin nimellä Aloituspaikka, jos
-    et tallettanut yhtään paikkaa.</li>
-    <li>Valitse <strong>Aloituspaikka</strong> valinta -painikkeella tai
-    tuplaklikkauksella VoiceOver moodissa.</li>
-    <li>Suuntain alkaa puhumaan etäisyyden ja suunnan Aloituspaikkaan.
-    Kun lähdet kävelemään, kuulet esimerkiksi “Aloituspaikka, 350
-    metriä, kello 6”. Eli aloituspaikka on noin 350 metrin päässä sinun
-    takana.</li>
+    <li>Suuntain tallettaa nykyisen sijainnin automaattisesti, jos et
+    ole tätä paikkaa tallettanut. Jos muita paikkoja ei ole, paikan
+    nimeksi tulee Aloituspaikka.</li>
+    <li>Valitse Koti -sivulla <strong>Aloituspaikka</strong> valinta
+    -painikkeella tai tuplaklikkauksella VoiceOver moodissa.</li>
+    <li>Suuntain alkaa nyt puhumaan etäisyyden ja suunnan valittuun
+    paikkaan. Kun lähdet kävelemään, kuulet esimerkiksi “Aloituspaikka,
+    100 metriä, kello 6”. Eli aloituspaikka on noin 100 metrin päässä
+    sinun takana.</li>
     </ol>
     <h2 id="käyttöliittymä">Käyttöliittymä</h2>
     <p>Kun Suuntain käynnistyy, olet sovelluksen <strong>Koti</strong>
@@ -110,10 +111,14 @@
     <li>koordinaatit voivat olla muodossa (64.12345, 25.12345) tai 
     ilman sulkeita 64.12345, 25.12345.</li>
     <li>koordinaateissa on käytössä desimaalipiste eli sama formaatti
-    kuin Google Mapsissä ja monissa muissa sovelluksissa</li>
-    </ul>
-    <h2 id="reitit--välilehti">Reitit -välilehti</h2>
-    <ul>
+    kuin Google Mapsissä ja monissa muissa sovelluksissa.</li>
+    <li>voit myös kirjoittaa muistiinpanoja tähän paikkaan liittyen. Jos
+    laitat päälle <strong>Puhu muistiinpanot</strong>, Suuntain puhuu
+    tekstin, kun valitset tämän paikan tai kun reitillä lähdet kulkemaan
+    tätä paikkaa kohti.</li>
+    <li>jos laitat päälle <strong>Hälytys</strong>, Suuntain hälyttää
+    äänellä ja puheella, kun lähestyt tätä paikkaa. ## Reitit
+    -välilehti</li>
     <li>lista sinun reiteistä (esimerkiksi Koti - Kauppa)</li>
     <li>voit valita reitin vaihtopainikkeella. Vain yksi reitti voi olla
     valittuna kerrallaan.</li>
@@ -231,7 +236,12 @@
     pitkään paikallaan.</li>
     <li>Uusia paikkoja voi lisätä Lisää paikka -painikkeella tai
     näpäyttämällä haluttua kohtaa kartasta Kartta -välilehdellä.</li>
-    <li>Voit jatkaa paikan tai reitin.</li>
+    <li>Voit jakaa paikan tai reitin.</li>
+    <li>Suuntain puhuu paikkaan liittyvät muistiinpanot, jos olet
+    laittanut puheen päälle.</li>
+    <li>Suuntain hälyttää, kun olet tietyn paikan lähellä. Hälytys
+    toimii vaikka paikka ei ole valittuna kohteeksi tai reitin
+    osana.</li>
     <li>Voit vaihtaa puheääntä Asetuksien kautta. Vaihtoehtoina on Satu
     ja Onni.</li>
     <li>Paikkojen, reittien ja asetuksien JSON varmuuskopiointi.</li>
