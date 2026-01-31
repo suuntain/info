@@ -1,4 +1,4 @@
-# Suuntain 1.1  – Käyttöohje
+# Suuntain 1.1  – Käyttöohje, [User Guide](english.html)
 
 ## Yleistä
 
