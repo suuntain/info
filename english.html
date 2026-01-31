@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="suuntain-1.1-user-guide">Suuntain 1.1 – User Guide</h1>
+    <h2 id="overview">Overview</h2>
+    <p>Suuntain is an iPhone app that helps you navigate in nature and
+    find places easily. The app speaks the distance and direction to a
+    selected location or route waypoint.</p>
+    <p>The app is designed especially for blind and visually impaired
+    users, but it’s useful for anyone moving in nature.</p>
+    <p><strong>Note! The user is always responsible for their own
+    safety. The app is an assistive tool.</strong></p>
+    <hr />
+    <h2 id="quick-start">Quick Start</h2>
+    <ol type="1">
+    <li>Launch the Suuntain app.</li>
+    <li>The app automatically saves your current location (Starting
+    Point).</li>
+    <li>Select your desired location from the Home tab.</li>
+    <li>The app speaks the distance and direction to the selected
+    location.</li>
+    <li>When you arrive, the app speaks “Arrived at”.</li>
+    </ol>
+    <hr />
+    <h2 id="main-menus">Main Menus</h2>
+    <h3 id="home">Home</h3>
+    <ul>
+    <li>View a list of locations and routes.</li>
+    <li>Select a location or route to navigate to.</li>
+    <li>The app speaks the distance and direction to the selected
+    destination.</li>
+    </ul>
+    <h3 id="locations">Locations</h3>
+    <ul>
+    <li>Manage saved locations.</li>
+    <li>Add, rename, or delete locations.</li>
+    <li>You can add notes to locations and enable an alert that notifies
+    you when you’re near a location.</li>
+    <li>You can define an alias for the location name using /
+    marker.</li>
+    </ul>
+    <h3 id="routes">Routes</h3>
+    <ul>
+    <li>Create new routes and edit existing ones.</li>
+    <li>Add waypoints and change route names.</li>
+    <li>Modify, add, or delete waypoints in the map view.</li>
+    <li>You can travel the route in both directions (reverse
+    route).</li>
+    <li>You can define an alias for the route name using / marker.</li>
+    </ul>
+    <h3 id="map">Map</h3>
+    <ul>
+    <li>See your location, saved places, and the selected route on the
+    map.</li>
+    <li>Add a new location by tapping the map.</li>
+    </ul>
+    <h3 id="settings">Settings</h3>
+    <ul>
+    <li>Change the app appearance (dark/light/system).</li>
+    <li>Adjust speech profiles and other settings.</li>
+    <li>Back up and restore locations and routes.</li>
+    </ul>
+    <hr />
+    <h2 id="key-features">Key Features</h2>
+    <ul>
+    <li><strong>Add Location:</strong> Save your current location to the
+    location list.</li>
+    <li><strong>Select Location/Route:</strong> The app announces the
+    distance and direction to the selected destination.</li>
+    <li><strong>Reverse Route:</strong> Travel the route in the opposite
+    direction.</li>
+    <li><strong>Notes and Alerts:</strong> Add notes to locations and
+    enable alerts.</li>
+    <li><strong>Backup:</strong> Save and restore locations and routes
+    as a JSON file.</li>
+    <li><strong>Siri Commands:</strong> Control the app with voice
+    commands (e.g., “Suuntain, select location”).</li>
+    </ul>
+    <h2 id="speech-profiles">Speech Profiles</h2>
+    <p>Suuntain speaks the distance and direction to a location or
+    waypoint according to the speech profile. You can select a speech
+    profile in Settings under Speech Profiles. Locations and routes can
+    use different profiles. You can also edit existing profiles or
+    create new ones.</p>
+    <p>Speech profiles are based on distance or time.</p>
+    <p>For example, the profile named <strong>Default</strong> is
+    distance-based, meaning Suuntain speaks more frequently when you’re
+    closer to the location.</p>
+    <ul>
+    <li>When you’re <strong>very close</strong>, within 30 meters,
+    speech repeats every 3 seconds.</li>
+    <li>When you’re <strong>close</strong>, within 100 meters, speech
+    repeats every 10 seconds.</li>
+    <li>When you’re at <strong>medium</strong> distance, within 500
+    meters, speech repeats every 30 seconds.</li>
+    <li>When you’re <strong>far</strong>, over 500 meters away, speech
+    repeats every 60 seconds.</li>
+    </ul>
+    <p>Another example is the profile named <strong>Time 30s</strong>.
+    It’s time-based, meaning Suuntain speaks continuously, in this case
+    every 30 seconds.</p>
+    <p>In distance-based profiles, you can change the meter thresholds
+    and speech timing. For example, you can set the <strong>very
+    close</strong> threshold to 15 meters and the speech interval to 3
+    seconds.</p>
+    <h2 id="creating-routes">Creating Routes</h2>
+    <p>You can create your own routes using existing locations,
+    automatically, or based on locations you select.</p>
+    <p>Create a route from saved locations:</p>
+    <ol type="1">
+    <li>Go to the Routes tab.</li>
+    <li>Start a route with the “Add new route” button.</li>
+    <li>Select waypoints from the list.</li>
+    <li>Give the route a name.</li>
+    <li>The “Save route” button saves the new route.</li>
+    </ol>
+    <p>Create a new route automatically:</p>
+    <ol type="1">
+    <li>Go to the Routes tab.</li>
+    <li>Select “Record new route”.</li>
+    <li>Select the “Automatic” tab.</li>
+    <li>When you start walking, Suuntain records the entire route
+    automatically.</li>
+    <li>Select “Add new waypoint” when you want to add the current
+    location as a mandatory point on the route.</li>
+    <li>Select “Stop recording”.</li>
+    <li>“Save route” - in the map view you can see Suuntain’s suggested
+    waypoints.</li>
+    <li>Adjust the “Threshold” setting to change the number of
+    waypoints.</li>
+    <li>Give the route a name.</li>
+    <li>Select “Save”</li>
+    </ol>
+    <p>Create a new route based on locations you select:</p>
+    <ol type="1">
+    <li>Go to the Routes tab.</li>
+    <li>Select “Record new route”.</li>
+    <li>Select the “Manual” tab.</li>
+    <li>Select “Add new waypoint” when you want to add the current
+    location to the route.</li>
+    <li>Continue walking and add new waypoints at appropriate
+    places.</li>
+    <li>Select “Stop recording”.</li>
+    <li>Give the route a name.</li>
+    <li>Select “Save”</li>
+    </ol>
+    <p>The new route can be found in the Home:Route view.</p>
+    <h2 id="gps-breadcrumbs">GPS Breadcrumbs</h2>
+    <p>If you recorded a long route but the recording was interrupted
+    for some reason, or the phone battery died before saving the route,
+    you can recover the route using GPS breadcrumbs:</p>
+    <ol type="1">
+    <li>Launch the Suuntain app.</li>
+    <li>Select the “Routes” tab.</li>
+    <li>Select “Recover route”. This option is available if a route was
+    left incomplete.</li>
+    <li>In the “Recover route” map view, give the route a name.</li>
+    <li>Select “Save”</li>
+    </ol>
+    <hr />
+    <h2 id="clock-face-directions">Clock-Face Directions</h2>
+    <ul>
+    <li>12 o’clock: straight ahead</li>
+    <li>6 o’clock: straight behind</li>
+    <li>3 o’clock: to the right</li>
+    <li>9 o’clock: to the left</li>
+    <li>1 o’clock: slightly ahead to the right</li>
+    <li>12:30: ahead slightly to the right</li>
+    </ul>
+    <hr />
+    <h2 id="tips-and-notes">Tips and Notes</h2>
+    <ul>
+    <li>The app works without an internet connection (airplane
+    mode).</li>
+    <li>The app supports VoiceOver and Bluetooth headphones.</li>
+    <li>The app scales text according to Dynamic Type settings.</li>
+    <li>GPS usage stops automatically when the phone has been stationary
+    for a long time.</li>
+    <li>You can share locations and routes with other users as a JSON
+    file.</li>
+    </ul>
+    <hr />
+    <h2 id="first-use">First Use</h2>
+    <ol type="1">
+    <li>Launch Suuntain.</li>
+    <li>Allow location access while the app is in use.</li>
+    <li>Allow motion and fitness data access while the app is in
+    use.</li>
+    <li>Allow location access “Always” so the app doesn’t stop when the
+    phone is locked.</li>
+    <li>Select the automatically created location.</li>
+    <li>You’ll hear the app speak the distance and direction.</li>
+    </ol>
+    <hr />
+    <h2 id="support-and-privacy">Support and Privacy</h2>
+    <ul>
+    <li>The app does not collect user data.</li>
+    <li>For issues, you can send an email to: suuntain@proton.me</li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    </ul>
+    <hr />
+    <h2 id="licensed-libraries">Licensed Libraries</h2>
+    <ul>
+    <li>SwiftUILogger, (c) 2022 Zach Eriksen:
+    https://github.com/0xLeif/SwiftUILogger/blob/main/LICENSE</li>
+    <li>Surge, (c) 2014-2019 the Surge contributors:
+    https://github.com/Jounce/Surge/blob/master/LICENSE</li>
+    </ul>
+    <hr />
+    <p>Suuntain (c) Jukka Kemppainen, 2024 - 2026</p>
+  </div>
+</body>
+</html>
