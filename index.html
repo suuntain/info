@@ -7,17 +7,15 @@
 </head>
 <body>
   <div class="container">
-    <h1 id="suuntain-1.0-käyttöohje">Suuntain 1.0 – Käyttöohje</h1>
+    <h1 id="suuntain-1.1-käyttöohje">Suuntain 1.1 – Käyttöohje</h1>
     <h2 id="yleistä">Yleistä</h2>
     <p>Suuntain on iPhone-sovellus, joka auttaa liikkumaan luonnossa ja
     löytämään paikkoja helposti. Sovellus kertoo ääneen etäisyyden ja
-    suunnan valittuun paikkaan tai reitin pisteeseen. Sovellus on
-    suunniteltu erityisesti sokeille ja näkövammaisille, mutta siitä on
-    hyötyä kaikille luonnossa liikkujille.</p>
+    suunnan valittuun paikkaan tai reitin pisteeseen.</p>
+    <p>Sovellus on suunniteltu erityisesti sokeille ja näkövammaisille,
+    mutta siitä on hyötyä kaikille luonnossa liikkujille.</p>
     <p><strong>Huom! Käyttäjä vastaa aina omasta turvallisuudestaan.
     Sovellus on apuväline.</strong></p>
-    <p>Huom! Tässä versiossa <strong>reitin nauhoituksessa on
-    ongelma</strong>. Korjaus on jo työn alla.</p>
     <hr />
     <h2 id="pikaohje">Pikaohje</h2>
     <ol type="1">
@@ -42,12 +40,15 @@
     <li>Lisää, nimeä uudelleen tai poista paikkoja.</li>
     <li>Voit lisätä muistiinpanoja paikkoihin ja ottaa käyttöön
     hälytyksen, joka ilmoittaa kun olet lähellä paikkaa.</li>
+    <li>Voit määritellä paikan nimelle aliaksen / merkin avulla.</li>
     </ul>
     <h3 id="reitit">Reitit</h3>
     <ul>
     <li>Luo uusia reittejä ja muokkaa olemassa olevia.</li>
     <li>Lisää reittipisteitä ja muuta reitin nimeä.</li>
+    <li>Muuta, lisää tai poista reittipisteitä karttanäkymässä.</li>
     <li>Voit kulkea reitin molempiin suuntiin (käänteinen reitti).</li>
+    <li>Voit määritellä reitin nimelle aliaksen / merkin avulla.</li>
     </ul>
     <h3 id="kartta">Kartta</h3>
     <ul>
@@ -105,9 +106,9 @@
     lähellä</strong> metrimääräksi 15 metriä ja asettaa puheen
     ajoitukseksi 3 sekuntia.</p>
     <h2 id="reittien-luominen">Reittien luominen</h2>
-    <p>Voit luoda omia reittejä olemassa olevien paikkojen avulla tai
-    nauhoittamalla uuden reitin.</p>
-    <p>Luo reitti paikkojen pohjalta:</p>
+    <p>Voit luoda omia reittejä olemassa olevien paikkojen avulla,
+    automaattisesti tai sinun valitsemien paikkojen perusteella.</p>
+    <p>Luo reitti talletettujen paikkojen pohjalta:</p>
     <ol type="1">
     <li>Siirry Reitit välilehdelle.</li>
     <li>Aloita reitti “Lisää uusi reitti” napilla.</li>
@@ -115,12 +116,31 @@
     <li>Anna reitille nimi.</li>
     <li>“Talleta reitti” nappi tallettaa uuden reitin.</li>
     </ol>
-    <p>Luo uusi reitti nauhoittamalla:</p>
+    <p>Luo uusi reitti automaattisesti:</p>
     <ol type="1">
     <li>Siirry Reitit välilehdelle.</li>
     <li>Valitse “Nauhoita uusi reitti”.</li>
-    <li>“Lisää uusi reittipiste” nappi lisää nykyisen paikan
-    reitille.</li>
+    <li>Valitse “Automaattinen” välilehti.</li>
+    <li>Kun lähdet kävelemään, Suuntain nauhoittaa koko reitin
+    automaattisesti.</li>
+    <li>Valitse “Lisää uusi reittipiste”, kun haluat lisätä nykyisen
+    paikan reitin pakolliseksi pisteeksi.</li>
+    <li>Valitse “Lopeta nauhoitus”.</li>
+    <li>“Talleta reitti” karttanäkymässä näet Suuntaimen ehdottomat
+    reittipisteet.</li>
+    <li>Voit muuttaa raja-arvo -asetusta, jos haluat vähenmmän tai
+    enemmän reittipisteistä.</li>
+    <li>Anna reitille nimi.</li>
+    <li>Valitse “Talleta”</li>
+    </ol>
+    <p>Luo uusi reitti sinun valitsemien reittipisteiden
+    perusteella:</p>
+    <ol type="1">
+    <li>Siirry Reitit välilehdelle.</li>
+    <li>Valitse “Nauhoita uusi reitti”.</li>
+    <li>Valitse “Käyttäjä” välilehti.</li>
+    <li>Valitse “Lisää uusi reittipiste”, kun haluat lisätä nykyisen
+    paikan reitille.</li>
     <li>Jatka kävelyä ja lisää uusia reittipisteitä sopivissa
     paikoissa.</li>
     <li>Valitse “Lopeta nauhoitus”.</li>
@@ -128,6 +148,25 @@
     <li>Valitse “Talleta”</li>
     </ol>
     <p>Uusi reitti löytyy Koti:Reitti näkymästä.</p>
+    <h2 id="gps-leivänmurut">GPS leivänmurut</h2>
+    <p>Suuntain tallettaa GPS leivänmuruja (puhelimen ja reitin
+    sijaintitietoja) kun käytät sovellusta. Jos olet nauhoittanut pitkän
+    reitin mutta, jos nauhoitus jää jostakin syystä kesken tai puhelimen
+    akku loppuu ennen reitin talletusta, voit palauttaa reitin GPS
+    leivänmurujen avulla:</p>
+    <ol type="1">
+    <li>Käynnistä Suuntain sovellus.</li>
+    <li>Valitse “Reitit” välilehti.</li>
+    <li>Valitse “Palauta reitti”.</li>
+    </ol>
+    <ul>
+    <li>“Palauta reitti” on valittavissa, jos reitti on jäänyt
+    kesken.</li>
+    </ul>
+    <ol type="1">
+    <li>Anna “Palauta reitti” karttanäkymässä reitille nimi.</li>
+    <li>Valitse “Talleta”</li>
+    </ol>
     <hr />
     <h2 id="kellotaulun-mukaiset-suunnat">Kellotaulun mukaiset
     suunnat</h2>
