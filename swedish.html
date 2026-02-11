@@ -40,8 +40,8 @@
     <ul>
     <li>Hantera sparade platser.</li>
     <li>Lägg till, byt namn på eller ta bort platser.</li>
-    <li>Du kan lägga till anteckningar till platser och aktivera en
-    avisering som meddelar dig när du är nära en plats.</li>
+    <li>Du kan lägga till anteckningar till platser och aktivera ett
+    larm som meddelar dig när du är nära en plats.</li>
     <li>Du kan definiera ett alias för platsnamnet med /-markören.</li>
     </ul>
     <h3 id="rutter">Rutter</h3>
@@ -49,7 +49,8 @@
     <li>Skapa nya rutter och redigera befintliga.</li>
     <li>Lägg till vägpunkter och ändra ruttnamn.</li>
     <li>Ändra, lägg till eller ta bort vägpunkter i kartvyn.</li>
-    <li>Du kan resa längs rutten i båda riktningarna (vänd rutt).</li>
+    <li>Du kan resa längs rutten i båda riktningarna (omvänd
+    ruttriktning).</li>
     <li>Du kan definiera ett alias för ruttnamnet med /-markören.</li>
     </ul>
     <h3 id="karta">Karta</h3>
@@ -61,7 +62,7 @@
     <h3 id="inställningar">Inställningar</h3>
     <ul>
     <li>Ändra appens utseende (mörkt/ljust/system).</li>
-    <li>Justera talprofiler och andra inställningar.</li>
+    <li>Justera aviseringsprofiler och andra inställningar.</li>
     <li>Säkerhetskopiera och återställ platser och rutter.</li>
     </ul>
     <hr />
@@ -71,22 +72,22 @@
     platslistan.</li>
     <li><strong>Välj plats/rutt:</strong> Appen meddelar avståndet och
     riktningen till det valda målet.</li>
-    <li><strong>Vänd rutt:</strong> Res längs rutten i motsatt
+    <li><strong>Omvänd ruttriktning:</strong> Res längs rutten i motsatt
     riktning.</li>
-    <li><strong>Anteckningar och aviseringar:</strong> Lägg till
-    anteckningar till platser och aktivera aviseringar.</li>
+    <li><strong>Anteckningar och larm:</strong> Lägg till anteckningar
+    till platser och aktivera larm.</li>
     <li><strong>Säkerhetskopia:</strong> Spara och återställ platser och
     rutter som en JSON-fil.</li>
     <li><strong>Siri-kommandon:</strong> Styr appen med röstkommandon
     (t.ex. “Suuntain, välj plats”).</li>
     </ul>
-    <h2 id="talprofiler">Talprofiler</h2>
+    <h2 id="aviseringsprofiler">Aviseringsprofiler</h2>
     <p>Suuntain talar om avståndet och riktningen till en plats eller
-    vägpunkt enligt talprofilen. Du kan välja en talprofil i
-    Inställningar under Talprofiler. Platser och rutter kan använda
-    olika profiler. Du kan också redigera befintliga profiler eller
-    skapa nya.</p>
-    <p>Talprofiler baseras på avstånd eller tid.</p>
+    vägpunkt enligt aviseringsprofilen. Du kan välja en aviseringsprofil
+    i Inställningar under Aviseringsprofiler. Platser och rutter kan
+    använda olika profiler. Du kan också redigera befintliga profiler
+    eller skapa nya.</p>
+    <p>Aviseringsprofiler baseras på avstånd eller tid.</p>
     <p>Till exempel är profilen <strong>Standard</strong>
     avståndsbaserad, vilket innebär att Suuntain talar oftare när du är
     närmare platsen.</p>
@@ -113,7 +114,7 @@
     <p>Skapa en rutt från sparade platser:</p>
     <ol type="1">
     <li>Gå till fliken Rutter.</li>
-    <li>Starta en rutt med knappen “Lägg till ny rutt”.</li>
+    <li>Starta en rutt med knappen “Lägg till rutt”.</li>
     <li>Välj vägpunkter från listan.</li>
     <li>Ge rutten ett namn.</li>
     <li>Knappen “Spara rutt” sparar den nya rutten.</li>
@@ -122,15 +123,15 @@
     <ol type="1">
     <li>Gå till fliken Rutter.</li>
     <li>Välj “Spela in ny rutt”.</li>
-    <li>Välj fliken “Automatisk”.</li>
+    <li>Välj fliken “Automatiskt”.</li>
     <li>När du börjar gå spelar Suuntain in hela rutten
     automatiskt.</li>
-    <li>Välj “Lägg till ny vägpunkt” när du vill lägga till den aktuella
+    <li>Välj “Lägg till vägpunkt” när du vill lägga till den aktuella
     platsen som en obligatorisk punkt på rutten.</li>
     <li>Välj “Stoppa inspelning”.</li>
     <li>“Spara rutt” – i kartvyn kan du se Suuntains föreslagna
     vägpunkter.</li>
-    <li>Justera inställningen “Tröskel” för att ändra antalet
+    <li>Justera inställningen “Förenklingströskel” för att ändra antalet
     vägpunkter.</li>
     <li>Ge rutten ett namn.</li>
     <li>Välj “Spara”</li>
@@ -140,7 +141,7 @@
     <li>Gå till fliken Rutter.</li>
     <li>Välj “Spela in ny rutt”.</li>
     <li>Välj fliken “Manuell”.</li>
-    <li>Välj “Lägg till ny vägpunkt” när du vill lägga till den aktuella
+    <li>Välj “Lägg till vägpunkt” när du vill lägga till den aktuella
     platsen till rutten.</li>
     <li>Fortsätt gå och lägg till nya vägpunkter på lämpliga
     ställen.</li>

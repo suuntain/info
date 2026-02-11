@@ -32,7 +32,7 @@ Appen är särskilt utformad för blinda och synskadade användare, men den är 
 
 - Hantera sparade platser.
 - Lägg till, byt namn på eller ta bort platser.
-- Du kan lägga till anteckningar till platser och aktivera en avisering som meddelar dig när du är nära en plats.
+- Du kan lägga till anteckningar till platser och aktivera ett larm som meddelar dig när du är nära en plats.
 - Du kan definiera ett alias för platsnamnet med /-markören.
 
 ### Rutter
@@ -40,7 +40,7 @@ Appen är särskilt utformad för blinda och synskadade användare, men den är 
 - Skapa nya rutter och redigera befintliga.
 - Lägg till vägpunkter och ändra ruttnamn.
 - Ändra, lägg till eller ta bort vägpunkter i kartvyn.
-- Du kan resa längs rutten i båda riktningarna (vänd rutt).
+- Du kan resa längs rutten i båda riktningarna (omvänd ruttriktning).
 - Du kan definiera ett alias för ruttnamnet med /-markören.
 
 ### Karta
@@ -51,7 +51,7 @@ Appen är särskilt utformad för blinda och synskadade användare, men den är 
 ### Inställningar
 
 - Ändra appens utseende (mörkt/ljust/system).
-- Justera talprofiler och andra inställningar.
+- Justera aviseringsprofiler och andra inställningar.
 - Säkerhetskopiera och återställ platser och rutter.
 
 ---
@@ -60,15 +60,15 @@ Appen är särskilt utformad för blinda och synskadade användare, men den är 
 
 - **Lägg till plats:** Spara din nuvarande plats i platslistan.
 - **Välj plats/rutt:** Appen meddelar avståndet och riktningen till det valda målet.
-- **Vänd rutt:** Res längs rutten i motsatt riktning.
-- **Anteckningar och aviseringar:** Lägg till anteckningar till platser och aktivera aviseringar.
+- **Omvänd ruttriktning:** Res längs rutten i motsatt riktning.
+- **Anteckningar och larm:** Lägg till anteckningar till platser och aktivera larm.
 - **Säkerhetskopia:** Spara och återställ platser och rutter som en JSON-fil.
 - **Siri-kommandon:** Styr appen med röstkommandon (t.ex. "Suuntain, välj plats").
 
-## Talprofiler
-Suuntain talar om avståndet och riktningen till en plats eller vägpunkt enligt talprofilen. Du kan välja en talprofil i Inställningar under Talprofiler. Platser och rutter kan använda olika profiler. Du kan också redigera befintliga profiler eller skapa nya.
+## Aviseringsprofiler
+Suuntain talar om avståndet och riktningen till en plats eller vägpunkt enligt aviseringsprofilen. Du kan välja en aviseringsprofil i Inställningar under Aviseringsprofiler. Platser och rutter kan använda olika profiler. Du kan också redigera befintliga profiler eller skapa nya.
 
-Talprofiler baseras på avstånd eller tid.
+Aviseringsprofiler baseras på avstånd eller tid.
 
 Till exempel är profilen **Standard** avståndsbaserad, vilket innebär att Suuntain talar oftare när du är närmare platsen.
 
@@ -87,7 +87,7 @@ Du kan skapa egna rutter med befintliga platser, automatiskt eller baserat på p
 Skapa en rutt från sparade platser:
 
 1. Gå till fliken Rutter.
-2. Starta en rutt med knappen "Lägg till ny rutt".
+2. Starta en rutt med knappen "Lägg till rutt".
 3. Välj vägpunkter från listan.
 4. Ge rutten ett namn.
 5. Knappen "Spara rutt" sparar den nya rutten.
@@ -96,12 +96,12 @@ Skapa en ny rutt automatiskt:
 
 1. Gå till fliken Rutter.
 2. Välj "Spela in ny rutt".
-3. Välj fliken "Automatisk".
+3. Välj fliken "Automatiskt".
 4. När du börjar gå spelar Suuntain in hela rutten automatiskt.
-5. Välj "Lägg till ny vägpunkt" när du vill lägga till den aktuella platsen som en obligatorisk punkt på rutten.
+5. Välj "Lägg till vägpunkt" när du vill lägga till den aktuella platsen som en obligatorisk punkt på rutten.
 6. Välj "Stoppa inspelning".
 7. "Spara rutt" – i kartvyn kan du se Suuntains föreslagna vägpunkter.
-8. Justera inställningen "Tröskel" för att ändra antalet vägpunkter.
+8. Justera inställningen "Förenklingströskel" för att ändra antalet vägpunkter.
 9. Ge rutten ett namn.
 10. Välj "Spara"
 
@@ -110,7 +110,7 @@ Skapa en ny rutt baserat på platser du väljer:
 1. Gå till fliken Rutter.
 2. Välj "Spela in ny rutt".
 3. Välj fliken "Manuell".
-4. Välj "Lägg till ny vägpunkt" när du vill lägga till den aktuella platsen till rutten.
+4. Välj "Lägg till vägpunkt" när du vill lägga till den aktuella platsen till rutten.
 5. Fortsätt gå och lägg till nya vägpunkter på lämpliga ställen.
 6. Välj "Stoppa inspelning".
 7. Ge rutten ett namn.
