@@ -54,6 +54,7 @@ Sovellus on suunniteltu erityisesti sokeille ja näkövammaisille, mutta siitä 
 
 - Vaihda sovelluksen ulkoasua (tumma/vaalea/puhelin).
 - Säädä puheprofiileja ja muita asetuksia.
+- Säädä puhenopeutta.
 - Varmuuskopioi ja palauta paikat sekä reitit.
 
 ---

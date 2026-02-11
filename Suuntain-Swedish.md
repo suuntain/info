@@ -52,6 +52,7 @@ Appen är särskilt utformad för blinda och synskadade användare, men den är 
 
 - Ändra appens utseende (mörkt/ljust/system).
 - Justera aviseringsprofiler och andra inställningar.
+- Justera talhastigheten.
 - Säkerhetskopiera och återställ platser och rutter.
 
 ---

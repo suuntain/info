@@ -52,6 +52,7 @@ The app is designed especially for blind and visually impaired users, but it's u
 
 - Change the app appearance (dark/light/system).
 - Adjust speech profiles and other settings.
+- Adjust the speech rate.
 - Back up and restore locations and routes.
 
 ---
