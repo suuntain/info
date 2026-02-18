@@ -2,21 +2,23 @@
 
 ## Översikt
 
-Suuntain är en iPhone-app som hjälper dig att navigera i naturen och hitta platser enkelt. Appen talar om avståndet och riktningen till en vald plats eller ruttvägpunkt.
+Suuntain är en iPhone-app som hjälper dig att navigera i naturen och lätt hitta olika destinationer.
 
-Appen är särskilt utformad för blinda och synskadade användare, men den är användbar för alla som rör sig i naturen.
+Appen berättar både avståndet och riktningen till den valda destinationen eller ruttvägpunkten.
 
-**Obs! Användaren ansvarar alltid för sin egen säkerhet. Appen är ett hjälpmedel.**
+Appen är främst avsedd för blinda och synskadade användare, men kan förstås användas av alla som rör sig i naturen.
+
+**Obs! Användaren ansvarar alltid sig själv för sin egen säkerhet. Appen är bara ett hjälpmedel.**
 
 ---
 
 ## Snabbstart
 
 1. Starta Suuntain-appen.
-2. Appen sparar automatiskt din nuvarande plats (Startpunkt).
-3. Välj önskad plats från fliken Hem.
-4. Appen talar om avståndet och riktningen till den valda platsen.
-5. När du har kommit fram säger appen "Framme vid".
+2. Appen sparar automatiskt din nuvarande position ("Startpunkt").
+3. Välj den önskade destinationen från fliken Hem.
+4. Appen berättar avståndet och riktningen till den valda destinationen.
+5. När du har kommit fram anmäler appen: "Framme vid!".
 
 ---
 
@@ -24,95 +26,97 @@ Appen är särskilt utformad för blinda och synskadade användare, men den är 
 
 ### Hem
 
-- Visa en lista över platser och rutter.
-- Välj en plats eller rutt att navigera till.
-- Appen talar om avståndet och riktningen till det valda målet.
+- Visa en lista på destinationer och rutter.
+- Välj din önskade destination.
+- Appen berättar avståndet och riktningen till den valda destinationen.
 
-### Platser
+### Destinationer
 
-- Hantera sparade platser.
-- Lägg till, byt namn på eller ta bort platser.
-- Du kan lägga till anteckningar till platser och aktivera ett larm som meddelar dig när du är nära en plats.
-- Du kan definiera ett alias för platsnamnet med /-markören.
+- Hantera de sparade destinationerna.
+- Lägg till nya destinationer, byt deras namn på eller radera dem.
+- Du kan ansluta anteckningar till destinationer samt aktivera ett larm som anmäler dig när du är nära en viss destination.
+- Du kan skapa ett "alias"-namn för destinationen med /-markören.
 
 ### Rutter
 
-- Skapa nya rutter och redigera befintliga.
+- Skapa nya rutter samt ändra de befintliga.
 - Lägg till vägpunkter och ändra ruttnamn.
-- Ändra, lägg till eller ta bort vägpunkter i kartvyn.
-- Du kan resa längs rutten i båda riktningarna (omvänd ruttriktning).
-- Du kan definiera ett alias för ruttnamnet med /-markören.
+- Ändra, lägg till eller radera vägpunkter i kartvyn.
+- Du kan vandra längs rutten i de båda riktningarna ("omvänd ruttriktning").
+- Skapa ett alias för ruttnamnet med /-markören.
 
 ### Karta
 
-- Se din plats, sparade platser och den valda rutten på kartan.
-- Lägg till en ny plats genom att trycka på kartan.
+- Se din position, sparade positioner och den valda rutten på kartan.
+- Lägg till en ny position genom att trycka på kartan.
 
 ### Inställningar
 
 - Ändra appens utseende (mörkt/ljust/system).
-- Justera aviseringsprofiler och andra inställningar.
-- Justera talhastigheten.
-- Säkerhetskopiera och återställ platser och rutter.
+- Ändra navigeringsprofiler och andra inställningar.
+- Ändra talhastigheten.
+- Säkerhetskopiera och återställ destinationer och rutter.
 
 ---
 
 ## Huvudfunktioner
 
-- **Lägg till plats:** Spara din nuvarande plats i platslistan.
-- **Välj plats/rutt:** Appen meddelar avståndet och riktningen till det valda målet.
-- **Omvänd ruttriktning:** Res längs rutten i motsatt riktning.
-- **Anteckningar och larm:** Lägg till anteckningar till platser och aktivera larm.
-- **Säkerhetskopia:** Spara och återställ platser och rutter som en JSON-fil.
+- **Lägg till position:** Spara din nuvarande position på listan.
+- **Välj plats/rutt:** Appen anmäler avståndet och riktningen till det valda målet.
+- **Omvänd ruttriktning:** Vandra längs rutten i motsatt riktning.
+- **Anteckningar och larm:** Lägg till anteckningar till destinationer och aktivera larm.
+- **Säkerhetskopia:** Spara och återställ destinationer och rutter som en JSON-fil.
 - **Siri-kommandon:** Styr appen med röstkommandon (t.ex. "Suuntain, välj plats").
 
-## Aviseringsprofiler
-Suuntain talar om avståndet och riktningen till en plats eller vägpunkt enligt aviseringsprofilen. Du kan välja en aviseringsprofil i Inställningar under Aviseringsprofiler. Platser och rutter kan använda olika profiler. Du kan också redigera befintliga profiler eller skapa nya.
+## Navigeringsprofiler
 
-Aviseringsprofiler baseras på avstånd eller tid.
+Suuntain berättar avståndet och riktningen till en destination eller en vägpunkt enligt navigeringsprofilen. Välj navigeringsprofilen i Inställningar under "Navigeringsprofiler". Destinationer och rutter kan använda olika profiler. Du kan också ändra befintliga profiler eller skapa nya.
 
-Till exempel är profilen **Standard** avståndsbaserad, vilket innebär att Suuntain talar oftare när du är närmare platsen.
+Navigeringsprofiler baserar sig antingen på avstånd eller på tid.
 
-- När du är **mycket nära**, inom 30 meter, upprepas talet var 3:e sekund.
-- När du är **nära**, inom 100 meter, upprepas talet var 10:e sekund.
-- På **medellångt** avstånd, inom 500 meter, upprepas talet var 30:e sekund.
-- När du är **långt bort**, över 500 meter, upprepas talet var 60:e sekund.
+Till exempel är profilen **Standard** avståndsbaserad, vilket innebär att Suuntain anmäler dig oftare när du är närmare destinationen.
 
-Ett annat exempel är profilen **Tid 30s**. Den är tidsbaserad, vilket innebär att Suuntain talar kontinuerligt, i detta fall var 30:e sekund.
+- När du är **mycket nära**, inom 30 meter, upprepas anmälningen var 3:e sekund.
+- När du är **nära**, inom 100 meter, upprepas anmälningen var 10:e sekund.
+- På **medellångt** avstånd, inom 500 meter, upprepas anmälningen var 30:e sekund.
+- När du är **långt bort**, över 500 meter, upprepas anmälningen var 60:e sekund.
 
-I avståndsbaserade profiler kan du ändra metertrösklarna och talintervallet. Du kan till exempel ställa in tröskeln för **mycket nära** till 15 meter och talintervallet till 3 sekunder.
+Ett annat exempel är profilen **Tid 30s**. Den är tidsbaserad, vilket innebär att Suuntain anmäler dig kontinuerligt med 30 sekunders intervall.
+
+I profilens inställningar kan du ändra metertrösklarna och anmälningsintervallet. Du kan till exempel ställa in tröskeln för **mycket nära** till 15 meter och anmälningsintervallet till 3 sekunder.
 
 ## Skapa rutter
-Du kan skapa egna rutter med befintliga platser, automatiskt eller baserat på platser du väljer.
 
-Skapa en rutt från sparade platser:
+Du kan skapa egna rutter genom att spela dem in eller genom att välja vägpunkter från din lista av destinationer.
+
+Skapa en rutt med hjälp av de sparade destinationerna:
 
 1. Gå till fliken Rutter.
-2. Starta en rutt med knappen "Lägg till rutt".
+2. Starta en rutt med knappen "Skapa ny rutt".
 3. Välj vägpunkter från listan.
 4. Ge rutten ett namn.
-5. Knappen "Spara rutt" sparar den nya rutten.
+5. Knappen "Spara rutten" sparar den nya rutten.
 
 Skapa en ny rutt automatiskt:
 
 1. Gå till fliken Rutter.
 2. Välj "Spela in ny rutt".
 3. Välj fliken "Automatiskt".
-4. När du börjar gå spelar Suuntain in hela rutten automatiskt.
-5. Välj "Lägg till vägpunkt" när du vill lägga till den aktuella platsen som en obligatorisk punkt på rutten.
+4. När du börjar gå, spelar Suuntain in hela rutten automatiskt.
+5. Välj "Lägg till vägpunkt" om du vill manuellt spara din nuvarande position som vägpunkt på rutten.
 6. Välj "Stoppa inspelning".
-7. "Spara rutt" – i kartvyn kan du se Suuntains föreslagna vägpunkter.
-8. Justera inställningen "Förenklingströskel" för att ändra antalet vägpunkter.
+7. Välj "Spara rutten" – och därefter kan du se både de automatiskt skapade och de manuellt sparade vägpunkter i din kartvy.
+8. Justera inställningen "Ruttens noggrannhet" för att ändra antalet vägpunkter.
 9. Ge rutten ett namn.
 10. Välj "Spara"
 
-Skapa en ny rutt baserat på platser du väljer:
+Skapa en ny rutt manuellt:
 
 1. Gå till fliken Rutter.
 2. Välj "Spela in ny rutt".
 3. Välj fliken "Manuell".
-4. Välj "Lägg till vägpunkt" när du vill lägga till den aktuella platsen till rutten.
-5. Fortsätt gå och lägg till nya vägpunkter på lämpliga ställen.
+4. Välj "Lägg till vägpunkt" för att spara din nuvarande position som startpunkt på rutten.
+5. Fortsätt gå vidare och lägg till nya vägpunkter på lämpliga ställen.
 6. Välj "Stoppa inspelning".
 7. Ge rutten ett namn.
 8. Välj "Spara"
@@ -120,13 +124,13 @@ Skapa en ny rutt baserat på platser du väljer:
 Den nya rutten finns i vyn Hem:Rutt.
 
 ## GPS-brödsmulor
-Om du spelade in en lång rutt men inspelningen avbröts av någon anledning, eller telefonens batteri tog slut innan rutten sparades, kan du återställa rutten med GPS-brödsmulor:
 
-1) Starta Suuntain-appen.
-2) Välj fliken "Rutter".
-3) Välj "Återställ rutt". Det här alternativet är tillgängligt om en rutt lämnades ofullständig.
-4) I kartvyn "Återställ rutt", ge rutten ett namn.
-5) Välj "Spara"
+Om du spelade in en lång rutt men inspelningen avbröts av någon anledning, eller telefonens batteri tog slut innan rutten sparades, kan du återställa rutten med hjälp av så kallade "GPS-brödsmulor":
+
+1. Starta Suuntain-appen.
+2. Välj fliken "Rutter".
+3. Välj "Återställ rutten". Detta alternativ är tillgängligt om ruttinspelningen har blivit avbruten.
+4. I kartvyn "Återställ rutten", ge rutten ett namn och välj: "Spara"
 
 ---
 
@@ -146,25 +150,25 @@ Om du spelade in en lång rutt men inspelningen avbröts av någon anledning, el
 - Appen fungerar utan internetanslutning (flygplansläge).
 - Appen stöder VoiceOver och Bluetooth-hörlurar.
 - Appen skalar text enligt inställningarna för Dynamisk text.
-- GPS-användningen stoppas automatiskt när telefonen har varit stilla under en längre tid.
-- Du kan dela platser och rutter med andra användare som en JSON-fil.
+- GPS deaktiveras automatiskt när telefonen har varit stilla under en längre tid.
+- Du kan dela platser och rutter med andra användare i form av JSON-fil.
 
 ---
 
 ## Första användningen
 
 1. Starta Suuntain.
-2. Tillåt platsåtkomst medan appen används.
-3. Tillåt åtkomst till rörelse- och träningsdata medan appen används.
-4. Tillåt platsåtkomst "Alltid" så att appen inte stoppas när telefonen är låst.
-5. Välj den automatiskt skapade platsen.
-6. Du hör appen tala om avståndet och riktningen.
+2. Tillåt åtgången till positionsdata medan appen används.
+3. Tillåt åtgången till rörelse- och träningsdata medan appen används.
+4. Tillåt åtgången till positionsdata "Alltid" så att appen inte stoppas när telefonen är låst.
+5. Välj: "automatiskt skapad position".
+6. Nu hör du appen anmäla avståndet och riktningen till positionen.
 
 ---
 
 ## Support och integritet
 
-- Appen samlar inte in användardata.
+- Appen samlar ingen användardata.
 - Vid problem kan du skicka e-post till: suuntain@proton.me
 - [Integritetspolicy](privacy.html)
 
