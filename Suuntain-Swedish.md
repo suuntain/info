@@ -8,7 +8,7 @@ Appen berättar både avståndet och riktningen till den valda destinationen ell
 
 Appen är främst avsedd för blinda och synskadade användare, men kan förstås användas av alla som rör sig i naturen.
 
-**Obs! Användaren ansvarar alltid sig själv för sin egen säkerhet. Appen är bara ett hjälpmedel.**
+**Obs! Användaren ansvarar alltid själv för sin egen säkerhet. Appen är bara ett hjälpmedel.**
 
 ---
 
@@ -18,7 +18,7 @@ Appen är främst avsedd för blinda och synskadade användare, men kan förstå
 2. Appen sparar automatiskt din nuvarande position ("Startpunkt").
 3. Välj den önskade destinationen från fliken Hem.
 4. Appen berättar avståndet och riktningen till den valda destinationen.
-5. När du har kommit fram anmäler appen: "Framme vid!".
+5. När du har kommit fram anmäler appen: "Framme!".
 
 ---
 
@@ -33,7 +33,7 @@ Appen är främst avsedd för blinda och synskadade användare, men kan förstå
 ### Destinationer
 
 - Hantera de sparade destinationerna.
-- Lägg till nya destinationer, byt deras namn på eller radera dem.
+- Lägg till nya destinationer, byt deras namn eller radera dem.
 - Du kan ansluta anteckningar till destinationer samt aktivera ett larm som anmäler dig när du är nära en viss destination.
 - Du kan skapa ett "alias"-namn för destinationen med /-markören.
 
@@ -87,7 +87,7 @@ I profilens inställningar kan du ändra metertrösklarna och anmälningsinterva
 
 ## Skapa rutter
 
-Du kan skapa egna rutter genom att spela dem in eller genom att välja vägpunkter från din lista av destinationer.
+Du kan skapa egna rutter genom att spela in dem eller genom att välja vägpunkter från din lista av destinationer.
 
 Skapa en rutt med hjälp av de sparade destinationerna:
 
@@ -103,9 +103,9 @@ Skapa en ny rutt automatiskt:
 2. Välj "Spela in ny rutt".
 3. Välj fliken "Automatiskt".
 4. När du börjar gå, spelar Suuntain in hela rutten automatiskt.
-5. Välj "Lägg till vägpunkt" om du vill manuellt spara din nuvarande position som vägpunkt på rutten.
+5. Välj "Lägg till vägpunkt" om du manuellt vill spara din nuvarande position som vägpunkt på rutten.
 6. Välj "Stoppa inspelning".
-7. Välj "Spara rutten" – och därefter kan du se både de automatiskt skapade och de manuellt sparade vägpunkter i din kartvy.
+7. Välj "Spara rutten" – och därefter kan du se både de automatiskt skapade och de manuellt sparade vägpunkterna i din kartvy.
 8. Justera inställningen "Ruttens noggrannhet" för att ändra antalet vägpunkter.
 9. Ge rutten ett namn.
 10. Välj "Spara"
@@ -125,7 +125,7 @@ Den nya rutten finns i vyn Hem:Rutt.
 
 ## GPS-brödsmulor
 
-Om du spelade in en lång rutt men inspelningen avbröts av någon anledning, eller telefonens batteri tog slut innan rutten sparades, kan du återställa rutten med hjälp av så kallade "GPS-brödsmulor":
+Om du spelade in en lång rutt men inspelningen avbröts av någon anledning, eller telefonens batteri tog slut innan rutten sparades, kan du återställa rutten med hjälp av så kallade "GPS-brödsmulor" eller GPS-spår.
 
 1. Starta Suuntain-appen.
 2. Välj fliken "Rutter".
@@ -150,7 +150,7 @@ Om du spelade in en lång rutt men inspelningen avbröts av någon anledning, el
 - Appen fungerar utan internetanslutning (flygplansläge).
 - Appen stöder VoiceOver och Bluetooth-hörlurar.
 - Appen skalar text enligt inställningarna för Dynamisk text.
-- GPS deaktiveras automatiskt när telefonen har varit stilla under en längre tid.
+- GPS avaktiveras automatiskt när telefonen har varit stilla under en längre tid.
 - Du kan dela platser och rutter med andra användare i form av JSON-fil.
 
 ---
