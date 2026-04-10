@@ -1,4 +1,6 @@
-# Suuntain 1.1 – Användarguide
+# Suuntain 1.3 – Användarguide
+[User Guide](english.html)
+[Käyttöohje](finnish.html)
 
 ## Översikt
 
@@ -36,6 +38,7 @@ Appen är främst avsedd för blinda och synskadade användare, men kan förstå
 - Lägg till nya destinationer, byt deras namn eller radera dem.
 - Du kan ansluta anteckningar till destinationer samt aktivera ett larm som anmäler dig när du är nära en viss destination.
 - Du kan skapa ett "alias"-namn för destinationen med /-markören.
+- Namnet på en ny destination fylls i automatiskt i formatet "Stad, Gata Nummer" (t.ex. "Oulu, Kirkkokatu 1"). Detta gäller både manuellt och automatiskt sparade destinationer. Om internetanslutning saknas blir namnet "Auto" eller en tidsstämpel.
 
 ### Rutter
 
@@ -49,6 +52,9 @@ Appen är främst avsedd för blinda och synskadade användare, men kan förstå
 
 - Se din position, sparade positioner och den valda rutten på kartan.
 - Lägg till en ny position genom att trycka på kartan.
+- Sökfältet längst upp ("Sök platser och ställen") söker både bland dina sparade destinationer och bland verkliga platser (Apple Maps-sökning). Resultaten visas i en lista uppdelad i grupperna "Platser" (sparade destinationer) och "Platser" (sökresultat).
+- Att trycka på ett sökresultat centrerar kartan på den platsen och visar en orange nål. Ett sökresultat kan sparas till destinationslistan med bokmärkesknappen eller genom att trycka på nålen.
+- Att trycka på en sparad destination antingen på kartan eller i sökresultaten startar navigeringen: en grön nål betyder vald, en röd betyder ovald. En ny tryckning på samma nål avbryter valet.
 
 ### Inställningar
 
@@ -152,6 +158,13 @@ Om du spelade in en lång rutt men inspelningen avbröts av någon anledning, el
 - Appen skalar text enligt inställningarna för Dynamisk text.
 - GPS avaktiveras automatiskt när telefonen har varit stilla under en längre tid.
 - Du kan dela platser och rutter med andra användare i form av JSON-fil.
+
+### VoiceOver-rotorer
+
+- Flikarna Hem och Destinationer har en rotor "Platser" som låter VoiceOver-användare hoppa snabbt mellan destinationsrader utan att svepa igenom hela vyn.
+- Fliken Rutter har på motsvarande sätt en rotor "Rutter".
+- Rotormeddelandena innehåller avståndet utöver namnet på destinationen eller rutten, så du kan skanna listan med hjälp av hörseln utan att öppna varje rad.
+- Med VoiceOver är val av destination ett enkelval: när du väljer en ny destination avmarkeras den föregående. På så sätt staplas valen inte oavsiktligt och navigeringsmålet förblir entydigt.
 
 ---
 

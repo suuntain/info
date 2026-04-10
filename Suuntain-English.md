@@ -1,4 +1,6 @@
-# Suuntain 1.1 – User Guide
+# Suuntain 1.3 – User Guide
+[Käyttöohje](finnish.html)
+[Användarguide](swedish.html)
 
 ## Overview
 
@@ -34,6 +36,7 @@ The app is designed especially for blind and visually impaired users, but it's u
 - Add, rename, or delete locations.
 - You can add notes to locations and enable an alert that notifies you when you're near a location.
 - You can define an alias for the location name using / marker.
+- New location names are filled in automatically in the format "City, Street Number" (e.g. "Oulu, Kirkkokatu 1"). This applies to both manually and automatically saved locations. If there's no network connection, the name falls back to "Auto" or a timestamp.
 
 ### Routes
 
@@ -47,6 +50,9 @@ The app is designed especially for blind and visually impaired users, but it's u
 
 - See your location, saved places, and the selected route on the map.
 - Add a new location by tapping the map.
+- The search bar at the top ("Search locations and places") searches both your saved locations and real-world places (Apple Maps search). Results are shown in a sectioned list with "Locations" and "Places" as separate groups.
+- Tapping a search result centers the map on that place and drops an orange pin. A search result place can be saved to your location list with the bookmark button or by tapping the pin.
+- Tapping a saved-location pin on the map or in the search results starts navigation: a green pin means selected, red means not selected. Tapping it again clears the selection.
 
 ### Settings
 
@@ -148,6 +154,13 @@ If you recorded a long route but the recording was interrupted for some reason, 
 - The app scales text according to Dynamic Type settings.
 - GPS usage stops automatically when the phone has been stationary for a long time.
 - You can share locations and routes with other users as a JSON file.
+
+### VoiceOver Rotors
+
+- The Home and Locations tabs provide a "Locations" rotor that lets VoiceOver users jump between location rows quickly without swiping through the whole view.
+- The Routes tab provides a corresponding "Routes" rotor.
+- Rotor announcements include the distance in addition to the location or route name, so you can scan the list by ear without opening each row.
+- With VoiceOver, selecting a location is single-select: choosing a new location clears the previous one. This prevents selections from accidentally piling up and keeps the navigation target unambiguous.
 
 ---
 

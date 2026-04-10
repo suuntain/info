@@ -1,4 +1,4 @@
-# Suuntain 1.2  – Käyttöohje
+# Suuntain 1.3  – Käyttöohje
 [User Guide](english.html)
 [Användarguide](swedish.html)
 
@@ -36,6 +36,7 @@ Sovellus on suunniteltu erityisesti sokeille ja näkövammaisille, mutta siitä 
 - Lisää, nimeä uudelleen tai poista paikkoja.
 - Voit lisätä muistiinpanoja paikkoihin ja ottaa käyttöön hälytyksen, joka ilmoittaa kun olet lähellä paikkaa.
 - Voit määritellä paikan nimelle aliaksen / merkin avulla.
+- Uuden paikan nimi täytetään automaattisesti muotoon "Kaupunki, Katu numero" (esim. "Oulu, Kirkkokatu 1"). Tämä koskee sekä manuaalisesti että automaattisesti tallennettuja paikkoja. Jos verkkoyhteyttä ei ole, nimeksi tulee "Auto" tai aikaleima.
 
 ### Reitit
 
@@ -49,6 +50,9 @@ Sovellus on suunniteltu erityisesti sokeille ja näkövammaisille, mutta siitä 
 
 - Näet sijaintisi, tallennetut paikat ja valitun reitin kartalla.
 - Lisää uusi paikka napauttamalla karttaa.
+- Yläreunan hakukentässä ("Etsi sijainteja ja paikkoja") voit hakea sekä omia tallennettuja paikkoja että oikean maailman kohteita (Apple Maps -haku). Tulokset näytetään osio-listana, jossa "Paikat" ja "Kohteet" ovat omina ryhminään.
+- Hakutuloksen napauttaminen keskittää kartan kyseiseen paikkaan ja näyttää siinä oranssin nastan. Hakutuloksena löytyneen kohteen voi tallentaa paikkalistalle kirjanmerkkinapilla tai napauttamalla nastaa.
+- Tallennetun paikan napauttaminen kartalla tai hakutuloksissa käynnistää navigoinnin: vihreä nasta tarkoittaa valittua paikkaa, punainen ei-valittua. Sama nappi vapauttaa valinnan, kun sitä napauttaa uudelleen.
 
 ### Asetukset
 
@@ -150,6 +154,13 @@ Jos nauhoitit pitkän reitin mutta nauhoitus jäi jostakin syystä kesken tai pu
 - Sovellus suurentaa tekstit dynaamiset tekstit asetuksen mukaisesti.
 - GPS:n käyttö pysähtyy automaattisesti, kun puhelin on pitkään paikallaan.
 - Voit jakaa paikkoja ja reittejä muille käyttäjille JSON-tiedostona.
+
+### VoiceOver-roottorit
+
+- Koti- ja Paikat-välilehdillä on "Paikat"-roottori, jolla VoiceOver-käyttäjä voi siirtyä paikkarivien välillä nopeasti pyyhkäisemättä koko näkymää läpi.
+- Reitit-välilehdellä on vastaavasti "Reitit"-roottori.
+- Roottori-ilmoituksissa luetaan paikan tai reitin nimen lisäksi etäisyys, joten voit selata listaa kuulokuvana ilman, että sinun tarvitsee avata jokaista riviä erikseen.
+- VoiceOverilla paikan valinta on yksivalinta: uuden paikan valitseminen poistaa aiemman valinnan. Tämä estää valintojen tahattoman kasaantumisen ja pitää navigointikohteen yksiselitteisenä.
 
 ---
 
