@@ -174,8 +174,9 @@ Om du spelade in en lång rutt men inspelningen avbröts av någon anledning, el
 2. Tillåt åtgången till positionsdata medan appen används.
 3. Tillåt åtgången till rörelse- och träningsdata medan appen används.
 4. Tillåt åtgången till positionsdata "Alltid" så att appen inte stoppas när telefonen är låst.
-5. Välj: "automatiskt skapad position".
-6. Nu hör du appen anmäla avståndet och riktningen till positionen.
+5. Hem sidan har automatisk skapad position "Start". 
+6. Välj: "Start".
+7. Nu hör du appen anmäla avståndet och riktningen till positionen.
 
 ---
 

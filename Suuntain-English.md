@@ -170,8 +170,9 @@ If you recorded a long route but the recording was interrupted for some reason, 
 2. Allow location access while the app is in use.
 3. Allow motion and fitness data access while the app is in use.
 4. Allow location access "Always" so the app doesn't stop when the phone is locked.
-5. Select the automatically created location.
-6. You'll hear the app speak the distance and direction.
+5. Home page lists the automatically created location "Start".
+6. Select "Start" location.
+7. You'll hear the app speak the distance and direction.
 
 ---
 

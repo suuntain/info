@@ -7,8 +7,10 @@
 </head>
 <body>
   <div class="container">
-    <h1 id="suuntain-1.1-användarguide">Suuntain 1.1 –
+    <h1 id="suuntain-1.3-användarguide">Suuntain 1.3 –
     Användarguide</h1>
+    <p><a href="english.html">User Guide</a> <a
+    href="finnish.html">Käyttöohje</a></p>
     <h2 id="översikt">Översikt</h2>
     <p>Suuntain är en iPhone-app som hjälper dig att navigera i naturen
     och lätt hitta olika destinationer.</p>
@@ -47,6 +49,11 @@
     larm som anmäler dig när du är nära en viss destination.</li>
     <li>Du kan skapa ett “alias”-namn för destinationen med
     /-markören.</li>
+    <li>Namnet på en ny destination fylls i automatiskt i formatet
+    “Stad, Gata Nummer” (t.ex. “Oulu, Kirkkokatu 1”). Detta gäller både
+    manuellt och automatiskt sparade destinationer. Om
+    internetanslutning saknas blir namnet “Auto” eller en
+    tidsstämpel.</li>
     </ul>
     <h3 id="rutter">Rutter</h3>
     <ul>
@@ -62,6 +69,17 @@
     <li>Se din position, sparade positioner och den valda rutten på
     kartan.</li>
     <li>Lägg till en ny position genom att trycka på kartan.</li>
+    <li>Sökfältet längst upp (“Sök platser och ställen”) söker både
+    bland dina sparade destinationer och bland verkliga platser (Apple
+    Maps-sökning). Resultaten visas i en lista uppdelad i grupperna
+    “Platser” (sparade destinationer) och “Platser” (sökresultat).</li>
+    <li>Att trycka på ett sökresultat centrerar kartan på den platsen
+    och visar en orange nål. Ett sökresultat kan sparas till
+    destinationslistan med bokmärkesknappen eller genom att trycka på
+    nålen.</li>
+    <li>Att trycka på en sparad destination antingen på kartan eller i
+    sökresultaten startar navigeringen: en grön nål betyder vald, en röd
+    betyder ovald. En ny tryckning på samma nål avbryter valet.</li>
     </ul>
     <h3 id="inställningar">Inställningar</h3>
     <ul>
@@ -190,6 +208,19 @@
     <li>Du kan dela platser och rutter med andra användare i form av
     JSON-fil.</li>
     </ul>
+    <h3 id="voiceover-rotorer">VoiceOver-rotorer</h3>
+    <ul>
+    <li>Flikarna Hem och Destinationer har en rotor “Platser” som låter
+    VoiceOver-användare hoppa snabbt mellan destinationsrader utan att
+    svepa igenom hela vyn.</li>
+    <li>Fliken Rutter har på motsvarande sätt en rotor “Rutter”.</li>
+    <li>Rotormeddelandena innehåller avståndet utöver namnet på
+    destinationen eller rutten, så du kan skanna listan med hjälp av
+    hörseln utan att öppna varje rad.</li>
+    <li>Med VoiceOver är val av destination ett enkelval: när du väljer
+    en ny destination avmarkeras den föregående. På så sätt staplas
+    valen inte oavsiktligt och navigeringsmålet förblir entydigt.</li>
+    </ul>
     <hr />
     <h2 id="första-användningen">Första användningen</h2>
     <ol type="1">
@@ -199,7 +230,8 @@
     används.</li>
     <li>Tillåt åtgången till positionsdata “Alltid” så att appen inte
     stoppas när telefonen är låst.</li>
-    <li>Välj: “automatiskt skapad position”.</li>
+    <li>Hem sidan har automatisk skapad position “Start”.</li>
+    <li>Välj: “Start”.</li>
     <li>Nu hör du appen anmäla avståndet och riktningen till
     positionen.</li>
     </ol>

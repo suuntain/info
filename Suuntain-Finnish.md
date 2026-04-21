@@ -170,8 +170,9 @@ Jos nauhoitit pitkän reitin mutta nauhoitus jäi jostakin syystä kesken tai pu
 2. Salli sijaintitietojen käyttö, kun sovellus on käytössä.
 3. Salli liike- ja kuntoilutietojen käyttö, kun sovellus on käytössä.
 4. Salli sijaintitietojen käyttö "Aina", jotta sovellus ei pysähdy, kun puhelin on lukittu.
-5. Valitse automaattisesti luotu paikka.
-6. Kuulet sovelluksen puhuvan etäisyyden ja suunnan.
+5. Koti välilehdellä on automaattisesti luotu paikka "Aloituspaikka".
+6. Valitse "Aloituspaikka". 
+7. Kuulet sovelluksen puhuvan etäisyyden ja suunnan.
 
 ---
 

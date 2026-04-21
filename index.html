@@ -7,7 +7,7 @@
 </head>
 <body>
   <div class="container">
-    <h1 id="suuntain-1.2-käyttöohje">Suuntain 1.2 – Käyttöohje</h1>
+    <h1 id="suuntain-1.3-käyttöohje">Suuntain 1.3 – Käyttöohje</h1>
     <p><a href="english.html">User Guide</a> <a
     href="swedish.html">Användarguide</a></p>
     <h2 id="yleistä">Yleistä</h2>
@@ -43,6 +43,10 @@
     <li>Voit lisätä muistiinpanoja paikkoihin ja ottaa käyttöön
     hälytyksen, joka ilmoittaa kun olet lähellä paikkaa.</li>
     <li>Voit määritellä paikan nimelle aliaksen / merkin avulla.</li>
+    <li>Uuden paikan nimi täytetään automaattisesti muotoon “Kaupunki,
+    Katu numero” (esim. “Oulu, Kirkkokatu 1”). Tämä koskee sekä
+    manuaalisesti että automaattisesti tallennettuja paikkoja. Jos
+    verkkoyhteyttä ei ole, nimeksi tulee “Auto” tai aikaleima.</li>
     </ul>
     <h3 id="reitit">Reitit</h3>
     <ul>
@@ -57,6 +61,18 @@
     <li>Näet sijaintisi, tallennetut paikat ja valitun reitin
     kartalla.</li>
     <li>Lisää uusi paikka napauttamalla karttaa.</li>
+    <li>Yläreunan hakukentässä (“Etsi sijainteja ja paikkoja”) voit
+    hakea sekä omia tallennettuja paikkoja että oikean maailman kohteita
+    (Apple Maps -haku). Tulokset näytetään osio-listana, jossa “Paikat”
+    ja “Kohteet” ovat omina ryhminään.</li>
+    <li>Hakutuloksen napauttaminen keskittää kartan kyseiseen paikkaan
+    ja näyttää siinä oranssin nastan. Hakutuloksena löytyneen kohteen
+    voi tallentaa paikkalistalle kirjanmerkkinapilla tai napauttamalla
+    nastaa.</li>
+    <li>Tallennetun paikan napauttaminen kartalla tai hakutuloksissa
+    käynnistää navigoinnin: vihreä nasta tarkoittaa valittua paikkaa,
+    punainen ei-valittua. Sama nappi vapauttaa valinnan, kun sitä
+    napauttaa uudelleen.</li>
     </ul>
     <h3 id="asetukset">Asetukset</h3>
     <ul>
@@ -187,6 +203,20 @@
     <li>Voit jakaa paikkoja ja reittejä muille käyttäjille
     JSON-tiedostona.</li>
     </ul>
+    <h3 id="voiceover-roottorit">VoiceOver-roottorit</h3>
+    <ul>
+    <li>Koti- ja Paikat-välilehdillä on “Paikat”-roottori, jolla
+    VoiceOver-käyttäjä voi siirtyä paikkarivien välillä nopeasti
+    pyyhkäisemättä koko näkymää läpi.</li>
+    <li>Reitit-välilehdellä on vastaavasti “Reitit”-roottori.</li>
+    <li>Roottori-ilmoituksissa luetaan paikan tai reitin nimen lisäksi
+    etäisyys, joten voit selata listaa kuulokuvana ilman, että sinun
+    tarvitsee avata jokaista riviä erikseen.</li>
+    <li>VoiceOverilla paikan valinta on yksivalinta: uuden paikan
+    valitseminen poistaa aiemman valinnan. Tämä estää valintojen
+    tahattoman kasaantumisen ja pitää navigointikohteen
+    yksiselitteisenä.</li>
+    </ul>
     <hr />
     <h2 id="ensimmäinen-käyttökerta">Ensimmäinen käyttökerta</h2>
     <ol type="1">
@@ -196,7 +226,9 @@
     käytössä.</li>
     <li>Salli sijaintitietojen käyttö “Aina”, jotta sovellus ei pysähdy,
     kun puhelin on lukittu.</li>
-    <li>Valitse automaattisesti luotu paikka.</li>
+    <li>Koti välilehdellä on automaattisesti luotu paikka
+    “Aloituspaikka”.</li>
+    <li>Valitse “Aloituspaikka”.</li>
     <li>Kuulet sovelluksen puhuvan etäisyyden ja suunnan.</li>
     </ol>
     <hr />
