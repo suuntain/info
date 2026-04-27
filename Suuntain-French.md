@@ -1,6 +1,7 @@
 # Suuntain 1.3 – Guide d'utilisation
 [User Guide](english.html)
 [Käyttöohje](finnish.html)
+[Användarguide](swedish.html)
 
 ## Vue d'ensemble
 
