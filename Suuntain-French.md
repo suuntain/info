@@ -19,7 +19,7 @@ L'application est conçue spécialement pour les utilisateurs aveugles et malvoy
 2. L'application enregistre automatiquement votre position actuelle (Point de départ).
 3. Sélectionnez l'emplacement souhaité dans l'onglet Accueil.
 4. L'application annonce la distance et la direction vers l'emplacement sélectionné.
-5. À l'arrivée, l'application annonce "Arrivé à".
+5. À l'arrivée, l'application annonce "Vous êtes arrivé à".
 
 ---
 
@@ -52,13 +52,13 @@ L'application est conçue spécialement pour les utilisateurs aveugles et malvoy
 - Voir votre position, les lieux enregistrés et l'itinéraire sélectionné sur la carte.
 - Ajouter un nouvel emplacement en appuyant sur la carte.
 - La barre de recherche en haut ("Rechercher des emplacements et des lieux") permet de rechercher à la fois vos emplacements enregistrés et des lieux réels (recherche Apple Maps). Les résultats sont affichés dans une liste groupée avec "Emplacements" et "Lieux" comme groupes distincts.
-- Appuyer sur un résultat de recherche centre la carte sur ce lieu et affiche une épingle orange. Un lieu trouvé par recherche peut être enregistré dans votre liste d'emplacements via le bouton marque-page ou en appuyant sur l'épingle.
-- Appuyer sur une épingle d'emplacement enregistré sur la carte ou dans les résultats de recherche démarre la navigation : une épingle verte signifie sélectionné, rouge signifie non sélectionné. Appuyer à nouveau annule la sélection.
+- Appuyer sur un résultat de recherche centre la carte sur ce lieu et affiche un repère orange. Un lieu trouvé par recherche peut être enregistré dans votre liste d'emplacements via le bouton favori ou en appuyant sur le repère.
+- Appuyer sur un repère d'emplacement enregistré sur la carte ou dans les résultats de recherche démarre la navigation : un repère vert signifie sélectionné, rouge signifie non sélectionné. Appuyer à nouveau annule la sélection.
 
 ### Paramètres
 
 - Modifier l'apparence de l'application (sombre/clair/système).
-- Régler les profils de synthèse vocale et d'autres paramètres.
+- Configurer les profils de guidage vocal et d'autres paramètres.
 - Régler la vitesse de la synthèse vocale.
 - Sauvegarder et restaurer les emplacements et les itinéraires.
 
@@ -70,24 +70,24 @@ L'application est conçue spécialement pour les utilisateurs aveugles et malvoy
 - **Sélectionner un emplacement/itinéraire :** L'application annonce la distance et la direction vers la destination sélectionnée.
 - **Itinéraire inversé :** Parcourir l'itinéraire dans le sens opposé.
 - **Notes et alertes :** Ajouter des notes aux emplacements et activer des alertes.
-- **Sauvegarde :** Enregistrer et restaurer les emplacements et les itinéraires sous forme de fichier JSON.
-- **Commandes Siri :** Contrôler l'application par commandes vocales (ex. : "Suuntain, sélectionner l'emplacement").
+- **Sauvegarde :** Sauvegarder et restaurer les emplacements et les itinéraires sous forme de fichier JSON.
+- **Raccourcis Siri :** Contrôler l'application par commandes vocales (ex. : "Suuntain, sélectionner l'emplacement").
 
-## Profils de synthèse vocale
-Suuntain annonce la distance et la direction vers un emplacement ou un point de passage selon le profil de synthèse vocale. Vous pouvez sélectionner un profil de synthèse vocale dans les Paramètres sous Profils de synthèse vocale. Les emplacements et les itinéraires peuvent utiliser des profils différents. Vous pouvez également modifier des profils existants ou en créer de nouveaux.
+## Profils de guidage vocal
+Suuntain annonce la distance et la direction vers un emplacement ou un point de passage selon le profil de guidage vocal. Vous pouvez sélectionner un profil de guidage vocal dans les Paramètres sous Profils de guidage vocal. Les emplacements et les itinéraires peuvent utiliser des profils différents. Vous pouvez également modifier des profils existants ou en créer de nouveaux.
 
-Les profils de synthèse vocale sont basés sur la distance ou le temps.
+Les profils de guidage vocal sont basés sur la distance ou le temps.
 
-Par exemple, le profil nommé **Défaut** est basé sur la distance, ce qui signifie que Suuntain parle plus fréquemment lorsque vous êtes plus proche de l'emplacement.
+Par exemple, le profil nommé **Défaut** est basé sur la distance, ce qui signifie que Suuntain émet des indications plus fréquemment lorsque vous approchez de l'emplacement.
 
-- Lorsque vous êtes **très proche**, à moins de 30 mètres, la synthèse vocale se répète toutes les 3 secondes.
-- Lorsque vous êtes **proche**, à moins de 100 mètres, la synthèse vocale se répète toutes les 10 secondes.
-- À **distance moyenne**, à moins de 500 mètres, la synthèse vocale se répète toutes les 30 secondes.
-- Lorsque vous êtes **loin**, à plus de 500 mètres, la synthèse vocale se répète toutes les 60 secondes.
+- Lorsque vous êtes **tout proche**, à moins de 30 mètres, le guidage vocal se répète toutes les 3 secondes.
+- Lorsque vous êtes **à proximité**, à moins de 100 mètres, le guidage vocal se répète toutes les 10 secondes.
+- À **distance intermédiaire**, à moins de 500 mètres, le guidage vocal se répète toutes les 30 secondes.
+- Lorsque vous êtes **loin**, à plus de 500 mètres, le guidage vocal se répète toutes les 60 secondes.
 
-Un autre exemple est le profil nommé **Temps 30s**. Il est basé sur le temps, ce qui signifie que Suuntain parle en continu, dans ce cas toutes les 30 secondes.
+Un autre exemple est le profil nommé **Temps 30s**. Il est basé sur le temps, ce qui signifie que Suuntain émet des indications en continu, dans ce cas toutes les 30 secondes.
 
-Dans les profils basés sur la distance, vous pouvez modifier les seuils en mètres et la fréquence de la synthèse vocale. Par exemple, vous pouvez fixer le seuil **très proche** à 15 mètres et l'intervalle de parole à 3 secondes.
+Dans les profils basés sur la distance, vous pouvez modifier les seuils en mètres et la fréquence des indications. Par exemple, vous pouvez fixer le seuil **tout proche** à 15 mètres et l'intervalle entre les indications à 3 secondes.
 
 ## Création d'itinéraires
 Vous pouvez créer vos propres itinéraires à partir d'emplacements existants, automatiquement, ou à partir d'emplacements que vous sélectionnez.
