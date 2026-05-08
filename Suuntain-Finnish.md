@@ -1,4 +1,4 @@
-# Suuntain 1.3  – Käyttöohje
+# Suuntain 1.4  – Käyttöohje
 [User Guide](english.html)
 [Användarguide](swedish.html)
 [Guide d'utilisation](french.html)
@@ -113,6 +113,16 @@ Luo uusi reitti automaattisesti:
 9. Anna reitille nimi.
 10. Valitse "Talleta"
 
+Luo uusi reitti kartan avulla:
+
+1. Siirry Reitit välilehdelle.
+2. Valitse "Kävelyreitti kartasta".
+3. Valitse lähtöpisteeksi joko nykyinen sijainti tai valitse paikka listalta.
+4. Valitse kohde valitsemalla paikka listalta.
+5. Reittipisteet luodaan automaattisesti Applen karttatietojen pohjalta.
+6. Anna reitille nimi.
+7. Valitse "Talleta".
+
 Luo uusi reitti sinun valitsemien reittipisteiden perusteella:
 
 1. Siirry Reitit välilehdelle.
@@ -173,6 +183,46 @@ Jos nauhoitit pitkän reitin mutta nauhoitus jäi jostakin syystä kesken tai pu
 4. Salli sijaintitietojen käyttö "Aina", jotta sovellus ei pysähdy, kun puhelin on lukittu.
 5. Valitse automaattisesti luotu paikka.
 6. Kuulet sovelluksen puhuvan etäisyyden ja suunnan.
+
+---
+
+## Pikakomento saapuessa
+Suuntain voi käynnistää pikakomennon, kun olet perillä paikassa tai reitin viimeisessä pisteessä.
+
+1. Käynnistä Pikakomennot.
+2. Luo pikakomento ja anna esille nimi (esimerkiksi "etsi teksti")
+3. Siirry Suuntain sovelluksen paikan tietoihin (esimerkiksi "postilaatikko")
+4. **Pikakomento saapuessa** tiedoissa syötä pikakomennon nimi (esimerkiksi "etsi teksti").
+5. Jos pikakomento käyttää syötettä, kirjoita se Syöte kenttää (esimerkiksi "Mäkinen")
+6. T**estaa pikakomentoa** napilla voit tarkistaa toimiiko pikakomento halutusti.
+7. Talleta paikka.
+
+Kun valitset paikan "postilaatikko" ja olet kävellyt postilaatikon lähelle, Suuntain käynnistää pikakomennon "etsi teksti" automaattisesti.
+
+Voit luoda pikakomentoja itse tai tuoda Pikakomennot sovellukseen valmiiksi tehtyjä pikakomentoja.
+
+### BeMyEyes pikakomento
+Tämä pikakomento käynnistää Be My Eyes sovelluksen.
+
+Asennus:
+
+1) asenna Be My Eyes sovellus App Storesta.
+2) valitse icloud linkki 
+[https://www.icloud.com/shortcuts/ea37170b87ab4b099965d704a92d8024](https://www.icloud.com/shortcuts/ea37170b87ab4b099965d704a92d8024)
+3) Pikakomennot sovelluksessa talleta pikakomento.
+4) Pikakomennon nimi on BeMyEyes.
+
+### OOrion pikakomento
+Tämä pikakomento käynnistää OOrion sovelluksen.
+Jos annat pikakomennolle syötteen (esimerkiksi "ovi") ja OOrion etsii tälläistä esinettä.
+
+Asennus:
+
+1) asenna OOrion sovellus App Storesta.
+2) valitse icloud linkki
+[https://www.icloud.com/shortcuts/34dd9804a8df476ca77e3d940eb91348](https://www.icloud.com/shortcuts/34dd9804a8df476ca77e3d940eb91348)
+3) Pikakomennot sovelluksessa talleta pikakomento.
+4) Pikakomennon nimi on OOrion.
 
 ---
 

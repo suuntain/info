@@ -1,4 +1,4 @@
-# Suuntain 1.3 – Användarguide
+# Suuntain 1.4 – Användarguide
 [User Guide](english.html)
 [Käyttöohje](finnish.html)
 
@@ -177,6 +177,46 @@ Om du spelade in en lång rutt men inspelningen avbröts av någon anledning, el
 5. Hem sidan har automatisk skapad position "Start". 
 6. Välj: "Start".
 7. Nu hör du appen anmäla avståndet och riktningen till positionen.
+
+---
+
+## Genväg vid ankomst
+Suuntain kan starta en genväg när du anländer till en position eller vid den sista punkten på en rutt.
+
+1. Öppna appen Genvägar.
+2. Skapa en genväg och ge den ett namn (till exempel "sök text").
+3. Gå till positionens uppgifter i Suuntain-appen (till exempel "brevlåda").
+4. I uppgifterna anger du genvägens namn i **Genväg vid ankomst** (till exempel "sök text").
+5. Om genvägen använder inmatning, skriv den i fältet Inmatning (till exempel "Mäkinen").
+6. Använd knappen **Testa genväg** för att kontrollera att genvägen fungerar som förväntat.
+7. Spara positionen.
+
+När du väljer positionen "brevlåda" och går nära brevlådan startar Suuntain automatiskt genvägen "sök text".
+
+Du kan skapa egna genvägar eller importera färdiga genvägar till appen Genvägar.
+
+### BeMyEyes-genväg
+Denna genväg startar appen Be My Eyes.
+
+Installation:
+
+1) Installera appen Be My Eyes från App Store.
+2) Öppna iCloud-länken
+[https://www.icloud.com/shortcuts/ea37170b87ab4b099965d704a92d8024](https://www.icloud.com/shortcuts/ea37170b87ab4b099965d704a92d8024)
+3) Spara genvägen i appen Genvägar.
+4) Genvägens namn är BeMyEyes.
+
+### OOrion-genväg
+Denna genväg startar appen OOrion.
+Om du anger inmatning för genvägen (till exempel "dörr") söker OOrion efter det föremålet.
+
+Installation:
+
+1) Installera appen OOrion från App Store.
+2) Öppna iCloud-länken
+[https://www.icloud.com/shortcuts/34dd9804a8df476ca77e3d940eb91348](https://www.icloud.com/shortcuts/34dd9804a8df476ca77e3d940eb91348)
+3) Spara genvägen i appen Genvägar.
+4) Genvägens namn är OOrion.
 
 ---
 

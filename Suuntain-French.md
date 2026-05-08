@@ -1,4 +1,4 @@
-# Suuntain 1.3 – Guide d'utilisation
+# Suuntain 1.4 – Guide d'utilisation
 [User Guide](english.html)
 [Käyttöohje](finnish.html)
 [Användarguide](swedish.html)
@@ -173,6 +173,46 @@ Si vous avez enregistré un long itinéraire mais que l'enregistrement a été i
 4. Autorisez l'accès à la localisation "Toujours" afin que l'application ne s'arrête pas lorsque le téléphone est verrouillé.
 5. Sélectionnez l'emplacement créé automatiquement.
 6. Vous entendrez l'application annoncer la distance et la direction.
+
+---
+
+## Raccourci à l'arrivée
+Suuntain peut lancer un raccourci lorsque vous arrivez à un emplacement ou au dernier point d'un itinéraire.
+
+1. Ouvrez l'application Raccourcis.
+2. Créez un raccourci et donnez-lui un nom (par exemple « chercher texte »).
+3. Accédez aux détails de l'emplacement dans l'application Suuntain (par exemple « boîte aux lettres »).
+4. Dans les détails, saisissez le nom du raccourci dans **Raccourci à l'arrivée** (par exemple « chercher texte »).
+5. Si le raccourci utilise une entrée, saisissez-la dans le champ Entrée (par exemple « Mäkinen »).
+6. Utilisez le bouton **Tester le raccourci** pour vérifier que le raccourci fonctionne comme prévu.
+7. Enregistrez l'emplacement.
+
+Lorsque vous sélectionnez l'emplacement « boîte aux lettres » et que vous marchez à proximité de la boîte aux lettres, Suuntain lancera automatiquement le raccourci « chercher texte ».
+
+Vous pouvez créer vos propres raccourcis ou importer des raccourcis prêts à l'emploi dans l'application Raccourcis.
+
+### Raccourci BeMyEyes
+Ce raccourci lance l'application Be My Eyes.
+
+Installation :
+
+1) Installez l'application Be My Eyes depuis l'App Store.
+2) Ouvrez le lien iCloud
+[https://www.icloud.com/shortcuts/ea37170b87ab4b099965d704a92d8024](https://www.icloud.com/shortcuts/ea37170b87ab4b099965d704a92d8024)
+3) Enregistrez le raccourci dans l'application Raccourcis.
+4) Le nom du raccourci est BeMyEyes.
+
+### Raccourci OOrion
+Ce raccourci lance l'application OOrion.
+Si vous fournissez une entrée au raccourci (par exemple « porte »), OOrion recherchera cet objet.
+
+Installation :
+
+1) Installez l'application OOrion depuis l'App Store.
+2) Ouvrez le lien iCloud
+[https://www.icloud.com/shortcuts/34dd9804a8df476ca77e3d940eb91348](https://www.icloud.com/shortcuts/34dd9804a8df476ca77e3d940eb91348)
+3) Enregistrez le raccourci dans l'application Raccourcis.
+4) Le nom du raccourci est OOrion.
 
 ---
 

@@ -1,4 +1,4 @@
-# Suuntain 1.3 – User Guide
+# Suuntain 1.4 – User Guide
 [Käyttöohje](finnish.html)
 [Användarguide](swedish.html)
 
@@ -173,6 +173,46 @@ If you recorded a long route but the recording was interrupted for some reason, 
 5. Home page lists the automatically created location "Start".
 6. Select "Start" location.
 7. You'll hear the app speak the distance and direction.
+
+---
+
+## Shortcut on Arrival
+Suuntain can launch a shortcut when you arrive at a location or at the last point of a route.
+
+1. Open the Shortcuts app.
+2. Create a shortcut and give it a name (for example, "find text").
+3. Go to the location details in the Suuntain app (for example, "mailbox").
+4. In the details, enter the shortcut name in **Shortcut on Arrival** (for example, "find text").
+5. If the shortcut uses input, type it in the Input field (for example, "Mäkinen").
+6. Use the **Test shortcut** button to check that the shortcut works as expected.
+7. Save the location.
+
+When you select the location "mailbox" and walk near the mailbox, Suuntain will automatically launch the shortcut "find text".
+
+You can create shortcuts yourself or import ready-made shortcuts into the Shortcuts app.
+
+### BeMyEyes Shortcut
+This shortcut launches the Be My Eyes app.
+
+Installation:
+
+1) Install the Be My Eyes app from the App Store.
+2) Open the iCloud link
+[https://www.icloud.com/shortcuts/ea37170b87ab4b099965d704a92d8024](https://www.icloud.com/shortcuts/ea37170b87ab4b099965d704a92d8024)
+3) Save the shortcut in the Shortcuts app.
+4) The shortcut name is BeMyEyes.
+
+### OOrion Shortcut
+This shortcut launches the OOrion app.
+If you provide input for the shortcut (for example, "door"), OOrion will search for that object.
+
+Installation:
+
+1) Install the OOrion app from the App Store.
+2) Open the iCloud link
+[https://www.icloud.com/shortcuts/34dd9804a8df476ca77e3d940eb91348](https://www.icloud.com/shortcuts/34dd9804a8df476ca77e3d940eb91348)
+3) Save the shortcut in the Shortcuts app.
+4) The shortcut name is OOrion.
 
 ---
 
