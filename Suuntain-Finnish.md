@@ -1,5 +1,4 @@
 # Suuntain 1.4  – Käyttöohje
-- karttapohjainen reitti
 [User Guide](english.html)
 [Användarguide](swedish.html)
 [Guide d'utilisation](french.html)
