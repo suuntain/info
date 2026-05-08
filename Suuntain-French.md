@@ -191,7 +191,7 @@ Lorsque vous sélectionnez l'emplacement « boîte aux lettres » et que vous ma
 
 Vous pouvez créer vos propres raccourcis ou importer des raccourcis prêts à l'emploi dans l'application Raccourcis.
 
-### Raccourci BeMyEyes
+### Raccourci Be My Eyes
 Ce raccourci lance l'application Be My Eyes.
 
 Installation :

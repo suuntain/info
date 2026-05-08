@@ -191,7 +191,7 @@ When you select the location "mailbox" and walk near the mailbox, Suuntain will 
 
 You can create shortcuts yourself or import ready-made shortcuts into the Shortcuts app.
 
-### BeMyEyes Shortcut
+### Be My Eyes Shortcut
 This shortcut launches the Be My Eyes app.
 
 Installation:

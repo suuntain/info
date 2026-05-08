@@ -201,7 +201,7 @@ Kun valitset paikan "postilaatikko" ja olet kävellyt postilaatikon lähelle, Su
 
 Voit luoda pikakomentoja itse tai tuoda Pikakomennot sovellukseen valmiiksi tehtyjä pikakomentoja.
 
-### BeMyEyes pikakomento
+### Be My Eyes pikakomento
 Tämä pikakomento käynnistää Be My Eyes sovelluksen.
 
 Asennus:

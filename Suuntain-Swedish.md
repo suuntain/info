@@ -195,7 +195,7 @@ När du väljer positionen "brevlåda" och går nära brevlådan startar Suuntai
 
 Du kan skapa egna genvägar eller importera färdiga genvägar till appen Genvägar.
 
-### BeMyEyes-genväg
+### Be My Eyes-genväg
 Denna genväg startar appen Be My Eyes.
 
 Installation:
