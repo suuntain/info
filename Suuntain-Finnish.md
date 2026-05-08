@@ -33,7 +33,7 @@ Sovellus on suunniteltu erityisesti sokeille ja näkövammaisille, mutta siitä 
 
 ### Paikat
 
-- Hallinnoi tallennettuja paikkoja.
+- Lista sinun tallentamista paikoista.
 - Lisää, nimeä uudelleen tai poista paikkoja.
 - Voit lisätä muistiinpanoja paikkoihin ja ottaa käyttöön hälytyksen, joka ilmoittaa kun olet lähellä paikkaa.
 - Voit määritellä paikan nimelle aliaksen / merkin avulla.
@@ -41,6 +41,7 @@ Sovellus on suunniteltu erityisesti sokeille ja näkövammaisille, mutta siitä 
 
 ### Reitit
 
+- Lista sinun luomista reiteistä.
 - Luo uusia reittejä ja muokkaa olemassa olevia.
 - Lisää reittipisteitä ja muuta reitin nimeä.
 - Muuta, lisää tai poista reittipisteitä karttanäkymässä.
@@ -51,8 +52,8 @@ Sovellus on suunniteltu erityisesti sokeille ja näkövammaisille, mutta siitä 
 
 - Näet sijaintisi, tallennetut paikat ja valitun reitin kartalla.
 - Lisää uusi paikka napauttamalla karttaa.
-- Yläreunan hakukentässä ("Etsi sijainteja ja paikkoja") voit hakea sekä omia tallennettuja paikkoja että oikean maailman kohteita (Apple Maps -haku). Tulokset näytetään osio-listana, jossa "Paikat" ja "Kohteet" ovat omina ryhminään.
-- Hakutuloksen napauttaminen keskittää kartan kyseiseen paikkaan ja näyttää siinä oranssin nastan. Hakutuloksena löytyneen kohteen voi tallentaa paikkalistalle kirjanmerkkinapilla tai napauttamalla nastaa.
+- Yläreunan hakukentässä ("Etsi sijainteja ja paikkoja") voit hakea sekä omia tallennettuja paikkoja että oikean maailman kohteita (Apple Maps -haku). 
+- Hakutuloksen napauttaminen keskittää kartan kyseiseen paikkaan ja näyttää siinä oranssin nastan. Hakutuloksena löytyneen kohteen voit tallentaa paikkalistalle kirjanmerkkinapilla.
 - Tallennetun paikan napauttaminen kartalla tai hakutuloksissa käynnistää navigoinnin: vihreä nasta tarkoittaa valittua paikkaa, punainen ei-valittua. Sama nappi vapauttaa valinnan, kun sitä napauttaa uudelleen.
 
 ### Asetukset
@@ -137,7 +138,7 @@ Luo uusi reitti sinun valitsemien reittipisteiden perusteella:
 Uusi reitti löytyy Koti:Reitti näkymästä.
 
 ## GPS leivänmurut 
-Jos nauhoitit pitkän reitin mutta nauhoitus jäi jostakin syystä kesken tai puhelimen akku loppui ennen reitin talletusta, voit palauttaa reitin GPS leivänmurujen avulla:
+Jos aloitit reitin nauhoittamisen mutta nauhoitus jäi jostakin syystä kesken tai puhelimen akku loppui ennen reitin talletusta, voit palauttaa reitin GPS leivänmurujen avulla:
 
 1) Käynnistä Suuntain sovellus.
 2) Valitse "Reitit" välilehti.
@@ -168,10 +169,10 @@ Jos nauhoitit pitkän reitin mutta nauhoitus jäi jostakin syystä kesken tai pu
 
 ### VoiceOver-roottorit
 
-- Koti- ja Paikat-välilehdillä on "Paikat"-roottori, jolla VoiceOver-käyttäjä voi siirtyä paikkarivien välillä nopeasti pyyhkäisemättä koko näkymää läpi.
+- Koti- ja Paikat-välilehdillä on "Paikat"-roottori, jolla VoiceOver-käyttäjä voi siirtyä paikkarivien välillä nopeasti pyyhkäisemättä koko näkymää ylös tai alas.
 - Reitit-välilehdellä on vastaavasti "Reitit"-roottori.
-- Roottori-ilmoituksissa luetaan paikan tai reitin nimen lisäksi etäisyys, joten voit selata listaa kuulokuvana ilman, että sinun tarvitsee avata jokaista riviä erikseen.
-- VoiceOverilla paikan valinta on yksivalinta: uuden paikan valitseminen poistaa aiemman valinnan. Tämä estää valintojen tahattoman kasaantumisen ja pitää navigointikohteen yksiselitteisenä.
+- Roottori-ilmoituksissa luetaan paikan tai reitin nimen lisäksi etäisyys, joten voit selata helposti nopeasti.
+- VoiceOverilla vain yksi paikka voi olla valittuna kerrallaan. 
 
 ---
 
@@ -197,7 +198,7 @@ Suuntain voi käynnistää pikakomennon, kun olet perillä paikassa tai reitin v
 6. T**estaa pikakomentoa** napilla voit tarkistaa toimiiko pikakomento halutusti.
 7. Talleta paikka.
 
-Kun valitset paikan "postilaatikko" ja olet kävellyt postilaatikon lähelle, Suuntain käynnistää pikakomennon "etsi teksti" automaattisesti.
+Kun valitset paikan "postilaatikko" ja olet kävellyt postilaatikon lähelle, Suuntain käynnistää pikakomennon "etsi teksti" automaattisesti. 
 
 Voit luoda pikakomentoja itse tai tuoda Pikakomennot sovellukseen valmiiksi tehtyjä pikakomentoja.
 

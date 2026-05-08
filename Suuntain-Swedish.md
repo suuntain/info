@@ -163,8 +163,8 @@ Om du spelade in en lång rutt men inspelningen avbröts av någon anledning, el
 
 - Flikarna Hem och Destinationer har en rotor "Platser" som låter VoiceOver-användare hoppa snabbt mellan destinationsrader utan att svepa igenom hela vyn.
 - Fliken Rutter har på motsvarande sätt en rotor "Rutter".
-- Rotormeddelandena innehåller avståndet utöver namnet på destinationen eller rutten, så du kan skanna listan med hjälp av hörseln utan att öppna varje rad.
-- Med VoiceOver är val av destination ett enkelval: när du väljer en ny destination avmarkeras den föregående. På så sätt staplas valen inte oavsiktligt och navigeringsmålet förblir entydigt.
+- Rotormeddelandena innehåller avståndet utöver namnet på destinationen eller rutten, så du kan skanna listan enkelt.
+- Med VoiceOver är val av destination ett enkelval: när du väljer en ny destination avmarkeras den föregående. 
 
 ---
 
@@ -187,7 +187,7 @@ Suuntain kan starta en genväg när du anländer till en position eller vid den 
 2. Skapa en genväg och ge den ett namn (till exempel "sök text").
 3. Gå till positionens uppgifter i Suuntain-appen (till exempel "brevlåda").
 4. I uppgifterna anger du genvägens namn i **Genväg vid ankomst** (till exempel "sök text").
-5. Om genvägen använder inmatning, skriv den i fältet Inmatning (till exempel "Mäkinen").
+5. Om genvägen använder inmatning, skriv den i fältet Inmatning (till exempel "Lindström").
 6. Använd knappen **Testa genväg** för att kontrollera att genvägen fungerar som förväntat.
 7. Spara positionen.
 

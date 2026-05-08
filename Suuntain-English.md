@@ -159,8 +159,8 @@ If you recorded a long route but the recording was interrupted for some reason, 
 
 - The Home and Locations tabs provide a "Locations" rotor that lets VoiceOver users jump between location rows quickly without swiping through the whole view.
 - The Routes tab provides a corresponding "Routes" rotor.
-- Rotor announcements include the distance in addition to the location or route name, so you can scan the list by ear without opening each row.
-- With VoiceOver, selecting a location is single-select: choosing a new location clears the previous one. This prevents selections from accidentally piling up and keeps the navigation target unambiguous.
+- Rotor announcements include the distance in addition to the location or route name, so you can scan the list easily.
+- With VoiceOver, selecting a location is single-select: choosing a new location clears the previous one. 
 
 ---
 
@@ -183,7 +183,7 @@ Suuntain can launch a shortcut when you arrive at a location or at the last poin
 2. Create a shortcut and give it a name (for example, "find text").
 3. Go to the location details in the Suuntain app (for example, "mailbox").
 4. In the details, enter the shortcut name in **Shortcut on Arrival** (for example, "find text").
-5. If the shortcut uses input, type it in the Input field (for example, "Mäkinen").
+5. If the shortcut uses input, type it in the Input field (for example, "Smith").
 6. Use the **Test shortcut** button to check that the shortcut works as expected.
 7. Save the location.
 

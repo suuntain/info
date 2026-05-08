@@ -161,7 +161,7 @@ Si vous avez enregistré un long itinéraire mais que l'enregistrement a été i
 - Les onglets Accueil et Emplacements proposent un rotor "Emplacements" qui permet aux utilisateurs de VoiceOver de passer rapidement d'une ligne d'emplacement à l'autre sans balayer toute la vue.
 - L'onglet Itinéraires propose un rotor "Itinéraires" correspondant.
 - Les annonces du rotor incluent la distance en plus du nom de l'emplacement ou de l'itinéraire, ce qui permet de parcourir la liste à l'oreille sans ouvrir chaque ligne.
-- Avec VoiceOver, la sélection d'un emplacement est à sélection unique : choisir un nouvel emplacement efface le précédent. Cela évite l'accumulation accidentelle de sélections et maintient la cible de navigation non ambiguë.
+- Avec VoiceOver, la sélection d'un emplacement est à sélection unique : choisir un nouvel emplacement efface le précédent. 
 
 ---
 
