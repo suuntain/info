@@ -143,3 +143,8 @@ Puheopastus toimii ruutua katsomatta, taustalla ja puhelin lukittuna.
 ## 12. Kielet
 
 - Käyttöliittymä ja opastuspuhe: suomi, ruotsi, englanti ja ranska
+
+
+---
+
+Suuntain (c) Jukka Kemppainen, 2024 - 2026
