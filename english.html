@@ -7,7 +7,7 @@
 </head>
 <body>
   <div class="container">
-    <h1 id="suuntain-1.4-user-guide">Suuntain 1.4 – User Guide</h1>
+    <h1 id="suuntain-1.5-user-guide">Suuntain 1.5 – User Guide</h1>
     <p><a href="finnish.html">Käyttöohje</a> <a
     href="swedish.html">Användarguide</a></p>
     <h2 id="overview">Overview</h2>
@@ -40,7 +40,7 @@
     </ul>
     <h3 id="locations">Locations</h3>
     <ul>
-    <li>Manage saved locations.</li>
+    <li>A list of your saved locations.</li>
     <li>Add, rename, or delete locations.</li>
     <li>You can add notes to locations and enable an alert that notifies
     you when you’re near a location.</li>
@@ -51,28 +51,37 @@
     both manually and automatically saved locations. If there’s no
     network connection, the name falls back to “Auto” or a
     timestamp.</li>
+    <li><strong>Car Location</strong>: a separate location, always
+    pinned to the top of the list, whose Update button saves your
+    current GPS position down to the street address. Hidden by default;
+    enable it in Settings (“Show Car location”).</li>
     </ul>
     <h3 id="routes">Routes</h3>
     <ul>
+    <li>A list of your created routes.</li>
     <li>Create new routes and edit existing ones.</li>
     <li>Add waypoints and change route names.</li>
     <li>Modify, add, or delete waypoints in the map view.</li>
     <li>You can travel the route in both directions (reverse
     route).</li>
     <li>You can define an alias for the route name using / marker.</li>
+    <li>Import a route from a GPX file, by opening a GPX file from
+    another app, or by scanning a QR code.</li>
+    <li>Combine two or more existing routes into a new route.</li>
     </ul>
     <h3 id="map">Map</h3>
     <ul>
     <li>See your location, saved places, and the selected route on the
     map.</li>
+    <li>When the Tail setting is on, the map shows your recent movement
+    as a dashed line.</li>
     <li>Add a new location by tapping the map.</li>
     <li>The search bar at the top (“Search locations and places”)
     searches both your saved locations and real-world places (Apple Maps
-    search). Results are shown in a sectioned list with “Locations” and
-    “Places” as separate groups.</li>
+    search).</li>
     <li>Tapping a search result centers the map on that place and drops
     an orange pin. A search result place can be saved to your location
-    list with the bookmark button or by tapping the pin.</li>
+    list with the bookmark button.</li>
     <li>Tapping a saved-location pin on the map or in the search results
     starts navigation: a green pin means selected, red means not
     selected. Tapping it again clears the selection.</li>
@@ -82,6 +91,10 @@
     <li>Change the app appearance (dark/light/system).</li>
     <li>Adjust speech profiles and other settings.</li>
     <li>Adjust the speech rate.</li>
+    <li>Show or hide the Car location (“Show Car location”).</li>
+    <li>Adjust the map Tail length and update interval.</li>
+    <li>Enable “Include direction word” if you want a coarse direction
+    word in addition to the clock position.</li>
     <li>Back up and restore locations and routes.</li>
     </ul>
     <hr />
@@ -95,6 +108,12 @@
     direction.</li>
     <li><strong>Notes and Alerts:</strong> Add notes to locations and
     enable alerts.</li>
+    <li><strong>Car Location:</strong> An always up-to-date parking
+    spot, saved with the Update button.</li>
+    <li><strong>GPX Import:</strong> Import a route from a GPX file,
+    another app, or a QR code.</li>
+    <li><strong>Combine Routes:</strong> Build a new route by combining
+    existing routes.</li>
     <li><strong>Backup:</strong> Save and restore locations and routes
     as a JSON file.</li>
     <li><strong>Siri Commands:</strong> Control the app with voice
@@ -169,6 +188,35 @@
     <li>Select “Save”</li>
     </ol>
     <p>The new route can be found in the Home:Route view.</p>
+    <p>Import a route from a GPX file:</p>
+    <ol type="1">
+    <li>Go to the Routes tab.</li>
+    <li>Select “Import GPX” and choose a GPX file from your device.</li>
+    <li>If the GPX file has only one track, it’s already selected in the
+    preview. If it has more than one, select the tracks you want by
+    tapping them on the map; tap order determines the order of the
+    routes.</li>
+    <li>Give the route a name.</li>
+    <li>Select “Save”.</li>
+    </ol>
+    <p>You can also open a <code>.gpx</code> file directly from another
+    app (e.g. Files, Mail) using the Share Sheet’s “Open in Suuntain”
+    action, or select “Scan GPX QR Code” on the Routes tab and scan a QR
+    code that links to a GPX route file. Both open the same preview as
+    importing from a file.</p>
+    <p><strong>Note!</strong> The GPX preview’s map view, where tracks
+    are selected by tapping, doesn’t support VoiceOver — you’ll need
+    sighted assistance for this step.</p>
+    <p>Combine existing routes into a new route:</p>
+    <ol type="1">
+    <li>Go to the Routes tab. You need at least two saved routes.</li>
+    <li>Select “Combine routes”.</li>
+    <li>Select the routes to combine and their order; you can reverse an
+    individual route if needed.</li>
+    <li>Check the result in the map preview.</li>
+    <li>Give the new route a name.</li>
+    <li>Select “Save”.</li>
+    </ol>
     <h2 id="gps-breadcrumbs">GPS Breadcrumbs</h2>
     <p>If you recorded a long route but the recording was interrupted
     for some reason, or the phone battery died before saving the route,
@@ -191,6 +239,10 @@
     <li>1 o’clock: slightly ahead to the right</li>
     <li>12:30: ahead slightly to the right</li>
     </ul>
+    <p>If you want a coarse direction word in addition to the clock
+    position, enable “Include direction word” in Settings. The
+    announcement then becomes, for example, “ahead at 12 o’clock” or
+    “right at 3 o’clock”.</p>
     <hr />
     <h2 id="tips-and-notes">Tips and Notes</h2>
     <ul>

@@ -1,4 +1,4 @@
-# Suuntain 1.4  – Käyttöohje
+# Suuntain 1.5  – Käyttöohje
 [User Guide](english.html)
 [Användarguide](swedish.html)
 [Guide d'utilisation](french.html)
@@ -38,6 +38,7 @@ Sovellus on suunniteltu erityisesti sokeille ja näkövammaisille, mutta siitä 
 - Voit lisätä muistiinpanoja paikkoihin ja ottaa käyttöön hälytyksen, joka ilmoittaa kun olet lähellä paikkaa.
 - Voit määritellä paikan nimelle aliaksen / merkin avulla.
 - Uuden paikan nimi täytetään automaattisesti muotoon "Kaupunki, Katu numero" (esim. "Oulu, Kirkkokatu 1"). Tämä koskee sekä manuaalisesti että automaattisesti tallennettuja paikkoja. Jos verkkoyhteyttä ei ole, nimeksi tulee "Auto" tai aikaleima.
+- **Auton sijainti**: erillinen, aina listan kärjessä näkyvä paikka, jonka Päivitä-nappi tallentaa nykyisen GPS-sijainnin osoitteeksi asti. Piilotettu oletuksena, näkyviin Asetuksista ("Näytä auton sijainti").
 
 ### Reitit
 
@@ -46,11 +47,14 @@ Sovellus on suunniteltu erityisesti sokeille ja näkövammaisille, mutta siitä 
 - Lisää reittipisteitä ja muuta reitin nimeä.
 - Muuta, lisää tai poista reittipisteitä karttanäkymässä.
 - Voit kulkea reitin molempiin suuntiin (käänteinen reitti).
-- Voit määritellä reitin nimelle aliaksen / merkin avulla. 
+- Voit määritellä reitin nimelle aliaksen / merkin avulla.
+- Tuo reitti GPX-tiedostosta, GPX-tiedoston avaamalla toisesta sovelluksesta tai QR-koodia skannaamalla.
+- Yhdistä kaksi tai useampia olemassa olevia reittejä uudeksi reitiksi.
 
 ### Kartta
 
 - Näet sijaintisi, tallennetut paikat ja valitun reitin kartalla.
+- Häntä-asetuksen ollessa päällä kartalla näkyy katkoviivalla viimeaikainen kulkemasi reitti.
 - Lisää uusi paikka napauttamalla karttaa.
 - Yläreunan hakukentässä ("Etsi sijainteja ja paikkoja") voit hakea sekä omia tallennettuja paikkoja että oikean maailman kohteita (Apple Maps -haku). 
 - Hakutuloksen napauttaminen keskittää kartan kyseiseen paikkaan ja näyttää siinä oranssin nastan. Hakutuloksena löytyneen kohteen voit tallentaa paikkalistalle kirjanmerkkinapilla.
@@ -61,6 +65,9 @@ Sovellus on suunniteltu erityisesti sokeille ja näkövammaisille, mutta siitä 
 - Vaihda sovelluksen ulkoasua (tumma/vaalea/puhelin).
 - Säädä puheprofiileja ja muita asetuksia.
 - Säädä puhenopeutta.
+- Näytä tai piilota auton sijainti ("Näytä auton sijainti").
+- Säädä kartan Häntä-jäljen pituutta ja päivitysväliä.
+- Ota käyttöön "Lisäksi 8 suuntaa", jos haluat kellonsuunnan lisäksi karkean suuntasanan.
 - Varmuuskopioi ja palauta paikat sekä reitit.
 
 ---
@@ -71,6 +78,9 @@ Sovellus on suunniteltu erityisesti sokeille ja näkövammaisille, mutta siitä 
 - **Valitse paikka/reitti:** Sovellus kertoo etäisyyden ja suunnan valittuun kohteeseen.
 - **Käänteinen reitti:** Kulje reitti myös toiseen suuntaan.
 - **Muistiinpanot ja hälytys:** Lisää paikkoihin muistiinpanoja ja ota käyttöön hälytys.
+- **Auton sijainti:** Päivitä-napilla tallentuva, aina ajantasainen auton pysäköintipaikka.
+- **GPX-tuonti:** Tuo reitti GPX-tiedostosta, toisesta sovelluksesta tai QR-koodilla.
+- **Reittien yhdistäminen:** Rakenna uusi reitti yhdistämällä olemassa olevia reittejä.
 - **Varmuuskopiointi:** Tallenna ja palauta paikat sekä reitit JSON-tiedostona.
 - **Siri-komennot:** Ohjaa sovellusta äänikomennoilla (esim. "Suuntain, valitse paikka").
 
@@ -137,6 +147,27 @@ Luo uusi reitti sinun valitsemien reittipisteiden perusteella:
 
 Uusi reitti löytyy Koti:Reitti näkymästä.
 
+Tuo reitti GPX-tiedostosta:
+
+1. Siirry Reitit välilehdelle.
+2. Valitse "Tuo GPX" ja valitse GPX-tiedosto laitteeltasi.
+3. Jos GPX-tiedostossa on vain yksi reitti, se on valmiiksi valittuna esikatselussa. Jos tiedostossa on useampia, valitse haluamasi reitit napauttamalla niitä kartalla; napautusjärjestys määrää reittien järjestyksen.
+4. Anna reitille nimi.
+5. Valitse "Talleta".
+
+Voit myös avata `.gpx`-tiedoston suoraan toisesta sovelluksesta (esim. Tiedostot, Mail) "Jaa"-valikon "Avaa sovelluksessa Suuntain" -toiminnolla, tai valita Reitit-välilehdeltä "Skannaa GPX QR-koodi" ja skannata QR-koodin, joka linkittää GPX-reittitiedostoon. Molemmat avaavat saman esikatselunäkymän kuin tiedostosta tuonti.
+
+**Huom!** GPX-esikatselun karttanäkymä, jossa reitit valitaan napauttamalla, ei tue VoiceOveria — tarvitset tähän vaiheeseen näkevän avustajan.
+
+Yhdistä olemassa olevia reittejä uudeksi reitiksi:
+
+1. Siirry Reitit välilehdelle. Sinulla tulee olla vähintään kaksi tallennettua reittiä.
+2. Valitse "Yhdistä reittejä".
+3. Valitse yhdistettävät reitit ja niiden järjestys; voit tarvittaessa kääntää yksittäisen reitin suunnan.
+4. Tarkista tulos kartan esikatselusta.
+5. Anna uudelle reitille nimi.
+6. Valitse "Talleta".
+
 ## GPS leivänmurut 
 Jos aloitit reitin nauhoittamisen mutta nauhoitus jäi jostakin syystä kesken tai puhelimen akku loppui ennen reitin talletusta, voit palauttaa reitin GPS leivänmurujen avulla:
 
@@ -156,6 +187,8 @@ Jos aloitit reitin nauhoittamisen mutta nauhoitus jäi jostakin syystä kesken t
 - Kello 9: vasemmalla
 - Kello 1: hieman edessä oikealla
 - Kello 12.30: edessä hieman oikealla
+
+Jos haluat kellonsuunnan lisäksi karkean suuntasanan, ota Asetuksista käyttöön "Lisäksi 8 suuntaa". Tällöin kuulutus on esimerkiksi "edessä kello 12" tai "oikealla kello 3".
 
 ---
 

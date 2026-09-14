@@ -1,4 +1,4 @@
-# Suuntain 1.4 – ominaisuudet
+# Suuntain 1.5 – ominaisuudet
 
 Suuntain on iOS-navigointisovellus, joka opastaa puhuttujen etäisyys- ja
 suuntatietojen avulla tallennettuihin paikkoihin ja reitteihin. 
@@ -12,6 +12,7 @@ Puheopastus toimii ruutua katsomatta, taustalla ja puhelin lukittuna.
 ## 1. Navigointi ja opastus
 
 - Kellonsuuntaopastus: 12 h, 24 h tai kahdeksan suunnan mukainen opastus
+- Valinnainen kahdeksan suunnan suuntasana kellonsuunnan lisäksi (esim. "edessä kello 12")
 - Etäisyysilmoitukset metreinä (alle 1 km) ja kilometreinä (1 km tai enemmän)
 - Reittipisteeseen saapumisen automaattinen tunnistus
 - Taustanavigointi: opastus jatkuu ruudun ollessa lukittuna
@@ -40,6 +41,7 @@ Puheopastus toimii ruutua katsomatta, taustalla ja puhelin lukittuna.
 - Nimikuviot:
   - `/` erottaa näyttönimen ja puhenimen (esim. `"Pysäköintipaikka / parkki"`)
   - `!!` vaimentaa paikan nimen jaksollisissa etäisyyskuulutuksissa
+- Auton sijainti: itsepäivittyvä erikoispaikka listan kärjessä, Päivitä-nappi tallentaa nykyisen GPS-sijainnin osoitteeksi asti; piilotettu oletuksena, näkyviin Asetuksista
 
 ## 3. Reitit
 
@@ -53,6 +55,8 @@ Puheopastus toimii ruutua katsomatta, taustalla ja puhelin lukittuna.
 - Reitin yksinkertaistus käyttäjän säädettävissä
 - Esikatselukartta yksinkertaistuksen säätöön tallennuksen yhteydessä
 - Tallennuksen palautus sovelluksen kaatumisen jälkeen (leivänmurupolku)
+- GPX-tuonti: tiedostosta, toisen sovelluksen "Avaa sovelluksessa Suuntain" -toiminnolla tai QR-koodia skannaamalla; reitit valitaan napauttamalla kartan esikatselussa (ei VoiceOver-tukea tässä vaiheessa)
+- Reittien yhdistäminen: kahden tai useamman olemassa olevan reitin ketjutus uudeksi reitiksi, yksittäisen reitin suunnan kääntö, esikatselu kartalla
 
 ## 4. Kartta
 
@@ -60,6 +64,7 @@ Puheopastus toimii ruutua katsomatta, taustalla ja puhelin lukittuna.
 - MML Maastokartan värien kääntö yökäyttöön
 - Tallennetut paikat numeroituina merkkeinä
 - Aktiivinen reitti näkyy kartalla
+- Häntä: viimeaikaisen sijaintihistorian näyttö katkoviivana, säädettävä pituus ja päivitysväli
 - Pitkä painallus: tallenna paikka kartalta automaattisella nimellä
 - Paikkahaku: Applen karttojen -haku + omien paikkojen haku
 - Nykyisen sijainnin seuranta oranssilla ympärällä
@@ -92,6 +97,8 @@ Puheopastus toimii ruutua katsomatta, taustalla ja puhelin lukittuna.
 - Ravistus-eleen asetukset (ota käyttöön, toipumisaika)
 - Reitin yksinkertaistuksen oletusarvo
 - Automaattisten paikkojen näkyvyys
+- Auton sijainnin näkyvyys ("Näytä auton sijainti")
+- Hännän pituus (0–60 min, 0 = pois) ja päivitysväli
 - Sovelluspäivitysten tarkistus (automaattinen + "Tarkista nyt")
 - Loki-välilehden näkyvyys
 - Käyttöoppaan linkit (suomi, ruotsi, englanti, ranska)

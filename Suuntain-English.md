@@ -1,4 +1,4 @@
-# Suuntain 1.4 – User Guide
+# Suuntain 1.5 – User Guide
 [Käyttöohje](finnish.html)
 [Användarguide](swedish.html)
 
@@ -32,26 +32,31 @@ The app is designed especially for blind and visually impaired users, but it's u
 
 ### Locations
 
-- Manage saved locations.
+- A list of your saved locations.
 - Add, rename, or delete locations.
 - You can add notes to locations and enable an alert that notifies you when you're near a location.
 - You can define an alias for the location name using / marker.
 - New location names are filled in automatically in the format "City, Street Number" (e.g. "Oulu, Kirkkokatu 1"). This applies to both manually and automatically saved locations. If there's no network connection, the name falls back to "Auto" or a timestamp.
+- **Car Location**: a separate location, always pinned to the top of the list, whose Update button saves your current GPS position down to the street address. Hidden by default; enable it in Settings ("Show Car location").
 
 ### Routes
 
+- A list of your created routes.
 - Create new routes and edit existing ones.
 - Add waypoints and change route names.
 - Modify, add, or delete waypoints in the map view.
 - You can travel the route in both directions (reverse route).
 - You can define an alias for the route name using / marker.
+- Import a route from a GPX file, by opening a GPX file from another app, or by scanning a QR code.
+- Combine two or more existing routes into a new route.
 
 ### Map
 
 - See your location, saved places, and the selected route on the map.
+- When the Tail setting is on, the map shows your recent movement as a dashed line.
 - Add a new location by tapping the map.
-- The search bar at the top ("Search locations and places") searches both your saved locations and real-world places (Apple Maps search). Results are shown in a sectioned list with "Locations" and "Places" as separate groups.
-- Tapping a search result centers the map on that place and drops an orange pin. A search result place can be saved to your location list with the bookmark button or by tapping the pin.
+- The search bar at the top ("Search locations and places") searches both your saved locations and real-world places (Apple Maps search).
+- Tapping a search result centers the map on that place and drops an orange pin. A search result place can be saved to your location list with the bookmark button.
 - Tapping a saved-location pin on the map or in the search results starts navigation: a green pin means selected, red means not selected. Tapping it again clears the selection.
 
 ### Settings
@@ -59,6 +64,9 @@ The app is designed especially for blind and visually impaired users, but it's u
 - Change the app appearance (dark/light/system).
 - Adjust speech profiles and other settings.
 - Adjust the speech rate.
+- Show or hide the Car location ("Show Car location").
+- Adjust the map Tail length and update interval.
+- Enable "Include direction word" if you want a coarse direction word in addition to the clock position.
 - Back up and restore locations and routes.
 
 ---
@@ -69,6 +77,9 @@ The app is designed especially for blind and visually impaired users, but it's u
 - **Select Location/Route:** The app announces the distance and direction to the selected destination.
 - **Reverse Route:** Travel the route in the opposite direction.
 - **Notes and Alerts:** Add notes to locations and enable alerts.
+- **Car Location:** An always up-to-date parking spot, saved with the Update button.
+- **GPX Import:** Import a route from a GPX file, another app, or a QR code.
+- **Combine Routes:** Build a new route by combining existing routes.
 - **Backup:** Save and restore locations and routes as a JSON file.
 - **Siri Commands:** Control the app with voice commands (e.g., "Suuntain, select location").
 
@@ -125,6 +136,27 @@ Create a new route based on locations you select:
 
 The new route can be found in the Home:Route view.
 
+Import a route from a GPX file:
+
+1. Go to the Routes tab.
+2. Select "Import GPX" and choose a GPX file from your device.
+3. If the GPX file has only one track, it's already selected in the preview. If it has more than one, select the tracks you want by tapping them on the map; tap order determines the order of the routes.
+4. Give the route a name.
+5. Select "Save".
+
+You can also open a `.gpx` file directly from another app (e.g. Files, Mail) using the Share Sheet's "Open in Suuntain" action, or select "Scan GPX QR Code" on the Routes tab and scan a QR code that links to a GPX route file. Both open the same preview as importing from a file.
+
+**Note!** The GPX preview's map view, where tracks are selected by tapping, doesn't support VoiceOver — you'll need sighted assistance for this step.
+
+Combine existing routes into a new route:
+
+1. Go to the Routes tab. You need at least two saved routes.
+2. Select "Combine routes".
+3. Select the routes to combine and their order; you can reverse an individual route if needed.
+4. Check the result in the map preview.
+5. Give the new route a name.
+6. Select "Save".
+
 ## GPS Breadcrumbs
 If you recorded a long route but the recording was interrupted for some reason, or the phone battery died before saving the route, you can recover the route using GPS breadcrumbs:
 
@@ -144,6 +176,8 @@ If you recorded a long route but the recording was interrupted for some reason, 
 - 9 o'clock: to the left
 - 1 o'clock: slightly ahead to the right
 - 12:30: ahead slightly to the right
+
+If you want a coarse direction word in addition to the clock position, enable "Include direction word" in Settings. The announcement then becomes, for example, "ahead at 12 o'clock" or "right at 3 o'clock".
 
 ---
 

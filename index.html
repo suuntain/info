@@ -7,7 +7,7 @@
 </head>
 <body>
   <div class="container">
-    <h1 id="suuntain-1.4-käyttöohje">Suuntain 1.4 – Käyttöohje</h1>
+    <h1 id="suuntain-1.5-käyttöohje">Suuntain 1.5 – Käyttöohje</h1>
     <p><a href="english.html">User Guide</a> <a
     href="swedish.html">Användarguide</a> <a href="french.html">Guide
     d’utilisation</a></p>
@@ -48,6 +48,10 @@
     Katu numero” (esim. “Oulu, Kirkkokatu 1”). Tämä koskee sekä
     manuaalisesti että automaattisesti tallennettuja paikkoja. Jos
     verkkoyhteyttä ei ole, nimeksi tulee “Auto” tai aikaleima.</li>
+    <li><strong>Auton sijainti</strong>: erillinen, aina listan kärjessä
+    näkyvä paikka, jonka Päivitä-nappi tallentaa nykyisen GPS-sijainnin
+    osoitteeksi asti. Piilotettu oletuksena, näkyviin Asetuksista
+    (“Näytä auton sijainti”).</li>
     </ul>
     <h3 id="reitit">Reitit</h3>
     <ul>
@@ -57,11 +61,17 @@
     <li>Muuta, lisää tai poista reittipisteitä karttanäkymässä.</li>
     <li>Voit kulkea reitin molempiin suuntiin (käänteinen reitti).</li>
     <li>Voit määritellä reitin nimelle aliaksen / merkin avulla.</li>
+    <li>Tuo reitti GPX-tiedostosta, GPX-tiedoston avaamalla toisesta
+    sovelluksesta tai QR-koodia skannaamalla.</li>
+    <li>Yhdistä kaksi tai useampia olemassa olevia reittejä uudeksi
+    reitiksi.</li>
     </ul>
     <h3 id="kartta">Kartta</h3>
     <ul>
     <li>Näet sijaintisi, tallennetut paikat ja valitun reitin
     kartalla.</li>
+    <li>Häntä-asetuksen ollessa päällä kartalla näkyy katkoviivalla
+    viimeaikainen kulkemasi reitti.</li>
     <li>Lisää uusi paikka napauttamalla karttaa.</li>
     <li>Yläreunan hakukentässä (“Etsi sijainteja ja paikkoja”) voit
     hakea sekä omia tallennettuja paikkoja että oikean maailman kohteita
@@ -79,6 +89,10 @@
     <li>Vaihda sovelluksen ulkoasua (tumma/vaalea/puhelin).</li>
     <li>Säädä puheprofiileja ja muita asetuksia.</li>
     <li>Säädä puhenopeutta.</li>
+    <li>Näytä tai piilota auton sijainti (“Näytä auton sijainti”).</li>
+    <li>Säädä kartan Häntä-jäljen pituutta ja päivitysväliä.</li>
+    <li>Ota käyttöön “Lisäksi 8 suuntaa”, jos haluat kellonsuunnan
+    lisäksi karkean suuntasanan.</li>
     <li>Varmuuskopioi ja palauta paikat sekä reitit.</li>
     </ul>
     <hr />
@@ -92,6 +106,12 @@
     suuntaan.</li>
     <li><strong>Muistiinpanot ja hälytys:</strong> Lisää paikkoihin
     muistiinpanoja ja ota käyttöön hälytys.</li>
+    <li><strong>Auton sijainti:</strong> Päivitä-napilla tallentuva,
+    aina ajantasainen auton pysäköintipaikka.</li>
+    <li><strong>GPX-tuonti:</strong> Tuo reitti GPX-tiedostosta,
+    toisesta sovelluksesta tai QR-koodilla.</li>
+    <li><strong>Reittien yhdistäminen:</strong> Rakenna uusi reitti
+    yhdistämällä olemassa olevia reittejä.</li>
     <li><strong>Varmuuskopiointi:</strong> Tallenna ja palauta paikat
     sekä reitit JSON-tiedostona.</li>
     <li><strong>Siri-komennot:</strong> Ohjaa sovellusta äänikomennoilla
@@ -179,6 +199,37 @@
     <li>Valitse “Talleta”</li>
     </ol>
     <p>Uusi reitti löytyy Koti:Reitti näkymästä.</p>
+    <p>Tuo reitti GPX-tiedostosta:</p>
+    <ol type="1">
+    <li>Siirry Reitit välilehdelle.</li>
+    <li>Valitse “Tuo GPX” ja valitse GPX-tiedosto laitteeltasi.</li>
+    <li>Jos GPX-tiedostossa on vain yksi reitti, se on valmiiksi
+    valittuna esikatselussa. Jos tiedostossa on useampia, valitse
+    haluamasi reitit napauttamalla niitä kartalla; napautusjärjestys
+    määrää reittien järjestyksen.</li>
+    <li>Anna reitille nimi.</li>
+    <li>Valitse “Talleta”.</li>
+    </ol>
+    <p>Voit myös avata <code>.gpx</code>-tiedoston suoraan toisesta
+    sovelluksesta (esim. Tiedostot, Mail) “Jaa”-valikon “Avaa
+    sovelluksessa Suuntain” -toiminnolla, tai valita Reitit-välilehdeltä
+    “Skannaa GPX QR-koodi” ja skannata QR-koodin, joka linkittää
+    GPX-reittitiedostoon. Molemmat avaavat saman esikatselunäkymän kuin
+    tiedostosta tuonti.</p>
+    <p><strong>Huom!</strong> GPX-esikatselun karttanäkymä, jossa reitit
+    valitaan napauttamalla, ei tue VoiceOveria — tarvitset tähän
+    vaiheeseen näkevän avustajan.</p>
+    <p>Yhdistä olemassa olevia reittejä uudeksi reitiksi:</p>
+    <ol type="1">
+    <li>Siirry Reitit välilehdelle. Sinulla tulee olla vähintään kaksi
+    tallennettua reittiä.</li>
+    <li>Valitse “Yhdistä reittejä”.</li>
+    <li>Valitse yhdistettävät reitit ja niiden järjestys; voit
+    tarvittaessa kääntää yksittäisen reitin suunnan.</li>
+    <li>Tarkista tulos kartan esikatselusta.</li>
+    <li>Anna uudelle reitille nimi.</li>
+    <li>Valitse “Talleta”.</li>
+    </ol>
     <h2 id="gps-leivänmurut">GPS leivänmurut</h2>
     <p>Jos aloitit reitin nauhoittamisen mutta nauhoitus jäi jostakin
     syystä kesken tai puhelimen akku loppui ennen reitin talletusta,
@@ -202,6 +253,9 @@
     <li>Kello 1: hieman edessä oikealla</li>
     <li>Kello 12.30: edessä hieman oikealla</li>
     </ul>
+    <p>Jos haluat kellonsuunnan lisäksi karkean suuntasanan, ota
+    Asetuksista käyttöön “Lisäksi 8 suuntaa”. Tällöin kuulutus on
+    esimerkiksi “edessä kello 12” tai “oikealla kello 3”.</p>
     <hr />
     <h2 id="vinkkejä-ja-huomioita">Vinkkejä ja huomioita</h2>
     <ul>

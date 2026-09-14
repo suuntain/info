@@ -7,7 +7,7 @@
 </head>
 <body>
   <div class="container">
-    <h1 id="suuntain-1.4-guide-dutilisation">Suuntain 1.4 – Guide
+    <h1 id="suuntain-1.5-guide-dutilisation">Suuntain 1.5 – Guide
     d’utilisation</h1>
     <p><a href="english.html">User Guide</a> <a
     href="finnish.html">Käyttöohje</a> <a
@@ -46,7 +46,7 @@
     </ul>
     <h3 id="emplacements">Emplacements</h3>
     <ul>
-    <li>Gérer les emplacements enregistrés.</li>
+    <li>Une liste de vos emplacements enregistrés.</li>
     <li>Ajouter, renommer ou supprimer des emplacements.</li>
     <li>Vous pouvez ajouter des notes aux emplacements et activer une
     alerte qui vous avertit lorsque vous êtes proche d’un
@@ -58,9 +58,15 @@
     s’applique aux emplacements enregistrés manuellement et
     automatiquement. En l’absence de connexion réseau, le nom est
     remplacé par “Auto” ou un horodatage.</li>
+    <li><strong>Emplacement de la voiture</strong> : un emplacement à
+    part, toujours épinglé en haut de la liste. Le bouton “Mettre à
+    jour” enregistre votre position GPS actuelle jusqu’à l’adresse.
+    Masqué par défaut ; activez-le dans les Paramètres (“Afficher
+    l’emplacement de la voiture”).</li>
     </ul>
     <h3 id="itinéraires">Itinéraires</h3>
     <ul>
+    <li>Une liste des itinéraires que vous avez créés.</li>
     <li>Créer de nouveaux itinéraires et modifier les existants.</li>
     <li>Ajouter des points de passage et modifier les noms
     d’itinéraires.</li>
@@ -70,21 +76,26 @@
     (itinéraire inversé).</li>
     <li>Vous pouvez définir un alias pour le nom de l’itinéraire en
     utilisant le marqueur /.</li>
+    <li>Importer un itinéraire à partir d’un fichier GPX, en ouvrant un
+    fichier GPX depuis une autre application, ou en scannant un code
+    QR.</li>
+    <li>Combiner deux itinéraires existants ou plus en un nouvel
+    itinéraire.</li>
     </ul>
     <h3 id="carte">Carte</h3>
     <ul>
     <li>Voir votre position, les lieux enregistrés et l’itinéraire
     sélectionné sur la carte.</li>
+    <li>Lorsque le réglage “Queue” est activé, la carte affiche votre
+    déplacement récent sous forme de ligne pointillée.</li>
     <li>Ajouter un nouvel emplacement en appuyant sur la carte.</li>
     <li>La barre de recherche en haut (“Rechercher des emplacements et
     des lieux”) permet de rechercher à la fois vos emplacements
-    enregistrés et des lieux réels (recherche Apple Maps). Les résultats
-    sont affichés dans une liste groupée avec “Emplacements” et “Lieux”
-    comme groupes distincts.</li>
+    enregistrés et des lieux réels (recherche Apple Maps).</li>
     <li>Appuyer sur un résultat de recherche centre la carte sur ce lieu
     et affiche un repère orange. Un lieu trouvé par recherche peut être
-    enregistré dans votre liste d’emplacements via le bouton favori ou
-    en appuyant sur le repère.</li>
+    enregistré dans votre liste d’emplacements via le bouton
+    favori.</li>
     <li>Appuyer sur un repère d’emplacement enregistré sur la carte ou
     dans les résultats de recherche démarre la navigation : un repère
     vert signifie sélectionné, rouge signifie non sélectionné. Appuyer à
@@ -97,6 +108,13 @@
     <li>Configurer les profils de guidage vocal et d’autres
     paramètres.</li>
     <li>Régler la vitesse de la synthèse vocale.</li>
+    <li>Afficher ou masquer l’emplacement de la voiture (“Afficher
+    l’emplacement de la voiture”).</li>
+    <li>Régler la longueur de la queue sur la carte (“Longueur de la
+    queue”) et son intervalle de mise à jour.</li>
+    <li>Activez “Également 8 directions” si vous souhaitez, en plus de
+    la position sur le cadran, une direction approximative annoncée en
+    mot.</li>
     <li>Sauvegarder et restaurer les emplacements et les
     itinéraires.</li>
     </ul>
@@ -113,6 +131,13 @@
     dans le sens opposé.</li>
     <li><strong>Notes et alertes :</strong> Ajouter des notes aux
     emplacements et activer des alertes.</li>
+    <li><strong>Emplacement de la voiture :</strong> Une place de
+    stationnement toujours à jour, enregistrée avec le bouton “Mettre à
+    jour”.</li>
+    <li><strong>Import GPX :</strong> Importer un itinéraire depuis un
+    fichier GPX, une autre application ou un code QR.</li>
+    <li><strong>Combiner des itinéraires :</strong> Construire un nouvel
+    itinéraire en combinant des itinéraires existants.</li>
     <li><strong>Sauvegarde :</strong> Sauvegarder et restaurer les
     emplacements et les itinéraires sous forme de fichier JSON.</li>
     <li><strong>Raccourcis Siri :</strong> Contrôler l’application par
@@ -196,6 +221,39 @@
     </ol>
     <p>Le nouvel itinéraire se trouve dans la vue Accueil :
     Itinéraires.</p>
+    <p>Importer un itinéraire depuis un fichier GPX :</p>
+    <ol type="1">
+    <li>Allez dans l’onglet Itinéraires.</li>
+    <li>Sélectionnez “Importer GPX” et choisissez un fichier GPX sur
+    votre appareil.</li>
+    <li>Si le fichier GPX ne contient qu’un seul tracé, il est déjà
+    sélectionné dans l’aperçu. S’il en contient plusieurs, sélectionnez
+    les tracés souhaités en appuyant dessus sur la carte ; l’ordre des
+    appuis détermine l’ordre des points de passage.</li>
+    <li>Donnez un nom à l’itinéraire.</li>
+    <li>Sélectionnez “Enregistrer”.</li>
+    </ol>
+    <p>Vous pouvez aussi ouvrir un fichier <code>.gpx</code> directement
+    depuis une autre application (par ex. Fichiers, Mail) via l’action
+    “Ouvrir dans Suuntain” du menu de partage, ou sélectionner “Scanner
+    un code QR GPX” dans l’onglet Itinéraires et scanner un code QR qui
+    pointe vers un fichier d’itinéraire GPX. Les deux méthodes ouvrent
+    le même aperçu que l’import depuis un fichier.</p>
+    <p><strong>Attention !</strong> La vue carte de l’aperçu GPX, où les
+    tracés se sélectionnent en appuyant dessus, ne prend pas en charge
+    VoiceOver — vous aurez besoin de l’aide d’une personne voyante pour
+    cette étape.</p>
+    <p>Combiner des itinéraires existants en un nouvel itinéraire :</p>
+    <ol type="1">
+    <li>Allez dans l’onglet Itinéraires. Vous devez avoir au moins deux
+    itinéraires enregistrés.</li>
+    <li>Sélectionnez “Combiner des itinéraires”.</li>
+    <li>Sélectionnez les itinéraires à combiner et leur ordre ; vous
+    pouvez inverser le sens d’un itinéraire si besoin.</li>
+    <li>Vérifiez le résultat dans l’aperçu sur la carte.</li>
+    <li>Donnez un nom au nouvel itinéraire.</li>
+    <li>Sélectionnez “Enregistrer”.</li>
+    </ol>
     <h2 id="traces-gps">Traces GPS</h2>
     <p>Si vous avez enregistré un long itinéraire mais que
     l’enregistrement a été interrompu pour une raison quelconque, ou si
@@ -222,6 +280,10 @@
     <li>1 heure : légèrement devant à droite</li>
     <li>12h30 : devant légèrement à droite</li>
     </ul>
+    <p>Si vous souhaitez, en plus de la position sur le cadran, une
+    direction approximative annoncée en mot, activez “Également 8
+    directions” dans les Paramètres. L’annonce devient alors par exemple
+    « devant à 12 heures » ou « à droite à 3 heures ».</p>
     <hr />
     <h2 id="conseils-et-remarques">Conseils et remarques</h2>
     <ul>

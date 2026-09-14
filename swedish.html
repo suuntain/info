@@ -7,7 +7,7 @@
 </head>
 <body>
   <div class="container">
-    <h1 id="suuntain-1.4-användarguide">Suuntain 1.4 –
+    <h1 id="suuntain-1.5-användarguide">Suuntain 1.5 –
     Användarguide</h1>
     <p><a href="english.html">User Guide</a> <a
     href="finnish.html">Käyttöohje</a></p>
@@ -42,7 +42,7 @@
     </ul>
     <h3 id="destinationer">Destinationer</h3>
     <ul>
-    <li>Hantera de sparade destinationerna.</li>
+    <li>En lista över dina sparade destinationer.</li>
     <li>Lägg till nya destinationer, byt deras namn eller radera
     dem.</li>
     <li>Du kan ansluta anteckningar till destinationer samt aktivera ett
@@ -54,29 +54,38 @@
     manuellt och automatiskt sparade destinationer. Om
     internetanslutning saknas blir namnet “Auto” eller en
     tidsstämpel.</li>
+    <li><strong>Bilens plats</strong>: en separat destination som alltid
+    ligger högst upp i listan. Knappen “Uppdatera” sparar din nuvarande
+    GPS-position ner till gatuadressen. Dold som standard; visa den i
+    Inställningar (“Visa bilens plats”).</li>
     </ul>
     <h3 id="rutter">Rutter</h3>
     <ul>
+    <li>En lista över de rutter du skapat.</li>
     <li>Skapa nya rutter samt ändra de befintliga.</li>
     <li>Lägg till vägpunkter och ändra ruttnamn.</li>
     <li>Ändra, lägg till eller radera vägpunkter i kartvyn.</li>
     <li>Du kan vandra längs rutten i de båda riktningarna (“omvänd
     ruttriktning”).</li>
     <li>Skapa ett alias för ruttnamnet med /-markören.</li>
+    <li>Importera en rutt från en GPX-fil, genom att öppna en GPX-fil
+    från en annan app, eller genom att skanna en QR-kod.</li>
+    <li>Kombinera två eller flera befintliga rutter till en ny
+    rutt.</li>
     </ul>
     <h3 id="karta">Karta</h3>
     <ul>
     <li>Se din position, sparade positioner och den valda rutten på
     kartan.</li>
+    <li>När inställningen “Svans” är på visas din senaste förflyttning
+    som en streckad linje på kartan.</li>
     <li>Lägg till en ny position genom att trycka på kartan.</li>
     <li>Sökfältet längst upp (“Sök platser och ställen”) söker både
     bland dina sparade destinationer och bland verkliga platser (Apple
-    Maps-sökning). Resultaten visas i en lista uppdelad i grupperna
-    “Platser” (sparade destinationer) och “Platser” (sökresultat).</li>
+    Maps-sökning).</li>
     <li>Att trycka på ett sökresultat centrerar kartan på den platsen
     och visar en orange nål. Ett sökresultat kan sparas till
-    destinationslistan med bokmärkesknappen eller genom att trycka på
-    nålen.</li>
+    destinationslistan med bokmärkesknappen.</li>
     <li>Att trycka på en sparad destination antingen på kartan eller i
     sökresultaten startar navigeringen: en grön nål betyder vald, en röd
     betyder ovald. En ny tryckning på samma nål avbryter valet.</li>
@@ -86,6 +95,10 @@
     <li>Ändra appens utseende (mörkt/ljust/system).</li>
     <li>Ändra navigeringsprofiler och andra inställningar.</li>
     <li>Ändra talhastigheten.</li>
+    <li>Visa eller dölj bilens plats (“Visa bilens plats”).</li>
+    <li>Ändra kartans svanslängd och uppdateringsintervall.</li>
+    <li>Aktivera “Även 8 riktningar” om du utöver klockriktningen vill
+    höra en ungefärlig riktning i ord.</li>
     <li>Säkerhetskopiera och återställ destinationer och rutter.</li>
     </ul>
     <hr />
@@ -99,6 +112,12 @@
     motsatt riktning.</li>
     <li><strong>Anteckningar och larm:</strong> Lägg till anteckningar
     till destinationer och aktivera larm.</li>
+    <li><strong>Bilens plats:</strong> En alltid aktuell
+    parkeringsplats, sparad med knappen “Uppdatera”.</li>
+    <li><strong>GPX-import:</strong> Importera en rutt från en GPX-fil,
+    en annan app eller en QR-kod.</li>
+    <li><strong>Kombinera rutter:</strong> Bygg en ny rutt genom att
+    kombinera befintliga rutter.</li>
     <li><strong>Säkerhetskopia:</strong> Spara och återställ
     destinationer och rutter som en JSON-fil.</li>
     <li><strong>Siri-kommandon:</strong> Styr appen med röstkommandon
@@ -174,6 +193,35 @@
     <li>Välj “Spara”</li>
     </ol>
     <p>Den nya rutten finns i vyn Hem:Rutt.</p>
+    <p>Importera en rutt från en GPX-fil:</p>
+    <ol type="1">
+    <li>Gå till fliken Rutter.</li>
+    <li>Välj “Importera GPX” och välj en GPX-fil på din enhet.</li>
+    <li>Om GPX-filen bara innehåller en rutt (track) är den redan vald i
+    förhandsvisningen. Om filen innehåller flera, välj de rutter du vill
+    ha genom att trycka på dem på kartan; tryckordningen avgör ruttens
+    ordning.</li>
+    <li>Ge rutten ett namn.</li>
+    <li>Välj “Spara”.</li>
+    </ol>
+    <p>Du kan också öppna en <code>.gpx</code>-fil direkt från en annan
+    app (t.ex. Filer, Mail) via delningsmenyns funktion “Öppna i
+    Suuntain”, eller välja “Skanna GPX QR-kod” på fliken Rutter och
+    skanna en QR-kod som länkar till en GPX-ruttfil. Båda öppnar samma
+    förhandsvisning som import från fil.</p>
+    <p><strong>Obs!</strong> Förhandsvisningens kartvy, där rutter väljs
+    genom att trycka på dem, stöder inte VoiceOver — du behöver seende
+    hjälp för detta steg.</p>
+    <p>Kombinera befintliga rutter till en ny rutt:</p>
+    <ol type="1">
+    <li>Gå till fliken Rutter. Du behöver minst två sparade rutter.</li>
+    <li>Välj “Kombinera rutter”.</li>
+    <li>Välj vilka rutter som ska kombineras och i vilken ordning; du
+    kan vid behov vända riktningen på en enskild rutt.</li>
+    <li>Kontrollera resultatet i kartans förhandsvisning.</li>
+    <li>Ge den nya rutten ett namn.</li>
+    <li>Välj “Spara”.</li>
+    </ol>
     <h2 id="gps-brödsmulor">GPS-brödsmulor</h2>
     <p>Om du spelade in en lång rutt men inspelningen avbröts av någon
     anledning, eller telefonens batteri tog slut innan rutten sparades,
@@ -197,6 +245,9 @@
     <li>Klockan 1: snett framåt till höger</li>
     <li>Klockan 12:30: framåt något till höger</li>
     </ul>
+    <p>Om du utöver klockriktningen vill höra en ungefärlig riktning i
+    ord, aktivera “Även 8 riktningar” i Inställningar. Anmälningen blir
+    då till exempel “framåt klockan 12” eller “höger klockan 3”.</p>
     <hr />
     <h2 id="tips-och-anmärkningar">Tips och anmärkningar</h2>
     <ul>

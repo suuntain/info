@@ -1,4 +1,4 @@
-# Suuntain 1.4 – Användarguide
+# Suuntain 1.5 – Användarguide
 [User Guide](english.html)
 [Käyttöohje](finnish.html)
 
@@ -34,26 +34,31 @@ Appen är främst avsedd för blinda och synskadade användare, men kan förstå
 
 ### Destinationer
 
-- Hantera de sparade destinationerna.
+- En lista över dina sparade destinationer.
 - Lägg till nya destinationer, byt deras namn eller radera dem.
 - Du kan ansluta anteckningar till destinationer samt aktivera ett larm som anmäler dig när du är nära en viss destination.
 - Du kan skapa ett "alias"-namn för destinationen med /-markören.
 - Namnet på en ny destination fylls i automatiskt i formatet "Stad, Gata Nummer" (t.ex. "Oulu, Kirkkokatu 1"). Detta gäller både manuellt och automatiskt sparade destinationer. Om internetanslutning saknas blir namnet "Auto" eller en tidsstämpel.
+- **Bilens plats**: en separat destination som alltid ligger högst upp i listan. Knappen "Uppdatera" sparar din nuvarande GPS-position ner till gatuadressen. Dold som standard; visa den i Inställningar ("Visa bilens plats").
 
 ### Rutter
 
+- En lista över de rutter du skapat.
 - Skapa nya rutter samt ändra de befintliga.
 - Lägg till vägpunkter och ändra ruttnamn.
 - Ändra, lägg till eller radera vägpunkter i kartvyn.
 - Du kan vandra längs rutten i de båda riktningarna ("omvänd ruttriktning").
 - Skapa ett alias för ruttnamnet med /-markören.
+- Importera en rutt från en GPX-fil, genom att öppna en GPX-fil från en annan app, eller genom att skanna en QR-kod.
+- Kombinera två eller flera befintliga rutter till en ny rutt.
 
 ### Karta
 
 - Se din position, sparade positioner och den valda rutten på kartan.
+- När inställningen "Svans" är på visas din senaste förflyttning som en streckad linje på kartan.
 - Lägg till en ny position genom att trycka på kartan.
-- Sökfältet längst upp ("Sök platser och ställen") söker både bland dina sparade destinationer och bland verkliga platser (Apple Maps-sökning). Resultaten visas i en lista uppdelad i grupperna "Platser" (sparade destinationer) och "Platser" (sökresultat).
-- Att trycka på ett sökresultat centrerar kartan på den platsen och visar en orange nål. Ett sökresultat kan sparas till destinationslistan med bokmärkesknappen eller genom att trycka på nålen.
+- Sökfältet längst upp ("Sök platser och ställen") söker både bland dina sparade destinationer och bland verkliga platser (Apple Maps-sökning).
+- Att trycka på ett sökresultat centrerar kartan på den platsen och visar en orange nål. Ett sökresultat kan sparas till destinationslistan med bokmärkesknappen.
 - Att trycka på en sparad destination antingen på kartan eller i sökresultaten startar navigeringen: en grön nål betyder vald, en röd betyder ovald. En ny tryckning på samma nål avbryter valet.
 
 ### Inställningar
@@ -61,6 +66,9 @@ Appen är främst avsedd för blinda och synskadade användare, men kan förstå
 - Ändra appens utseende (mörkt/ljust/system).
 - Ändra navigeringsprofiler och andra inställningar.
 - Ändra talhastigheten.
+- Visa eller dölj bilens plats ("Visa bilens plats").
+- Ändra kartans svanslängd och uppdateringsintervall.
+- Aktivera "Även 8 riktningar" om du utöver klockriktningen vill höra en ungefärlig riktning i ord.
 - Säkerhetskopiera och återställ destinationer och rutter.
 
 ---
@@ -71,6 +79,9 @@ Appen är främst avsedd för blinda och synskadade användare, men kan förstå
 - **Välj plats/rutt:** Appen anmäler avståndet och riktningen till det valda målet.
 - **Omvänd ruttriktning:** Vandra längs rutten i motsatt riktning.
 - **Anteckningar och larm:** Lägg till anteckningar till destinationer och aktivera larm.
+- **Bilens plats:** En alltid aktuell parkeringsplats, sparad med knappen "Uppdatera".
+- **GPX-import:** Importera en rutt från en GPX-fil, en annan app eller en QR-kod.
+- **Kombinera rutter:** Bygg en ny rutt genom att kombinera befintliga rutter.
 - **Säkerhetskopia:** Spara och återställ destinationer och rutter som en JSON-fil.
 - **Siri-kommandon:** Styr appen med röstkommandon (t.ex. "Suuntain, välj plats").
 
@@ -129,6 +140,27 @@ Skapa en ny rutt manuellt:
 
 Den nya rutten finns i vyn Hem:Rutt.
 
+Importera en rutt från en GPX-fil:
+
+1. Gå till fliken Rutter.
+2. Välj "Importera GPX" och välj en GPX-fil på din enhet.
+3. Om GPX-filen bara innehåller en rutt (track) är den redan vald i förhandsvisningen. Om filen innehåller flera, välj de rutter du vill ha genom att trycka på dem på kartan; tryckordningen avgör ruttens ordning.
+4. Ge rutten ett namn.
+5. Välj "Spara".
+
+Du kan också öppna en `.gpx`-fil direkt från en annan app (t.ex. Filer, Mail) via delningsmenyns funktion "Öppna i Suuntain", eller välja "Skanna GPX QR-kod" på fliken Rutter och skanna en QR-kod som länkar till en GPX-ruttfil. Båda öppnar samma förhandsvisning som import från fil.
+
+**Obs!** Förhandsvisningens kartvy, där rutter väljs genom att trycka på dem, stöder inte VoiceOver — du behöver seende hjälp för detta steg.
+
+Kombinera befintliga rutter till en ny rutt:
+
+1. Gå till fliken Rutter. Du behöver minst två sparade rutter.
+2. Välj "Kombinera rutter".
+3. Välj vilka rutter som ska kombineras och i vilken ordning; du kan vid behov vända riktningen på en enskild rutt.
+4. Kontrollera resultatet i kartans förhandsvisning.
+5. Ge den nya rutten ett namn.
+6. Välj "Spara".
+
 ## GPS-brödsmulor
 
 Om du spelade in en lång rutt men inspelningen avbröts av någon anledning, eller telefonens batteri tog slut innan rutten sparades, kan du återställa rutten med hjälp av så kallade "GPS-brödsmulor" eller GPS-spår.
@@ -148,6 +180,8 @@ Om du spelade in en lång rutt men inspelningen avbröts av någon anledning, el
 - Klockan 9: till vänster
 - Klockan 1: snett framåt till höger
 - Klockan 12:30: framåt något till höger
+
+Om du utöver klockriktningen vill höra en ungefärlig riktning i ord, aktivera "Även 8 riktningar" i Inställningar. Anmälningen blir då till exempel "framåt klockan 12" eller "höger klockan 3".
 
 ---
 
