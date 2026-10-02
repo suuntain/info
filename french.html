@@ -20,6 +20,9 @@
     <p>L’application est conçue spécialement pour les utilisateurs
     aveugles et malvoyants, mais elle est utile pour quiconque se
     déplace dans la nature.</p>
+    <p>Suuntain est accompagnée d’une application Apple Watch,
+    <strong>Suuntain Mini</strong>, qui vous guide vers vos emplacements
+    enregistrés même sans l’iPhone (voir « Apple Watch »).</p>
     <p><strong>Attention ! L’utilisateur est toujours responsable de sa
     propre sécurité. L’application est un outil
     d’assistance.</strong></p>
@@ -57,12 +60,14 @@
     au format “Ville, Rue Numéro” (ex. : “Oulu, Kirkkokatu 1”). Cela
     s’applique aux emplacements enregistrés manuellement et
     automatiquement. En l’absence de connexion réseau, le nom est
-    remplacé par “Auto” ou un horodatage.</li>
-    <li><strong>Emplacement de la voiture</strong> : un emplacement à
-    part, toujours épinglé en haut de la liste. Le bouton “Mettre à
-    jour” enregistre votre position GPS actuelle jusqu’à l’adresse.
-    Masqué par défaut ; activez-le dans les Paramètres (“Afficher
-    l’emplacement de la voiture”).</li>
+    remplacé par un horodatage.</li>
+    <li>La voiture est un emplacement toujours affiché en haut de la
+    liste. Le bouton “Mettre à jour” enregistre votre position GPS
+    actuelle comme emplacement de la voiture. Paramètres -&gt; Afficher
+    l’emplacement de la voiture rend cette ligne visible.</li>
+    <li>Lorsque vous sélectionnez un emplacement enregistré
+    automatiquement, il devient un emplacement normal. Il s’affiche dans
+    les onglets Accueil et Emplacements.</li>
     </ul>
     <h3 id="itinéraires">Itinéraires</h3>
     <ul>
@@ -76,11 +81,16 @@
     (itinéraire inversé).</li>
     <li>Vous pouvez définir un alias pour le nom de l’itinéraire en
     utilisant le marqueur /.</li>
-    <li>Importer un itinéraire à partir d’un fichier GPX, en ouvrant un
-    fichier GPX depuis une autre application, ou en scannant un code
-    QR.</li>
-    <li>Combiner deux itinéraires existants ou plus en un nouvel
-    itinéraire.</li>
+    <li>Vous pouvez importer un itinéraire à partir d’un fichier GPX,
+    partager un fichier GPX depuis une autre application ou scanner un
+    code QR.</li>
+    <li>Vous pouvez créer un nouvel itinéraire en combinant deux
+    itinéraires existants ou plus.</li>
+    <li>Les points de passage d’un itinéraire enregistré sont nommés «
+    nom de l’itinéraire - numéro » (par ex. « Sentier nature - 1 »).
+    Lorsque vous renommez l’itinéraire, les noms des points de passage
+    changent avec lui. Les points de passage que vous avez nommés
+    vous-même gardent leur nom.</li>
     </ul>
     <h3 id="carte">Carte</h3>
     <ul>
@@ -89,6 +99,13 @@
     <li>Lorsque le réglage “Queue” est activé, la carte affiche votre
     déplacement récent sous forme de ligne pointillée.</li>
     <li>Ajouter un nouvel emplacement en appuyant sur la carte.</li>
+    <li>Le bouton des couches de carte change la couche affichée :
+    Topographique, Carte Apple, Satellite Apple et Satellite Apple avec
+    libellés. Vous pouvez choisir les couches utilisées dans les
+    Paramètres.</li>
+    <li>Comme carte topographique, vous pouvez choisir la carte
+    topographique de l’Institut national de topographie finlandais
+    (MML), OpenTopoMap ou Thunderforest Outdoors.</li>
     <li>La barre de recherche en haut (“Rechercher des emplacements et
     des lieux”) permet de rechercher à la fois vos emplacements
     enregistrés et des lieux réels (recherche Apple Maps).</li>
@@ -112,6 +129,10 @@
     l’emplacement de la voiture”).</li>
     <li>Régler la longueur de la queue sur la carte (“Longueur de la
     queue”) et son intervalle de mise à jour.</li>
+    <li>Choisir les couches de carte.</li>
+    <li>Vérifier les mises à jour de l’application (« Vérifier les mises
+    à jour »). L’application indique toujours le résultat de la
+    vérification.</li>
     <li>Activez “Également 8 directions” si vous souhaitez, en plus de
     la position sur le cadran, une direction approximative annoncée en
     mot.</li>
@@ -234,11 +255,11 @@
     <li>Sélectionnez “Enregistrer”.</li>
     </ol>
     <p>Vous pouvez aussi ouvrir un fichier <code>.gpx</code> directement
-    depuis une autre application (par ex. Fichiers, Mail) via l’action
-    “Ouvrir dans Suuntain” du menu de partage, ou sélectionner “Scanner
-    un code QR GPX” dans l’onglet Itinéraires et scanner un code QR qui
-    pointe vers un fichier d’itinéraire GPX. Les deux méthodes ouvrent
-    le même aperçu que l’import depuis un fichier.</p>
+    depuis une autre application (par ex. Fichiers, Mail, AirDrop) via
+    l’action “Ouvrir dans Suuntain” du menu de partage, ou sélectionner
+    “Scanner un code QR GPX” dans l’onglet Itinéraires et scanner un
+    code QR qui pointe vers un fichier d’itinéraire GPX. Les deux
+    méthodes ouvrent le même aperçu que l’import depuis un fichier.</p>
     <p><strong>Attention !</strong> La vue carte de l’aperçu GPX, où les
     tracés se sélectionnent en appuyant dessus, ne prend pas en charge
     VoiceOver — vous aurez besoin de l’aide d’une personne voyante pour
@@ -295,6 +316,14 @@
     police dynamique.</li>
     <li>L’utilisation du GPS s’arrête automatiquement lorsque le
     téléphone est immobile depuis longtemps.</li>
+    <li>Lorsque vous fermez complètement l’application (en la balayant
+    dans le sélecteur d’applications), le GPS et la détection de
+    mouvement s’arrêtent et l’application ne parle plus en arrière-plan.
+    Le suivi de position redémarre lorsque vous ouvrez
+    l’application.</li>
+    <li>Les fichiers de sauvegarde et d’itinéraire peuvent être ouverts
+    dans Suuntain directement depuis AirDrop ou une pièce jointe
+    d’e-mail.</li>
     <li>Vous pouvez partager des emplacements et des itinéraires avec
     d’autres utilisateurs sous forme de fichier JSON.</li>
     </ul>
@@ -311,6 +340,64 @@
     liste à l’oreille sans ouvrir chaque ligne.</li>
     <li>Avec VoiceOver, la sélection d’un emplacement est à sélection
     unique : choisir un nouvel emplacement efface le précédent.</li>
+    </ul>
+    <h2 id="apple-watch">Apple Watch</h2>
+    <p>Suuntain Mini est l’application complémentaire Apple Watch de
+    Suuntain. Elle s’installe sur la montre avec l’application
+    iPhone.</p>
+    <ul>
+    <li>La montre calcule la direction avec son propre GPS et sa propre
+    boussole : les directions sur cadran sont donc relatives à votre
+    poignet. Le guidage fonctionne même lorsque vous n’avez pas l’iPhone
+    avec vous.</li>
+    <li>La montre annonce le guidage par son propre haut-parleur ou par
+    des écouteurs Bluetooth connectés à la montre, avec les mêmes mots
+    que l’iPhone.</li>
+    <li>L’iPhone transfère vers la montre les emplacements que vous avez
+    enregistrés, les réglages vocaux et le profil de guidage vocal. La
+    montre les garde en mémoire : la liste fonctionne donc sans
+    l’iPhone.</li>
+    <li>Sur la montre, vous pouvez naviguer vers des emplacements
+    individuels. Les itinéraires ne sont pas encore disponibles sur la
+    montre.</li>
+    </ul>
+    <p>Utilisation :</p>
+    <ol type="1">
+    <li>Ouvrez Suuntain Mini sur la montre. La liste affiche d’abord
+    l’emplacement de la voiture, puis les autres emplacements du plus
+    proche au plus éloigné.</li>
+    <li>Touchez un emplacement. La montre affiche une flèche de
+    direction, la distance et la direction sur cadran, et annonce le
+    guidage selon le profil de guidage vocal.</li>
+    <li>Touchez la flèche ou le texte, ou le bouton Parler, pour
+    entendre le guidage immédiatement.</li>
+    <li>À votre arrivée, la montre vous l’annonce. Le bouton Arrêter la
+    navigation ou le retour en arrière met fin au guidage.</li>
+    </ol>
+    <p>Actions dans la liste :</p>
+    <ul>
+    <li><strong>Ajouter (+)</strong>, en haut à gauche : enregistre la
+    position actuelle de la montre comme nouvel emplacement. L’iPhone
+    nomme l’emplacement d’après son adresse.</li>
+    <li><strong>Mettre à jour</strong> sur la ligne de la voiture :
+    enregistre la position actuelle de la montre comme emplacement de la
+    voiture.</li>
+    <li><strong>Renommer</strong> : balayez la ligne d’un emplacement
+    vers la gauche.</li>
+    <li>Les ajouts, mises à jour et changements de nom arrivent sur
+    l’iPhone immédiatement ou, si l’iPhone n’est pas à proximité,
+    lorsque les appareils sont de nouveau connectés.</li>
+    </ul>
+    <p>Réglages de la montre (en haut à droite) :</p>
+    <ul>
+    <li><strong>Continuer le guidage poignet baissé</strong> (activé par
+    défaut) : le guidage continue lorsque vous baissez le poignet. La
+    montre utilise pour cela un entraînement de marche, mais rien n’est
+    enregistré dans l’app Santé.</li>
+    <li><strong>Économie d’énergie</strong> (désactivé par défaut) : le
+    GPS et la boussole ne fonctionnent que lorsque l’écran de la montre
+    est actif. Le guidage s’interrompt poignet baissé et reprend lorsque
+    vous levez le poignet.</li>
     </ul>
     <hr />
     <h2 id="première-utilisation">Première utilisation</h2>

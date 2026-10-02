@@ -8,6 +8,8 @@ Suuntain is an iPhone app that helps you navigate in nature and find places easi
 
 The app is designed especially for blind and visually impaired users, but it's useful for anyone moving in nature.
 
+Suuntain comes with an Apple Watch app, **Suuntain Mini**, which guides you to your saved locations even without the iPhone (see "Apple Watch").
+
 **Note! The user is always responsible for their own safety. The app is an assistive tool.**
 
 ---
@@ -36,8 +38,9 @@ The app is designed especially for blind and visually impaired users, but it's u
 - Add, rename, or delete locations.
 - You can add notes to locations and enable an alert that notifies you when you're near a location.
 - You can define an alias for the location name using / marker.
-- New location names are filled in automatically in the format "City, Street Number" (e.g. "Oulu, Kirkkokatu 1"). This applies to both manually and automatically saved locations. If there's no network connection, the name falls back to "Auto" or a timestamp.
-- **Car Location**: a separate location, always pinned to the top of the list, whose Update button saves your current GPS position down to the street address. Hidden by default; enable it in Settings ("Show Car location").
+- New location names are filled in automatically in the format "City, Street Number" (e.g. "Oulu, Kirkkokatu 1"). This applies to both manually and automatically saved locations. If there's no network connection, the name falls back to a timestamp.
+- Car is a location always shown at the top of the list, whose Update button saves your current GPS position as the car's location. Settings -> Show Car location makes this row visible.
+- When you select an automatically saved location, it becomes a normal location. It is shown on the Home and Locations tabs.
 
 ### Routes
 
@@ -47,14 +50,17 @@ The app is designed especially for blind and visually impaired users, but it's u
 - Modify, add, or delete waypoints in the map view.
 - You can travel the route in both directions (reverse route).
 - You can define an alias for the route name using / marker.
-- Import a route from a GPX file, by opening a GPX file from another app, or by scanning a QR code.
-- Combine two or more existing routes into a new route.
+- You can import a route from a GPX file, share a GPX file from another app, or scan a QR code.
+- You can create a new route by combining two or more existing routes.
+- Waypoints of a saved route are named in the format "route name - number" (e.g. "Nature trail - 1"). When you rename the route, the waypoint names change with it. Waypoints you have named yourself keep their names.
 
 ### Map
 
 - See your location, saved places, and the selected route on the map.
 - When the Tail setting is on, the map shows your recent movement as a dashed line.
 - Add a new location by tapping the map.
+- The map layer button switches the map layer: Topographic, Apple map, Apple satellite and Apple satellite with labels. You can choose which layers are in use in Settings.
+- As the topographic map, you can choose the National Land Survey of Finland (MML) topographic map, OpenTopoMap or Thunderforest Outdoors.
 - The search bar at the top ("Search locations and places") searches both your saved locations and real-world places (Apple Maps search).
 - Tapping a search result centers the map on that place and drops an orange pin. A search result place can be saved to your location list with the bookmark button.
 - Tapping a saved-location pin on the map or in the search results starts navigation: a green pin means selected, red means not selected. Tapping it again clears the selection.
@@ -66,6 +72,8 @@ The app is designed especially for blind and visually impaired users, but it's u
 - Adjust the speech rate.
 - Show or hide the Car location ("Show Car location").
 - Adjust the map Tail length and update interval.
+- Choose the map layers.
+- Check for app updates ("Check for updates"). The app always tells you the result of the check.
 - Enable "Include direction word" if you want a coarse direction word in addition to the clock position.
 - Back up and restore locations and routes.
 
@@ -144,7 +152,7 @@ Import a route from a GPX file:
 4. Give the route a name.
 5. Select "Save".
 
-You can also open a `.gpx` file directly from another app (e.g. Files, Mail) using the Share Sheet's "Open in Suuntain" action, or select "Scan GPX QR Code" on the Routes tab and scan a QR code that links to a GPX route file. Both open the same preview as importing from a file.
+You can also open a `.gpx` file directly from another app (e.g. Files, Mail, AirDrop) using the Share Sheet's "Open in Suuntain" action, or select "Scan GPX QR Code" on the Routes tab and scan a QR code that links to a GPX route file. Both open the same preview as importing from a file.
 
 **Note!** The GPX preview's map view, where tracks are selected by tapping, doesn't support VoiceOver — you'll need sighted assistance for this step.
 
@@ -187,6 +195,8 @@ If you want a coarse direction word in addition to the clock position, enable "I
 - The app supports VoiceOver and Bluetooth headphones.
 - The app scales text according to Dynamic Type settings.
 - GPS usage stops automatically when the phone has been stationary for a long time.
+- When you close the app completely (swipe it away in the app switcher), GPS and motion detection stop and the app does not speak in the background. Location tracking starts again when you open the app.
+- Backup and route files can be opened in Suuntain directly from AirDrop or an email attachment.
 - You can share locations and routes with other users as a JSON file.
 
 ### VoiceOver Rotors
@@ -195,6 +205,34 @@ If you want a coarse direction word in addition to the clock position, enable "I
 - The Routes tab provides a corresponding "Routes" rotor.
 - Rotor announcements include the distance in addition to the location or route name, so you can scan the list easily.
 - With VoiceOver, selecting a location is single-select: choosing a new location clears the previous one. 
+
+## Apple Watch
+
+Suuntain Mini is the Apple Watch companion app for Suuntain. It is installed on the Watch together with the iPhone app.
+
+- The Watch calculates the direction with its own GPS and compass, so clock directions are relative to your wrist. Guidance works even when the iPhone is not with you.
+- The Watch speaks guidance through its own speaker or Bluetooth headphones connected to the Watch, with the same words as the iPhone.
+- The iPhone transfers the locations you have saved, speech settings and speech profile to the Watch. The Watch remembers them, so the list works without the iPhone.
+- On the Watch you can navigate to single locations. Routes are not yet available on the Watch.
+
+Usage:
+
+1. Open Suuntain Mini on the Watch. The list shows the Car location first and the other locations nearest first.
+2. Tap a location. The Watch shows a direction arrow, distance and clock direction, and speaks guidance according to the speech profile.
+3. Tap the arrow or the text, or the Speak button, to hear guidance immediately.
+4. When you arrive, the Watch tells you. The Stop navigation button or going back ends guidance.
+
+Actions in the list:
+
+- **Add (+)**, top left: saves the Watch's current position as a new location. The iPhone names the location after its address.
+- **Update** on the Car row: saves the Watch's current position as the Car location.
+- **Rename**: swipe a location row to the left.
+- Additions, updates and renames reach the iPhone immediately or, if the iPhone is not nearby, when the devices are connected again.
+
+Watch settings (top right):
+
+- **Keep guiding when wrist is down** (on by default): guidance continues when you lower your wrist. The Watch uses a walking workout for this, but nothing is saved to the Health app.
+- **Power save** (off by default): GPS and compass are on only while the Watch screen is active. Guidance pauses with the wrist down and continues when you raise your wrist.
 
 ---
 

@@ -17,6 +17,9 @@
     valittuun paikkaan tai reitin pisteeseen.</p>
     <p>Sovellus on suunniteltu erityisesti sokeille ja näkövammaisille,
     mutta siitä on hyötyä kaikille luonnossa liikkujille.</p>
+    <p>Suuntaimen mukana tulee Apple Watch -sovellus <strong>Suuntain
+    Mini</strong>, joka opastaa tallennettuihin paikkoihin myös ilman
+    iPhonea (katso kohta “Apple Watch”).</p>
     <p><strong>Huom! Käyttäjä vastaa aina omasta turvallisuudestaan.
     Sovellus on apuväline.</strong></p>
     <hr />
@@ -47,11 +50,12 @@
     <li>Uuden paikan nimi täytetään automaattisesti muotoon “Kaupunki,
     Katu numero” (esim. “Oulu, Kirkkokatu 1”). Tämä koskee sekä
     manuaalisesti että automaattisesti tallennettuja paikkoja. Jos
-    verkkoyhteyttä ei ole, nimeksi tulee “Auto” tai aikaleima.</li>
-    <li><strong>Auton sijainti</strong>: erillinen, aina listan kärjessä
-    näkyvä paikka, jonka Päivitä-nappi tallentaa nykyisen GPS-sijainnin
-    osoitteeksi asti. Piilotettu oletuksena, näkyviin Asetuksista
-    (“Näytä auton sijainti”).</li>
+    verkkoyhteyttä ei ole, nimeksi tulee aikaleima.</li>
+    <li>Auto on aina listan kärjessä näkyvä paikka, jonka Päivitä-nappi
+    tallentaa nykyisen GPS-sijainnin auton sijainniksi. Asetukset -&gt;
+    Näytä auton sijainti laittaa tämän rivin näkyviin.</li>
+    <li>Kun valitset automaattisesti tallennetun paikan, siitä tulee
+    tavallinen paikka. Se näkyy Koti ja Paikat välilehdellä.</li>
     </ul>
     <h3 id="reitit">Reitit</h3>
     <ul>
@@ -61,10 +65,14 @@
     <li>Muuta, lisää tai poista reittipisteitä karttanäkymässä.</li>
     <li>Voit kulkea reitin molempiin suuntiin (käänteinen reitti).</li>
     <li>Voit määritellä reitin nimelle aliaksen / merkin avulla.</li>
-    <li>Tuo reitti GPX-tiedostosta, GPX-tiedoston avaamalla toisesta
-    sovelluksesta tai QR-koodia skannaamalla.</li>
-    <li>Yhdistä kaksi tai useampia olemassa olevia reittejä uudeksi
-    reitiksi.</li>
+    <li>Voit tuoda reitin GPX-tiedostosta, jakaa GPX-tiedoston toisesta
+    sovelluksesta tai skannata QR-koodin.</li>
+    <li>Voit luoda uuden reitin yhdistämällä kaksi tai useampia olemassa
+    olevia reittejä.</li>
+    <li>Tallennetun reitin pisteet nimetään muotoon “reitin nimi -
+    numero” (esim. “Luontopolku - 1”). Kun muutat reitin nimeä,
+    pisteiden nimet muuttuvat mukana. Itse nimeämäsi pisteet säilyttävät
+    nimensä.</li>
     </ul>
     <h3 id="kartta">Kartta</h3>
     <ul>
@@ -73,6 +81,11 @@
     <li>Häntä-asetuksen ollessa päällä kartalla näkyy katkoviivalla
     viimeaikainen kulkemasi reitti.</li>
     <li>Lisää uusi paikka napauttamalla karttaa.</li>
+    <li>Kartan tasopainike vaihtaa karttatasoa: Maastokartta, Applen
+    kartta, Applen satelliitti sekä Applen satelliitti ja nimet. Voit
+    valita Asetuksista, mitkä tasot ovat käytössä.</li>
+    <li>Maastokartaksi voit valita Maanmittauslaitoksen maastokartan,
+    OpenTopoMap-kartan tai Thunderforest Outdoors kartan.</li>
     <li>Yläreunan hakukentässä (“Etsi sijainteja ja paikkoja”) voit
     hakea sekä omia tallennettuja paikkoja että oikean maailman kohteita
     (Apple Maps -haku).</li>
@@ -91,6 +104,9 @@
     <li>Säädä puhenopeutta.</li>
     <li>Näytä tai piilota auton sijainti (“Näytä auton sijainti”).</li>
     <li>Säädä kartan Häntä-jäljen pituutta ja päivitysväliä.</li>
+    <li>Valitse karttatasot.</li>
+    <li>Tarkista sovelluksen päivitykset (“Tarkista päivitykset”).
+    Sovellus kertoo aina tarkistuksen tuloksen.</li>
     <li>Ota käyttöön “Lisäksi 8 suuntaa”, jos haluat kellonsuunnan
     lisäksi karkean suuntasanan.</li>
     <li>Varmuuskopioi ja palauta paikat sekä reitit.</li>
@@ -211,7 +227,7 @@
     <li>Valitse “Talleta”.</li>
     </ol>
     <p>Voit myös avata <code>.gpx</code>-tiedoston suoraan toisesta
-    sovelluksesta (esim. Tiedostot, Mail) “Jaa”-valikon “Avaa
+    sovelluksesta (esim. Tiedostot, Mail, AirDrop) “Jaa”-valikon “Avaa
     sovelluksessa Suuntain” -toiminnolla, tai valita Reitit-välilehdeltä
     “Skannaa GPX QR-koodi” ja skannata QR-koodin, joka linkittää
     GPX-reittitiedostoon. Molemmat avaavat saman esikatselunäkymän kuin
@@ -266,6 +282,12 @@
     mukaisesti.</li>
     <li>GPS:n käyttö pysähtyy automaattisesti, kun puhelin on pitkään
     paikallaan.</li>
+    <li>Kun suljet sovelluksen kokonaan (pyyhkäisemällä sen pois
+    sovellusvaihtajasta), GPS ja liiketunnistus pysähtyvät, eikä
+    sovellus puhu taustalla. Sijainnin seuranta käynnistyy taas, kun
+    avaat sovelluksen.</li>
+    <li>Varmuuskopio- ja reittitiedostot voi avata Suuntaimessa suoraan
+    AirDropista tai sähköpostin liitteestä.</li>
     <li>Voit jakaa paikkoja ja reittejä muille käyttäjille
     JSON-tiedostona.</li>
     </ul>
@@ -279,6 +301,56 @@
     etäisyys, joten voit selata helposti nopeasti.</li>
     <li>VoiceOverilla vain yksi paikka voi olla valittuna
     kerrallaan.</li>
+    </ul>
+    <hr />
+    <h2 id="apple-watch">Apple Watch</h2>
+    <p>Suuntain Mini on Suuntain sovelluksen Apple Watch -lisäsovellus.
+    Se asentuu kelloon iPhone-sovelluksen mukana.</p>
+    <ul>
+    <li>Kello laskee suunnan omalla GPS:llään ja kompassillaan, joten
+    kellotaulun suunnat ovat suhteessa ranteeseen. Opastus toimii myös
+    silloin, kun iPhone ei ole mukana.</li>
+    <li>Kello puhuu opasteet omasta kaiuttimestaan tai kelloon
+    yhdistetyillä Bluetooth-kuulokkeilla, samoin sanoin kuin
+    iPhone.</li>
+    <li>iPhone siirtää kelloon sinun tallentamat paikat sekä
+    puheasetukset ja puheprofiilin. Kello muistaa ne, joten lista toimii
+    myös ilman iPhonea.</li>
+    <li>Kellossa voi suunnistaa yksittäisiin paikkoihin. Reitit eivät
+    ole vielä käytössä kellossa.</li>
+    </ul>
+    <p>Käyttö:</p>
+    <ol type="1">
+    <li>Avaa Suuntain Mini kellossa. Lista näyttää auton sijainnin
+    ensimmäisenä ja muut paikat lähimmästä alkaen.</li>
+    <li>Napauta paikkaa. Kello näyttää suuntanuolen, etäisyyden ja
+    kellosuunnan ja puhuu opasteet puheprofiilin mukaan.</li>
+    <li>Napauta nuolta tai tekstiä, tai Puhu-painiketta, kun haluat
+    kuulla opasteen heti.</li>
+    <li>Kun olet perillä, kello ilmoittaa siitä. Pysäytä navigointi
+    -painike tai takaisin palaaminen lopettaa opastuksen.</li>
+    </ol>
+    <p>Toiminnot listalla:</p>
+    <ul>
+    <li><strong>Lisää (+)</strong>, vasen yläkulma: tallentaa kellon
+    nykyisen sijainnin uudeksi paikaksi. iPhone nimeää paikan osoitteen
+    mukaan.</li>
+    <li><strong>Päivitä</strong> auton rivillä: tallentaa kellon
+    nykyisen sijainnin auton sijainniksi.</li>
+    <li><strong>Nimeä uudelleen</strong>: pyyhkäise paikan riviä
+    vasemmalle.</li>
+    <li>Lisäykset, päivitykset ja nimenmuutokset siirtyvät iPhoneen heti
+    tai, jos iPhone ei ole lähellä, kun laitteet ovat taas
+    yhteydessä.</li>
+    </ul>
+    <p>Kellon asetukset (oikea yläkulma):</p>
+    <ul>
+    <li><strong>Opasta myös ranne alhaalla</strong> (oletuksena päällä):
+    opastus jatkuu, kun lasket ranteen. Kello käyttää tähän
+    kävelytreeniä, mutta mitään ei tallenneta Terveys-sovellukseen.</li>
+    <li><strong>Virransäästö</strong> (oletuksena pois): GPS ja kompassi
+    ovat päällä vain, kun kellon näyttö on aktiivinen. Opastus pysähtyy
+    ranne alhaalla ja jatkuu, kun nostat ranteen.</li>
     </ul>
     <hr />
     <h2 id="ensimmäinen-käyttökerta">Ensimmäinen käyttökerta</h2>

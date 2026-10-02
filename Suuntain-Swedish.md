@@ -10,6 +10,8 @@ Appen berättar både avståndet och riktningen till den valda destinationen ell
 
 Appen är främst avsedd för blinda och synskadade användare, men kan förstås användas av alla som rör sig i naturen.
 
+Till Suuntain hör en Apple Watch-app, **Suuntain Mini**, som guidar dig till dina sparade destinationer även utan iPhone (se "Apple Watch").
+
 **Obs! Användaren ansvarar alltid själv för sin egen säkerhet. Appen är bara ett hjälpmedel.**
 
 ---
@@ -38,8 +40,9 @@ Appen är främst avsedd för blinda och synskadade användare, men kan förstå
 - Lägg till nya destinationer, byt deras namn eller radera dem.
 - Du kan ansluta anteckningar till destinationer samt aktivera ett larm som anmäler dig när du är nära en viss destination.
 - Du kan skapa ett "alias"-namn för destinationen med /-markören.
-- Namnet på en ny destination fylls i automatiskt i formatet "Stad, Gata Nummer" (t.ex. "Oulu, Kirkkokatu 1"). Detta gäller både manuellt och automatiskt sparade destinationer. Om internetanslutning saknas blir namnet "Auto" eller en tidsstämpel.
-- **Bilens plats**: en separat destination som alltid ligger högst upp i listan. Knappen "Uppdatera" sparar din nuvarande GPS-position ner till gatuadressen. Dold som standard; visa den i Inställningar ("Visa bilens plats").
+- Namnet på en ny destination fylls i automatiskt i formatet "Stad, Gata Nummer" (t.ex. "Oulu, Kirkkokatu 1"). Detta gäller både manuellt och automatiskt sparade destinationer. Om internetanslutning saknas blir namnet en tidsstämpel.
+- Bilen är en destination som alltid visas högst upp i listan. Knappen "Uppdatera" sparar din nuvarande GPS-position som bilens plats. Inställningar -> Visa bilens plats gör raden synlig.
+- När du väljer en automatiskt sparad destination blir den en vanlig destination. Den visas på flikarna Hem och Destinationer.
 
 ### Rutter
 
@@ -49,14 +52,17 @@ Appen är främst avsedd för blinda och synskadade användare, men kan förstå
 - Ändra, lägg till eller radera vägpunkter i kartvyn.
 - Du kan vandra längs rutten i de båda riktningarna ("omvänd ruttriktning").
 - Skapa ett alias för ruttnamnet med /-markören.
-- Importera en rutt från en GPX-fil, genom att öppna en GPX-fil från en annan app, eller genom att skanna en QR-kod.
-- Kombinera två eller flera befintliga rutter till en ny rutt.
+- Du kan importera en rutt från en GPX-fil, dela en GPX-fil från en annan app eller skanna en QR-kod.
+- Du kan skapa en ny rutt genom att kombinera två eller flera befintliga rutter.
+- Vägpunkterna i en sparad rutt namnges "ruttens namn - nummer" (t.ex. "Naturstig - 1"). När du byter namn på rutten ändras vägpunkternas namn med den. Vägpunkter som du själv har namngett behåller sina namn.
 
 ### Karta
 
 - Se din position, sparade positioner och den valda rutten på kartan.
 - När inställningen "Svans" är på visas din senaste förflyttning som en streckad linje på kartan.
 - Lägg till en ny position genom att trycka på kartan.
+- Kartans lagerknapp byter kartlager: Terrängkarta, Apple-karta, Apple-satellit och Apple-satellit med etiketter. Du kan välja vilka lager som används i Inställningar.
+- Som terrängkarta kan du välja Lantmäteriverkets (MML) terrängkarta, OpenTopoMap eller Thunderforest Outdoors.
 - Sökfältet längst upp ("Sök platser och ställen") söker både bland dina sparade destinationer och bland verkliga platser (Apple Maps-sökning).
 - Att trycka på ett sökresultat centrerar kartan på den platsen och visar en orange nål. Ett sökresultat kan sparas till destinationslistan med bokmärkesknappen.
 - Att trycka på en sparad destination antingen på kartan eller i sökresultaten startar navigeringen: en grön nål betyder vald, en röd betyder ovald. En ny tryckning på samma nål avbryter valet.
@@ -68,6 +74,8 @@ Appen är främst avsedd för blinda och synskadade användare, men kan förstå
 - Ändra talhastigheten.
 - Visa eller dölj bilens plats ("Visa bilens plats").
 - Ändra kartans svanslängd och uppdateringsintervall.
+- Välj kartlager.
+- Sök efter appuppdateringar ("Sök efter uppdateringar"). Appen berättar alltid resultatet av sökningen.
 - Aktivera "Även 8 riktningar" om du utöver klockriktningen vill höra en ungefärlig riktning i ord.
 - Säkerhetskopiera och återställ destinationer och rutter.
 
@@ -148,7 +156,7 @@ Importera en rutt från en GPX-fil:
 4. Ge rutten ett namn.
 5. Välj "Spara".
 
-Du kan också öppna en `.gpx`-fil direkt från en annan app (t.ex. Filer, Mail) via delningsmenyns funktion "Öppna i Suuntain", eller välja "Skanna GPX QR-kod" på fliken Rutter och skanna en QR-kod som länkar till en GPX-ruttfil. Båda öppnar samma förhandsvisning som import från fil.
+Du kan också öppna en `.gpx`-fil direkt från en annan app (t.ex. Filer, Mail, AirDrop) via delningsmenyns funktion "Öppna i Suuntain", eller välja "Skanna GPX QR-kod" på fliken Rutter och skanna en QR-kod som länkar till en GPX-ruttfil. Båda öppnar samma förhandsvisning som import från fil.
 
 **Obs!** Förhandsvisningens kartvy, där rutter väljs genom att trycka på dem, stöder inte VoiceOver — du behöver seende hjälp för detta steg.
 
@@ -191,6 +199,8 @@ Om du utöver klockriktningen vill höra en ungefärlig riktning i ord, aktivera
 - Appen stöder VoiceOver och Bluetooth-hörlurar.
 - Appen skalar text enligt inställningarna för Dynamisk text.
 - GPS avaktiveras automatiskt när telefonen har varit stilla under en längre tid.
+- När du stänger appen helt (sveper bort den i appväxlaren) stannar GPS och rörelseavkänningen, och appen talar inte i bakgrunden. Positionsspårningen startar igen när du öppnar appen.
+- Säkerhetskopior och ruttfiler kan öppnas i Suuntain direkt från AirDrop eller en e-postbilaga.
 - Du kan dela platser och rutter med andra användare i form av JSON-fil.
 
 ### VoiceOver-rotorer
@@ -199,6 +209,34 @@ Om du utöver klockriktningen vill höra en ungefärlig riktning i ord, aktivera
 - Fliken Rutter har på motsvarande sätt en rotor "Rutter".
 - Rotormeddelandena innehåller avståndet utöver namnet på destinationen eller rutten, så du kan skanna listan enkelt.
 - Med VoiceOver är val av destination ett enkelval: när du väljer en ny destination avmarkeras den föregående. 
+
+## Apple Watch
+
+Suuntain Mini är Suuntains tilläggsapp för Apple Watch. Den installeras på klockan tillsammans med iPhone-appen.
+
+- Klockan beräknar riktningen med sin egen GPS och kompass, så klockriktningarna utgår från handleden. Guidningen fungerar även när du inte har iPhonen med dig.
+- Klockan talar guidningen genom sin egen högtalare eller Bluetooth-hörlurar anslutna till klockan, med samma ord som iPhonen.
+- iPhonen för över de destinationer du har sparat, talinställningarna och navigeringsprofilen till klockan. Klockan minns dem, så listan fungerar även utan iPhone.
+- På klockan kan du navigera till enskilda destinationer. Rutter finns ännu inte på klockan.
+
+Användning:
+
+1. Öppna Suuntain Mini på klockan. Listan visar bilens plats först och övriga destinationer med den närmaste först.
+2. Tryck på en destination. Klockan visar en riktningspil, avståndet och klockriktningen och talar guidningen enligt navigeringsprofilen.
+3. Tryck på pilen eller texten, eller på knappen Tala, för att höra guidningen direkt.
+4. När du är framme meddelar klockan det. Knappen Stoppa navigation eller att gå tillbaka avslutar guidningen.
+
+Funktioner i listan:
+
+- **Lägg till (+)**, uppe till vänster: sparar klockans nuvarande position som en ny destination. iPhonen namnger destinationen efter adressen.
+- **Uppdatera** på raden för bilens plats: sparar klockans nuvarande position som bilens plats.
+- **Byt namn**: svep en destinations rad åt vänster.
+- Tillägg, uppdateringar och namnbyten når iPhonen direkt eller, om iPhonen inte är i närheten, när enheterna har kontakt igen.
+
+Klockans inställningar (uppe till höger):
+
+- **Fortsätt guida med handleden nere** (på som standard): guidningen fortsätter när du sänker handleden. Klockan använder ett promenadträningspass för detta, men inget sparas i appen Hälsa.
+- **Energisparläge** (av som standard): GPS och kompass är på bara när klockans skärm är aktiv. Guidningen pausar med handleden nere och fortsätter när du lyfter handleden.
 
 ---
 
