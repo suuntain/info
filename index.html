@@ -42,24 +42,24 @@
     </ul>
     <h3 id="paikat">Paikat</h3>
     <ul>
-    <li>Lista sinun tallentamista paikoista.</li>
+    <li>Lista tallentamistasi paikoista.</li>
     <li>Lisää, nimeä uudelleen tai poista paikkoja.</li>
     <li>Voit lisätä muistiinpanoja paikkoihin ja ottaa käyttöön
     hälytyksen, joka ilmoittaa kun olet lähellä paikkaa.</li>
     <li>Voit määritellä paikan nimelle aliaksen / merkin avulla.</li>
     <li>Uuden paikan nimi täytetään automaattisesti muotoon “Kaupunki,
-    Katu numero” (esim. “Oulu, Kirkkokatu 1”). Tämä koskee sekä
-    manuaalisesti että automaattisesti tallennettuja paikkoja. Jos
-    verkkoyhteyttä ei ole, nimeksi tulee aikaleima.</li>
-    <li>Auto on aina listan kärjessä näkyvä paikka, jonka Päivitä-nappi
-    tallentaa nykyisen GPS-sijainnin auton sijainniksi. Asetukset -&gt;
-    Näytä auton sijainti laittaa tämän rivin näkyviin.</li>
+    Katu numero” (esim. “Oulu, Kirkkokatu 1”). Jos verkkoyhteyttä ei
+    ole, nimeksi tulee aikaleima.</li>
+    <li>Auto on erikoispaikka, joka on aina listan kärjessä näkyvillä.
+    Sen Päivitä-nappi tallentaa nykyisen GPS-sijainnin auton
+    sijainniksi. Asetukset → Paikat ja reitit → “Näytä auton sijainti”
+    laittaa tämän rivin näkyviin.</li>
     <li>Kun valitset automaattisesti tallennetun paikan, siitä tulee
-    tavallinen paikka. Se näkyy Koti ja Paikat välilehdellä.</li>
+    tavallinen paikka. Se näkyy Koti- ja Paikat-välilehdellä.</li>
     </ul>
     <h3 id="reitit">Reitit</h3>
     <ul>
-    <li>Lista sinun luomista reiteistä.</li>
+    <li>Lista luomistasi reiteistä.</li>
     <li>Luo uusia reittejä ja muokkaa olemassa olevia.</li>
     <li>Lisää reittipisteitä ja muuta reitin nimeä.</li>
     <li>Muuta, lisää tai poista reittipisteitä karttanäkymässä.</li>
@@ -82,13 +82,13 @@
     viimeaikainen kulkemasi reitti.</li>
     <li>Lisää uusi paikka napauttamalla karttaa.</li>
     <li>Kartan tasopainike vaihtaa karttatasoa: Maastokartta, Applen
-    kartta, Applen satelliitti sekä Applen satelliitti ja nimet. Voit
-    valita Asetuksista, mitkä tasot ovat käytössä.</li>
+    kartta, Applen satelliitti sekä Applen satelliitti ja nimet. Valitse
+    Asetukset → Kartta kohdassa tasot, joita haluat käyttää.</li>
     <li>Maastokartaksi voit valita Maanmittauslaitoksen maastokartan,
-    OpenTopoMap-kartan tai Thunderforest Outdoors kartan.</li>
+    OpenTopoMap-kartan tai Thunderforest Outdoors -kartan.</li>
     <li>Yläreunan hakukentässä (“Etsi sijainteja ja paikkoja”) voit
     hakea sekä omia tallennettuja paikkoja että oikean maailman kohteita
-    (Apple Maps -haku).</li>
+    (Applen karttatietokannasta).</li>
     <li>Hakutuloksen napauttaminen keskittää kartan kyseiseen paikkaan
     ja näyttää siinä oranssin nastan. Hakutuloksena löytyneen kohteen
     voit tallentaa paikkalistalle kirjanmerkkinapilla.</li>
@@ -96,20 +96,49 @@
     käynnistää navigoinnin: vihreä nasta tarkoittaa valittua paikkaa,
     punainen ei-valittua. Sama nappi vapauttaa valinnan, kun sitä
     napauttaa uudelleen.</li>
+    <li>Jos verkkoyhteyttä ei ole, Kartta-välilehden alareunassa näkyy
+    ilmoitus “Ei internet-yhteyttä. Onko lentokonetila päällä?”. Ilman
+    verkkoyhteyttä kartalla näkyvät vain aiemmin katsotut alueet.</li>
     </ul>
     <h3 id="asetukset">Asetukset</h3>
+    <p>Asetusten pääsivulla on rivi jokaiselle asetusryhmälle. Rivi avaa
+    sivun, jolla ryhmän asetukset ovat.</p>
     <ul>
-    <li>Vaihda sovelluksen ulkoasua (tumma/vaalea/puhelin).</li>
-    <li>Säädä puheprofiileja ja muita asetuksia.</li>
-    <li>Säädä puhenopeutta.</li>
-    <li>Näytä tai piilota auton sijainti (“Näytä auton sijainti”).</li>
-    <li>Säädä kartan Häntä-jäljen pituutta ja päivitysväliä.</li>
-    <li>Valitse karttatasot.</li>
-    <li>Tarkista sovelluksen päivitykset (“Tarkista päivitykset”).
-    Sovellus kertoo aina tarkistuksen tuloksen.</li>
-    <li>Ota käyttöön “Lisäksi 8 suuntaa”, jos haluat kellonsuunnan
-    lisäksi karkean suuntasanan.</li>
-    <li>Varmuuskopioi ja palauta paikat sekä reitit.</li>
+    <li><strong>Opastus</strong>: suuntatapa (12h kello, 24h kello tai 8
+    suuntaa), “Lisäksi 8 suuntaa” (karkea suuntasana kellonsuunnan
+    lisäksi), puheääni ja puheen nopeus.</li>
+    <li><strong>Puheilmoitukset</strong>: paikan ja reitin puheprofiilit
+    sekä “Muokkaa profiileja” (katso kohta “Puheprofiilit”), “Puhu
+    suunta pysähtyessä” (katso kohta “Puhe pysähtyessä”), ravistus
+    (katso kohta “Ravistus”) ja U-käännöksen ehdotus.</li>
+    <li><strong>Suunta ja GPS</strong>:
+    <ul>
+    <li>“Käytä kompassia kun hitaampi kuin”: jos liikut tätä hitaammin,
+    Suuntain käyttää puhelimen kompassia, jos kuljet nopeammin, Suuntain
+    käyttää GPS:n kulkusuuntaa. Oletus on alle 0,75 km/h.</li>
+    <li>“Käynnistä GPS sovelluksen avautuessa” (oletuksena päällä).</li>
+    <li>“Liikkeentunnistuksen aika”: kuinka kauan puhelin saa olla
+    paikallaan, ennen kuin GPS pysähtyy (oletus 15 min).</li>
+    <li>“Määritä suunta liikeantureilla” parantaa suuntatietoa, kun
+    pidät puhelinta taskussa ja kuuntelet puheohjeita kaiuttimesta tai
+    kuulokkeista.</li>
+    </ul></li>
+    <li><strong>Kartta</strong>: karttatasot, maastokartan lähde,
+    “Käännä maastokartan värit” sekä Häntä-jäljen pituus ja
+    päivitysväli.</li>
+    <li><strong>Paikat ja reitit</strong>: “Näytä automaattiset paikat”,
+    “Näytä auton sijainti”, reitin nauhoituksen yksinkertaistus,
+    “Talleta leivänmuruja” (katso kohta “GPS leivänmurut”) ja kartasta
+    luotavan reitin maksimietäisyys.</li>
+    <li><strong>Sovellus</strong>: teema (Puhelin, Vaalea tai Tumma),
+    “Pidä näyttö päällä”, “Yksinkertainen tilapalkki” ja “Näytä
+    sovelluksen loki”.</li>
+    <li><strong>Varmuuskopiointi</strong> (pääsivulla): “Luo
+    varmuuskopio” ja “Palauta varmuuskopiosta” (katso kohta
+    “Varmuuskopiot”).</li>
+    <li><strong>Tietoja</strong>: käyttöohje, sovelluksen versio,
+    “Tarkista päivitykset” (ilmoittaa, kun App Storessa on uusi versio)
+    ja “Tarkista nyt”. Sovellus kertoo aina tarkistuksen tuloksen.</li>
     </ul>
     <hr />
     <h2 id="tärkeimmät-toiminnot">Tärkeimmät toiminnot</h2>
@@ -128,20 +157,25 @@
     toisesta sovelluksesta tai QR-koodilla.</li>
     <li><strong>Reittien yhdistäminen:</strong> Rakenna uusi reitti
     yhdistämällä olemassa olevia reittejä.</li>
+    <li><strong>Puhe pysähtyessä:</strong> Kun pysähdyt tai käännyt
+    paikallasi, kuulet suunnan heti.</li>
+    <li><strong>Ravistus:</strong> Ravista puhelinta, niin kuulet
+    etäisyyden ja suunnan heti.</li>
     <li><strong>Varmuuskopiointi:</strong> Tallenna ja palauta paikat
-    sekä reitit JSON-tiedostona.</li>
+    sekä reitit JSON-tiedostona. Suuntain tekee varmuuskopion myös itse
+    kerran päivässä.</li>
     <li><strong>Siri-komennot:</strong> Ohjaa sovellusta äänikomennoilla
     (esim. “Suuntain, valitse paikka”).</li>
     </ul>
     <h2 id="puheprofiilit">Puheprofiilit</h2>
     <p>Suuntain puhuu etäisyyden ja suunnan paikkaan tai
     reittipisteeseen puheprofiilin mukaan. Voit valita puheprofiilin
-    Asetukset Puheprofiilit kohdassa. Paikka ja reitti voi käyttää eri
-    profiilia. Voit myös muokata olemassa olevia profiileja tai luoda
-    uusia.</p>
+    kohdassa Asetukset → Puheilmoitukset → Puheprofiilit. Paikka ja
+    reitti voivat käyttää eri profiilia. Voit myös muokata olemassa
+    olevia profiileja tai luoda uusia (“Muokkaa profiileja”).</p>
     <p>Puheprofiileja on etäisyyteen ja aikaan perustuvia.</p>
-    <p>Esimerkiksi <strong>Oletus</strong> niminen profiili perustuu
-    etäisyyteen eli Suuntain puhuu useammin kuin olet lähempänä
+    <p>Esimerkiksi <strong>Oletus</strong>-niminen profiili perustuu
+    etäisyyteen eli Suuntain puhuu useammin, kun olet lähempänä
     paikkaa.</p>
     <ul>
     <li>Kun olet <strong>hyvin lähellä</strong> eli alle 30 metrin
@@ -153,44 +187,68 @@
     <li>Kun olet <strong>kaukana</strong> eli yli 500 metrin päässä,
     puhe toistuu 60 sekunnin välein.</li>
     </ul>
-    <p>Toinen esimerkki on <strong>Aika 30s</strong> niminen profiili.
+    <p>Toinen esimerkki on <strong>Aika 30s</strong> -niminen profiili.
     Se perustuu aikaan eli Suuntain puhuu koko ajan, tässä tapauksessa
     30 sekunnin välein.</p>
     <p>Etäisyyspohjaisissa profiileissa voit muuttaa metrimääriä ja
     puheen ajoitusta. Esimerkiksi voit muuttaa <strong>hyvin
     lähellä</strong> metrimääräksi 15 metriä ja asettaa puheen
     ajoitukseksi 3 sekuntia.</p>
+    <h3 id="puhe-pysähtyessä">Puhe pysähtyessä</h3>
+    <p>Kun pysähdyt, etsit usein suuntaa, ja seuraavaan puheprofiilin
+    mukaiseen puheeseen voi olla minuutti. Siksi Suuntain puhuu
+    etäisyyden ja suunnan heti:</p>
+    <ul>
+    <li>kun pysähdyt kävelyn jälkeen: noin 1–2 sekuntia pysähtymisen
+    jälkeen</li>
+    <li>kun käännyt seisoessasi vähintään 30 astetta ja pysyt hetken
+    samassa suunnassa: voit kääntyä, kunnes kohde on kello 12:ssa</li>
+    <li>kun olet valinnut paikan tai reitin ja lähdet kävelemään:
+    kerran, noin 4 sekunnin kävelyn jälkeen</li>
+    </ul>
+    <p>Suuntain ei toista suuntaa, jos se on juuri kerrottu ja olet yhä
+    samassa suunnassa. Asetus on kohdassa Asetukset → Puheilmoitukset →
+    “Puhu suunta pysähtyessä” (oletuksena päällä). Se ei toimi, jos
+    “Käytä kompassia kun hitaampi kuin” on OFF. Jos “Määritä suunta
+    liikeantureilla” on päällä, Suuntain puhuu pysähtyessä vasta, kun se
+    on oppinut kulkusuuntasi. Toiminto on vain iPhonessa.</p>
+    <h3 id="ravistus">Ravistus</h3>
+    <p>Ravista puhelinta, niin Suuntain puhuu etäisyyden ja suunnan
+    heti. Kohdassa Asetukset → Puheilmoitukset → Ravistus “Puhu etäisyys
+    ja suunta” kytkee toiminnon päälle tai pois (oletuksena päällä), ja
+    “Ravistusten väli” (3–10 s, oletus 5 s) on lyhin aika kahden
+    ravistuksen välillä.</p>
     <h2 id="reittien-luominen">Reittien luominen</h2>
     <p>Voit luoda omia reittejä olemassa olevien paikkojen avulla,
-    automaattisesti tai sinun valitsemien paikkojen perusteella.</p>
+    automaattisesti tai valitsemiesi paikkojen perusteella.</p>
     <p>Luo reitti talletettujen paikkojen pohjalta:</p>
     <ol type="1">
-    <li>Siirry Reitit välilehdelle.</li>
-    <li>Aloita reitti “Lisää uusi reitti” napilla.</li>
+    <li>Siirry Reitit-välilehdelle.</li>
+    <li>Aloita reitti “Lisää uusi reitti” -napilla.</li>
     <li>Valitse reittipisteet listalta.</li>
     <li>Anna reitille nimi.</li>
-    <li>“Talleta reitti” nappi tallettaa uuden reitin.</li>
+    <li>“Talleta reitti” -nappi tallettaa uuden reitin.</li>
     </ol>
     <p>Luo uusi reitti automaattisesti:</p>
     <ol type="1">
-    <li>Siirry Reitit välilehdelle.</li>
+    <li>Siirry Reitit-välilehdelle.</li>
     <li>Valitse “Nauhoita uusi reitti”.</li>
-    <li>Valitse “Automaattinen” välilehti.</li>
+    <li>Valitse “Automaattinen”-välilehti.</li>
     <li>Kun lähdet kävelemään, Suuntain nauhoittaa koko reitin
     automaattisesti.</li>
     <li>Valitse “Lisää uusi reittipiste”, kun haluat lisätä nykyisen
     paikan reitin pakolliseksi pisteeksi.</li>
     <li>Valitse “Lopeta nauhoitus”.</li>
-    <li>“Talleta reitti” karttanäkymässä näet Suuntaimen ehdottomat
+    <li>“Talleta reitti” karttanäkymässä näet Suuntaimen ehdottamat
     reittipisteet.</li>
-    <li>Muuta “Raja-arvo” asetusta, jos muuttaa reittipisteiden
+    <li>Muuta “Raja-arvo”-asetusta, jos haluat muuttaa reittipisteiden
     määrää.</li>
     <li>Anna reitille nimi.</li>
     <li>Valitse “Talleta”</li>
     </ol>
     <p>Luo uusi reitti kartan avulla:</p>
     <ol type="1">
-    <li>Siirry Reitit välilehdelle.</li>
+    <li>Siirry Reitit-välilehdelle.</li>
     <li>Valitse “Kävelyreitti kartasta”.</li>
     <li>Valitse lähtöpisteeksi joko nykyinen sijainti tai valitse paikka
     listalta.</li>
@@ -200,12 +258,11 @@
     <li>Anna reitille nimi.</li>
     <li>Valitse “Talleta”.</li>
     </ol>
-    <p>Luo uusi reitti sinun valitsemien reittipisteiden
-    perusteella:</p>
+    <p>Luo uusi reitti valitsemiesi reittipisteiden perusteella:</p>
     <ol type="1">
-    <li>Siirry Reitit välilehdelle.</li>
+    <li>Siirry Reitit-välilehdelle.</li>
     <li>Valitse “Nauhoita uusi reitti”.</li>
-    <li>Valitse “Käyttäjä” välilehti.</li>
+    <li>Valitse “Käyttäjä”-välilehti.</li>
     <li>Valitse “Lisää uusi reittipiste”, kun haluat lisätä nykyisen
     paikan reitille.</li>
     <li>Jatka kävelyä ja lisää uusia reittipisteitä sopivissa
@@ -217,7 +274,7 @@
     <p>Uusi reitti löytyy Koti:Reitti näkymästä.</p>
     <p>Tuo reitti GPX-tiedostosta:</p>
     <ol type="1">
-    <li>Siirry Reitit välilehdelle.</li>
+    <li>Siirry Reitit-välilehdelle.</li>
     <li>Valitse “Tuo GPX” ja valitse GPX-tiedosto laitteeltasi.</li>
     <li>Jos GPX-tiedostossa on vain yksi reitti, se on valmiiksi
     valittuna esikatselussa. Jos tiedostossa on useampia, valitse
@@ -237,7 +294,7 @@
     vaiheeseen näkevän avustajan.</p>
     <p>Yhdistä olemassa olevia reittejä uudeksi reitiksi:</p>
     <ol type="1">
-    <li>Siirry Reitit välilehdelle. Sinulla tulee olla vähintään kaksi
+    <li>Siirry Reitit-välilehdelle. Sinulla tulee olla vähintään kaksi
     tallennettua reittiä.</li>
     <li>Valitse “Yhdistä reittejä”.</li>
     <li>Valitse yhdistettävät reitit ja niiden järjestys; voit
@@ -251,13 +308,60 @@
     syystä kesken tai puhelimen akku loppui ennen reitin talletusta,
     voit palauttaa reitin GPS leivänmurujen avulla:</p>
     <ol type="1">
-    <li>Käynnistä Suuntain sovellus.</li>
-    <li>Valitse “Reitit” välilehti.</li>
+    <li>Käynnistä Suuntain-sovellus.</li>
+    <li>Valitse “Reitit”-välilehti.</li>
     <li>Valitse “Palauta reitti”. Se on valittavissa, jos reitti on
     jäänyt kesken.</li>
     <li>Anna “Palauta reitti” karttanäkymässä reitille nimi.</li>
     <li>Valitse “Talleta”</li>
     </ol>
+    <h2 id="varmuuskopiot">Varmuuskopiot</h2>
+    <p>Varmuuskopioon tallentuvat kaikki paikat ja reitit sekä asetukset
+    ja puheprofiilit.</p>
+    <p>Luo varmuuskopio:</p>
+    <ol type="1">
+    <li>Valitse Asetukset → “Luo varmuuskopio”.</li>
+    <li>Valitse, mihin tiedosto tallennetaan tai lähetetään (esim.
+    Tiedostot tai Mail).</li>
+    </ol>
+    <p>Automaattinen varmuuskopio:</p>
+    <ul>
+    <li>Suuntain tekee varmuuskopion itse kerran päivässä, kun avaat
+    sovelluksen, jos paikat, reitit tai asetukset ovat muuttuneet
+    edellisestä automaattisesta varmuuskopiosta.</li>
+    <li>Seitsemän uusinta automaattista varmuuskopiota säilytetään,
+    vanhemmat poistetaan.</li>
+    <li>Ne löytyvät Tiedostot-sovelluksesta kohdasta Omalla iPhonella →
+    Suuntain. Tiedoston nimi on <code>suuntain_auto_backup_</code> ja
+    sen perässä päivä ja kellonaika. Voit kopioida niitä muualle tai
+    palauttaa niistä.</li>
+    </ul>
+    <p>Palauta varmuuskopiosta:</p>
+    <ol type="1">
+    <li>Valitse Asetukset → “Palauta varmuuskopiosta” ja valitse
+    tiedosto.</li>
+    <li>Suuntain kysyy “Palautetaanko varmuuskopio?”:
+    <ul>
+    <li>“Palauta kaikki”: paikat, reitit, asetukset ja
+    puheprofiilit.</li>
+    <li>“Vain paikat ja reitit”: asetukset ja puheprofiilit pysyvät
+    ennallaan.</li>
+    <li>“Peru”: mitään ei muuteta.</li>
+    </ul></li>
+    <li>Sovellus kertoo tuloksen äänellä.</li>
+    </ol>
+    <p><strong>Huom!</strong> Palautusta ei voi perua. Palautus yhdistää
+    varmuuskopion nykyisiin tietoihin: paikat, jotka ovat myös
+    varmuuskopiossa, saavat varmuuskopion nimen, sijainnin ja
+    muistiinpanot, ja varmuuskopion jälkeen poistetut paikat palaavat.
+    Sama kysymys tulee, kun avaat varmuuskopiotiedoston toisesta
+    sovelluksesta (Tiedostot, AirDrop, Mail). Tiedosto, jossa ei ole
+    asetuksia (esim. jaettu paikka tai reitti), tuodaan kysymättä.</p>
+    <p>Jos sovelluksen tietokantaa ei voi avata (esim. iOS-päivityksen
+    jälkeen), Suuntain palauttaa uusimman varmuuskopion automaattisesti
+    ja kertoo sen päivämäärän: “Tietokanta palautettu varmuuskopiosta.
+    Varmuuskopio on tehty …”. Varmuuskopion jälkeen tehdyt muutokset
+    puuttuvat.</p>
     <hr />
     <h2 id="kellotaulun-mukaiset-suunnat">Kellotaulun mukaiset
     suunnat</h2>
@@ -270,26 +374,44 @@
     <li>Kello 12.30: edessä hieman oikealla</li>
     </ul>
     <p>Jos haluat kellonsuunnan lisäksi karkean suuntasanan, ota
-    Asetuksista käyttöön “Lisäksi 8 suuntaa”. Tällöin kuulutus on
-    esimerkiksi “edessä kello 12” tai “oikealla kello 3”.</p>
+    kohdassa Asetukset → Opastus käyttöön “Lisäksi 8 suuntaa”. Tällöin
+    kuulutus on esimerkiksi “edessä kello 12” tai “oikealla kello
+    3”.</p>
     <hr />
     <h2 id="vinkkejä-ja-huomioita">Vinkkejä ja huomioita</h2>
     <ul>
-    <li>Sovellus toimii myös ilman verkkoyhteyttä (lentokonetila).</li>
+    <li>Sovellus toimii myös ilman verkkoyhteyttä (lentokonetila).
+    Kartalla näkyvät silloin vain aiemmin katsotut alueet.</li>
     <li>Sovellus tukee VoiceOver-toimintoa ja
     Bluetooth-kuulokkeita.</li>
-    <li>Sovellus suurentaa tekstit dynaamiset tekstit asetuksen
+    <li>Sovellus suurentaa tekstit puhelimen tekstikoon asetuksen
     mukaisesti.</li>
-    <li>GPS:n käyttö pysähtyy automaattisesti, kun puhelin on pitkään
-    paikallaan.</li>
+    <li>GPS:n käyttö pysähtyy automaattisesti, kun puhelin on ollut
+    paikallaan asetuksen “Liikkeentunnistuksen aika” verran (oletus 15
+    min), ja kuulet “Puhelin on paikallaan”. Kun lähdet kävelemään, GPS
+    käynnistyy itsestään, ja kuulet “Puhelin on liikkeessä”, kun opastus
+    jatkuu. Tämä vaatii sijaintiluvan “Aina”. Jos lupa on “Kun appia
+    käytetään”, kuulet “GPS keskeytetty. Jatka avaamalla Suuntain.”, ja
+    opastus jatkuu, kun avaat sovelluksen.</li>
+    <li>Saapumista ei ilmoiteta, jos sijainti on epätarkempi kuin 50
+    metriä, esimerkiksi junassa, jossa sijainti voi tulla tukiasemista.
+    Kuulet silloin “GPS-tarkkuus heikko”. Opastus jatkuu, ja saapuminen
+    ilmoitetaan, kun sijainti tarkentuu.</li>
     <li>Kun suljet sovelluksen kokonaan (pyyhkäisemällä sen pois
     sovellusvaihtajasta), GPS ja liiketunnistus pysähtyvät, eikä
     sovellus puhu taustalla. Sijainnin seuranta käynnistyy taas, kun
     avaat sovelluksen.</li>
     <li>Varmuuskopio- ja reittitiedostot voi avata Suuntaimessa suoraan
-    AirDropista tai sähköpostin liitteestä.</li>
+    AirDropista tai sähköpostin liitteestä. Varmuuskopiosta Suuntain
+    kysyy ensin, mitä palautetaan (katso kohta “Varmuuskopiot”).</li>
     <li>Voit jakaa paikkoja ja reittejä muille käyttäjille
-    JSON-tiedostona.</li>
+    JSON-tiedostona. Kun avaat toisen jakaman paikan tai reitin, se
+    tuodaan heti omaksesi: uusi paikka ei ole valittuna, eikä siinä ole
+    hälytystä tai pikakomentoa. Jos sinulla on jo sama paikka, se saa
+    jakajan nimen ja sijainnin, mutta valintasi ja hälytyksesi säilyvät.
+    Jaettu auton sijainti tulee tavallisena paikkana eikä korvaa omaasi.
+    Sovellus kertoo tuloksen, esimerkiksi “Reitti ‘Luontopolku’ tuotu”.
+    Paikat, joiden koordinaatit ovat virheelliset, ohitetaan.</li>
     </ul>
     <h3 id="voiceover-roottorit">VoiceOver-roottorit</h3>
     <ul>
@@ -298,13 +420,13 @@
     pyyhkäisemättä koko näkymää ylös tai alas.</li>
     <li>Reitit-välilehdellä on vastaavasti “Reitit”-roottori.</li>
     <li>Roottori-ilmoituksissa luetaan paikan tai reitin nimen lisäksi
-    etäisyys, joten voit selata helposti nopeasti.</li>
+    etäisyys, joten voit selata nopeasti.</li>
     <li>VoiceOverilla vain yksi paikka voi olla valittuna
     kerrallaan.</li>
     </ul>
     <hr />
     <h2 id="apple-watch">Apple Watch</h2>
-    <p>Suuntain Mini on Suuntain sovelluksen Apple Watch -lisäsovellus.
+    <p>Suuntain Mini on Suuntain-sovelluksen Apple Watch -lisäsovellus.
     Se asentuu kelloon iPhone-sovelluksen mukana.</p>
     <ul>
     <li>Kello laskee suunnan omalla GPS:llään ja kompassillaan, joten
@@ -313,9 +435,9 @@
     <li>Kello puhuu opasteet omasta kaiuttimestaan tai kelloon
     yhdistetyillä Bluetooth-kuulokkeilla, samoin sanoin kuin
     iPhone.</li>
-    <li>iPhone siirtää kelloon sinun tallentamat paikat sekä
-    puheasetukset ja puheprofiilin. Kello muistaa ne, joten lista toimii
-    myös ilman iPhonea.</li>
+    <li>iPhone siirtää kelloon tallentamasi paikat sekä puheasetukset ja
+    puheprofiilin. Kello muistaa ne, joten lista toimii myös ilman
+    iPhonea.</li>
     <li>Kellossa voi suunnistaa yksittäisiin paikkoihin. Reitit eivät
     ole vielä käytössä kellossa.</li>
     </ul>
@@ -360,7 +482,8 @@
     <li>Salli liike- ja kuntoilutietojen käyttö, kun sovellus on
     käytössä.</li>
     <li>Salli sijaintitietojen käyttö “Aina”, jotta sovellus ei pysähdy,
-    kun puhelin on lukittu.</li>
+    kun puhelin on lukittu, ja GPS käynnistyy taas itsestään, kun lähdet
+    liikkeelle pitkän pysähdyksen jälkeen.</li>
     <li>Valitse automaattisesti luotu paikka.</li>
     <li>Kuulet sovelluksen puhuvan etäisyyden ja suunnan.</li>
     </ol>
@@ -370,43 +493,43 @@
     tai reitin viimeisessä pisteessä.</p>
     <ol type="1">
     <li>Käynnistä Pikakomennot.</li>
-    <li>Luo pikakomento ja anna esille nimi (esimerkiksi “etsi
-    teksti”)</li>
-    <li>Siirry Suuntain sovelluksen paikan tietoihin (esimerkiksi
-    “postilaatikko”)</li>
-    <li><strong>Pikakomento saapuessa</strong> tiedoissa syötä
+    <li>Luo pikakomento ja anna sille nimi (esimerkiksi “etsi
+    teksti”).</li>
+    <li>Siirry Suuntain-sovelluksessa paikan tietoihin (esimerkiksi
+    “postilaatikko”).</li>
+    <li>Syötä tietojen kohtaan <strong>Pikakomento saapuessa</strong>
     pikakomennon nimi (esimerkiksi “etsi teksti”).</li>
-    <li>Jos pikakomento käyttää syötettä, kirjoita se Syöte kenttää
-    (esimerkiksi “Mäkinen”)</li>
-    <li>T<strong>estaa pikakomentoa</strong> napilla voit tarkistaa
+    <li>Jos pikakomento käyttää syötettä, kirjoita se Syöte-kenttään
+    (esimerkiksi “Mäkinen”).</li>
+    <li><strong>Testaa pikakomentoa</strong> -napilla voit tarkistaa
     toimiiko pikakomento halutusti.</li>
     <li>Talleta paikka.</li>
     </ol>
     <p>Kun valitset paikan “postilaatikko” ja olet kävellyt
     postilaatikon lähelle, Suuntain käynnistää pikakomennon “etsi
     teksti” automaattisesti.</p>
-    <p>Voit luoda pikakomentoja itse tai tuoda Pikakomennot sovellukseen
+    <p>Voit luoda pikakomentoja itse tai tuoda Pikakomennot-sovellukseen
     valmiiksi tehtyjä pikakomentoja.</p>
     <h3 id="be-my-eyes-pikakomento">Be My Eyes pikakomento</h3>
-    <p>Tämä pikakomento käynnistää Be My Eyes sovelluksen.</p>
+    <p>Tämä pikakomento käynnistää Be My Eyes -sovelluksen.</p>
     <p>Asennus:</p>
     <ol type="1">
-    <li>asenna Be My Eyes sovellus App Storesta.</li>
-    <li>valitse icloud linkki <a
+    <li>Asenna Be My Eyes -sovellus App Storesta.</li>
+    <li>Valitse iCloud-linkki <a
     href="https://www.icloud.com/shortcuts/ea37170b87ab4b099965d704a92d8024">https://www.icloud.com/shortcuts/ea37170b87ab4b099965d704a92d8024</a></li>
-    <li>Pikakomennot sovelluksessa talleta pikakomento.</li>
+    <li>Talleta pikakomento Pikakomennot-sovelluksessa.</li>
     <li>Pikakomennon nimi on BeMyEyes.</li>
     </ol>
     <h3 id="oorion-pikakomento">OOrion pikakomento</h3>
-    <p>Tämä pikakomento käynnistää OOrion sovelluksen. Jos annat
-    pikakomennolle syötteen (esimerkiksi “ovi”) ja OOrion etsii
-    tälläistä esinettä.</p>
+    <p>Tämä pikakomento käynnistää OOrion-sovelluksen. Jos annat
+    pikakomennolle syötteen (esimerkiksi “ovi”), OOrion etsii tällaista
+    esinettä.</p>
     <p>Asennus:</p>
     <ol type="1">
-    <li>asenna OOrion sovellus App Storesta.</li>
-    <li>valitse icloud linkki <a
+    <li>Asenna OOrion-sovellus App Storesta.</li>
+    <li>Valitse iCloud-linkki <a
     href="https://www.icloud.com/shortcuts/34dd9804a8df476ca77e3d940eb91348">https://www.icloud.com/shortcuts/34dd9804a8df476ca77e3d940eb91348</a></li>
-    <li>Pikakomennot sovelluksessa talleta pikakomento.</li>
+    <li>Talleta pikakomento Pikakomennot-sovelluksessa.</li>
     <li>Pikakomennon nimi on OOrion.</li>
     </ol>
     <hr />

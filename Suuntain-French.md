@@ -18,7 +18,7 @@ Suuntain est accompagnée d'une application Apple Watch, **Suuntain Mini**, qui 
 ## Démarrage rapide
 
 1. Lancez l'application Suuntain.
-2. L'application enregistre automatiquement votre position actuelle (Point de départ).
+2. L'application enregistre automatiquement votre position actuelle (Début).
 3. Sélectionnez l'emplacement souhaité dans l'onglet Accueil.
 4. L'application annonce la distance et la direction vers l'emplacement sélectionné.
 5. À l'arrivée, l'application annonce "Vous êtes arrivé à".
@@ -33,15 +33,15 @@ Suuntain est accompagnée d'une application Apple Watch, **Suuntain Mini**, qui 
 - Sélectionner un emplacement ou un itinéraire pour la navigation.
 - L'application annonce la distance et la direction vers la destination sélectionnée.
 
-### Emplacements
+### Lieux
 
 - Une liste de vos emplacements enregistrés.
 - Ajouter, renommer ou supprimer des emplacements.
 - Vous pouvez ajouter des notes aux emplacements et activer une alerte qui vous avertit lorsque vous êtes proche d'un emplacement.
 - Vous pouvez définir un alias pour le nom de l'emplacement en utilisant le marqueur /.
-- Les nouveaux noms d'emplacements sont renseignés automatiquement au format "Ville, Rue Numéro" (ex. : "Oulu, Kirkkokatu 1"). Cela s'applique aux emplacements enregistrés manuellement et automatiquement. En l'absence de connexion réseau, le nom est remplacé par un horodatage.
-- La voiture est un emplacement toujours affiché en haut de la liste. Le bouton "Mettre à jour" enregistre votre position GPS actuelle comme emplacement de la voiture. Paramètres -> Afficher l'emplacement de la voiture rend cette ligne visible.
-- Lorsque vous sélectionnez un emplacement enregistré automatiquement, il devient un emplacement normal. Il s'affiche dans les onglets Accueil et Emplacements.
+- Les nouveaux noms d'emplacements sont renseignés automatiquement au format "Ville, Rue Numéro" (ex. : "Oulu, Kirkkokatu 1"). En l'absence de connexion réseau, le nom est remplacé par un horodatage.
+- La voiture est un emplacement spécial, toujours affiché en haut de la liste. Son bouton "Mettre à jour" enregistre votre position GPS actuelle comme emplacement de la voiture. Réglages → Lieux et itinéraires → « Afficher l'emplacement de la voiture » rend cette ligne visible.
+- Lorsque vous sélectionnez un emplacement enregistré automatiquement, il devient un emplacement normal. Il s'affiche dans les onglets Accueil et Lieux.
 
 ### Itinéraires
 
@@ -60,23 +60,29 @@ Suuntain est accompagnée d'une application Apple Watch, **Suuntain Mini**, qui 
 - Voir votre position, les lieux enregistrés et l'itinéraire sélectionné sur la carte.
 - Lorsque le réglage "Queue" est activé, la carte affiche votre déplacement récent sous forme de ligne pointillée.
 - Ajouter un nouvel emplacement en appuyant sur la carte.
-- Le bouton des couches de carte change la couche affichée : Topographique, Carte Apple, Satellite Apple et Satellite Apple avec libellés. Vous pouvez choisir les couches utilisées dans les Paramètres.
+- Le bouton des couches de carte change la couche affichée : Topographique, Carte Apple, Satellite Apple et Satellite Apple avec libellés. Choisissez les couches à utiliser dans Réglages → Carte.
 - Comme carte topographique, vous pouvez choisir la carte topographique de l'Institut national de topographie finlandais (MML), OpenTopoMap ou Thunderforest Outdoors.
-- La barre de recherche en haut ("Rechercher des emplacements et des lieux") permet de rechercher à la fois vos emplacements enregistrés et des lieux réels (recherche Apple Maps).
+- La barre de recherche en haut (« Rechercher des lieux et des endroits ») permet de rechercher à la fois vos emplacements enregistrés et des lieux réels (dans la base cartographique d'Apple).
 - Appuyer sur un résultat de recherche centre la carte sur ce lieu et affiche un repère orange. Un lieu trouvé par recherche peut être enregistré dans votre liste d'emplacements via le bouton favori.
 - Appuyer sur un repère d'emplacement enregistré sur la carte ou dans les résultats de recherche démarre la navigation : un repère vert signifie sélectionné, rouge signifie non sélectionné. Appuyer à nouveau annule la sélection.
+- En l'absence de connexion réseau, le bas de l'onglet Carte affiche le message « Pas de connexion Internet. Le mode Avion est-il activé ? ». Sans connexion, la carte n'affiche que les zones déjà consultées.
 
-### Paramètres
+### Réglages
 
-- Modifier l'apparence de l'application (sombre/clair/système).
-- Configurer les profils de guidage vocal et d'autres paramètres.
-- Régler la vitesse de la synthèse vocale.
-- Afficher ou masquer l'emplacement de la voiture ("Afficher l'emplacement de la voiture").
-- Régler la longueur de la queue sur la carte ("Longueur de la queue") et son intervalle de mise à jour.
-- Choisir les couches de carte.
-- Vérifier les mises à jour de l'application (« Vérifier les mises à jour »). L'application indique toujours le résultat de la vérification.
-- Activez "Également 8 directions" si vous souhaitez, en plus de la position sur le cadran, une direction approximative annoncée en mot.
-- Sauvegarder et restaurer les emplacements et les itinéraires.
+La page principale des Réglages comporte une ligne pour chaque groupe de réglages. Une ligne ouvre une page avec les réglages de ce groupe.
+
+- **Guidage** : mode de direction (Horloge 12h, Horloge 24h ou 8 directions), « Également 8 directions » (une direction approximative annoncée en mot en plus de la position sur le cadran), voix et vitesse de parole.
+- **Annonces** : les profils d'annonce des emplacements et des itinéraires et « Gérer les profils » (voir « Profils de guidage vocal »), « Annoncer la direction à l'arrêt » (voir « Annonce à l'arrêt »), la secousse (voir « Secousse ») et la proposition de demi-tour.
+- **Direction et GPS** :
+  - « Utiliser la boussole quand plus lent que » : si vous vous déplacez plus lentement, l'application utilise la boussole du téléphone ; si vous allez plus vite, elle utilise la direction de déplacement du GPS. La valeur par défaut est « < 0,75 km/h ».
+  - « Démarrer le GPS à l'ouverture de l'app » (activé par défaut).
+  - « Délai d'inactivité du mouvement » : durée pendant laquelle le téléphone peut rester immobile avant l'arrêt du GPS (15 min par défaut).
+  - « Direction avec les capteurs de mouvement » améliore la direction lorsque vous gardez le téléphone dans votre poche et écoutez le guidage par le haut-parleur ou des écouteurs.
+- **Carte** : couches de carte, source de la carte topographique, « Inverser les couleurs de la carte topographique », ainsi que la longueur et l'intervalle de mise à jour de la queue.
+- **Lieux et itinéraires** : « Afficher les lieux automatiques », « Afficher l'emplacement de la voiture », simplification de l'enregistrement d'itinéraire, « Stocker les jalons » (voir « Traces GPS ») et distance maximale d'un itinéraire créé depuis la carte.
+- **Application** : thème (Système, Clair ou Sombre), « Garder l'écran allumé », « Barre d'état simplifiée » et « Afficher le journal de l'application ».
+- **Sauvegarde** (sur la page principale) : « Créer une sauvegarde » et « Restaurer depuis la sauvegarde » (voir « Sauvegardes »).
+- **À propos** : guide d'utilisation, version de l'application, « Vérifier les mises à jour » (vous avertit lorsqu'une nouvelle version est disponible sur l'App Store) et « Vérifier maintenant ». L'application indique toujours le résultat de la vérification.
 
 ---
 
@@ -89,11 +95,13 @@ Suuntain est accompagnée d'une application Apple Watch, **Suuntain Mini**, qui 
 - **Emplacement de la voiture :** Une place de stationnement toujours à jour, enregistrée avec le bouton "Mettre à jour".
 - **Import GPX :** Importer un itinéraire depuis un fichier GPX, une autre application ou un code QR.
 - **Combiner des itinéraires :** Construire un nouvel itinéraire en combinant des itinéraires existants.
-- **Sauvegarde :** Sauvegarder et restaurer les emplacements et les itinéraires sous forme de fichier JSON.
+- **Annonce à l'arrêt :** Lorsque vous vous arrêtez ou tournez sur place, vous entendez tout de suite la direction.
+- **Secousse :** Secouez le téléphone pour entendre tout de suite la distance et la direction.
+- **Sauvegarde :** Sauvegarder et restaurer les emplacements et les itinéraires sous forme de fichier JSON. L'application fait aussi une sauvegarde automatique une fois par jour.
 - **Raccourcis Siri :** Contrôler l'application par commandes vocales (ex. : "Suuntain, sélectionner l'emplacement").
 
 ## Profils de guidage vocal
-Suuntain annonce la distance et la direction vers un emplacement ou un point de passage selon le profil de guidage vocal. Vous pouvez sélectionner un profil de guidage vocal dans les Paramètres sous Profils de guidage vocal. Les emplacements et les itinéraires peuvent utiliser des profils différents. Vous pouvez également modifier des profils existants ou en créer de nouveaux.
+Suuntain annonce la distance et la direction vers un emplacement ou un point de passage selon le profil de guidage vocal. Vous pouvez sélectionner un profil de guidage vocal dans Réglages → Annonces → Profils d'annonce. Les emplacements et les itinéraires peuvent utiliser des profils différents. Vous pouvez également modifier des profils existants ou en créer de nouveaux (« Gérer les profils »).
 
 Les profils de guidage vocal sont basés sur la distance ou le temps.
 
@@ -107,6 +115,20 @@ Par exemple, le profil nommé **Défaut** est basé sur la distance, ce qui sign
 Un autre exemple est le profil nommé **Temps 30s**. Il est basé sur le temps, ce qui signifie que Suuntain émet des indications en continu, dans ce cas toutes les 30 secondes.
 
 Dans les profils basés sur la distance, vous pouvez modifier les seuils en mètres et la fréquence des indications. Par exemple, vous pouvez fixer le seuil **tout proche** à 15 mètres et l'intervalle entre les indications à 3 secondes.
+
+### Annonce à l'arrêt
+
+Lorsque vous vous arrêtez, vous cherchez souvent votre chemin, et la prochaine annonce du profil de guidage vocal peut n'arriver que dans une minute. Suuntain annonce donc tout de suite la distance et la direction :
+
+- lorsque vous vous arrêtez après avoir marché : environ 1 à 2 secondes après l'arrêt
+- lorsque vous tournez d'au moins 30 degrés sans avancer et gardez cette direction un instant : vous pouvez tourner jusqu'à ce que la cible soit à 12 heures
+- lorsque vous avez sélectionné un emplacement ou un itinéraire et commencez à marcher : une fois, après environ 4 secondes de marche
+
+Suuntain ne répète pas la direction si elle vient d'être annoncée et que vous êtes toujours tourné dans la même direction. Le réglage se trouve dans Réglages → Annonces → « Annoncer la direction à l'arrêt » (activé par défaut). Il ne fonctionne pas si « Utiliser la boussole quand plus lent que » est sur OFF. Si « Direction avec les capteurs de mouvement » est activé, Suuntain n'annonce les arrêts qu'une fois votre direction de marche apprise. La fonction n'existe que sur l'iPhone.
+
+### Secousse
+
+Secouez le téléphone et Suuntain annonce tout de suite la distance et la direction. Dans Réglages → Annonces → Secousse, « Secouer pour annoncer » active ou désactive la fonction (activée par défaut), et « Délai entre secousses » (3 à 10 s, 5 s par défaut) est le temps minimal entre deux secousses.
 
 ## Création d'itinéraires
 Vous pouvez créer vos propres itinéraires à partir d'emplacements existants, automatiquement, ou à partir d'emplacements que vous sélectionnez.
@@ -175,6 +197,34 @@ Si vous avez enregistré un long itinéraire mais que l'enregistrement a été i
 4) Dans la vue carte "Récupérer l'itinéraire", donnez un nom à l'itinéraire.
 5) Sélectionnez "Enregistrer"
 
+## Sauvegardes
+
+Une sauvegarde contient tous les emplacements et itinéraires ainsi que les réglages et les profils de guidage vocal.
+
+Créer une sauvegarde :
+
+1. Sélectionnez Réglages → « Créer une sauvegarde ».
+2. Choisissez où enregistrer ou envoyer le fichier (par ex. Fichiers ou Mail).
+
+Sauvegarde automatique :
+
+- L'application fait elle-même une sauvegarde une fois par jour, à son ouverture, si les emplacements, les itinéraires ou les réglages ont changé depuis la dernière sauvegarde automatique.
+- Les sept sauvegardes automatiques les plus récentes sont conservées ; les plus anciennes sont supprimées.
+- Vous les trouverez dans l'app Fichiers sous Sur mon iPhone → Suuntain. Le nom du fichier est `suuntain_auto_backup_` suivi de la date et de l'heure. Vous pouvez les copier ailleurs ou les restaurer.
+
+Restaurer depuis une sauvegarde :
+
+1. Sélectionnez Réglages → « Restaurer depuis la sauvegarde » et choisissez un fichier.
+2. Suuntain demande « Restaurer la sauvegarde ? » :
+   - « Tout restaurer » : emplacements, itinéraires, réglages et profils de guidage vocal.
+   - « Lieux et itinéraires uniquement » : les réglages et les profils de guidage vocal restent inchangés.
+   - « Annuler » : rien n'est modifié.
+3. L'application annonce le résultat à voix haute.
+
+**Attention !** Une restauration ne peut pas être annulée. Elle fusionne la sauvegarde avec vos données actuelles : les emplacements qui figurent aussi dans la sauvegarde reprennent le nom, la position et les notes de la sauvegarde, et les emplacements supprimés après la sauvegarde réapparaissent. La même question s'affiche lorsque vous ouvrez un fichier de sauvegarde depuis une autre application (Fichiers, AirDrop, Mail). Un fichier sans réglages (par ex. un emplacement ou un itinéraire partagé) est importé sans question.
+
+Si la base de données de l'application ne peut pas être ouverte (par ex. après une mise à jour d'iOS), Suuntain restaure automatiquement la sauvegarde la plus récente et en annonce la date : « Base de données restaurée depuis la sauvegarde du … ». Les modifications faites après la sauvegarde sont perdues.
+
 ---
 
 ## Directions sur cadran d'horloge
@@ -186,23 +236,24 @@ Si vous avez enregistré un long itinéraire mais que l'enregistrement a été i
 - 1 heure : légèrement devant à droite
 - 12h30 : devant légèrement à droite
 
-Si vous souhaitez, en plus de la position sur le cadran, une direction approximative annoncée en mot, activez "Également 8 directions" dans les Paramètres. L'annonce devient alors par exemple « devant à 12 heures » ou « à droite à 3 heures ».
+Si vous souhaitez, en plus de la position sur le cadran, une direction approximative annoncée en mot, activez « Également 8 directions » dans Réglages → Guidage. L'annonce devient alors par exemple « devant à 12 heures » ou « à droite à 3 heures ».
 
 ---
 
 ## Conseils et remarques
 
-- L'application fonctionne sans connexion internet (mode avion).
+- L'application fonctionne sans connexion internet (mode avion). La carte n'affiche alors que les zones déjà consultées.
 - L'application prend en charge VoiceOver et les écouteurs Bluetooth.
 - L'application adapte le texte selon les paramètres de taille de police dynamique.
-- L'utilisation du GPS s'arrête automatiquement lorsque le téléphone est immobile depuis longtemps.
+- L'utilisation du GPS s'arrête automatiquement lorsque le téléphone est resté immobile pendant la durée du réglage « Délai d'inactivité du mouvement » (15 min par défaut), et vous entendez « Le téléphone est à l'arrêt ». Lorsque vous recommencez à marcher, le GPS redémarre de lui-même et vous entendez « Le téléphone est en mouvement » quand le guidage reprend. Cela nécessite l'autorisation de localisation « Toujours ». Avec « Lorsque l'app est active », vous entendez « GPS en pause. Ouvrez Suuntain pour continuer. » et le guidage reprend lorsque vous ouvrez l'application.
+- L'arrivée n'est pas annoncée lorsque la position est moins précise que 50 mètres, par exemple dans un train, où la position peut provenir des antennes-relais. Vous entendez alors « Précision GPS faible ». Le guidage continue, et l'arrivée est annoncée dès que la position redevient précise.
 - Lorsque vous fermez complètement l'application (en la balayant dans le sélecteur d'applications), le GPS et la détection de mouvement s'arrêtent et l'application ne parle plus en arrière-plan. Le suivi de position redémarre lorsque vous ouvrez l'application.
-- Les fichiers de sauvegarde et d'itinéraire peuvent être ouverts dans Suuntain directement depuis AirDrop ou une pièce jointe d'e-mail.
-- Vous pouvez partager des emplacements et des itinéraires avec d'autres utilisateurs sous forme de fichier JSON.
+- Les fichiers de sauvegarde et d'itinéraire peuvent être ouverts dans Suuntain directement depuis AirDrop ou une pièce jointe d'e-mail. Pour une sauvegarde, Suuntain demande d'abord ce qu'il faut restaurer (voir « Sauvegardes »).
+- Vous pouvez partager des emplacements et des itinéraires avec d'autres utilisateurs sous forme de fichier JSON. Lorsque vous ouvrez un emplacement ou un itinéraire partagé par quelqu'un d'autre, il est immédiatement importé comme le vôtre : un nouvel emplacement n'est pas sélectionné et n'a ni alerte ni raccourci. Si vous avez déjà le même emplacement, il prend le nom et la position de l'expéditeur, mais votre sélection et votre alerte sont conservées. Un emplacement de voiture partagé arrive comme un emplacement normal et ne remplace pas le vôtre. L'application annonce le résultat, par exemple « Itinéraire 'Sentier nature' importé ». Les emplacements aux coordonnées invalides sont ignorés.
 
 ### Rotors VoiceOver
 
-- Les onglets Accueil et Emplacements proposent un rotor "Emplacements" qui permet aux utilisateurs de VoiceOver de passer rapidement d'une ligne d'emplacement à l'autre sans balayer toute la vue.
+- Les onglets Accueil et Lieux proposent un rotor "Lieux" qui permet aux utilisateurs de VoiceOver de passer rapidement d'une ligne d'emplacement à l'autre sans balayer toute la vue.
 - L'onglet Itinéraires propose un rotor "Itinéraires" correspondant.
 - Les annonces du rotor incluent la distance en plus du nom de l'emplacement ou de l'itinéraire, ce qui permet de parcourir la liste à l'oreille sans ouvrir chaque ligne.
 - Avec VoiceOver, la sélection d'un emplacement est à sélection unique : choisir un nouvel emplacement efface le précédent. 
@@ -242,7 +293,7 @@ Réglages de la montre (en haut à droite) :
 1. Lancez Suuntain.
 2. Autorisez l'accès à la localisation pendant l'utilisation de l'application.
 3. Autorisez l'accès aux données de mouvement et de remise en forme pendant l'utilisation de l'application.
-4. Autorisez l'accès à la localisation "Toujours" afin que l'application ne s'arrête pas lorsque le téléphone est verrouillé.
+4. Autorisez l'accès à la localisation "Toujours" afin que l'application ne s'arrête pas lorsque le téléphone est verrouillé, et que le GPS redémarre de lui-même lorsque vous repartez après un long arrêt.
 5. Sélectionnez l'emplacement créé automatiquement.
 6. Vous entendrez l'application annoncer la distance et la direction.
 

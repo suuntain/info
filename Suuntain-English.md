@@ -1,6 +1,7 @@
 # Suuntain 1.5 – User Guide
 [Käyttöohje](finnish.html)
 [Användarguide](swedish.html)
+[Guide d'utilisation](french.html)
 
 ## Overview
 
@@ -17,7 +18,7 @@ Suuntain comes with an Apple Watch app, **Suuntain Mini**, which guides you to y
 ## Quick Start
 
 1. Launch the Suuntain app.
-2. The app automatically saves your current location (Starting Point).
+2. The app automatically saves your current location (Start).
 3. Select your desired location from the Home tab.
 4. The app speaks the distance and direction to the selected location.
 5. When you arrive, the app speaks "Arrived at".
@@ -38,8 +39,8 @@ Suuntain comes with an Apple Watch app, **Suuntain Mini**, which guides you to y
 - Add, rename, or delete locations.
 - You can add notes to locations and enable an alert that notifies you when you're near a location.
 - You can define an alias for the location name using / marker.
-- New location names are filled in automatically in the format "City, Street Number" (e.g. "Oulu, Kirkkokatu 1"). This applies to both manually and automatically saved locations. If there's no network connection, the name falls back to a timestamp.
-- Car is a location always shown at the top of the list, whose Update button saves your current GPS position as the car's location. Settings -> Show Car location makes this row visible.
+- New location names are filled in automatically in the format "City, Street Number" (e.g. "Oulu, Kirkkokatu 1"). If there's no network connection, the name falls back to a timestamp.
+- Car is a special location that is always shown at the top of the list. Its Update button saves your current GPS position as the car's location. Settings → Locations & routes → "Show Car location" makes this row visible.
 - When you select an automatically saved location, it becomes a normal location. It is shown on the Home and Locations tabs.
 
 ### Routes
@@ -59,23 +60,29 @@ Suuntain comes with an Apple Watch app, **Suuntain Mini**, which guides you to y
 - See your location, saved places, and the selected route on the map.
 - When the Tail setting is on, the map shows your recent movement as a dashed line.
 - Add a new location by tapping the map.
-- The map layer button switches the map layer: Topographic, Apple map, Apple satellite and Apple satellite with labels. You can choose which layers are in use in Settings.
+- The map layer button switches the map layer: Topographic, Apple map, Apple satellite and Apple satellite with labels. Choose the layers you want to use in Settings → Map.
 - As the topographic map, you can choose the National Land Survey of Finland (MML) topographic map, OpenTopoMap or Thunderforest Outdoors.
-- The search bar at the top ("Search locations and places") searches both your saved locations and real-world places (Apple Maps search).
+- The search bar at the top ("Search locations and places") searches both your saved locations and real-world places (in Apple's map database).
 - Tapping a search result centers the map on that place and drops an orange pin. A search result place can be saved to your location list with the bookmark button.
 - Tapping a saved-location pin on the map or in the search results starts navigation: a green pin means selected, red means not selected. Tapping it again clears the selection.
+- If there's no network connection, the bottom of the Map tab shows the notice "No internet connection. Is Airplane mode on?". Without a network connection, the map shows only areas viewed before.
 
 ### Settings
 
-- Change the app appearance (dark/light/system).
-- Adjust speech profiles and other settings.
-- Adjust the speech rate.
-- Show or hide the Car location ("Show Car location").
-- Adjust the map Tail length and update interval.
-- Choose the map layers.
-- Check for app updates ("Check for updates"). The app always tells you the result of the check.
-- Enable "Include direction word" if you want a coarse direction word in addition to the clock position.
-- Back up and restore locations and routes.
+The main Settings page has a row for each group of settings. A row opens a page with the settings of that group.
+
+- **Guidance**: direction mode (12h clock, 24h clock or 8 directions), "Include direction word" (a coarse direction word in addition to the clock position), voice and speech speed.
+- **Announcements**: the location and route speech profiles and "Manage Profiles" (see "Speech Profiles"), "Announce when you stop" (see "Announcing When You Stop"), shake (see "Shake") and the U-turn proposal.
+- **Direction & GPS**:
+  - "Use compass when slower than": when you move slower than this, Suuntain uses the phone's compass; when you move faster, it uses the GPS direction of travel. The default is "< 0,75 km/h".
+  - "Start GPS when the app opens" (on by default).
+  - "Motion inactivity timeout": how long the phone may stay still before GPS stops (default 15 min).
+  - "Use motion sensors for direction" improves the direction when you keep the phone in your pocket and listen to guidance through the speaker or headphones.
+- **Map**: map layers, the topographic map source, "Invert topographic map colors", and the Tail length and update interval.
+- **Locations & routes**: "Show automatic locations", "Show Car location", route recording simplification, "Store Breadcrumbs" (see "GPS Breadcrumbs") and the maximum distance of a route created from the map.
+- **App**: theme (System, Light or Dark), "Keep display active", "Simple Statusbar" and "Show Application Log".
+- **Backup** (on the main page): "Create Backup" and "Restore from Backup" (see "Backups").
+- **About**: user guide, app version, "Check for updates" (tells you when a new version is in the App Store) and "Check Now". The app always tells you the result of the check.
 
 ---
 
@@ -88,11 +95,13 @@ Suuntain comes with an Apple Watch app, **Suuntain Mini**, which guides you to y
 - **Car Location:** An always up-to-date parking spot, saved with the Update button.
 - **GPX Import:** Import a route from a GPX file, another app, or a QR code.
 - **Combine Routes:** Build a new route by combining existing routes.
-- **Backup:** Save and restore locations and routes as a JSON file.
+- **Announcing when you stop:** When you stop or turn on the spot, you hear the direction right away.
+- **Shake:** Shake the phone to hear the distance and direction right away.
+- **Backup:** Save and restore locations and routes as a JSON file. Suuntain also makes a backup by itself once a day.
 - **Siri Commands:** Control the app with voice commands (e.g., "Suuntain, select location").
 
 ## Speech Profiles
-Suuntain speaks the distance and direction to a location or waypoint according to the speech profile. You can select a speech profile in Settings under Speech Profiles. Locations and routes can use different profiles. You can also edit existing profiles or create new ones.
+Suuntain speaks the distance and direction to a location or waypoint according to the speech profile. You can select a speech profile in Settings → Announcements → Announcement Profiles. Locations and routes can use different profiles. You can also edit existing profiles or create new ones ("Manage Profiles").
 
 Speech profiles are based on distance or time.
 
@@ -106,6 +115,20 @@ For example, the profile named **Default** is distance-based, meaning Suuntain s
 Another example is the profile named **Time 30s**. It's time-based, meaning Suuntain speaks continuously, in this case every 30 seconds.
 
 In distance-based profiles, you can change the meter thresholds and speech timing. For example, you can set the **very close** threshold to 15 meters and the speech interval to 3 seconds.
+
+### Announcing When You Stop
+
+When you stop, you are often looking for the way, and the next announcement of the speech profile may be a minute away. So Suuntain speaks the distance and direction right away:
+
+- when you stop after walking: about 1–2 seconds after you stop
+- when you turn at least 30 degrees while standing and hold that direction for a moment: you can keep turning until the target is at 12 o'clock
+- when you have selected a location or route and start walking: once, after about 4 seconds of walking
+
+Suuntain doesn't repeat the direction if it was just announced and you are still facing the same way. The setting is in Settings → Announcements → "Announce when you stop" (on by default). It doesn't work when "Use compass when slower than" is OFF. If "Use motion sensors for direction" is on, Suuntain announces stops only once it has learned your walking direction. The feature is on the iPhone only.
+
+### Shake
+
+Shake the phone and Suuntain speaks the distance and direction right away. In Settings → Announcements → Shake, "Shake to announce" turns this on or off (on by default), and "Shake cooldown" (3–10 s, default 5 s) is the shortest time between two shakes.
 
 ## Creating Routes
 You can create your own routes using existing locations, automatically, or based on locations you select.
@@ -174,6 +197,34 @@ If you recorded a long route but the recording was interrupted for some reason, 
 4) In the "Recover route" map view, give the route a name.
 5) Select "Save"
 
+## Backups
+
+A backup contains all locations and routes as well as the settings and speech profiles.
+
+Create a backup:
+
+1. Select Settings → "Create Backup".
+2. Choose where to save or send the file (e.g. Files or Mail).
+
+Automatic backup:
+
+- Suuntain makes a backup by itself once a day when you open the app, if locations, routes or settings have changed since the last automatic backup.
+- The seven newest automatic backups are kept; older ones are deleted.
+- You'll find them in the Files app under On My iPhone → Suuntain. The file name is `suuntain_auto_backup_` followed by the date and time. You can copy them elsewhere or restore from them.
+
+Restore from a backup:
+
+1. Select Settings → "Restore from Backup" and choose a file.
+2. Suuntain asks "Restore backup?":
+   - "Restore everything": locations, routes, settings and speech profiles.
+   - "Locations and routes only": settings and speech profiles stay as they are.
+   - "Cancel": nothing is changed.
+3. The app speaks the result.
+
+**Note!** A restore can't be undone. It merges the backup with your current data: locations that are also in the backup take the backup's name, position and notes, and locations deleted after the backup come back. You get the same question when you open a backup file from another app (Files, AirDrop, Mail). A file without settings (e.g. a shared location or route) is imported without asking.
+
+If the app's database can't be opened (e.g. after an iOS update), Suuntain restores the newest backup automatically and tells you its date: "Database recovered from backup of …". Changes made after the backup are missing.
+
 ---
 
 ## Clock-Face Directions
@@ -185,19 +236,20 @@ If you recorded a long route but the recording was interrupted for some reason, 
 - 1 o'clock: slightly ahead to the right
 - 12:30: ahead slightly to the right
 
-If you want a coarse direction word in addition to the clock position, enable "Include direction word" in Settings. The announcement then becomes, for example, "ahead at 12 o'clock" or "right at 3 o'clock".
+If you want a coarse direction word in addition to the clock position, enable "Include direction word" in Settings → Guidance. The announcement then becomes, for example, "ahead at 12 o'clock" or "right at 3 o'clock".
 
 ---
 
 ## Tips and Notes
 
-- The app works without an internet connection (airplane mode).
+- The app works without an internet connection (airplane mode). The map then shows only areas viewed before.
 - The app supports VoiceOver and Bluetooth headphones.
 - The app scales text according to Dynamic Type settings.
-- GPS usage stops automatically when the phone has been stationary for a long time.
+- GPS usage stops automatically when the phone has been still for the time set in "Motion inactivity timeout" (default 15 min), and you hear "Phone is stationary". When you start walking, GPS restarts by itself, and you hear "Phone is moving" when guidance continues. This requires the location permission "Always". With "While Using the App", you hear "GPS paused. Open Suuntain to continue.", and guidance continues when you open the app.
+- Arrival isn't announced when the position is less accurate than 50 meters, for example on a train, where the position may come from cell towers. You then hear "GPS accuracy poor". Guidance continues, and arrival is announced once the position becomes accurate.
 - When you close the app completely (swipe it away in the app switcher), GPS and motion detection stop and the app does not speak in the background. Location tracking starts again when you open the app.
-- Backup and route files can be opened in Suuntain directly from AirDrop or an email attachment.
-- You can share locations and routes with other users as a JSON file.
+- Backup and route files can be opened in Suuntain directly from AirDrop or an email attachment. For a backup, Suuntain first asks what to restore (see "Backups").
+- You can share locations and routes with other users as a JSON file. When you open a location or route someone shared, it is imported as your own at once: a new location is not selected and has no alert or shortcut. If you already have the same location, it takes the sender's name and position, but your selection and alert stay. A shared Car location arrives as a normal location and doesn't replace yours. The app speaks the result, for example "Route 'Nature trail' imported". Locations with invalid coordinates are skipped.
 
 ### VoiceOver Rotors
 
@@ -241,7 +293,7 @@ Watch settings (top right):
 1. Launch Suuntain.
 2. Allow location access while the app is in use.
 3. Allow motion and fitness data access while the app is in use.
-4. Allow location access "Always" so the app doesn't stop when the phone is locked.
+4. Allow location access "Always" so the app doesn't stop when the phone is locked, and GPS restarts by itself when you start moving after a long stop.
 5. Home page lists the automatically created location "Start".
 6. Select "Start" location.
 7. You'll hear the app speak the distance and direction.

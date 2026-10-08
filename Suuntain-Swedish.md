@@ -1,6 +1,7 @@
 # Suuntain 1.5 – Användarguide
 [User Guide](english.html)
 [Käyttöohje](finnish.html)
+[Guide d'utilisation](french.html)
 
 ## Översikt
 
@@ -19,7 +20,7 @@ Till Suuntain hör en Apple Watch-app, **Suuntain Mini**, som guidar dig till di
 ## Snabbstart
 
 1. Starta Suuntain-appen.
-2. Appen sparar automatiskt din nuvarande position ("Startpunkt").
+2. Appen sparar automatiskt din nuvarande position ("Start").
 3. Välj den önskade destinationen från fliken Hem.
 4. Appen berättar avståndet och riktningen till den valda destinationen.
 5. När du har kommit fram anmäler appen: "Framme!".
@@ -34,15 +35,15 @@ Till Suuntain hör en Apple Watch-app, **Suuntain Mini**, som guidar dig till di
 - Välj din önskade destination.
 - Appen berättar avståndet och riktningen till den valda destinationen.
 
-### Destinationer
+### Platser
 
 - En lista över dina sparade destinationer.
 - Lägg till nya destinationer, byt deras namn eller radera dem.
 - Du kan ansluta anteckningar till destinationer samt aktivera ett larm som anmäler dig när du är nära en viss destination.
 - Du kan skapa ett "alias"-namn för destinationen med /-markören.
-- Namnet på en ny destination fylls i automatiskt i formatet "Stad, Gata Nummer" (t.ex. "Oulu, Kirkkokatu 1"). Detta gäller både manuellt och automatiskt sparade destinationer. Om internetanslutning saknas blir namnet en tidsstämpel.
-- Bilen är en destination som alltid visas högst upp i listan. Knappen "Uppdatera" sparar din nuvarande GPS-position som bilens plats. Inställningar -> Visa bilens plats gör raden synlig.
-- När du väljer en automatiskt sparad destination blir den en vanlig destination. Den visas på flikarna Hem och Destinationer.
+- Namnet på en ny destination fylls i automatiskt i formatet "Stad, Gata Nummer" (t.ex. "Oulu, Kirkkokatu 1"). Om internetanslutning saknas blir namnet en tidsstämpel.
+- Bilen är en specialdestination som alltid visas högst upp i listan. Dess knapp "Uppdatera" sparar din nuvarande GPS-position som bilens plats. Inställningar → Platser och rutter → "Visa bilens plats" gör raden synlig.
+- När du väljer en automatiskt sparad destination blir den en vanlig destination. Den visas på flikarna Hem och Platser.
 
 ### Rutter
 
@@ -61,23 +62,29 @@ Till Suuntain hör en Apple Watch-app, **Suuntain Mini**, som guidar dig till di
 - Se din position, sparade positioner och den valda rutten på kartan.
 - När inställningen "Svans" är på visas din senaste förflyttning som en streckad linje på kartan.
 - Lägg till en ny position genom att trycka på kartan.
-- Kartans lagerknapp byter kartlager: Terrängkarta, Apple-karta, Apple-satellit och Apple-satellit med etiketter. Du kan välja vilka lager som används i Inställningar.
+- Kartans lagerknapp byter kartlager: Terrängkarta, Apple-karta, Apple-satellit och Apple-satellit med etiketter. Välj de lager du vill använda under Inställningar → Karta.
 - Som terrängkarta kan du välja Lantmäteriverkets (MML) terrängkarta, OpenTopoMap eller Thunderforest Outdoors.
-- Sökfältet längst upp ("Sök platser och ställen") söker både bland dina sparade destinationer och bland verkliga platser (Apple Maps-sökning).
+- Sökfältet längst upp ("Sök platser och ställen") söker både bland dina sparade destinationer och bland verkliga platser (i Apples kartdatabas).
 - Att trycka på ett sökresultat centrerar kartan på den platsen och visar en orange nål. Ett sökresultat kan sparas till destinationslistan med bokmärkesknappen.
 - Att trycka på en sparad destination antingen på kartan eller i sökresultaten startar navigeringen: en grön nål betyder vald, en röd betyder ovald. En ny tryckning på samma nål avbryter valet.
+- Om internetanslutning saknas visas meddelandet "Ingen internetanslutning. Är flygplansläge på?" längst ner på fliken Karta. Utan internetanslutning visar kartan bara områden som visats tidigare.
 
 ### Inställningar
 
-- Ändra appens utseende (mörkt/ljust/system).
-- Ändra navigeringsprofiler och andra inställningar.
-- Ändra talhastigheten.
-- Visa eller dölj bilens plats ("Visa bilens plats").
-- Ändra kartans svanslängd och uppdateringsintervall.
-- Välj kartlager.
-- Sök efter appuppdateringar ("Sök efter uppdateringar"). Appen berättar alltid resultatet av sökningen.
-- Aktivera "Även 8 riktningar" om du utöver klockriktningen vill höra en ungefärlig riktning i ord.
-- Säkerhetskopiera och återställ destinationer och rutter.
+Inställningarnas huvudsida har en rad för varje grupp av inställningar. Raden öppnar en sida med gruppens inställningar.
+
+- **Vägledning**: riktningsläge (12h klocka, 24h klocka eller 8 riktningar), "Även 8 riktningar" (en ungefärlig riktning i ord utöver klockriktningen), röst och talhastighet.
+- **Utrop**: navigeringsprofiler för destinationer och rutter samt "Hantera profiler" (se "Navigeringsprofiler"), "Meddela riktningen när du stannar" (se "Meddelande när du stannar"), skakning (se "Skakning") och förslag om U-svängar.
+- **Riktning och GPS**:
+  - "Använd kompass när långsammare än": när du rör dig långsammare än så använder Suuntain telefonens kompass, när du rör dig snabbare använder den GPS:ens färdriktning. Standard är "< 0,75 km/h".
+  - "Starta GPS när appen öppnas" (på som standard).
+  - "Timeout för rörelseinaktivitet": hur länge telefonen får vara stilla innan GPS stoppas (standard 15 min).
+  - "Riktning med rörelsesensorer" förbättrar riktningen när du har telefonen i fickan och lyssnar på vägledningen via högtalaren eller hörlurar.
+- **Karta**: kartlager, terrängkartans källa, "Invertera terrängkartans färger" samt svanslängd och uppdateringsintervall.
+- **Platser och rutter**: "Visa automatiska platser", "Visa bilens plats", förenkling av ruttinspelning, "Spara brödsmulor" (se "GPS-brödsmulor") och maximal längd för en rutt som skapas från kartan.
+- **App**: tema (System, Ljust eller Mörkt), "Håll skärmen aktiv", "Enkel statusrad" och "Visa applikationslogg".
+- **Säkerhetskopiering** (på huvudsidan): "Skapa säkerhetskopia" och "Återställ från säkerhetskopia" (se "Säkerhetskopior").
+- **Om**: användarhandbok, appens version, "Sök efter uppdateringar" (meddelar när en ny version finns i App Store) och "Kontrollera nu". Appen berättar alltid resultatet av sökningen.
 
 ---
 
@@ -90,12 +97,14 @@ Till Suuntain hör en Apple Watch-app, **Suuntain Mini**, som guidar dig till di
 - **Bilens plats:** En alltid aktuell parkeringsplats, sparad med knappen "Uppdatera".
 - **GPX-import:** Importera en rutt från en GPX-fil, en annan app eller en QR-kod.
 - **Kombinera rutter:** Bygg en ny rutt genom att kombinera befintliga rutter.
-- **Säkerhetskopia:** Spara och återställ destinationer och rutter som en JSON-fil.
+- **Meddelande när du stannar:** När du stannar eller vänder dig på stället hör du riktningen direkt.
+- **Skakning:** Skaka telefonen så hör du avståndet och riktningen direkt.
+- **Säkerhetskopia:** Spara och återställ destinationer och rutter som en JSON-fil. Suuntain gör också en säkerhetskopia själv en gång om dagen.
 - **Siri-kommandon:** Styr appen med röstkommandon (t.ex. "Suuntain, välj plats").
 
 ## Navigeringsprofiler
 
-Suuntain berättar avståndet och riktningen till en destination eller en vägpunkt enligt navigeringsprofilen. Välj navigeringsprofilen i Inställningar under "Navigeringsprofiler". Destinationer och rutter kan använda olika profiler. Du kan också ändra befintliga profiler eller skapa nya.
+Suuntain berättar avståndet och riktningen till en destination eller en vägpunkt enligt navigeringsprofilen. Välj navigeringsprofilen under Inställningar → Utrop → Navigeringsprofiler. Destinationer och rutter kan använda olika profiler. Du kan också ändra befintliga profiler eller skapa nya ("Hantera profiler").
 
 Navigeringsprofiler baserar sig antingen på avstånd eller på tid.
 
@@ -109,6 +118,20 @@ Till exempel är profilen **Standard** avståndsbaserad, vilket innebär att Suu
 Ett annat exempel är profilen **Tid 30s**. Den är tidsbaserad, vilket innebär att Suuntain anmäler dig kontinuerligt med 30 sekunders intervall.
 
 I profilens inställningar kan du ändra metertrösklarna och anmälningsintervallet. Du kan till exempel ställa in tröskeln för **mycket nära** till 15 meter och anmälningsintervallet till 3 sekunder.
+
+### Meddelande när du stannar
+
+När du stannar letar du ofta efter vägen, och nästa anmälning enligt navigeringsprofilen kan dröja en minut. Därför berättar Suuntain avståndet och riktningen direkt:
+
+- när du stannar efter att ha gått: ungefär 1–2 sekunder efter att du stannat
+- när du vänder dig minst 30 grader medan du står still och håller riktningen en stund: du kan vända dig tills målet är klockan 12
+- när du har valt en destination eller rutt och börjar gå: en gång, efter ungefär 4 sekunders gång
+
+Suuntain upprepar inte riktningen om den just har meddelats och du fortfarande är vänd åt samma håll. Inställningen finns under Inställningar → Utrop → "Meddela riktningen när du stannar" (på som standard). Den fungerar inte om "Använd kompass när långsammare än" är AV. Om "Riktning med rörelsesensorer" är på meddelar Suuntain stopp först när den har lärt sig din gångriktning. Funktionen finns bara på iPhone.
+
+### Skakning
+
+Skaka telefonen så berättar Suuntain avståndet och riktningen direkt. Under Inställningar → Utrop → Skakning slår "Skaka för att meddela" på eller av funktionen (på som standard), och "Skakningspaus" (3–10 s, standard 5 s) är den kortaste tiden mellan två skakningar.
 
 ## Skapa rutter
 
@@ -178,6 +201,34 @@ Om du spelade in en lång rutt men inspelningen avbröts av någon anledning, el
 3. Välj "Återställ rutten". Detta alternativ är tillgängligt om ruttinspelningen har blivit avbruten.
 4. I kartvyn "Återställ rutten", ge rutten ett namn och välj: "Spara"
 
+## Säkerhetskopior
+
+En säkerhetskopia innehåller alla destinationer och rutter samt inställningarna och navigeringsprofilerna.
+
+Skapa en säkerhetskopia:
+
+1. Välj Inställningar → "Skapa säkerhetskopia".
+2. Välj var filen ska sparas eller skickas (t.ex. Filer eller Mail).
+
+Automatisk säkerhetskopia:
+
+- Suuntain gör en säkerhetskopia själv en gång om dagen när du öppnar appen, om destinationer, rutter eller inställningar har ändrats sedan den senaste automatiska säkerhetskopian.
+- De sju senaste automatiska säkerhetskopiorna sparas, äldre raderas.
+- Du hittar dem i appen Filer under På min iPhone → Suuntain. Filnamnet är `suuntain_auto_backup_` följt av datum och klockslag. Du kan kopiera dem till en annan plats eller återställa från dem.
+
+Återställ från en säkerhetskopia:
+
+1. Välj Inställningar → "Återställ från säkerhetskopia" och välj en fil.
+2. Suuntain frågar "Återställa säkerhetskopian?":
+   - "Återställ allt": destinationer, rutter, inställningar och navigeringsprofiler.
+   - "Endast platser och rutter": inställningarna och navigeringsprofilerna förblir oförändrade.
+   - "Avbryt": inget ändras.
+3. Appen berättar resultatet med tal.
+
+**Obs!** En återställning kan inte ångras. Den slår ihop säkerhetskopian med dina nuvarande data: destinationer som också finns i säkerhetskopian får säkerhetskopians namn, position och anteckningar, och destinationer som raderats efter säkerhetskopian kommer tillbaka. Samma fråga visas när du öppnar en säkerhetskopia från en annan app (Filer, AirDrop, Mail). En fil utan inställningar (t.ex. en delad destination eller rutt) importeras utan fråga.
+
+Om appens databas inte kan öppnas (t.ex. efter en iOS-uppdatering) återställer Suuntain den senaste säkerhetskopian automatiskt och berättar dess datum: "Databas återställd från säkerhetskopia gjord …". Ändringar som gjorts efter säkerhetskopian saknas.
+
 ---
 
 ## Klockriktningar
@@ -189,23 +240,24 @@ Om du spelade in en lång rutt men inspelningen avbröts av någon anledning, el
 - Klockan 1: snett framåt till höger
 - Klockan 12:30: framåt något till höger
 
-Om du utöver klockriktningen vill höra en ungefärlig riktning i ord, aktivera "Även 8 riktningar" i Inställningar. Anmälningen blir då till exempel "framåt klockan 12" eller "höger klockan 3".
+Om du utöver klockriktningen vill höra en ungefärlig riktning i ord, aktivera "Även 8 riktningar" under Inställningar → Vägledning. Anmälningen blir då till exempel "framåt klockan 12" eller "höger klockan 3".
 
 ---
 
 ## Tips och anmärkningar
 
-- Appen fungerar utan internetanslutning (flygplansläge).
+- Appen fungerar utan internetanslutning (flygplansläge). Kartan visar då bara områden som visats tidigare.
 - Appen stöder VoiceOver och Bluetooth-hörlurar.
 - Appen skalar text enligt inställningarna för Dynamisk text.
-- GPS avaktiveras automatiskt när telefonen har varit stilla under en längre tid.
+- GPS avaktiveras automatiskt när telefonen har varit stilla den tid som anges i "Timeout för rörelseinaktivitet" (standard 15 min), och du hör "Telefonen är stillastående". När du börjar gå startar GPS av sig själv, och du hör "Telefonen rör sig" när vägledningen fortsätter. Detta kräver platsbehörigheten "Alltid". Med "När appen används" hör du "GPS pausad. Öppna Suuntain för att fortsätta.", och vägledningen fortsätter när du öppnar appen.
+- Ankomst meddelas inte när positionen är mindre noggrann än 50 meter, till exempel på ett tåg där positionen kan komma från mobilmaster. Du hör då "Dålig GPS-noggrannhet". Vägledningen fortsätter, och ankomsten meddelas när positionen blir noggrannare.
 - När du stänger appen helt (sveper bort den i appväxlaren) stannar GPS och rörelseavkänningen, och appen talar inte i bakgrunden. Positionsspårningen startar igen när du öppnar appen.
-- Säkerhetskopior och ruttfiler kan öppnas i Suuntain direkt från AirDrop eller en e-postbilaga.
-- Du kan dela platser och rutter med andra användare i form av JSON-fil.
+- Säkerhetskopior och ruttfiler kan öppnas i Suuntain direkt från AirDrop eller en e-postbilaga. För en säkerhetskopia frågar Suuntain först vad som ska återställas (se "Säkerhetskopior").
+- Du kan dela platser och rutter med andra användare i form av JSON-fil. När du öppnar en destination eller rutt som någon annan har delat importeras den direkt som din egen: en ny destination är inte vald och har inget larm och ingen genväg. Om du redan har samma destination får den avsändarens namn och position, men ditt val och ditt larm finns kvar. En delad bilplats kommer som en vanlig destination och ersätter inte din egen. Appen berättar resultatet, till exempel "Rutt 'Naturstig' importerad". Destinationer med ogiltiga koordinater hoppas över.
 
 ### VoiceOver-rotorer
 
-- Flikarna Hem och Destinationer har en rotor "Platser" som låter VoiceOver-användare hoppa snabbt mellan destinationsrader utan att svepa igenom hela vyn.
+- Flikarna Hem och Platser har en rotor "Platser" som låter VoiceOver-användare hoppa snabbt mellan destinationsrader utan att svepa igenom hela vyn.
 - Fliken Rutter har på motsvarande sätt en rotor "Rutter".
 - Rotormeddelandena innehåller avståndet utöver namnet på destinationen eller rutten, så du kan skanna listan enkelt.
 - Med VoiceOver är val av destination ett enkelval: när du väljer en ny destination avmarkeras den föregående. 
@@ -245,7 +297,7 @@ Klockans inställningar (uppe till höger):
 1. Starta Suuntain.
 2. Tillåt åtgången till positionsdata medan appen används.
 3. Tillåt åtgången till rörelse- och träningsdata medan appen används.
-4. Tillåt åtgången till positionsdata "Alltid" så att appen inte stoppas när telefonen är låst.
+4. Tillåt åtgången till positionsdata "Alltid" så att appen inte stoppas när telefonen är låst, och GPS startar igen av sig själv när du börjar röra dig efter ett långt stopp.
 5. Hem sidan har automatisk skapad position "Start". 
 6. Välj: "Start".
 7. Nu hör du appen anmäla avståndet och riktningen till positionen.
