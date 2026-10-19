@@ -1,4 +1,4 @@
-# Suuntain 1.5  – Käyttöohje
+# Suuntain 2.0 – Käyttöohje
 [User Guide](english.html)
 [Användarguide](swedish.html)
 [Guide d'utilisation](french.html)
@@ -32,11 +32,15 @@ Suuntaimen mukana tulee Apple Watch -sovellus **Suuntain Mini**, joka opastaa ta
 - Näet listan paikoista ja reiteistä.
 - Valitse paikka tai reitti, johon haluat suunnistaa.
 - Sovellus puhuu etäisyyden ja suunnan valittuun kohteeseen.
+- Jos olet määritellyt paikalle tai reitille tunnisteen, yläreunan valitsimessa on Paikat- ja Reitit-vaihtoehtojen lisäksi "#" (Tunnisteet). 
+- Asetus "Yksinkertainen kotinäkymä" näyttää Koti-välilehdellä vain yhden listan kerrallaan (katso kohta "Yksinkertainen kotinäkymä").
+- Otsikon oikeassa reunassa on jakopainike ("Lähetä sijaintini"). Se lähettää nykyisen sijaintisi viestinä.
 
 ### Paikat
 
 - Lista tallentamistasi paikoista.
 - Lisää, nimeä uudelleen tai poista paikkoja.
+- Voit antaa paikalle tunnisteita (esim. #suosikit).
 - Voit lisätä muistiinpanoja paikkoihin ja ottaa käyttöön hälytyksen, joka ilmoittaa kun olet lähellä paikkaa.
 - Voit määritellä paikan nimelle aliaksen / merkin avulla.
 - Uuden paikan nimi täytetään automaattisesti muotoon "Kaupunki, Katu numero" (esim. "Oulu, Kirkkokatu 1"). Jos verkkoyhteyttä ei ole, nimeksi tulee aikaleima.
@@ -54,14 +58,17 @@ Suuntaimen mukana tulee Apple Watch -sovellus **Suuntain Mini**, joka opastaa ta
 - Voit tuoda reitin GPX-tiedostosta, jakaa GPX-tiedoston toisesta sovelluksesta tai skannata QR-koodin.
 - Voit luoda uuden reitin yhdistämällä kaksi tai useampia olemassa olevia reittejä.
 - Tallennetun reitin pisteet nimetään muotoon "reitin nimi - numero" (esim. "Luontopolku - 1"). Kun muutat reitin nimeä, pisteiden nimet muuttuvat mukana. Itse nimeämäsi pisteet säilyttävät nimensä.
+- "Paluu omia jälkiä pitkin" -painike luo kulkemastasi jäljestä reitin takaisin lähtöpaikkaan (katso kohta "Paluu omia jälkiä pitkin").
+- Voit antaa reitille tunnisteita reitin tietojen Tunnisteet-kohdassa.
 
 ### Kartta
 
 - Näet sijaintisi, tallennetut paikat ja valitun reitin kartalla.
-- Häntä-asetuksen ollessa päällä kartalla näkyy katkoviivalla viimeaikainen kulkemasi reitti.
+- Kartalla näkyy katkoviivalla viimeksi kulkemasi matka, häntä (oletuksena 10 minuuttia). Häntä piirretään jäljestä, joten se näkyy vain, kun "Tallenna jälki" on päällä. Hännän pituuden voit muuttaa kohdassa Asetukset → Kartta.
 - Lisää uusi paikka napauttamalla karttaa.
 - Kartan tasopainike vaihtaa karttatasoa: Maastokartta, Applen kartta, Applen satelliitti sekä Applen satelliitti ja nimet. Valitse Asetukset → Kartta kohdassa tasot, joita haluat käyttää.
 - Maastokartaksi voit valita Maanmittauslaitoksen maastokartan, OpenTopoMap-kartan tai Thunderforest Outdoors -kartan.
+- Maanmittauslaitoksen maastokartan päällä voit näyttää kiinteistörajat (punaiset viivat) ja kiinteistötunnukset (esim. 564-1-35-6). Ne näkyvät Suomessa, kun karttaa on lähennetty niin, että se on alle noin 3 km leveä. Kytke ne päälle kohdassa Asetukset → Kartta.
 - Yläreunan hakukentässä ("Etsi sijainteja ja paikkoja") voit hakea sekä omia tallennettuja paikkoja että oikean maailman kohteita (Applen karttatietokannasta). 
 - Hakutuloksen napauttaminen keskittää kartan kyseiseen paikkaan ja näyttää siinä oranssin nastan. Hakutuloksena löytyneen kohteen voit tallentaa paikkalistalle kirjanmerkkinapilla.
 - Tallennetun paikan napauttaminen kartalla tai hakutuloksissa käynnistää navigoinnin: vihreä nasta tarkoittaa valittua paikkaa, punainen ei-valittua. Sama nappi vapauttaa valinnan, kun sitä napauttaa uudelleen.
@@ -72,15 +79,16 @@ Suuntaimen mukana tulee Apple Watch -sovellus **Suuntain Mini**, joka opastaa ta
 Asetusten pääsivulla on rivi jokaiselle asetusryhmälle. Rivi avaa sivun, jolla ryhmän asetukset ovat.
 
 - **Opastus**: suuntatapa (12h kello, 24h kello tai 8 suuntaa), "Lisäksi 8 suuntaa" (karkea suuntasana kellonsuunnan lisäksi), puheääni ja puheen nopeus.
-- **Puheilmoitukset**: paikan ja reitin puheprofiilit sekä "Muokkaa profiileja" (katso kohta "Puheprofiilit"), "Puhu suunta pysähtyessä" (katso kohta "Puhe pysähtyessä"), ravistus (katso kohta "Ravistus") ja U-käännöksen ehdotus.
+- **Puheilmoitukset**: paikan ja reitin puheprofiilit sekä "Muokkaa profiileja" (katso kohta "Puheprofiilit"), Pysähtyminen: "Puhu suunta pysähtyessä" ja "Sano ”Pysähtynyt” ja ”Liikkeellä”" (katso kohta "Puhe pysähtyessä"), ravistus (katso kohta "Ravistus") ja U-käännöksen ehdotus.
 - **Suunta ja GPS**:
   - "Käytä kompassia kun hitaampi kuin": jos liikut tätä hitaammin, Suuntain käyttää puhelimen kompassia, jos kuljet nopeammin, Suuntain käyttää GPS:n kulkusuuntaa. Oletus on alle 0,75 km/h.
   - "Käynnistä GPS sovelluksen avautuessa" (oletuksena päällä).
   - "Liikkeentunnistuksen aika": kuinka kauan puhelin saa olla paikallaan, ennen kuin GPS pysähtyy (oletus 15 min).
-  - "Määritä suunta liikeantureilla" parantaa suuntatietoa, kun pidät puhelinta taskussa ja kuuntelet puheohjeita kaiuttimesta tai kuulokkeista. 
-- **Kartta**: karttatasot, maastokartan lähde, "Käännä maastokartan värit" sekä Häntä-jäljen pituus ja päivitysväli.
-- **Paikat ja reitit**: "Näytä automaattiset paikat", "Näytä auton sijainti", reitin nauhoituksen yksinkertaistus, "Talleta leivänmuruja" (katso kohta "GPS leivänmurut") ja kartasta luotavan reitin maksimietäisyys.
-- **Sovellus**: teema (Puhelin, Vaalea tai Tumma), "Pidä näyttö päällä", "Yksinkertainen tilapalkki" ja "Näytä sovelluksen loki".
+  - "Määritä suunta liikeantureilla" parantaa suuntatietoa, kun pidät puhelinta taskussa ja kuuntelet puheohjeita kaiuttimesta tai kuulokkeista. Se myös nopeuttaa puhetta pysähtyessä (katso kohta "Puhe pysähtyessä").
+  - Jälki: "Tallenna jälki" (oletuksena päällä) ja "Tyhjennä jälki" (katso kohta "Paluu omia jälkiä pitkin").
+- **Kartta**: karttatasot, maastokartan lähde, "Käännä maastokartan värit", "Kiinteistörajat" ja "Kiinteistötunnukset" (vain Maanmittauslaitoksen maastokartalla) sekä hännän pituus ja päivitysväli.
+- **Paikat ja reitit**: "Näytä automaattiset paikat", "Näytä auton sijainti", reitin nauhoituksen yksinkertaistus ja kartasta luotavan reitin maksimietäisyys.
+- **Sovellus**: teema (Puhelin, Vaalea tai Tumma), "Pidä näyttö päällä", "Yksinkertainen kotinäkymä" (katso kohta "Yksinkertainen kotinäkymä") ja "Näytä sovelluksen loki".
 - **Varmuuskopiointi** (pääsivulla): "Luo varmuuskopio" ja "Palauta varmuuskopiosta" (katso kohta "Varmuuskopiot").
 - **Tietoja**: käyttöohje, sovelluksen versio, "Tarkista päivitykset" (ilmoittaa, kun App Storessa on uusi versio) ja "Tarkista nyt". Sovellus kertoo aina tarkistuksen tuloksen.
 
@@ -95,9 +103,11 @@ Asetusten pääsivulla on rivi jokaiselle asetusryhmälle. Rivi avaa sivun, joll
 - **Auton sijainti:** Päivitä-napilla tallentuva, aina ajantasainen auton pysäköintipaikka.
 - **GPX-tuonti:** Tuo reitti GPX-tiedostosta, toisesta sovelluksesta tai QR-koodilla.
 - **Reittien yhdistäminen:** Rakenna uusi reitti yhdistämällä olemassa olevia reittejä.
+- **Paluu omia jälkiä pitkin:** Palaa samaa reittiä kuin tulit, vaikka et aloittanut nauhoitusta.
+- **Tunnisteet:** Kokoa paikat ja reitit omiksi listoiksi Koti-välilehdelle (esim. #suosikit).
+- **Lähetä sijaintini:** Lähetä sijaintisi viestinä yhdellä painalluksella.
 - **Puhe pysähtyessä:** Kun pysähdyt tai käännyt paikallasi, kuulet suunnan heti.
-- **Ravistus:** Ravista puhelinta, niin kuulet etäisyyden ja suunnan heti.
-- **Varmuuskopiointi:** Tallenna ja palauta paikat sekä reitit JSON-tiedostona. Suuntain tekee varmuuskopion myös itse kerran päivässä.
+- **Varmuuskopiointi:** Tallenna ja palauta paikat sekä reitit JSON-tiedostona. Suuntain tekee varmuuskopion myös automaattisesti kerran päivässä.
 - **Siri-komennot:** Ohjaa sovellusta äänikomennoilla (esim. "Suuntain, valitse paikka").
 
 ## Puheprofiilit
@@ -120,11 +130,18 @@ Etäisyyspohjaisissa profiileissa voit muuttaa metrimääriä ja puheen ajoitust
 
 Kun pysähdyt, etsit usein suuntaa, ja seuraavaan puheprofiilin mukaiseen puheeseen voi olla minuutti. Siksi Suuntain puhuu etäisyyden ja suunnan heti:
 
-- kun pysähdyt kävelyn jälkeen: noin 1–2 sekuntia pysähtymisen jälkeen
+- kun pysähdyt kävelyn jälkeen: noin 1–2 sekuntia pysähtymisen jälkeen. Jos "Määritä suunta liikeantureilla" on päällä, Suuntain huomaa pysähtymisen askelista ja puhuu usein jo puoli sekuntia viimeisen askeleen jälkeen
 - kun käännyt seisoessasi vähintään 30 astetta ja pysyt hetken samassa suunnassa: voit kääntyä, kunnes kohde on kello 12:ssa
 - kun olet valinnut paikan tai reitin ja lähdet kävelemään: kerran, noin 4 sekunnin kävelyn jälkeen
 
-Suuntain ei toista suuntaa, jos se on juuri kerrottu ja olet yhä samassa suunnassa. Asetus on kohdassa Asetukset → Puheilmoitukset → "Puhu suunta pysähtyessä" (oletuksena päällä). Se ei toimi, jos "Käytä kompassia kun hitaampi kuin" on OFF. Jos "Määritä suunta liikeantureilla" on päällä, Suuntain puhuu pysähtyessä vasta, kun se on oppinut kulkusuuntasi. Toiminto on vain iPhonessa.
+Suuntain ei toista suuntaa, jos se on juuri kerrottu ja olet yhä samassa suunnassa.
+
+Kun pysähtymisen jälkeinen suunta on kerrottu, Suuntain ei puhu puheprofiilin mukaisia ilmoituksia niin kauan kuin seisot paikallasi. Kääntyminen, saapuminen ja seuraava reittipiste kerrotaan silti. Kun lähdet taas kävelemään, seuraava ilmoitus tulee puheprofiilin välin kuluttua. Jos liikut hitaasti, esimerkiksi etsit tietä, ilmoitukset jatkuvat muutaman sekunnin kuluttua.
+
+Asetukset ovat kohdassa Asetukset → Puheilmoitukset → Pysähtyminen:
+
+- "Puhu suunta pysähtyessä" (oletuksena päällä). Se ei toimi, jos "Käytä kompassia kun hitaampi kuin" on OFF.
+- "Sano ”Pysähtynyt” ja ”Liikkeellä”" (oletuksena pois): kuulet "Pysähtynyt" ennen pysähtymisen jälkeistä suuntaa (esim. "Pysähtynyt. Koti 200 metriä: kello 3") ja "Liikkeellä", kun lähdet taas kävelemään.
 
 ### Ravistus
 
@@ -198,14 +215,54 @@ Yhdistä olemassa olevia reittejä uudeksi reitiksi:
 5. Anna uudelle reitille nimi.
 6. Valitse "Talleta".
 
-## GPS leivänmurut 
-Jos aloitit reitin nauhoittamisen mutta nauhoitus jäi jostakin syystä kesken tai puhelimen akku loppui ennen reitin talletusta, voit palauttaa reitin GPS leivänmurujen avulla:
+## Paluu omia jälkiä pitkin
+Suuntain tallentaa kulkemasi matkan, jäljen, aina kun GPS on käytössä. Nauhoitusta ei tarvitse aloittaa. Kun haluat palata samaa tietä kuin tulit, esimerkiksi metsästä, jossa suora linja lähtöpaikkaan kulkisi järven tai suon yli:
+
+1. Valitse "Paluu omia jälkiä pitkin" Koti-välilehden Reitit-näkymässä tai Reitit-välilehdellä. Painike on käytössä, kun jälkeä on vähintään 50 metriä. VoiceOver kertoo myös jäljen pituuden.
+2. Suuntain luo jäljestä reitin "Paluu" takaisin jäljen alkuun ja valitsee sen. Opastus alkaa reitin ensimmäisestä pisteestä.
+3. Reitin pisteet ovat "Paluu - 1", "Paluu - 2" ja niin edelleen. Jos paluumatka kulkee tallentamasi paikan tai auton ohi (alle 25 metrin päästä), se paikka on reitin piste omalla nimellään, joten kuulet esimerkiksi "Koti" etkä "Paluu - 3".
+
+Huomioita:
+
+- Uusi paluureitti korvaa edellisen "Paluu"-reitin. Jos haluat säilyttää paluureitin, anna sille uusi nimi.
+- Jos kuljet jäljelläsi edestakaisin tai kierrät lenkin, paluureitti oikaisee sen kohdan.
+- Roskakoripainike "Paluu omia jälkiä pitkin" -painikkeen vieressä tyhjentää jäljen. 
+- "Tallenna jälki" (Asetukset → Suunta ja GPS → Jälki, oletuksena päällä) pois päältä lopettaa jäljen tallennuksen ja tyhjentää jäljen. Silloin kartalla ei näy häntää.
+
+## Keskeytyneen nauhoituksen palautus
+Jos aloitit reitin nauhoittamisen mutta nauhoitus jäi jostakin syystä kesken tai puhelimen akku loppui ennen reitin talletusta, voit palauttaa reitin:
 
 1) Käynnistä Suuntain-sovellus.
 2) Valitse "Reitit"-välilehti.
 3) Valitse "Palauta reitti". Se on valittavissa, jos reitti on jäänyt kesken.
 4) Anna "Palauta reitti" karttanäkymässä reitille nimi.
 5) Valitse "Talleta"
+
+## Tunnisteet
+Voit antaa paikoille ja reiteille tunnisteita, esimerkiksi #suosikit tai #koiralenkit. Koti-välilehti näyttää jokaisen tunnisteen omana listanaan, joten löydät esimerkiksi kodin, kaupan ja koiralenkin selaamatta kaikkia paikkoja.
+
+Lisää tunniste:
+
+1. Avaa paikan tai reitin tiedot.
+2. Valitse Tunnisteet-kohdassa "Lisää tunniste".
+3. Valitse olemassa oleva tunniste tai "Uusi tunniste…" ja kirjoita nimi.
+4. Valitse "Talleta".
+
+Tunnisteen voi poistaa sen vieressä olevalla "Poista tunniste" -painikkeella. Tunniste on olemassa niin kauan kuin jollakin paikalla tai reitillä on se.
+
+Tunnistelista Koti-välilehdellä:
+
+- Jos olet määritellyt jollekin paikalle tai reitille tunnisteen, Koti-välilehden valitsimessa on kolmas vaihtoehto "#" (Tunnisteet).
+- Listan otsikko, esimerkiksi "#suosikit", on valikko, josta valitset tunnisteen. 
+- Listassa ovat ensin tunnisteella merkityt paikat ja sitten reitit.
+
+## Yksinkertainen kotinäkymä
+Asetus "Yksinkertainen kotinäkymä" (Asetukset → Sovellus) näyttää Koti-välilehdellä vain yhden listan kerrallaan. Se on suunniteltu erityisesti VoiceOver-käyttäjille.
+
+- Ylimpänä on rivi, jossa ovat "Lisää paikka", listan nimi ja "Lähetä sijaintini". Seurannan tilaa, GPS-tarkkuutta, kompassia ja Paikat/Reitit-valitsinta ei näytetä.
+- Listan nimi on valikko, josta valitset tunnisteen, "Kaikki paikat" tai "Kaikki reitit". VoiceOverilla voit pyyhkäistä listan nimen kohdalla ylös tai alas valitaksesi toisen listan.
+- Kun tunnistelista on näkyvissä, "Lisää paikka" antaa uudelle paikalle saman tunnisteen. Kuulet esimerkiksi "Kauppa lisätty, tunniste suosikit".
+- Jos valittuna on paikka tai reitti, joka ei kuulu näytettyyn listaan, se näkyy listan alussa, jotta voit poistaa valinnan.
 
 ## Varmuuskopiot
 
@@ -255,7 +312,7 @@ Jos haluat kellonsuunnan lisäksi karkean suuntasanan, ota kohdassa Asetukset �
 - Sovellus toimii myös ilman verkkoyhteyttä (lentokonetila). Kartalla näkyvät silloin vain aiemmin katsotut alueet.
 - Sovellus tukee VoiceOver-toimintoa ja Bluetooth-kuulokkeita.
 - Sovellus suurentaa tekstit puhelimen tekstikoon asetuksen mukaisesti.
-- GPS:n käyttö pysähtyy automaattisesti, kun puhelin on ollut paikallaan asetuksen "Liikkeentunnistuksen aika" verran (oletus 15 min), ja kuulet "Puhelin on paikallaan". Kun lähdet kävelemään, GPS käynnistyy itsestään, ja kuulet "Puhelin on liikkeessä", kun opastus jatkuu. Tämä vaatii sijaintiluvan "Aina". Jos lupa on "Kun appia käytetään", kuulet "GPS keskeytetty. Jatka avaamalla Suuntain.", ja opastus jatkuu, kun avaat sovelluksen.
+- GPS:n käyttö pysähtyy automaattisesti, kun puhelin on ollut paikallaan asetuksen "Liikkeentunnistuksen aika" verran (oletus 15 min), ja kuulet "Puhelin on paikallaan". Kun lähdet kävelemään, GPS käynnistyy itsestään, ja kuulet "Puhelin on liikkeessä", kun opastus jatkuu. Luvalla "Kun appia käytetään" sininen sijaintimerkki näkyy tauon ajan.
 - Saapumista ei ilmoiteta, jos sijainti on epätarkempi kuin 50 metriä, esimerkiksi junassa, jossa sijainti voi tulla tukiasemista. Kuulet silloin "GPS-tarkkuus heikko". Opastus jatkuu, ja saapuminen ilmoitetaan, kun sijainti tarkentuu.
 - Kun suljet sovelluksen kokonaan (pyyhkäisemällä sen pois sovellusvaihtajasta), GPS ja liiketunnistus pysähtyvät, eikä sovellus puhu taustalla. Sijainnin seuranta käynnistyy taas, kun avaat sovelluksen.
 - Varmuuskopio- ja reittitiedostot voi avata Suuntaimessa suoraan AirDropista tai sähköpostin liitteestä. Varmuuskopiosta Suuntain kysyy ensin, mitä palautetaan (katso kohta "Varmuuskopiot").
@@ -264,9 +321,11 @@ Jos haluat kellonsuunnan lisäksi karkean suuntasanan, ota kohdassa Asetukset �
 ### VoiceOver-roottorit
 
 - Koti- ja Paikat-välilehdillä on "Paikat"-roottori, jolla VoiceOver-käyttäjä voi siirtyä paikkarivien välillä nopeasti pyyhkäisemättä koko näkymää ylös tai alas.
-- Reitit-välilehdellä on vastaavasti "Reitit"-roottori.
+- Reitit-välilehdellä ja Koti-välilehden Reitit-näkymässä on vastaavasti "Reitit"-roottori.
+- Tunnistelistassa on kolme roottoria: "Paikat ja reitit" (kaikki rivit järjestyksessä), "Paikat" ja "Reitit".
+- Roottori käy läpi kaikki listan rivit, myös ne, jotka eivät mahdu näytölle, ja vierittää listaa samalla.
 - Roottori-ilmoituksissa luetaan paikan tai reitin nimen lisäksi etäisyys, joten voit selata nopeasti.
-- VoiceOverilla vain yksi paikka voi olla valittuna kerrallaan. 
+- VoiceOverilla vain yksi paikka voi olla valittuna kerrallaan. Tunnistelistassa ja yksinkertaisessa kotinäkymässä vain yksi paikka tai reitti on valittuna kerrallaan.
 
 ---
 
@@ -277,7 +336,7 @@ Suuntain Mini on Suuntain-sovelluksen Apple Watch -lisäsovellus. Se asentuu kel
 - Kello laskee suunnan omalla GPS:llään ja kompassillaan, joten kellotaulun suunnat ovat suhteessa ranteeseen. Opastus toimii myös silloin, kun iPhone ei ole mukana.
 - Kello puhuu opasteet omasta kaiuttimestaan tai kelloon yhdistetyillä Bluetooth-kuulokkeilla, samoin sanoin kuin iPhone.
 - iPhone siirtää kelloon tallentamasi paikat sekä puheasetukset ja puheprofiilin. Kello muistaa ne, joten lista toimii myös ilman iPhonea.
-- Kellossa voi suunnistaa yksittäisiin paikkoihin. Reitit eivät ole vielä käytössä kellossa.
+- Kellossa voi suunnistaa yksittäisiin paikkoihin. Reitit, "Paluu omia jälkiä pitkin" ja tunnisteet eivät ole vielä käytössä kellossa.
 
 Käyttö:
 
@@ -303,11 +362,10 @@ Kellon asetukset (oikea yläkulma):
 ## Ensimmäinen käyttökerta
 
 1. Käynnistä Suuntain.
-2. Salli sijaintitietojen käyttö, kun sovellus on käytössä.
+2. Salli sijaintitietojen käyttö, kun sovellus on käytössä. Se riittää: opastus jatkuu myös puhelimen ollessa lukittuna tai taskussa.
 3. Salli liike- ja kuntoilutietojen käyttö, kun sovellus on käytössä.
-4. Salli sijaintitietojen käyttö "Aina", jotta sovellus ei pysähdy, kun puhelin on lukittu, ja GPS käynnistyy taas itsestään, kun lähdet liikkeelle pitkän pysähdyksen jälkeen.
-5. Valitse automaattisesti luotu paikka.
-6. Kuulet sovelluksen puhuvan etäisyyden ja suunnan.
+4. Valitse automaattisesti luotu paikka.
+5. Kuulet sovelluksen puhuvan etäisyyden ja suunnan.
 
 ---
 

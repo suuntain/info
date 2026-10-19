@@ -1,4 +1,4 @@
-# Suuntain 1.5 – Guide d'utilisation
+# Suuntain 2.0 – Guide d'utilisation
 [User Guide](english.html)
 [Käyttöohje](finnish.html)
 [Användarguide](swedish.html)
@@ -32,11 +32,15 @@ Suuntain est accompagnée d'une application Apple Watch, **Suuntain Mini**, qui 
 - Afficher une liste d'emplacements et d'itinéraires.
 - Sélectionner un emplacement ou un itinéraire pour la navigation.
 - L'application annonce la distance et la direction vers la destination sélectionnée.
+- Si vous avez attribué un tag à un emplacement ou à un itinéraire, le sélecteur en haut propose « # » (Tags) en plus de Lieux et Itinéraires.
+- Le réglage « Accueil simplifié » n'affiche qu'une seule liste à la fois dans l'onglet Accueil (voir « Accueil simplifié »).
+- À droite de l'en-tête se trouve un bouton de partage (« Envoyer ma position »). Il envoie votre position actuelle sous forme de message.
 
 ### Lieux
 
 - Une liste de vos emplacements enregistrés.
 - Ajouter, renommer ou supprimer des emplacements.
+- Vous pouvez attribuer des tags à un emplacement (par ex. #favoris).
 - Vous pouvez ajouter des notes aux emplacements et activer une alerte qui vous avertit lorsque vous êtes proche d'un emplacement.
 - Vous pouvez définir un alias pour le nom de l'emplacement en utilisant le marqueur /.
 - Les nouveaux noms d'emplacements sont renseignés automatiquement au format "Ville, Rue Numéro" (ex. : "Oulu, Kirkkokatu 1"). En l'absence de connexion réseau, le nom est remplacé par un horodatage.
@@ -54,14 +58,17 @@ Suuntain est accompagnée d'une application Apple Watch, **Suuntain Mini**, qui 
 - Vous pouvez importer un itinéraire à partir d'un fichier GPX, partager un fichier GPX depuis une autre application ou scanner un code QR.
 - Vous pouvez créer un nouvel itinéraire en combinant deux itinéraires existants ou plus.
 - Les points de passage d'un itinéraire enregistré sont nommés « nom de l'itinéraire - numéro » (par ex. « Sentier nature - 1 »). Lorsque vous renommez l'itinéraire, les noms des points de passage changent avec lui. Les points de passage que vous avez nommés vous-même gardent leur nom.
+- Le bouton « Retour par la trace » crée, à partir de la trace que vous avez parcourue, un itinéraire de retour vers votre point de départ (voir « Retour par la trace »).
+- Vous pouvez attribuer des tags à un itinéraire dans la section Tags des détails de l'itinéraire.
 
 ### Carte
 
 - Voir votre position, les lieux enregistrés et l'itinéraire sélectionné sur la carte.
-- Lorsque le réglage "Queue" est activé, la carte affiche votre déplacement récent sous forme de ligne pointillée.
+- La carte affiche en pointillés le trajet que vous venez de parcourir, la queue (10 minutes par défaut). La queue est tracée à partir de la trace : elle ne s'affiche donc que si « Enregistrer la trace » est activé. Vous pouvez modifier la longueur de la queue dans Réglages → Carte.
 - Ajouter un nouvel emplacement en appuyant sur la carte.
 - Le bouton des couches de carte change la couche affichée : Topographique, Carte Apple, Satellite Apple et Satellite Apple avec libellés. Choisissez les couches à utiliser dans Réglages → Carte.
 - Comme carte topographique, vous pouvez choisir la carte topographique de l'Institut national de topographie finlandais (MML), OpenTopoMap ou Thunderforest Outdoors.
+- Sur la carte topographique de l'Institut national de topographie finlandais, vous pouvez afficher les limites cadastrales (lignes rouges) et les identifiants cadastraux (par ex. 564-1-35-6). Ils s'affichent en Finlande lorsque la carte est agrandie jusqu'à une largeur inférieure à environ 3 km. Activez-les dans Réglages → Carte.
 - La barre de recherche en haut (« Rechercher des lieux et des endroits ») permet de rechercher à la fois vos emplacements enregistrés et des lieux réels (dans la base cartographique d'Apple).
 - Appuyer sur un résultat de recherche centre la carte sur ce lieu et affiche un repère orange. Un lieu trouvé par recherche peut être enregistré dans votre liste d'emplacements via le bouton favori.
 - Appuyer sur un repère d'emplacement enregistré sur la carte ou dans les résultats de recherche démarre la navigation : un repère vert signifie sélectionné, rouge signifie non sélectionné. Appuyer à nouveau annule la sélection.
@@ -72,15 +79,16 @@ Suuntain est accompagnée d'une application Apple Watch, **Suuntain Mini**, qui 
 La page principale des Réglages comporte une ligne pour chaque groupe de réglages. Une ligne ouvre une page avec les réglages de ce groupe.
 
 - **Guidage** : mode de direction (Horloge 12h, Horloge 24h ou 8 directions), « Également 8 directions » (une direction approximative annoncée en mot en plus de la position sur le cadran), voix et vitesse de parole.
-- **Annonces** : les profils d'annonce des emplacements et des itinéraires et « Gérer les profils » (voir « Profils de guidage vocal »), « Annoncer la direction à l'arrêt » (voir « Annonce à l'arrêt »), la secousse (voir « Secousse ») et la proposition de demi-tour.
+- **Annonces** : les profils d'annonce des emplacements et des itinéraires et « Gérer les profils » (voir « Profils de guidage vocal »), Arrêt : « Annoncer la direction à l'arrêt » et « Dire “Arrêté” et “En marche” » (voir « Annonce à l'arrêt »), la secousse (voir « Secousse ») et la proposition de demi-tour.
 - **Direction et GPS** :
   - « Utiliser la boussole quand plus lent que » : si vous vous déplacez plus lentement, l'application utilise la boussole du téléphone ; si vous allez plus vite, elle utilise la direction de déplacement du GPS. La valeur par défaut est « < 0,75 km/h ».
   - « Démarrer le GPS à l'ouverture de l'app » (activé par défaut).
   - « Délai d'inactivité du mouvement » : durée pendant laquelle le téléphone peut rester immobile avant l'arrêt du GPS (15 min par défaut).
-  - « Direction avec les capteurs de mouvement » améliore la direction lorsque vous gardez le téléphone dans votre poche et écoutez le guidage par le haut-parleur ou des écouteurs.
-- **Carte** : couches de carte, source de la carte topographique, « Inverser les couleurs de la carte topographique », ainsi que la longueur et l'intervalle de mise à jour de la queue.
-- **Lieux et itinéraires** : « Afficher les lieux automatiques », « Afficher l'emplacement de la voiture », simplification de l'enregistrement d'itinéraire, « Stocker les jalons » (voir « Traces GPS ») et distance maximale d'un itinéraire créé depuis la carte.
-- **Application** : thème (Système, Clair ou Sombre), « Garder l'écran allumé », « Barre d'état simplifiée » et « Afficher le journal de l'application ».
+  - « Direction avec les capteurs de mouvement » améliore la direction lorsque vous gardez le téléphone dans votre poche et écoutez le guidage par le haut-parleur ou des écouteurs. Elle permet aussi d'entendre plus tôt l'annonce à l'arrêt (voir « Annonce à l'arrêt »).
+  - Trace : « Enregistrer la trace » (activé par défaut) et « Effacer la trace » (voir « Retour par la trace »).
+- **Carte** : couches de carte, source de la carte topographique, « Inverser les couleurs de la carte topographique », « Limites cadastrales » et « Identifiants cadastraux » (uniquement sur la carte topographique de l'Institut national de topographie finlandais), ainsi que la longueur et l'intervalle de mise à jour de la queue.
+- **Lieux et itinéraires** : « Afficher les lieux automatiques », « Afficher l'emplacement de la voiture », simplification de l'enregistrement d'itinéraire et distance maximale d'un itinéraire créé depuis la carte.
+- **Application** : thème (Système, Clair ou Sombre), « Garder l'écran allumé », « Accueil simplifié » (voir « Accueil simplifié ») et « Afficher le journal de l'application ».
 - **Sauvegarde** (sur la page principale) : « Créer une sauvegarde » et « Restaurer depuis la sauvegarde » (voir « Sauvegardes »).
 - **À propos** : guide d'utilisation, version de l'application, « Vérifier les mises à jour » (vous avertit lorsqu'une nouvelle version est disponible sur l'App Store) et « Vérifier maintenant ». L'application indique toujours le résultat de la vérification.
 
@@ -95,8 +103,10 @@ La page principale des Réglages comporte une ligne pour chaque groupe de régla
 - **Emplacement de la voiture :** Une place de stationnement toujours à jour, enregistrée avec le bouton "Mettre à jour".
 - **Import GPX :** Importer un itinéraire depuis un fichier GPX, une autre application ou un code QR.
 - **Combiner des itinéraires :** Construire un nouvel itinéraire en combinant des itinéraires existants.
+- **Retour par la trace :** Revenir par le même chemin qu'à l'aller, même sans avoir lancé d'enregistrement.
+- **Tags :** Regrouper des emplacements et des itinéraires dans vos propres listes dans l'onglet Accueil (par ex. #favoris).
+- **Envoyer ma position :** Envoyer votre position sous forme de message d'un seul geste.
 - **Annonce à l'arrêt :** Lorsque vous vous arrêtez ou tournez sur place, vous entendez tout de suite la direction.
-- **Secousse :** Secouez le téléphone pour entendre tout de suite la distance et la direction.
 - **Sauvegarde :** Sauvegarder et restaurer les emplacements et les itinéraires sous forme de fichier JSON. L'application fait aussi une sauvegarde automatique une fois par jour.
 - **Raccourcis Siri :** Contrôler l'application par commandes vocales (ex. : "Suuntain, sélectionner l'emplacement").
 
@@ -120,11 +130,18 @@ Dans les profils basés sur la distance, vous pouvez modifier les seuils en mèt
 
 Lorsque vous vous arrêtez, vous cherchez souvent votre chemin, et la prochaine annonce du profil de guidage vocal peut n'arriver que dans une minute. Suuntain annonce donc tout de suite la distance et la direction :
 
-- lorsque vous vous arrêtez après avoir marché : environ 1 à 2 secondes après l'arrêt
+- lorsque vous vous arrêtez après avoir marché : environ 1 à 2 secondes après l'arrêt. Si « Direction avec les capteurs de mouvement » est activé, Suuntain détecte l'arrêt grâce à vos pas et parle souvent dès une demi-seconde après votre dernier pas
 - lorsque vous tournez d'au moins 30 degrés sans avancer et gardez cette direction un instant : vous pouvez tourner jusqu'à ce que la cible soit à 12 heures
 - lorsque vous avez sélectionné un emplacement ou un itinéraire et commencez à marcher : une fois, après environ 4 secondes de marche
 
-Suuntain ne répète pas la direction si elle vient d'être annoncée et que vous êtes toujours tourné dans la même direction. Le réglage se trouve dans Réglages → Annonces → « Annoncer la direction à l'arrêt » (activé par défaut). Il ne fonctionne pas si « Utiliser la boussole quand plus lent que » est sur OFF. Si « Direction avec les capteurs de mouvement » est activé, Suuntain n'annonce les arrêts qu'une fois votre direction de marche apprise. La fonction n'existe que sur l'iPhone.
+Suuntain ne répète pas la direction si elle vient d'être annoncée et que vous êtes toujours tourné dans la même direction.
+
+Une fois la direction annoncée après l'arrêt, Suuntain ne fait plus les annonces du profil de guidage vocal tant que vous restez immobile. Les virages, l'arrivée et le point de passage suivant sont tout de même annoncés. Lorsque vous recommencez à marcher, l'annonce suivante arrive après l'intervalle du profil de guidage vocal. Si vous avancez lentement, par exemple en cherchant votre chemin, les annonces reprennent au bout de quelques secondes.
+
+Les réglages se trouvent dans Réglages → Annonces → Arrêt :
+
+- « Annoncer la direction à l'arrêt » (activé par défaut). Il ne fonctionne pas si « Utiliser la boussole quand plus lent que » est sur OFF.
+- « Dire “Arrêté” et “En marche” » (désactivé par défaut) : vous entendez « Arrêté » avant la direction annoncée après un arrêt (par ex. « Arrêté. Maison : dans 200 mètres : à 3 heures ») et « En marche » lorsque vous recommencez à marcher.
 
 ### Secousse
 
@@ -153,6 +170,16 @@ Créer un nouvel itinéraire automatiquement :
 8. Ajustez le paramètre "Seuil" pour modifier le nombre de points de passage.
 9. Donnez un nom à l'itinéraire.
 10. Sélectionnez "Enregistrer"
+
+Créer un nouvel itinéraire à l'aide de la carte :
+
+1. Allez dans l'onglet Itinéraires.
+2. Sélectionnez "Itinéraire pédestre depuis la carte".
+3. Choisissez comme point de départ votre position actuelle ou un emplacement de la liste.
+4. Choisissez la destination en sélectionnant un emplacement dans la liste.
+5. Les points de passage sont créés automatiquement à partir des données cartographiques d'Apple.
+6. Donnez un nom à l'itinéraire.
+7. Sélectionnez "Enregistrer".
 
 Créer un nouvel itinéraire à partir d'emplacements que vous sélectionnez :
 
@@ -188,14 +215,54 @@ Combiner des itinéraires existants en un nouvel itinéraire :
 5. Donnez un nom au nouvel itinéraire.
 6. Sélectionnez "Enregistrer".
 
-## Traces GPS
-Si vous avez enregistré un long itinéraire mais que l'enregistrement a été interrompu pour une raison quelconque, ou si la batterie du téléphone s'est déchargée avant l'enregistrement de l'itinéraire, vous pouvez récupérer l'itinéraire grâce aux traces GPS :
+## Retour par la trace
+Suuntain enregistre le trajet que vous parcourez, la trace, chaque fois que le GPS est actif. Vous n'avez pas besoin de lancer un enregistrement. Lorsque vous voulez revenir par le même chemin qu'à l'aller, par exemple depuis une forêt où la ligne droite vers le point de départ traverserait un lac ou un marais :
+
+1. Sélectionnez « Retour par la trace » dans la vue Itinéraires de l'onglet Accueil ou dans l'onglet Itinéraires. Le bouton est disponible lorsque la trace mesure au moins 50 mètres. VoiceOver annonce aussi la longueur de la trace.
+2. Suuntain crée à partir de la trace l'itinéraire « Retour », qui ramène au début de la trace, et le sélectionne. Le guidage commence au premier point de l'itinéraire.
+3. Les points de passage de l'itinéraire sont « Retour - 1 », « Retour - 2 » et ainsi de suite. Si le chemin du retour passe près de l'un de vos emplacements enregistrés ou de la voiture (à moins de 25 mètres), cet emplacement devient un point de passage de l'itinéraire avec son propre nom : vous entendez par exemple « Maison » au lieu de « Retour - 3 ».
+
+Remarques :
+
+- Un nouveau retour remplace l'itinéraire « Retour » précédent. Si vous voulez conserver un itinéraire de retour, donnez-lui un nouveau nom.
+- Si vous faites des allers-retours sur votre trace ou une boucle, l'itinéraire de retour coupe ce passage.
+- Le bouton corbeille à côté du bouton « Retour par la trace » efface la trace.
+- Désactiver « Enregistrer la trace » (Réglages → Direction et GPS → Trace, activé par défaut) arrête l'enregistrement de la trace et l'efface. La carte n'affiche alors plus de queue.
+
+## Récupération d'un enregistrement interrompu
+Si vous avez commencé à enregistrer un itinéraire mais que l'enregistrement a été interrompu pour une raison quelconque, ou si la batterie du téléphone s'est déchargée avant l'enregistrement de l'itinéraire, vous pouvez récupérer l'itinéraire :
 
 1) Lancez l'application Suuntain.
 2) Sélectionnez l'onglet "Itinéraires".
 3) Sélectionnez "Récupérer l'itinéraire". Cette option est disponible si un itinéraire a été laissé incomplet.
 4) Dans la vue carte "Récupérer l'itinéraire", donnez un nom à l'itinéraire.
 5) Sélectionnez "Enregistrer"
+
+## Tags
+Vous pouvez attribuer des tags aux emplacements et aux itinéraires, par exemple #favoris ou #promenades. L'onglet Accueil affiche chaque tag comme une liste distincte : vous trouvez ainsi par exemple la maison, le magasin et la promenade du chien sans parcourir tous vos emplacements.
+
+Ajouter un tag :
+
+1. Ouvrez les détails d'un emplacement ou d'un itinéraire.
+2. Dans la section Tags, sélectionnez « Ajouter un tag ».
+3. Choisissez un tag existant ou « Nouveau tag… » et saisissez un nom.
+4. Sélectionnez « Enregistrer ».
+
+Vous pouvez supprimer un tag avec le bouton « Supprimer le tag » à côté de lui. Un tag existe tant qu'au moins un emplacement ou un itinéraire le porte.
+
+Liste de tags dans l'onglet Accueil :
+
+- Si vous avez attribué un tag à un emplacement ou à un itinéraire, le sélecteur de l'onglet Accueil propose un troisième choix, « # » (Tags).
+- Le titre de la liste, par exemple « #favoris », est un menu dans lequel vous choisissez le tag.
+- La liste affiche d'abord les emplacements portant ce tag, puis les itinéraires.
+
+## Accueil simplifié
+Le réglage « Accueil simplifié » (Réglages → Application) n'affiche qu'une seule liste à la fois dans l'onglet Accueil. Il est conçu spécialement pour les utilisateurs de VoiceOver.
+
+- En haut se trouve une ligne avec « Ajouter un lieu », le nom de la liste et « Envoyer ma position ». L'état du suivi, la précision GPS, la boussole et le sélecteur Lieux/Itinéraires ne sont pas affichés.
+- Le nom de la liste est un menu dans lequel vous choisissez un tag, « Tous les lieux » ou « Tous les itinéraires ». Avec VoiceOver, vous pouvez balayer vers le haut ou le bas sur le nom de la liste pour choisir une autre liste.
+- Lorsqu'une liste de tags est affichée, « Ajouter un lieu » attribue le même tag au nouvel emplacement. Vous entendez par exemple « Magasin ajouté, tag favoris ».
+- Si un emplacement ou un itinéraire sélectionné ne fait pas partie de la liste affichée, il apparaît en haut de la liste pour que vous puissiez le désélectionner.
 
 ## Sauvegardes
 
@@ -245,7 +312,7 @@ Si vous souhaitez, en plus de la position sur le cadran, une direction approxima
 - L'application fonctionne sans connexion internet (mode avion). La carte n'affiche alors que les zones déjà consultées.
 - L'application prend en charge VoiceOver et les écouteurs Bluetooth.
 - L'application adapte le texte selon les paramètres de taille de police dynamique.
-- L'utilisation du GPS s'arrête automatiquement lorsque le téléphone est resté immobile pendant la durée du réglage « Délai d'inactivité du mouvement » (15 min par défaut), et vous entendez « Le téléphone est à l'arrêt ». Lorsque vous recommencez à marcher, le GPS redémarre de lui-même et vous entendez « Le téléphone est en mouvement » quand le guidage reprend. Cela nécessite l'autorisation de localisation « Toujours ». Avec « Lorsque l'app est active », vous entendez « GPS en pause. Ouvrez Suuntain pour continuer. » et le guidage reprend lorsque vous ouvrez l'application.
+- L'utilisation du GPS s'arrête automatiquement lorsque le téléphone est resté immobile pendant la durée du réglage « Délai d'inactivité du mouvement » (15 min par défaut), et vous entendez « Le téléphone est à l'arrêt ». Lorsque vous recommencez à marcher, le GPS redémarre de lui-même et vous entendez « Le téléphone est en mouvement » quand le guidage reprend. Avec « Lorsque l'app est active », l'indicateur de localisation bleu reste visible pendant la pause.
 - L'arrivée n'est pas annoncée lorsque la position est moins précise que 50 mètres, par exemple dans un train, où la position peut provenir des antennes-relais. Vous entendez alors « Précision GPS faible ». Le guidage continue, et l'arrivée est annoncée dès que la position redevient précise.
 - Lorsque vous fermez complètement l'application (en la balayant dans le sélecteur d'applications), le GPS et la détection de mouvement s'arrêtent et l'application ne parle plus en arrière-plan. Le suivi de position redémarre lorsque vous ouvrez l'application.
 - Les fichiers de sauvegarde et d'itinéraire peuvent être ouverts dans Suuntain directement depuis AirDrop ou une pièce jointe d'e-mail. Pour une sauvegarde, Suuntain demande d'abord ce qu'il faut restaurer (voir « Sauvegardes »).
@@ -254,9 +321,13 @@ Si vous souhaitez, en plus de la position sur le cadran, une direction approxima
 ### Rotors VoiceOver
 
 - Les onglets Accueil et Lieux proposent un rotor "Lieux" qui permet aux utilisateurs de VoiceOver de passer rapidement d'une ligne d'emplacement à l'autre sans balayer toute la vue.
-- L'onglet Itinéraires propose un rotor "Itinéraires" correspondant.
+- L'onglet Itinéraires et la vue Itinéraires de l'onglet Accueil proposent un rotor "Itinéraires" correspondant.
+- Une liste de tags propose trois rotors : "Lieux et itinéraires" (toutes les lignes dans l'ordre), "Lieux" et "Itinéraires".
+- Un rotor parcourt toutes les lignes de la liste, y compris celles qui ne tiennent pas à l'écran, et fait défiler la liste au passage.
 - Les annonces du rotor incluent la distance en plus du nom de l'emplacement ou de l'itinéraire, ce qui permet de parcourir la liste à l'oreille sans ouvrir chaque ligne.
-- Avec VoiceOver, la sélection d'un emplacement est à sélection unique : choisir un nouvel emplacement efface le précédent. 
+- Avec VoiceOver, la sélection d'un emplacement est à sélection unique : choisir un nouvel emplacement efface le précédent. Dans une liste de tags et dans l'accueil simplifié, un seul emplacement ou itinéraire est sélectionné à la fois.
+
+---
 
 ## Apple Watch
 
@@ -265,7 +336,7 @@ Suuntain Mini est l'application complémentaire Apple Watch de Suuntain. Elle s'
 - La montre calcule la direction avec son propre GPS et sa propre boussole : les directions sur cadran sont donc relatives à votre poignet. Le guidage fonctionne même lorsque vous n'avez pas l'iPhone avec vous.
 - La montre annonce le guidage par son propre haut-parleur ou par des écouteurs Bluetooth connectés à la montre, avec les mêmes mots que l'iPhone.
 - L'iPhone transfère vers la montre les emplacements que vous avez enregistrés, les réglages vocaux et le profil de guidage vocal. La montre les garde en mémoire : la liste fonctionne donc sans l'iPhone.
-- Sur la montre, vous pouvez naviguer vers des emplacements individuels. Les itinéraires ne sont pas encore disponibles sur la montre.
+- Sur la montre, vous pouvez naviguer vers des emplacements individuels. Les itinéraires, « Retour par la trace » et les tags ne sont pas encore disponibles sur la montre.
 
 Utilisation :
 
@@ -291,11 +362,10 @@ Réglages de la montre (en haut à droite) :
 ## Première utilisation
 
 1. Lancez Suuntain.
-2. Autorisez l'accès à la localisation pendant l'utilisation de l'application.
+2. Autorisez l'accès à la localisation pendant l'utilisation de l'application. Cela suffit : le guidage continue aussi téléphone verrouillé ou dans la poche.
 3. Autorisez l'accès aux données de mouvement et de remise en forme pendant l'utilisation de l'application.
-4. Autorisez l'accès à la localisation "Toujours" afin que l'application ne s'arrête pas lorsque le téléphone est verrouillé, et que le GPS redémarre de lui-même lorsque vous repartez après un long arrêt.
-5. Sélectionnez l'emplacement créé automatiquement.
-6. Vous entendrez l'application annoncer la distance et la direction.
+4. Sélectionnez l'emplacement créé automatiquement.
+5. Vous entendrez l'application annoncer la distance et la direction.
 
 ---
 

@@ -7,7 +7,7 @@
 </head>
 <body>
   <div class="container">
-    <h1 id="suuntain-1.5-användarguide">Suuntain 1.5 –
+    <h1 id="suuntain-2.0-användarguide">Suuntain 2.0 –
     Användarguide</h1>
     <p><a href="english.html">User Guide</a> <a
     href="finnish.html">Käyttöohje</a> <a href="french.html">Guide
@@ -42,12 +42,19 @@
     <li>Välj din önskade destination.</li>
     <li>Appen berättar avståndet och riktningen till den valda
     destinationen.</li>
+    <li>Om du har gett en destination eller rutt en tagg finns “#”
+    (Taggar) i växeln längst upp utöver Platser och Rutter.</li>
+    <li>Inställningen “Enkel hemvy” visar bara en lista i taget på
+    fliken Hem (se “Enkel hemvy”).</li>
+    <li>Längst till höger i rubriken finns en delningsknapp (“Skicka min
+    plats”). Den skickar din nuvarande plats som ett meddelande.</li>
     </ul>
     <h3 id="platser">Platser</h3>
     <ul>
     <li>En lista över dina sparade destinationer.</li>
     <li>Lägg till nya destinationer, byt deras namn eller radera
     dem.</li>
+    <li>Du kan ge en destination taggar (t.ex. #favoriter).</li>
     <li>Du kan ansluta anteckningar till destinationer samt aktivera ett
     larm som anmäler dig när du är nära en viss destination.</li>
     <li>Du kan skapa ett “alias”-namn för destinationen med
@@ -79,19 +86,31 @@
     (t.ex. “Naturstig - 1”). När du byter namn på rutten ändras
     vägpunkternas namn med den. Vägpunkter som du själv har namngett
     behåller sina namn.</li>
+    <li>Knappen “Tillbaka längs spåret” skapar av spåret du har gått en
+    rutt tillbaka till där du startade (se “Tillbaka längs
+    spåret”).</li>
+    <li>Du kan ge en rutt taggar i avsnittet Taggar i ruttens
+    uppgifter.</li>
     </ul>
     <h3 id="karta">Karta</h3>
     <ul>
     <li>Se din position, sparade positioner och den valda rutten på
     kartan.</li>
-    <li>När inställningen “Svans” är på visas din senaste förflyttning
-    som en streckad linje på kartan.</li>
+    <li>Kartan visar sträckan du senast har gått, svansen, som en
+    streckad linje (10 minuter som standard). Svansen ritas från spåret,
+    så den visas bara när “Spela in spår” är på. Svanslängden kan du
+    ändra under Inställningar → Karta.</li>
     <li>Lägg till en ny position genom att trycka på kartan.</li>
     <li>Kartans lagerknapp byter kartlager: Terrängkarta, Apple-karta,
     Apple-satellit och Apple-satellit med etiketter. Välj de lager du
     vill använda under Inställningar → Karta.</li>
     <li>Som terrängkarta kan du välja Lantmäteriverkets (MML)
     terrängkarta, OpenTopoMap eller Thunderforest Outdoors.</li>
+    <li>Ovanpå Lantmäteriverkets terrängkarta kan du visa
+    fastighetsgränser (röda linjer) och fastighetsbeteckningar (t.ex.
+    564-1-35-6). De visas i Finland när kartan är inzoomad så att den är
+    mindre än ungefär 3 km bred. Slå på dem under Inställningar →
+    Karta.</li>
     <li>Sökfältet längst upp (“Sök platser och ställen”) söker både
     bland dina sparade destinationer och bland verkliga platser (i
     Apples kartdatabas).</li>
@@ -115,8 +134,9 @@
     riktning i ord utöver klockriktningen), röst och talhastighet.</li>
     <li><strong>Utrop</strong>: navigeringsprofiler för destinationer
     och rutter samt “Hantera profiler” (se “Navigeringsprofiler”),
-    “Meddela riktningen när du stannar” (se “Meddelande när du
-    stannar”), skakning (se “Skakning”) och förslag om U-svängar.</li>
+    Stopp: “Meddela riktningen när du stannar” och “Säg ”Stannat” och ”I
+    rörelse”” (se “Meddelande när du stannar”), skakning (se “Skakning”)
+    och förslag om U-svängar.</li>
     <li><strong>Riktning och GPS</strong>:
     <ul>
     <li>“Använd kompass när långsammare än”: när du rör dig långsammare
@@ -128,17 +148,21 @@
     stilla innan GPS stoppas (standard 15 min).</li>
     <li>“Riktning med rörelsesensorer” förbättrar riktningen när du har
     telefonen i fickan och lyssnar på vägledningen via högtalaren eller
-    hörlurar.</li>
+    hörlurar. Den gör också att meddelandet när du stannar kommer
+    snabbare (se “Meddelande när du stannar”).</li>
+    <li>Spår: “Spela in spår” (på som standard) och “Rensa spår” (se
+    “Tillbaka längs spåret”).</li>
     </ul></li>
     <li><strong>Karta</strong>: kartlager, terrängkartans källa,
-    “Invertera terrängkartans färger” samt svanslängd och
-    uppdateringsintervall.</li>
+    “Invertera terrängkartans färger”, “Fastighetsgränser” och
+    “Fastighetsbeteckningar” (bara på Lantmäteriverkets terrängkarta)
+    samt svanslängd och uppdateringsintervall.</li>
     <li><strong>Platser och rutter</strong>: “Visa automatiska platser”,
-    “Visa bilens plats”, förenkling av ruttinspelning, “Spara
-    brödsmulor” (se “GPS-brödsmulor”) och maximal längd för en rutt som
-    skapas från kartan.</li>
+    “Visa bilens plats”, förenkling av ruttinspelning och maximal längd
+    för en rutt som skapas från kartan.</li>
     <li><strong>App</strong>: tema (System, Ljust eller Mörkt), “Håll
-    skärmen aktiv”, “Enkel statusrad” och “Visa applikationslogg”.</li>
+    skärmen aktiv”, “Enkel hemvy” (se “Enkel hemvy”) och “Visa
+    applikationslogg”.</li>
     <li><strong>Säkerhetskopiering</strong> (på huvudsidan): “Skapa
     säkerhetskopia” och “Återställ från säkerhetskopia” (se
     “Säkerhetskopior”).</li>
@@ -164,13 +188,17 @@
     en annan app eller en QR-kod.</li>
     <li><strong>Kombinera rutter:</strong> Bygg en ny rutt genom att
     kombinera befintliga rutter.</li>
+    <li><strong>Tillbaka längs spåret:</strong> Gå tillbaka samma väg
+    som du kom, även om du inte startade någon inspelning.</li>
+    <li><strong>Taggar:</strong> Samla destinationer och rutter i egna
+    listor på fliken Hem (t.ex. #favoriter).</li>
+    <li><strong>Skicka min plats:</strong> Skicka din plats som ett
+    meddelande med ett tryck.</li>
     <li><strong>Meddelande när du stannar:</strong> När du stannar eller
     vänder dig på stället hör du riktningen direkt.</li>
-    <li><strong>Skakning:</strong> Skaka telefonen så hör du avståndet
-    och riktningen direkt.</li>
     <li><strong>Säkerhetskopia:</strong> Spara och återställ
     destinationer och rutter som en JSON-fil. Suuntain gör också en
-    säkerhetskopia själv en gång om dagen.</li>
+    säkerhetskopia automatiskt en gång om dagen.</li>
     <li><strong>Siri-kommandon:</strong> Styr appen med röstkommandon
     (t.ex. “Suuntain, välj plats”).</li>
     </ul>
@@ -209,19 +237,30 @@
     Suuntain avståndet och riktningen direkt:</p>
     <ul>
     <li>när du stannar efter att ha gått: ungefär 1–2 sekunder efter att
-    du stannat</li>
+    du stannat. Om “Riktning med rörelsesensorer” är på märker Suuntain
+    stoppet på dina steg och talar ofta redan en halv sekund efter ditt
+    sista steg</li>
     <li>när du vänder dig minst 30 grader medan du står still och håller
     riktningen en stund: du kan vända dig tills målet är klockan 12</li>
     <li>när du har valt en destination eller rutt och börjar gå: en
     gång, efter ungefär 4 sekunders gång</li>
     </ul>
     <p>Suuntain upprepar inte riktningen om den just har meddelats och
-    du fortfarande är vänd åt samma håll. Inställningen finns under
-    Inställningar → Utrop → “Meddela riktningen när du stannar” (på som
-    standard). Den fungerar inte om “Använd kompass när långsammare än”
-    är AV. Om “Riktning med rörelsesensorer” är på meddelar Suuntain
-    stopp först när den har lärt sig din gångriktning. Funktionen finns
-    bara på iPhone.</p>
+    du fortfarande är vänd åt samma håll.</p>
+    <p>När riktningen har meddelats efter att du stannat talar Suuntain
+    inte navigeringsprofilens anmälningar så länge du står still.
+    Vändningar, ankomst och nästa vägpunkt meddelas ändå. När du börjar
+    gå igen kommer nästa anmälning efter navigeringsprofilens intervall.
+    Om du rör dig långsamt, till exempel när du letar efter vägen,
+    fortsätter anmälningarna efter några sekunder.</p>
+    <p>Inställningarna finns under Inställningar → Utrop → Stopp:</p>
+    <ul>
+    <li>“Meddela riktningen när du stannar” (på som standard). Den
+    fungerar inte om “Använd kompass när långsammare än” är AV.</li>
+    <li>“Säg ”Stannat” och ”I rörelse”” (av som standard): du hör
+    “Stannat” före riktningen efter ett stopp (t.ex. “Stannat. Hem 200
+    meter: klockan 3”) och “I rörelse” när du börjar gå igen.</li>
+    </ul>
     <h3 id="skakning">Skakning</h3>
     <p>Skaka telefonen så berättar Suuntain avståndet och riktningen
     direkt. Under Inställningar → Utrop → Skakning slår “Skaka för att
@@ -255,6 +294,17 @@
     antalet vägpunkter.</li>
     <li>Ge rutten ett namn.</li>
     <li>Välj “Spara”</li>
+    </ol>
+    <p>Skapa en ny rutt med hjälp av kartan:</p>
+    <ol type="1">
+    <li>Gå till fliken Rutter.</li>
+    <li>Välj “Gångväg från karta”.</li>
+    <li>Välj din nuvarande position som startpunkt eller välj en
+    destination från listan.</li>
+    <li>Välj målet genom att välja en destination från listan.</li>
+    <li>Vägpunkterna skapas automatiskt utifrån Apples kartdata.</li>
+    <li>Ge rutten ett namn.</li>
+    <li>Välj “Spara”.</li>
     </ol>
     <p>Skapa en ny rutt manuellt:</p>
     <ol type="1">
@@ -299,11 +349,40 @@
     <li>Ge den nya rutten ett namn.</li>
     <li>Välj “Spara”.</li>
     </ol>
-    <h2 id="gps-brödsmulor">GPS-brödsmulor</h2>
-    <p>Om du spelade in en lång rutt men inspelningen avbröts av någon
+    <h2 id="tillbaka-längs-spåret">Tillbaka längs spåret</h2>
+    <p>Suuntain sparar sträckan du rör dig, spåret, alltid när GPS är
+    på. Du behöver inte starta någon inspelning. När du vill gå tillbaka
+    samma väg som du kom, till exempel från en skog där en rak linje
+    till startplatsen skulle gå över en sjö eller ett kärr:</p>
+    <ol type="1">
+    <li>Välj “Tillbaka längs spåret” i vyn Rutter på fliken Hem eller på
+    fliken Rutter. Knappen kan användas när spåret är minst 50 meter
+    långt. VoiceOver berättar också spårets längd.</li>
+    <li>Suuntain skapar av spåret rutten “Tillbaka” till spårets början
+    och väljer den. Vägledningen börjar från ruttens första punkt.</li>
+    <li>Ruttens vägpunkter är “Tillbaka - 1”, “Tillbaka - 2” och så
+    vidare. Om vägen tillbaka passerar en av dina sparade destinationer
+    eller bilen (inom 25 meter) blir den destinationen en vägpunkt på
+    rutten med sitt eget namn, så du hör till exempel “Hem” i stället
+    för “Tillbaka - 3”.</li>
+    </ol>
+    <p>Att tänka på:</p>
+    <ul>
+    <li>En ny väg tillbaka ersätter den föregående rutten “Tillbaka”. Om
+    du vill behålla en väg tillbaka, ge den ett nytt namn.</li>
+    <li>Om du går fram och tillbaka längs ditt spår eller går runt en
+    slinga, genar vägen tillbaka den biten.</li>
+    <li>Papperskorgsknappen bredvid knappen “Tillbaka längs spåret”
+    rensar spåret.</li>
+    <li>Om du stänger av “Spela in spår” (Inställningar → Riktning och
+    GPS → Spår, på som standard) slutar spåret att sparas och rensas. Då
+    visas ingen svans på kartan.</li>
+    </ul>
+    <h2 id="återställ-en-avbruten-inspelning">Återställ en avbruten
+    inspelning</h2>
+    <p>Om du började spela in en rutt men inspelningen avbröts av någon
     anledning, eller telefonens batteri tog slut innan rutten sparades,
-    kan du återställa rutten med hjälp av så kallade “GPS-brödsmulor”
-    eller GPS-spår.</p>
+    kan du återställa rutten:</p>
     <ol type="1">
     <li>Starta Suuntain-appen.</li>
     <li>Välj fliken “Rutter”.</li>
@@ -312,6 +391,46 @@
     <li>I kartvyn “Återställ rutten”, ge rutten ett namn och välj:
     “Spara”</li>
     </ol>
+    <h2 id="taggar">Taggar</h2>
+    <p>Du kan ge destinationer och rutter taggar, till exempel
+    #favoriter eller #hundpromenader. Fliken Hem visar varje tagg som en
+    egen lista, så du hittar till exempel hemmet, affären och
+    hundpromenaden utan att bläddra igenom alla destinationer.</p>
+    <p>Lägg till en tagg:</p>
+    <ol type="1">
+    <li>Öppna uppgifterna för en destination eller rutt.</li>
+    <li>Välj “Lägg till tagg” i avsnittet Taggar.</li>
+    <li>Välj en befintlig tagg eller “Ny tagg…” och skriv ett namn.</li>
+    <li>Välj “Spara”.</li>
+    </ol>
+    <p>Du kan ta bort en tagg med knappen “Ta bort taggen” bredvid den.
+    En tagg finns så länge någon destination eller rutt har den.</p>
+    <p>Tagglistan på fliken Hem:</p>
+    <ul>
+    <li>Om du har gett en destination eller rutt en tagg har växeln på
+    fliken Hem ett tredje alternativ, “#” (Taggar).</li>
+    <li>Listans rubrik, till exempel “#favoriter”, är en meny där du
+    väljer tagg.</li>
+    <li>Listan visar först destinationerna med taggen och sedan
+    rutterna.</li>
+    </ul>
+    <h2 id="enkel-hemvy">Enkel hemvy</h2>
+    <p>Inställningen “Enkel hemvy” (Inställningar → App) visar bara en
+    lista i taget på fliken Hem. Den är utformad särskilt för
+    VoiceOver-användare.</p>
+    <ul>
+    <li>Överst finns en rad med “Lägg till plats”, listans namn och
+    “Skicka min plats”. Spårningsstatus, GPS-noggrannhet, kompass och
+    växeln Platser/Rutter visas inte.</li>
+    <li>Listans namn är en meny där du väljer en tagg, “Alla platser”
+    eller “Alla rutter”. Med VoiceOver kan du svepa uppåt eller nedåt på
+    listans namn för att välja en annan lista.</li>
+    <li>När en tagglista visas får en ny destination som läggs till med
+    “Lägg till plats” samma tagg. Du hör till exempel “Affär tillagd,
+    tagg favoriter”.</li>
+    <li>Om en destination eller rutt som inte hör till listan som visas
+    är vald, visas den överst i listan så att du kan avmarkera den.</li>
+    </ul>
     <h2 id="säkerhetskopior">Säkerhetskopior</h2>
     <p>En säkerhetskopia innehåller alla destinationer och rutter samt
     inställningarna och navigeringsprofilerna.</p>
@@ -385,9 +504,8 @@
     tid som anges i “Timeout för rörelseinaktivitet” (standard 15 min),
     och du hör “Telefonen är stillastående”. När du börjar gå startar
     GPS av sig själv, och du hör “Telefonen rör sig” när vägledningen
-    fortsätter. Detta kräver platsbehörigheten “Alltid”. Med “När appen
-    används” hör du “GPS pausad. Öppna Suuntain för att fortsätta.”, och
-    vägledningen fortsätter när du öppnar appen.</li>
+    fortsätter. Med “När appen används” syns den blå platsindikatorn
+    under pausen.</li>
     <li>Ankomst meddelas inte när positionen är mindre noggrann än 50
     meter, till exempel på ett tåg där positionen kan komma från
     mobilmaster. Du hör då “Dålig GPS-noggrannhet”. Vägledningen
@@ -415,12 +533,20 @@
     <li>Flikarna Hem och Platser har en rotor “Platser” som låter
     VoiceOver-användare hoppa snabbt mellan destinationsrader utan att
     svepa igenom hela vyn.</li>
-    <li>Fliken Rutter har på motsvarande sätt en rotor “Rutter”.</li>
+    <li>Fliken Rutter och vyn Rutter på fliken Hem har på motsvarande
+    sätt en rotor “Rutter”.</li>
+    <li>En tagglista har tre rotorer: “Platser och rutter” (alla rader i
+    ordning), “Platser” och “Rutter”.</li>
+    <li>En rotor går igenom alla rader i listan, även de som inte ryms
+    på skärmen, och rullar listan samtidigt.</li>
     <li>Rotormeddelandena innehåller avståndet utöver namnet på
     destinationen eller rutten, så du kan skanna listan enkelt.</li>
     <li>Med VoiceOver är val av destination ett enkelval: när du väljer
-    en ny destination avmarkeras den föregående.</li>
+    en ny destination avmarkeras den föregående. I en tagglista och i
+    den enkla hemvyn är bara en destination eller rutt vald åt
+    gången.</li>
     </ul>
+    <hr />
     <h2 id="apple-watch">Apple Watch</h2>
     <p>Suuntain Mini är Suuntains tilläggsapp för Apple Watch. Den
     installeras på klockan tillsammans med iPhone-appen.</p>
@@ -434,8 +560,8 @@
     <li>iPhonen för över de destinationer du har sparat,
     talinställningarna och navigeringsprofilen till klockan. Klockan
     minns dem, så listan fungerar även utan iPhone.</li>
-    <li>På klockan kan du navigera till enskilda destinationer. Rutter
-    finns ännu inte på klockan.</li>
+    <li>På klockan kan du navigera till enskilda destinationer. Rutter,
+    “Tillbaka längs spåret” och taggar finns ännu inte på klockan.</li>
     </ul>
     <p>Användning:</p>
     <ol type="1">
@@ -475,12 +601,11 @@
     <h2 id="första-användningen">Första användningen</h2>
     <ol type="1">
     <li>Starta Suuntain.</li>
-    <li>Tillåt åtgången till positionsdata medan appen används.</li>
-    <li>Tillåt åtgången till rörelse- och träningsdata medan appen
+    <li>Tillåt åtkomst till platsdata medan appen används. Det räcker:
+    vägledningen fortsätter också när telefonen är låst eller i
+    fickan.</li>
+    <li>Tillåt åtkomst till rörelse- och träningsdata medan appen
     används.</li>
-    <li>Tillåt åtgången till positionsdata “Alltid” så att appen inte
-    stoppas när telefonen är låst, och GPS startar igen av sig själv när
-    du börjar röra dig efter ett långt stopp.</li>
     <li>Hem sidan har automatisk skapad position “Start”.</li>
     <li>Välj: “Start”.</li>
     <li>Nu hör du appen anmäla avståndet och riktningen till
