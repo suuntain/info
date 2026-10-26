@@ -58,6 +58,7 @@ Suuntain est accompagnée d'une application Apple Watch, **Suuntain Mini**, qui 
 - Vous pouvez importer un itinéraire à partir d'un fichier GPX, partager un fichier GPX depuis une autre application ou scanner un code QR.
 - Vous pouvez créer un nouvel itinéraire en combinant deux itinéraires existants ou plus.
 - Les points de passage d'un itinéraire enregistré sont nommés « nom de l'itinéraire - numéro » (par ex. « Sentier nature - 1 »). Lorsque vous renommez l'itinéraire, les noms des points de passage changent avec lui. Les points de passage que vous avez nommés vous-même gardent leur nom.
+- Lorsque vous quittez un itinéraire pédestre créé depuis la carte, Suuntain peut calculer un nouvel itinéraire (voir « Recalcul d'un itinéraire »).
 - Le bouton « Retour par la trace » crée, à partir de la trace que vous avez parcourue, un itinéraire de retour vers votre point de départ (voir « Retour par la trace »).
 - Vous pouvez attribuer des tags à un itinéraire dans la section Tags des détails de l'itinéraire.
 
@@ -68,11 +69,11 @@ Suuntain est accompagnée d'une application Apple Watch, **Suuntain Mini**, qui 
 - Ajouter un nouvel emplacement en appuyant sur la carte.
 - Le bouton des couches de carte change la couche affichée : Topographique, Carte Apple, Satellite Apple et Satellite Apple avec libellés. Choisissez les couches à utiliser dans Réglages → Carte.
 - Comme carte topographique, vous pouvez choisir la carte topographique de l'Institut national de topographie finlandais (MML), OpenTopoMap ou Thunderforest Outdoors.
-- Sur la carte topographique de l'Institut national de topographie finlandais, vous pouvez afficher les limites cadastrales (lignes rouges) et les identifiants cadastraux (par ex. 564-1-35-6). Ils s'affichent en Finlande lorsque la carte est agrandie jusqu'à une largeur inférieure à environ 3 km. Activez-les dans Réglages → Carte.
+- Sur la carte topographique de l'Institut national de topographie finlandais, vous pouvez afficher les limites cadastrales (lignes rouges) et les identifiants cadastraux (par ex. 564-1-35-6).
 - La barre de recherche en haut (« Rechercher des lieux et des endroits ») permet de rechercher à la fois vos emplacements enregistrés et des lieux réels (dans la base cartographique d'Apple).
 - Appuyer sur un résultat de recherche centre la carte sur ce lieu et affiche un repère orange. Un lieu trouvé par recherche peut être enregistré dans votre liste d'emplacements via le bouton favori.
 - Appuyer sur un repère d'emplacement enregistré sur la carte ou dans les résultats de recherche démarre la navigation : un repère vert signifie sélectionné, rouge signifie non sélectionné. Appuyer à nouveau annule la sélection.
-- En l'absence de connexion réseau, le bas de l'onglet Carte affiche le message « Pas de connexion Internet. Le mode Avion est-il activé ? ». Sans connexion, la carte n'affiche que les zones déjà consultées.
+- En l'absence de connexion réseau, le bas de l'onglet Carte affiche le message « Pas de connexion Internet. Le mode Avion est-il activé ? ». Sans connexion, la carte n'affiche que les zones déjà consultées. Si le serveur de la carte topographique ne répond pas, les tuiles déjà consultées s'affichent quand même.
 
 ### Réglages
 
@@ -87,7 +88,7 @@ La page principale des Réglages comporte une ligne pour chaque groupe de régla
   - « Direction avec les capteurs de mouvement » améliore la direction lorsque vous gardez le téléphone dans votre poche et écoutez le guidage par le haut-parleur ou des écouteurs. Elle permet aussi d'entendre plus tôt l'annonce à l'arrêt (voir « Annonce à l'arrêt »).
   - Trace : « Enregistrer la trace » (activé par défaut) et « Effacer la trace » (voir « Retour par la trace »).
 - **Carte** : couches de carte, source de la carte topographique, « Inverser les couleurs de la carte topographique », « Limites cadastrales » et « Identifiants cadastraux » (uniquement sur la carte topographique de l'Institut national de topographie finlandais), ainsi que la longueur et l'intervalle de mise à jour de la queue.
-- **Lieux et itinéraires** : « Afficher les lieux automatiques », « Afficher l'emplacement de la voiture », simplification de l'enregistrement d'itinéraire et distance maximale d'un itinéraire créé depuis la carte.
+- **Lieux et itinéraires** : « Afficher les lieux automatiques », « Afficher l'emplacement de la voiture », simplification de l'enregistrement d'itinéraire, distance maximale d'un itinéraire créé depuis la carte et « Hors d'un itinéraire pédestre depuis la carte » (voir « Recalcul d'un itinéraire »).
 - **Application** : thème (Système, Clair ou Sombre), « Garder l'écran allumé », « Accueil simplifié » (voir « Accueil simplifié ») et « Afficher le journal de l'application ».
 - **Sauvegarde** (sur la page principale) : « Créer une sauvegarde » et « Restaurer depuis la sauvegarde » (voir « Sauvegardes »).
 - **À propos** : guide d'utilisation, version de l'application, « Vérifier les mises à jour » (vous avertit lorsqu'une nouvelle version est disponible sur l'App Store) et « Vérifier maintenant ». L'application indique toujours le résultat de la vérification.
@@ -128,15 +129,9 @@ Dans les profils basés sur la distance, vous pouvez modifier les seuils en mèt
 
 ### Annonce à l'arrêt
 
-Lorsque vous vous arrêtez, vous cherchez souvent votre chemin, et la prochaine annonce du profil de guidage vocal peut n'arriver que dans une minute. Suuntain annonce donc tout de suite la distance et la direction :
-
-- lorsque vous vous arrêtez après avoir marché : environ 1 à 2 secondes après l'arrêt. Si « Direction avec les capteurs de mouvement » est activé, Suuntain détecte l'arrêt grâce à vos pas et parle souvent dès une demi-seconde après votre dernier pas
-- lorsque vous tournez d'au moins 30 degrés sans avancer et gardez cette direction un instant : vous pouvez tourner jusqu'à ce que la cible soit à 12 heures
-- lorsque vous avez sélectionné un emplacement ou un itinéraire et commencez à marcher : une fois, après environ 4 secondes de marche
-
-Suuntain ne répète pas la direction si elle vient d'être annoncée et que vous êtes toujours tourné dans la même direction.
-
-Une fois la direction annoncée après l'arrêt, Suuntain ne fait plus les annonces du profil de guidage vocal tant que vous restez immobile. Les virages, l'arrivée et le point de passage suivant sont tout de même annoncés. Lorsque vous recommencez à marcher, l'annonce suivante arrive après l'intervalle du profil de guidage vocal. Si vous avancez lentement, par exemple en cherchant votre chemin, les annonces reprennent au bout de quelques secondes.
+- Si « Direction avec les capteurs de mouvement » est activé, Suuntain détecte que vous vous êtes arrêté et annonce la direction et la distance.
+- Lorsque vous tournez d'au moins 30 degrés sans avancer et gardez cette direction un instant, vous entendez de nouveau la direction et la distance.
+- Suuntain commence à utiliser les capteurs de mouvement après environ 4 secondes de marche.
 
 Les réglages se trouvent dans Réglages → Annonces → Arrêt :
 
@@ -215,12 +210,27 @@ Combiner des itinéraires existants en un nouvel itinéraire :
 5. Donnez un nom au nouvel itinéraire.
 6. Sélectionnez "Enregistrer".
 
-## Retour par la trace
-Suuntain enregistre le trajet que vous parcourez, la trace, chaque fois que le GPS est actif. Vous n'avez pas besoin de lancer un enregistrement. Lorsque vous voulez revenir par le même chemin qu'à l'aller, par exemple depuis une forêt où la ligne droite vers le point de départ traverserait un lac ou un marais :
+## Recalcul d'un itinéraire
+Lorsque vous suivez un itinéraire pédestre créé depuis la carte (« Itinéraire pédestre depuis la carte ») et que vous le quittez, Suuntain peut calculer un nouvel itinéraire depuis votre position. Cela ne concerne que les itinéraires créés avec Plans d'Apple.
 
-1. Sélectionnez « Retour par la trace » dans la vue Itinéraires de l'onglet Accueil ou dans l'onglet Itinéraires. Le bouton est disponible lorsque la trace mesure au moins 50 mètres. VoiceOver annonce aussi la longueur de la trace.
-2. Suuntain crée à partir de la trace l'itinéraire « Retour », qui ramène au début de la trace, et le sélectionne. Le guidage commence au premier point de l'itinéraire.
-3. Les points de passage de l'itinéraire sont « Retour - 1 », « Retour - 2 » et ainsi de suite. Si le chemin du retour passe près de l'un de vos emplacements enregistrés ou de la voiture (à moins de 25 mètres), cet emplacement devient un point de passage de l'itinéraire avec son propre nom : vous entendez par exemple « Maison » au lieu de « Retour - 3 ».
+Sélectionnez Réglages → Lieux et itinéraires → « Hors d'un itinéraire pédestre depuis la carte » :
+
+- **Désactivé** (par défaut) : Suuntain ne vous prévient pas lorsque vous quittez l'itinéraire.
+- **Demander** : vous entendez par exemple « Hors itinéraire. Itinéraire 45 mètres : à 3 heures », c'est-à-dire la direction et la distance jusqu'au point le plus proche de l'itinéraire. Lorsque vous revenez sur l'itinéraire, vous entendez « De retour sur l'itinéraire ».
+- **Automatique** : vous entendez « Hors itinéraire, calcul d'un nouvel itinéraire », puis le nouvel itinéraire. Un nouvel itinéraire est calculé au plus une fois par minute, et après trois échecs il n'y a plus de tentative tant que vous n'êtes pas revenu sur l'itinéraire.
+
+Suuntain détecte que vous avez quitté l'itinéraire lorsque vous en êtes à plus de 40 mètres pendant environ 15 secondes. Être près de l'itinéraire met fin à l'annonce. Près de la fin de l'itinéraire (moins de 50 m), il n'y a pas d'annonce.
+
+Le bouton « Recalculer l'itinéraire » calcule un nouvel itinéraire à tout moment, même si vous n'avez pas entendu que vous aviez quitté l'itinéraire.
+
+Le nouvel itinéraire s'appelle « Itinéraire recalculé ». Il remplace l'itinéraire recalculé précédent, sauf si vous l'avez renommé. L'itinéraire d'origine est conservé. Vous entendez « Nouvel itinéraire : 900 m », et le guidage commence au premier point du nouvel itinéraire. Si aucun nouvel itinéraire n'est trouvé, l'ancien reste actif et vous entendez la raison, par exemple « Nouvel itinéraire indisponible : pas de réseau ». Le recalcul nécessite une connexion réseau et une position précise (moins de 50 m).
+
+## Retour par la trace
+Suuntain enregistre le trajet que vous parcourez, la trace, chaque fois que le GPS est actif. Lorsque vous voulez revenir par le même chemin qu'à l'aller :
+
+1. Sélectionnez « Retour par la trace » dans la vue Itinéraires de l'onglet Accueil ou dans l'onglet Itinéraires.
+2. Suuntain crée l'itinéraire « Retour » à partir de la trace.
+3. Suuntain commence le guidage au premier point de passage de l'itinéraire « Retour ».
 
 Remarques :
 

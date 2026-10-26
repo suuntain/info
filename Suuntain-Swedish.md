@@ -60,6 +60,7 @@ Till Suuntain hör en Apple Watch-app, **Suuntain Mini**, som guidar dig till di
 - Du kan importera en rutt från en GPX-fil, dela en GPX-fil från en annan app eller skanna en QR-kod.
 - Du kan skapa en ny rutt genom att kombinera två eller flera befintliga rutter.
 - Vägpunkterna i en sparad rutt namnges "ruttens namn - nummer" (t.ex. "Naturstig - 1"). När du byter namn på rutten ändras vägpunkternas namn med den. Vägpunkter som du själv har namngett behåller sina namn.
+- När du lämnar en gångväg som skapats från kartan kan Suuntain beräkna en ny rutt (se "Beräkna rutten igen").
 - Knappen "Tillbaka längs spåret" skapar av spåret du har gått en rutt tillbaka till där du startade (se "Tillbaka längs spåret").
 - Du kan ge en rutt taggar i avsnittet Taggar i ruttens uppgifter.
 
@@ -70,11 +71,11 @@ Till Suuntain hör en Apple Watch-app, **Suuntain Mini**, som guidar dig till di
 - Lägg till en ny position genom att trycka på kartan.
 - Kartans lagerknapp byter kartlager: Terrängkarta, Apple-karta, Apple-satellit och Apple-satellit med etiketter. Välj de lager du vill använda under Inställningar → Karta.
 - Som terrängkarta kan du välja Lantmäteriverkets (MML) terrängkarta, OpenTopoMap eller Thunderforest Outdoors.
-- Ovanpå Lantmäteriverkets terrängkarta kan du visa fastighetsgränser (röda linjer) och fastighetsbeteckningar (t.ex. 564-1-35-6). De visas i Finland när kartan är inzoomad så att den är mindre än ungefär 3 km bred. Slå på dem under Inställningar → Karta.
+- Ovanpå Lantmäteriverkets terrängkarta kan du visa fastighetsgränser (röda linjer) och fastighetsbeteckningar (t.ex. 564-1-35-6).
 - Sökfältet längst upp ("Sök platser och ställen") söker både bland dina sparade destinationer och bland verkliga platser (i Apples kartdatabas).
 - Att trycka på ett sökresultat centrerar kartan på den platsen och visar en orange nål. Ett sökresultat kan sparas till destinationslistan med bokmärkesknappen.
 - Att trycka på en sparad destination antingen på kartan eller i sökresultaten startar navigeringen: en grön nål betyder vald, en röd betyder ovald. En ny tryckning på samma nål avbryter valet.
-- Om internetanslutning saknas visas meddelandet "Ingen internetanslutning. Är flygplansläge på?" längst ner på fliken Karta. Utan internetanslutning visar kartan bara områden som visats tidigare.
+- Om internetanslutning saknas visas meddelandet "Ingen internetanslutning. Är flygplansläge på?" längst ner på fliken Karta. Utan internetanslutning visar kartan bara områden som visats tidigare. Om terrängkartans server inte svarar visas ändå rutor som visats tidigare.
 
 ### Inställningar
 
@@ -89,7 +90,7 @@ Inställningarnas huvudsida har en rad för varje grupp av inställningar. Raden
   - "Riktning med rörelsesensorer" förbättrar riktningen när du har telefonen i fickan och lyssnar på vägledningen via högtalaren eller hörlurar. Den gör också att meddelandet när du stannar kommer snabbare (se "Meddelande när du stannar").
   - Spår: "Spela in spår" (på som standard) och "Rensa spår" (se "Tillbaka längs spåret").
 - **Karta**: kartlager, terrängkartans källa, "Invertera terrängkartans färger", "Fastighetsgränser" och "Fastighetsbeteckningar" (bara på Lantmäteriverkets terrängkarta) samt svanslängd och uppdateringsintervall.
-- **Platser och rutter**: "Visa automatiska platser", "Visa bilens plats", förenkling av ruttinspelning och maximal längd för en rutt som skapas från kartan.
+- **Platser och rutter**: "Visa automatiska platser", "Visa bilens plats", förenkling av ruttinspelning, maximal längd för en rutt som skapas från kartan och "Utanför en gångväg från karta" (se "Beräkna rutten igen").
 - **App**: tema (System, Ljust eller Mörkt), "Håll skärmen aktiv", "Enkel hemvy" (se "Enkel hemvy") och "Visa applikationslogg".
 - **Säkerhetskopiering** (på huvudsidan): "Skapa säkerhetskopia" och "Återställ från säkerhetskopia" (se "Säkerhetskopior").
 - **Om**: användarhandbok, appens version, "Sök efter uppdateringar" (meddelar när en ny version finns i App Store) och "Kontrollera nu". Appen berättar alltid resultatet av sökningen.
@@ -131,15 +132,9 @@ I profilens inställningar kan du ändra metertrösklarna och anmälningsinterva
 
 ### Meddelande när du stannar
 
-När du stannar letar du ofta efter vägen, och nästa anmälning enligt navigeringsprofilen kan dröja en minut. Därför berättar Suuntain avståndet och riktningen direkt:
-
-- när du stannar efter att ha gått: ungefär 1–2 sekunder efter att du stannat. Om "Riktning med rörelsesensorer" är på märker Suuntain stoppet på dina steg och talar ofta redan en halv sekund efter ditt sista steg
-- när du vänder dig minst 30 grader medan du står still och håller riktningen en stund: du kan vända dig tills målet är klockan 12
-- när du har valt en destination eller rutt och börjar gå: en gång, efter ungefär 4 sekunders gång
-
-Suuntain upprepar inte riktningen om den just har meddelats och du fortfarande är vänd åt samma håll.
-
-När riktningen har meddelats efter att du stannat talar Suuntain inte navigeringsprofilens anmälningar så länge du står still. Vändningar, ankomst och nästa vägpunkt meddelas ändå. När du börjar gå igen kommer nästa anmälning efter navigeringsprofilens intervall. Om du rör dig långsamt, till exempel när du letar efter vägen, fortsätter anmälningarna efter några sekunder.
+- Om "Riktning med rörelsesensorer" är på märker Suuntain att du har stannat och berättar riktningen och avståndet.
+- När du vänder dig minst 30 grader medan du står still och håller riktningen en stund hör du riktningen och avståndet igen.
+- Suuntain börjar använda rörelsesensorerna när du har gått i ungefär 4 sekunder.
 
 Inställningarna finns under Inställningar → Utrop → Stopp:
 
@@ -219,13 +214,27 @@ Kombinera befintliga rutter till en ny rutt:
 5. Ge den nya rutten ett namn.
 6. Välj "Spara".
 
+## Beräkna rutten igen
+När du följer en gångväg som skapats från kartan ("Gångväg från karta") och lämnar den kan Suuntain beräkna en ny rutt från där du är. Detta gäller bara rutter som skapats med Apple Kartor.
+
+Välj Inställningar → Platser och rutter → "Utanför en gångväg från karta":
+
+- **Av** (standard): Suuntain berättar inte när du lämnar rutten.
+- **Fråga**: du hör till exempel "Utanför rutten. Rutten 45 meter: klockan 3", alltså riktningen och avståndet till ruttens närmaste punkt. När du kommer tillbaka till rutten hör du "Tillbaka på rutten".
+- **Automatiskt**: du hör "Utanför rutten, beräknar ny rutt" och sedan den nya rutten. En ny rutt beräknas högst en gång i minuten, och efter tre misslyckade försök görs inga fler förrän du är tillbaka på rutten.
+
+Suuntain märker att du har lämnat rutten när du är mer än 40 meter från den i ungefär 15 sekunder. När du är nära rutten upphör meddelandet. Nära ruttens slut (mindre än 50 m) kommer inget meddelande.
+
+Knappen "Beräkna rutten igen" beräknar en ny rutt när som helst, även om du inte hörde att du lämnat rutten.
+
+Den nya rutten heter "Beräknad rutt". Den ersätter den föregående beräknade rutten om du inte har bytt namn på den. Den ursprungliga rutten behålls. Du hör "Ny rutt: 900 m", och vägledningen börjar från den nya ruttens första punkt. Om ingen ny rutt hittas förblir den gamla i bruk och du hör orsaken, till exempel "Ny rutt inte tillgänglig: inget nätverk". Beräkningen kräver nätverksanslutning och en exakt position (bättre än 50 m).
+
 ## Tillbaka längs spåret
+Suuntain sparar sträckan du rör dig, spåret, alltid när GPS är på. När du vill gå tillbaka samma väg som du kom:
 
-Suuntain sparar sträckan du rör dig, spåret, alltid när GPS är på. Du behöver inte starta någon inspelning. När du vill gå tillbaka samma väg som du kom, till exempel från en skog där en rak linje till startplatsen skulle gå över en sjö eller ett kärr:
-
-1. Välj "Tillbaka längs spåret" i vyn Rutter på fliken Hem eller på fliken Rutter. Knappen kan användas när spåret är minst 50 meter långt. VoiceOver berättar också spårets längd.
-2. Suuntain skapar av spåret rutten "Tillbaka" till spårets början och väljer den. Vägledningen börjar från ruttens första punkt.
-3. Ruttens vägpunkter är "Tillbaka - 1", "Tillbaka - 2" och så vidare. Om vägen tillbaka passerar en av dina sparade destinationer eller bilen (inom 25 meter) blir den destinationen en vägpunkt på rutten med sitt eget namn, så du hör till exempel "Hem" i stället för "Tillbaka - 3".
+1. Välj "Tillbaka längs spåret" i vyn Rutter på fliken Hem eller på fliken Rutter.
+2. Suuntain skapar rutten "Tillbaka" av spåret.
+3. Suuntain startar vägledningen från den första vägpunkten på rutten "Tillbaka".
 
 Att tänka på:
 

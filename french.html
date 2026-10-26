@@ -101,6 +101,9 @@
     Lorsque vous renommez l’itinéraire, les noms des points de passage
     changent avec lui. Les points de passage que vous avez nommés
     vous-même gardent leur nom.</li>
+    <li>Lorsque vous quittez un itinéraire pédestre créé depuis la
+    carte, Suuntain peut calculer un nouvel itinéraire (voir « Recalcul
+    d’un itinéraire »).</li>
     <li>Le bouton « Retour par la trace » crée, à partir de la trace que
     vous avez parcourue, un itinéraire de retour vers votre point de
     départ (voir « Retour par la trace »).</li>
@@ -126,10 +129,7 @@
     (MML), OpenTopoMap ou Thunderforest Outdoors.</li>
     <li>Sur la carte topographique de l’Institut national de topographie
     finlandais, vous pouvez afficher les limites cadastrales (lignes
-    rouges) et les identifiants cadastraux (par ex. 564-1-35-6). Ils
-    s’affichent en Finlande lorsque la carte est agrandie jusqu’à une
-    largeur inférieure à environ 3 km. Activez-les dans Réglages →
-    Carte.</li>
+    rouges) et les identifiants cadastraux (par ex. 564-1-35-6).</li>
     <li>La barre de recherche en haut (« Rechercher des lieux et des
     endroits ») permet de rechercher à la fois vos emplacements
     enregistrés et des lieux réels (dans la base cartographique
@@ -145,7 +145,8 @@
     <li>En l’absence de connexion réseau, le bas de l’onglet Carte
     affiche le message « Pas de connexion Internet. Le mode Avion est-il
     activé ? ». Sans connexion, la carte n’affiche que les zones déjà
-    consultées.</li>
+    consultées. Si le serveur de la carte topographique ne répond pas,
+    les tuiles déjà consultées s’affichent quand même.</li>
     </ul>
     <h3 id="réglages">Réglages</h3>
     <p>La page principale des Réglages comporte une ligne pour chaque
@@ -190,8 +191,9 @@
     la queue.</li>
     <li><strong>Lieux et itinéraires</strong> : « Afficher les lieux
     automatiques », « Afficher l’emplacement de la voiture »,
-    simplification de l’enregistrement d’itinéraire et distance maximale
-    d’un itinéraire créé depuis la carte.</li>
+    simplification de l’enregistrement d’itinéraire, distance maximale
+    d’un itinéraire créé depuis la carte et « Hors d’un itinéraire
+    pédestre depuis la carte » (voir « Recalcul d’un itinéraire »).</li>
     <li><strong>Application</strong> : thème (Système, Clair ou Sombre),
     « Garder l’écran allumé », « Accueil simplifié » (voir « Accueil
     simplifié ») et « Afficher le journal de l’application ».</li>
@@ -272,31 +274,16 @@
     pouvez fixer le seuil <strong>tout proche</strong> à 15 mètres et
     l’intervalle entre les indications à 3 secondes.</p>
     <h3 id="annonce-à-larrêt">Annonce à l’arrêt</h3>
-    <p>Lorsque vous vous arrêtez, vous cherchez souvent votre chemin, et
-    la prochaine annonce du profil de guidage vocal peut n’arriver que
-    dans une minute. Suuntain annonce donc tout de suite la distance et
-    la direction :</p>
     <ul>
-    <li>lorsque vous vous arrêtez après avoir marché : environ 1 à 2
-    secondes après l’arrêt. Si « Direction avec les capteurs de
-    mouvement » est activé, Suuntain détecte l’arrêt grâce à vos pas et
-    parle souvent dès une demi-seconde après votre dernier pas</li>
-    <li>lorsque vous tournez d’au moins 30 degrés sans avancer et gardez
-    cette direction un instant : vous pouvez tourner jusqu’à ce que la
-    cible soit à 12 heures</li>
-    <li>lorsque vous avez sélectionné un emplacement ou un itinéraire et
-    commencez à marcher : une fois, après environ 4 secondes de
-    marche</li>
+    <li>Si « Direction avec les capteurs de mouvement » est activé,
+    Suuntain détecte que vous vous êtes arrêté et annonce la direction
+    et la distance.</li>
+    <li>Lorsque vous tournez d’au moins 30 degrés sans avancer et gardez
+    cette direction un instant, vous entendez de nouveau la direction et
+    la distance.</li>
+    <li>Suuntain commence à utiliser les capteurs de mouvement après
+    environ 4 secondes de marche.</li>
     </ul>
-    <p>Suuntain ne répète pas la direction si elle vient d’être annoncée
-    et que vous êtes toujours tourné dans la même direction.</p>
-    <p>Une fois la direction annoncée après l’arrêt, Suuntain ne fait
-    plus les annonces du profil de guidage vocal tant que vous restez
-    immobile. Les virages, l’arrivée et le point de passage suivant sont
-    tout de même annoncés. Lorsque vous recommencez à marcher, l’annonce
-    suivante arrive après l’intervalle du profil de guidage vocal. Si
-    vous avancez lentement, par exemple en cherchant votre chemin, les
-    annonces reprennent au bout de quelques secondes.</p>
     <p>Les réglages se trouvent dans Réglages → Annonces → Arrêt :</p>
     <ul>
     <li>« Annoncer la direction à l’arrêt » (activé par défaut). Il ne
@@ -407,26 +394,52 @@
     <li>Donnez un nom au nouvel itinéraire.</li>
     <li>Sélectionnez “Enregistrer”.</li>
     </ol>
+    <h2 id="recalcul-dun-itinéraire">Recalcul d’un itinéraire</h2>
+    <p>Lorsque vous suivez un itinéraire pédestre créé depuis la carte
+    (« Itinéraire pédestre depuis la carte ») et que vous le quittez,
+    Suuntain peut calculer un nouvel itinéraire depuis votre position.
+    Cela ne concerne que les itinéraires créés avec Plans d’Apple.</p>
+    <p>Sélectionnez Réglages → Lieux et itinéraires → « Hors d’un
+    itinéraire pédestre depuis la carte » :</p>
+    <ul>
+    <li><strong>Désactivé</strong> (par défaut) : Suuntain ne vous
+    prévient pas lorsque vous quittez l’itinéraire.</li>
+    <li><strong>Demander</strong> : vous entendez par exemple « Hors
+    itinéraire. Itinéraire 45 mètres : à 3 heures », c’est-à-dire la
+    direction et la distance jusqu’au point le plus proche de
+    l’itinéraire. Lorsque vous revenez sur l’itinéraire, vous entendez «
+    De retour sur l’itinéraire ».</li>
+    <li><strong>Automatique</strong> : vous entendez « Hors itinéraire,
+    calcul d’un nouvel itinéraire », puis le nouvel itinéraire. Un
+    nouvel itinéraire est calculé au plus une fois par minute, et après
+    trois échecs il n’y a plus de tentative tant que vous n’êtes pas
+    revenu sur l’itinéraire.</li>
+    </ul>
+    <p>Suuntain détecte que vous avez quitté l’itinéraire lorsque vous
+    en êtes à plus de 40 mètres pendant environ 15 secondes. Être près
+    de l’itinéraire met fin à l’annonce. Près de la fin de l’itinéraire
+    (moins de 50 m), il n’y a pas d’annonce.</p>
+    <p>Le bouton « Recalculer l’itinéraire » calcule un nouvel
+    itinéraire à tout moment, même si vous n’avez pas entendu que vous
+    aviez quitté l’itinéraire.</p>
+    <p>Le nouvel itinéraire s’appelle « Itinéraire recalculé ». Il
+    remplace l’itinéraire recalculé précédent, sauf si vous l’avez
+    renommé. L’itinéraire d’origine est conservé. Vous entendez « Nouvel
+    itinéraire : 900 m », et le guidage commence au premier point du
+    nouvel itinéraire. Si aucun nouvel itinéraire n’est trouvé, l’ancien
+    reste actif et vous entendez la raison, par exemple « Nouvel
+    itinéraire indisponible : pas de réseau ». Le recalcul nécessite une
+    connexion réseau et une position précise (moins de 50 m).</p>
     <h2 id="retour-par-la-trace">Retour par la trace</h2>
     <p>Suuntain enregistre le trajet que vous parcourez, la trace,
-    chaque fois que le GPS est actif. Vous n’avez pas besoin de lancer
-    un enregistrement. Lorsque vous voulez revenir par le même chemin
-    qu’à l’aller, par exemple depuis une forêt où la ligne droite vers
-    le point de départ traverserait un lac ou un marais :</p>
+    chaque fois que le GPS est actif. Lorsque vous voulez revenir par le
+    même chemin qu’à l’aller :</p>
     <ol type="1">
     <li>Sélectionnez « Retour par la trace » dans la vue Itinéraires de
-    l’onglet Accueil ou dans l’onglet Itinéraires. Le bouton est
-    disponible lorsque la trace mesure au moins 50 mètres. VoiceOver
-    annonce aussi la longueur de la trace.</li>
-    <li>Suuntain crée à partir de la trace l’itinéraire « Retour », qui
-    ramène au début de la trace, et le sélectionne. Le guidage commence
-    au premier point de l’itinéraire.</li>
-    <li>Les points de passage de l’itinéraire sont « Retour - 1 », «
-    Retour - 2 » et ainsi de suite. Si le chemin du retour passe près de
-    l’un de vos emplacements enregistrés ou de la voiture (à moins de 25
-    mètres), cet emplacement devient un point de passage de l’itinéraire
-    avec son propre nom : vous entendez par exemple « Maison » au lieu
-    de « Retour - 3 ».</li>
+    l’onglet Accueil ou dans l’onglet Itinéraires.</li>
+    <li>Suuntain crée l’itinéraire « Retour » à partir de la trace.</li>
+    <li>Suuntain commence le guidage au premier point de passage de
+    l’itinéraire « Retour ».</li>
     </ol>
     <p>Remarques :</p>
     <ul>

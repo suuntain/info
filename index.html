@@ -82,6 +82,9 @@
     numero” (esim. “Luontopolku - 1”). Kun muutat reitin nimeä,
     pisteiden nimet muuttuvat mukana. Itse nimeämäsi pisteet säilyttävät
     nimensä.</li>
+    <li>Kartasta luodulta kävelyreitiltä poikettaessa Suuntain voi
+    laskea uuden reitin (katso kohta “Reitin laskeminen
+    uudelleen”).</li>
     <li>“Paluu omia jälkiä pitkin” -painike luo kulkemastasi jäljestä
     reitin takaisin lähtöpaikkaan (katso kohta “Paluu omia jälkiä
     pitkin”).</li>
@@ -103,10 +106,7 @@
     <li>Maastokartaksi voit valita Maanmittauslaitoksen maastokartan,
     OpenTopoMap-kartan tai Thunderforest Outdoors -kartan.</li>
     <li>Maanmittauslaitoksen maastokartan päällä voit näyttää
-    kiinteistörajat (punaiset viivat) ja kiinteistötunnukset (esim.
-    564-1-35-6). Ne näkyvät Suomessa, kun karttaa on lähennetty niin,
-    että se on alle noin 3 km leveä. Kytke ne päälle kohdassa Asetukset
-    → Kartta.</li>
+    kiinteistörajat (punaiset viivat) ja kiinteistötunnukset.</li>
     <li>Yläreunan hakukentässä (“Etsi sijainteja ja paikkoja”) voit
     hakea sekä omia tallennettuja paikkoja että oikean maailman kohteita
     (Applen karttatietokannasta).</li>
@@ -119,7 +119,9 @@
     napauttaa uudelleen.</li>
     <li>Jos verkkoyhteyttä ei ole, Kartta-välilehden alareunassa näkyy
     ilmoitus “Ei internet-yhteyttä. Onko lentokonetila päällä?”. Ilman
-    verkkoyhteyttä kartalla näkyvät vain aiemmin katsotut alueet.</li>
+    verkkoyhteyttä kartalla näkyvät vain aiemmin katsotut alueet. Jos
+    maastokartan palvelin ei vastaa, kartalla näkyvät aiemmin katsotut
+    ruudut silti.</li>
     </ul>
     <h3 id="asetukset">Asetukset</h3>
     <p>Asetusten pääsivulla on rivi jokaiselle asetusryhmälle. Rivi avaa
@@ -153,8 +155,9 @@
     “Kiinteistötunnukset” (vain Maanmittauslaitoksen maastokartalla)
     sekä hännän pituus ja päivitysväli.</li>
     <li><strong>Paikat ja reitit</strong>: “Näytä automaattiset paikat”,
-    “Näytä auton sijainti”, reitin nauhoituksen yksinkertaistus ja
-    kartasta luotavan reitin maksimietäisyys.</li>
+    “Näytä auton sijainti”, reitin nauhoituksen yksinkertaistus,
+    kartasta luotavan reitin maksimietäisyys ja “Kun poikkeat kartan
+    kävelyreitiltä” (katso kohta “Reitin laskeminen uudelleen”).</li>
     <li><strong>Sovellus</strong>: teema (Puhelin, Vaalea tai Tumma),
     “Pidä näyttö päällä”, “Yksinkertainen kotinäkymä” (katso kohta
     “Yksinkertainen kotinäkymä”) ja “Näytä sovelluksen loki”.</li>
@@ -224,27 +227,14 @@
     lähellä</strong> metrimääräksi 15 metriä ja asettaa puheen
     ajoitukseksi 3 sekuntia.</p>
     <h3 id="puhe-pysähtyessä">Puhe pysähtyessä</h3>
-    <p>Kun pysähdyt, etsit usein suuntaa, ja seuraavaan puheprofiilin
-    mukaiseen puheeseen voi olla minuutti. Siksi Suuntain puhuu
-    etäisyyden ja suunnan heti:</p>
     <ul>
-    <li>kun pysähdyt kävelyn jälkeen: noin 1–2 sekuntia pysähtymisen
-    jälkeen. Jos “Määritä suunta liikeantureilla” on päällä, Suuntain
-    huomaa pysähtymisen askelista ja puhuu usein jo puoli sekuntia
-    viimeisen askeleen jälkeen</li>
+    <li>Jos “Määritä suunta liikeantureilla” on päällä, Suuntain
+    tunnistaa pysähtymisen ja puhuu suunnan ja etäisyyden.</li>
     <li>kun käännyt seisoessasi vähintään 30 astetta ja pysyt hetken
-    samassa suunnassa: voit kääntyä, kunnes kohde on kello 12:ssa</li>
-    <li>kun olet valinnut paikan tai reitin ja lähdet kävelemään:
-    kerran, noin 4 sekunnin kävelyn jälkeen</li>
+    samassa suunnassa, kuulet uudestaan suunnan ja etäisyyden.</li>
+    <li>Suuntain ottaa liikeanturit käyttöön, kun olet kävellyt noin 4
+    sekuntia.</li>
     </ul>
-    <p>Suuntain ei toista suuntaa, jos se on juuri kerrottu ja olet yhä
-    samassa suunnassa.</p>
-    <p>Kun pysähtymisen jälkeinen suunta on kerrottu, Suuntain ei puhu
-    puheprofiilin mukaisia ilmoituksia niin kauan kuin seisot
-    paikallasi. Kääntyminen, saapuminen ja seuraava reittipiste
-    kerrotaan silti. Kun lähdet taas kävelemään, seuraava ilmoitus tulee
-    puheprofiilin välin kuluttua. Jos liikut hitaasti, esimerkiksi etsit
-    tietä, ilmoitukset jatkuvat muutaman sekunnin kuluttua.</p>
     <p>Asetukset ovat kohdassa Asetukset → Puheilmoitukset →
     Pysähtyminen:</p>
     <ul>
@@ -346,22 +336,48 @@
     <li>Anna uudelle reitille nimi.</li>
     <li>Valitse “Talleta”.</li>
     </ol>
+    <h2 id="reitin-laskeminen-uudelleen">Reitin laskeminen
+    uudelleen</h2>
+    <p>Kun kuljet kartasta luotua kävelyreittiä (“Kävelyreitti
+    kartasta”) ja poikkeat siltä, Suuntain osaa laskea uuden reitin
+    nykyisestä sijainnistasi. Toiminto koskee vain Apple Kartan avulla
+    luotuja reittejä.</p>
+    <p>Valitse Asetukset → Paikat ja reitit → “Kun poikkeat kartan
+    kävelyreitiltä”:</p>
+    <ul>
+    <li><strong>Pois</strong> (oletus): Suuntain ei kerro
+    poikkeamisesta.</li>
+    <li><strong>Kysy</strong>: kuulet esimerkiksi “Poikkesit reitiltä.
+    Reitti 45 metriä: kello 3” eli suunnan ja etäisyyden lähimpään
+    reitin kohtaan. Kun palaat reitille, kuulet “Takaisin
+    reitillä”.</li>
+    <li><strong>Automaattinen</strong>: kuulet “Poikkesit reitiltä,
+    lasketaan uutta reittiä” ja sitten uuden reitin. Uusi reitti
+    lasketaan enintään kerran minuutissa, ja kolmen epäonnistumisen
+    jälkeen yritykset loppuvat, kunnes olet taas reitillä.</li>
+    </ul>
+    <p>Suuntain tunnistaa poikkeamisen, kun olet yli 40 metrin päässä
+    reitistä noin 15 sekuntia. Reitin lähellä oleminen lopettaa
+    ilmoituksen. Reitin loppupään lähellä (alle 50 m) ilmoitusta ei
+    tule.</p>
+    <p>“Laske reitti uudelleen” -painike laskee uuden reitin milloin
+    tahansa, myös ilman että kuulit poikkeamisesta.</p>
+    <p>Uusi reitti on nimeltään “Laskettu reitti”. Se korvaa edellisen
+    lasketun reitin, ellet ole nimennyt sitä uudelleen. Alkuperäinen
+    reitti säilyy. Kuulet “Uusi reitti: 900 m”, ja opastus alkaa uuden
+    reitin ensimmäisestä pisteestä. Jos uutta reittiä ei saada, vanha
+    jää voimaan ja kuulet syyn, esimerkiksi “Uutta reittiä ei saatu: ei
+    verkkoyhteyttä”. Laskeminen tarvitsee verkkoyhteyden ja tarkan
+    sijainnin (alle 50 m).</p>
     <h2 id="paluu-omia-jälkiä-pitkin">Paluu omia jälkiä pitkin</h2>
     <p>Suuntain tallentaa kulkemasi matkan, jäljen, aina kun GPS on
-    käytössä. Nauhoitusta ei tarvitse aloittaa. Kun haluat palata samaa
-    tietä kuin tulit, esimerkiksi metsästä, jossa suora linja
-    lähtöpaikkaan kulkisi järven tai suon yli:</p>
+    käytössä. Kun haluat palata samaa tietä kuin tulit:</p>
     <ol type="1">
     <li>Valitse “Paluu omia jälkiä pitkin” Koti-välilehden
-    Reitit-näkymässä tai Reitit-välilehdellä. Painike on käytössä, kun
-    jälkeä on vähintään 50 metriä. VoiceOver kertoo myös jäljen
-    pituuden.</li>
-    <li>Suuntain luo jäljestä reitin “Paluu” takaisin jäljen alkuun ja
-    valitsee sen. Opastus alkaa reitin ensimmäisestä pisteestä.</li>
-    <li>Reitin pisteet ovat “Paluu - 1”, “Paluu - 2” ja niin edelleen.
-    Jos paluumatka kulkee tallentamasi paikan tai auton ohi (alle 25
-    metrin päästä), se paikka on reitin piste omalla nimellään, joten
-    kuulet esimerkiksi “Koti” etkä “Paluu - 3”.</li>
+    Reitit-näkymässä tai Reitit-välilehdellä.</li>
+    <li>Suuntain luo jäljestä reitin “Paluu”.</li>
+    <li>Suuntain aloitaa opastuksen “Paluu” reitin ensimmäisestä
+    reittpisteestä.</li>
     </ol>
     <p>Huomioita:</p>
     <ul>
@@ -402,8 +418,8 @@
     <li>Valitse “Talleta”.</li>
     </ol>
     <p>Tunnisteen voi poistaa sen vieressä olevalla “Poista tunniste”
-    -painikkeella. Tunniste on olemassa niin kauan kuin jollakin
-    paikalla tai reitillä on se.</p>
+    -painikkeella. Tunniste on olemassa niin kauan kuin se on käytössä
+    jollakin paikalla tai reitillä.</p>
     <p>Tunnistelista Koti-välilehdellä:</p>
     <ul>
     <li>Jos olet määritellyt jollekin paikalle tai reitille tunnisteen,

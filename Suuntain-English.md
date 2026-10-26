@@ -58,6 +58,7 @@ Suuntain comes with an Apple Watch app, **Suuntain Mini**, which guides you to y
 - You can import a route from a GPX file, share a GPX file from another app, or scan a QR code.
 - You can create a new route by combining two or more existing routes.
 - Waypoints of a saved route are named in the format "route name - number" (e.g. "Nature trail - 1"). When you rename the route, the waypoint names change with it. Waypoints you have named yourself keep their names.
+- When you leave a walking route made from the map, Suuntain can calculate a new route (see "Recalculating a Route").
 - The "Back along trail" button creates a route from the trail you have walked back to where you started (see "Back Along Trail").
 - You can give a route tags in the Tags section of the route details.
 
@@ -68,11 +69,11 @@ Suuntain comes with an Apple Watch app, **Suuntain Mini**, which guides you to y
 - Add a new location by tapping the map.
 - The map layer button switches the map layer: Topographic, Apple map, Apple satellite and Apple satellite with labels. Choose the layers you want to use in Settings → Map.
 - As the topographic map, you can choose the National Land Survey of Finland (MML) topographic map, OpenTopoMap or Thunderforest Outdoors.
-- Over the National Land Survey of Finland topographic map you can show property boundaries (red lines) and property identifiers (e.g. 564-1-35-6). They are shown in Finland when the map is zoomed in to less than about 3 km wide. Turn them on in Settings → Map.
+- Over the National Land Survey of Finland topographic map you can show property boundaries (red lines) and property identifiers (e.g. 564-1-35-6).
 - The search bar at the top ("Search locations and places") searches both your saved locations and real-world places (in Apple's map database).
 - Tapping a search result centers the map on that place and drops an orange pin. A search result place can be saved to your location list with the bookmark button.
 - Tapping a saved-location pin on the map or in the search results starts navigation: a green pin means selected, red means not selected. Tapping it again clears the selection.
-- If there's no network connection, the bottom of the Map tab shows the notice "No internet connection. Is Airplane mode on?". Without a network connection, the map shows only areas viewed before.
+- If there's no network connection, the bottom of the Map tab shows the notice "No internet connection. Is Airplane mode on?". Without a network connection, the map shows only areas viewed before. If the topographic map server doesn't respond, previously viewed tiles are still shown.
 
 ### Settings
 
@@ -87,7 +88,7 @@ The main Settings page has a row for each group of settings. A row opens a page 
   - "Use motion sensors for direction" improves the direction when you keep the phone in your pocket and listen to guidance through the speaker or headphones. It also makes the announcement when you stop come sooner (see "Announcing When You Stop").
   - Trail: "Record trail" (on by default) and "Clear trail" (see "Back Along Trail").
 - **Map**: map layers, the topographic map source, "Invert topographic map colors", "Property boundaries" and "Property identifiers" (only on the National Land Survey of Finland topographic map), and the tail length and update interval.
-- **Locations & routes**: "Show automatic locations", "Show Car location", route recording simplification and the maximum distance of a route created from the map.
+- **Locations & routes**: "Show automatic locations", "Show Car location", route recording simplification, the maximum distance of a route created from the map and "When off a walking route from map" (see "Recalculating a Route").
 - **App**: theme (System, Light or Dark), "Keep display active", "Simple Home" (see "Simple Home") and "Show Application Log".
 - **Backup** (on the main page): "Create Backup" and "Restore from Backup" (see "Backups").
 - **About**: user guide, app version, "Check for updates" (tells you when a new version is in the App Store) and "Check Now". The app always tells you the result of the check.
@@ -128,15 +129,9 @@ In distance-based profiles, you can change the meter thresholds and speech timin
 
 ### Announcing When You Stop
 
-When you stop, you are often looking for the way, and the next announcement of the speech profile may be a minute away. So Suuntain speaks the distance and direction right away:
-
-- when you stop after walking: about 1–2 seconds after you stop. If "Use motion sensors for direction" is on, Suuntain notices the stop from your steps and often speaks as soon as half a second after your last step
-- when you turn at least 30 degrees while standing and hold that direction for a moment: you can keep turning until the target is at 12 o'clock
-- when you have selected a location or route and start walking: once, after about 4 seconds of walking
-
-Suuntain doesn't repeat the direction if it was just announced and you are still facing the same way.
-
-Once the direction has been announced after you stop, Suuntain doesn't speak the speech profile's announcements for as long as you stand still. Turning, arrival and the next waypoint are still announced. When you start walking again, the next announcement comes after the speech profile's interval. If you move slowly, for example while looking for the way, the announcements continue after a few seconds.
+- If "Use motion sensors for direction" is on, Suuntain notices that you have stopped and speaks the direction and distance.
+- When you turn at least 30 degrees while standing and hold that direction for a moment, you hear the direction and distance again.
+- Suuntain starts using the motion sensors after you have walked for about 4 seconds.
 
 The settings are in Settings → Announcements → Stopping:
 
@@ -215,12 +210,27 @@ Combine existing routes into a new route:
 5. Give the new route a name.
 6. Select "Save".
 
-## Back Along Trail
-Suuntain records the distance you travel, the trail, whenever GPS is on. You don't need to start a recording. When you want to go back the way you came, for example from a forest where a straight line to the start would cross a lake or a swamp:
+## Recalculating a Route
+When you follow a walking route made from the map ("Walking route from map") and leave it, Suuntain can calculate a new route from where you are. This applies only to routes created with Apple Maps.
 
-1. Select "Back along trail" in the Routes view of the Home tab or on the Routes tab. The button is enabled once the trail is at least 50 meters long. VoiceOver also tells you the length of the trail.
-2. Suuntain creates the route "Way back" from the trail back to the start of the trail and selects it. Guidance starts from the first point of the route.
-3. The waypoints of the route are "Way back - 1", "Way back - 2" and so on. If the way back passes one of your saved locations or the Car (within 25 meters), that location is a waypoint of the route with its own name, so you hear, for example, "Home" instead of "Way back - 3".
+Select Settings → Locations & routes → "When off a walking route from map":
+
+- **Off** (default): Suuntain doesn't tell you when you leave the route.
+- **Ask**: you hear, for example, "Off route. Route 45 meters: at 3 o'clock", which is the direction and distance to the nearest point of the route. When you return to the route, you hear "Back on route".
+- **Automatic**: you hear "Off route, calculating new route" and then the new route. A new route is calculated at most once a minute, and after three failures no more attempts are made until you are back on the route.
+
+Suuntain notices that you have left the route when you are more than 40 meters from it for about 15 seconds. Being near the route ends the announcement. Near the end of the route (less than 50 m) there is no announcement.
+
+The "Recalculate route" button calculates a new route at any time, even if you haven't heard that you left the route.
+
+The new route is named "Recalculated route". It replaces the previous recalculated route unless you have renamed it. The original route is kept. You hear "New route: 900 m", and guidance starts from the first point of the new route. If no new route is found, the old one stays in use and you hear the reason, for example "New route not available: no network". Recalculating needs a network connection and an accurate location (better than 50 m).
+
+## Back Along Trail
+Suuntain records the distance you travel, the trail, whenever GPS is on. When you want to go back the way you came:
+
+1. Select "Back along trail" in the Routes view of the Home tab or on the Routes tab.
+2. Suuntain creates the route "Way back" from the trail.
+3. Suuntain starts guidance from the first waypoint of the "Way back" route.
 
 Notes:
 
