@@ -5,3 +5,4 @@ pandoc -s Suuntain-Swedish.md --template=template.html -o swedish.html
 pandoc -s Suuntain-French.md --template=template.html -o french.html
 pandoc -s Suuntain-Ominaisuudet.md --template=template.html -o ominaisuudet.html
 pandoc -s Suuntain-Finnish-Android.md --template=template.html -o android.html
+pandoc -s PrivacyPolicy.md --template=template.html -o privacy.html
