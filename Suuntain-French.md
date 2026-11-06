@@ -68,7 +68,7 @@ Suuntain est accompagnée d'une application Apple Watch, **Suuntain Mini**, qui 
 - La carte affiche en pointillés le trajet que vous venez de parcourir, la queue (10 minutes par défaut). La queue est tracée à partir de la trace : elle ne s'affiche donc que si « Enregistrer la trace » est activé. Vous pouvez modifier la longueur de la queue dans Réglages → Carte.
 - Ajouter un nouvel emplacement en appuyant sur la carte.
 - Le bouton des couches de carte change la couche affichée : Topographique, Carte Apple, Satellite Apple et Satellite Apple avec libellés. Choisissez les couches à utiliser dans Réglages → Carte.
-- Comme carte topographique, vous pouvez choisir la carte topographique de l'Institut national de topographie finlandais (MML), OpenTopoMap ou Thunderforest Outdoors.
+- Comme carte topographique, vous pouvez choisir Cartes nationales, OpenTopoMap ou Thunderforest Outdoors. Cartes nationales affiche la carte topographique de l'Institut national de topographie finlandais (MML) en Finlande, celle de l'Autorité cartographique norvégienne (Kartverket) en Norvège et OpenTopoMap ailleurs.
 - Sur la carte topographique de l'Institut national de topographie finlandais, vous pouvez afficher les limites cadastrales (lignes rouges) et les identifiants cadastraux (par ex. 564-1-35-6).
 - La barre de recherche en haut (« Rechercher des lieux et des endroits ») permet de rechercher à la fois vos emplacements enregistrés et des lieux réels (dans la base cartographique d'Apple).
 - Appuyer sur un résultat de recherche centre la carte sur ce lieu et affiche un repère orange. Un lieu trouvé par recherche peut être enregistré dans votre liste d'emplacements via le bouton favori.

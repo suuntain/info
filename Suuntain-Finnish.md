@@ -68,7 +68,7 @@ Suuntaimen mukana tulee Apple Watch -sovellus **Suuntain Mini**, joka opastaa ta
 - Kartalla näkyy katkoviivalla viimeksi kulkemasi matka, häntä (oletuksena 10 minuuttia). Häntä piirretään jäljestä, joten se näkyy vain, kun "Tallenna jälki" on päällä. Hännän pituuden voit muuttaa kohdassa Asetukset → Kartta.
 - Lisää uusi paikka napauttamalla karttaa.
 - Kartan tasopainike vaihtaa karttatasoa: Maastokartta, Applen kartta, Applen satelliitti sekä Applen satelliitti ja nimet. Valitse Asetukset → Kartta kohdassa tasot, joita haluat käyttää.
-- Maastokartaksi voit valita Maanmittauslaitoksen maastokartan, OpenTopoMap-kartan tai Thunderforest Outdoors -kartan.
+- Maastokartaksi voit valita Kansalliset kartat, OpenTopoMap-kartan tai Thunderforest Outdoors -kartan. Kansalliset kartat näyttää Suomessa Maanmittauslaitoksen maastokartan, Norjassa Norjan maanmittauslaitoksen (Kartverket) kartan ja muualla OpenTopoMap-kartan.
 - Maanmittauslaitoksen maastokartan päällä voit näyttää kiinteistörajat (punaiset viivat) ja kiinteistötunnukset.
 - Yläreunan hakukentässä ("Etsi sijainteja ja paikkoja") voit hakea sekä omia tallennettuja paikkoja että oikean maailman kohteita (Applen karttatietokannasta). 
 - Hakutuloksen napauttaminen keskittää kartan kyseiseen paikkaan ja näyttää siinä oranssin nastan. Hakutuloksena löytyneen kohteen voit tallentaa paikkalistalle kirjanmerkkinapilla.

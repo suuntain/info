@@ -6,8 +6,8 @@
 
 ## Suuntain-tietosuojaseloste
 
-**Päivitetty**: 3.11.2026
-**Voimassa**: 3.11.2026 alkaen
+**Päivitetty**: 6.11.2026
+**Voimassa**: 6.11.2026 alkaen
 
 Tämä tietosuojaseloste kertoo, mitä Suuntain-sovellus iPhonelle ja Apple Watchille tekee tiedoillasi.
 
@@ -42,10 +42,16 @@ Osa toiminnoista tarvitsee verkkoyhteyden. Jokainen pyyntö kulkee laitteeltasi 
 - **Milloin**: Olet valinnut maastokartan tarjoajaksi Thunderforestin
 - **Miten sen voi välttää**: Valitse toinen tarjoaja
 
+#### Kartverket (Norjan maanmittauslaitos)
+
+- **Mitä se näkee**: IP-osoitteesi, näytetty kartta-alue (karttatiilet), sovelluksen versio
+- **Milloin**: Maastokartta näytetään kartalla Norjassa, ja maastokartan lähteenä on Kansalliset kartat
+- **Miten sen voi välttää**: Käytä toista karttatasoa tai tarjoajaa
+
 #### OpenTopoMap
 
 - **Mitä se näkee**: IP-osoitteesi, näytetty kartta-alue (karttatiilet), sovelluksen versio
-- **Milloin**: Maastokartta näytetään Suomen ulkopuolella, tai olet valinnut OpenTopoMapin
+- **Milloin**: Maastokartta näytetään Suomen ja Norjan ulkopuolella, tai olet valinnut OpenTopoMapin
 - **Miten sen voi välttää**: Käytä toista karttatasoa tai tarjoajaa
 
 #### Apple Kartat
@@ -75,6 +81,7 @@ Osa toiminnoista tarvitsee verkkoyhteyden. Jokainen pyyntö kulkee laitteeltasi 
 Tietosuojaselosteet:
 
 - [Maanmittauslaitos](https://www.maanmittauslaitos.fi/tietoa-maanmittauslaitoksesta/organisaatio/tietosuoja-ja-henkilotietojen-kasittely)
+- [Kartverket](https://www.kartverket.no/om-kartverket/personvern)
 - [Thunderforest](https://www.thunderforest.com/privacy/)
 - [OpenTopoMap](https://opentopomap.org/about)
 - [Apple](https://www.apple.com/fi/legal/privacy/)
@@ -152,8 +159,8 @@ Kysymykset tästä selosteesta tai Suuntainin tietosuojasta:
 
 ## Suuntains integritetspolicy
 
-**Uppdaterad**: 3 november 2026
-**Gäller från**: 3 november 2026
+**Uppdaterad**: 6 november 2026
+**Gäller från**: 6 november 2026
 
 Den här integritetspolicyn förklarar vad Suuntain-appen för iPhone och Apple Watch gör med din information.
 
@@ -188,10 +195,16 @@ Vissa funktioner behöver nätverket. Varje förfrågan går direkt från din en
 - **När**: Du har valt Thunderforest som leverantör av terrängkartan
 - **Hur du undviker det**: Välj en annan leverantör
 
+#### Kartverket (Norges lantmäteri)
+
+- **Vad den ser**: Din IP-adress, kartområdet som visas (kartrutor), appens version
+- **När**: Terrängkartan visas på en karta i Norge, och terrängkartans källa är Nationella kartor
+- **Hur du undviker det**: Använd ett annat kartlager eller en annan leverantör
+
 #### OpenTopoMap
 
 - **Vad den ser**: Din IP-adress, kartområdet som visas (kartrutor), appens version
-- **När**: Terrängkartan visas utanför Finland, eller du har valt OpenTopoMap
+- **När**: Terrängkartan visas utanför Finland och Norge, eller du har valt OpenTopoMap
 - **Hur du undviker det**: Använd ett annat kartlager eller en annan leverantör
 
 #### Apple Kartor
@@ -221,6 +234,7 @@ Vissa funktioner behöver nätverket. Varje förfrågan går direkt från din en
 Integritetspolicyer:
 
 - [Lantmäteriverket](https://www.maanmittauslaitos.fi/sv/information-om-lantmateriverket/organisation/dataskydd-och-behandling-av-personuppgifter)
+- [Kartverket](https://www.kartverket.no/om-kartverket/personvern)
 - [Thunderforest](https://www.thunderforest.com/privacy/)
 - [OpenTopoMap](https://opentopomap.org/about)
 - [Apple](https://www.apple.com/se/legal/privacy/)
@@ -298,8 +312,8 @@ Frågor om den här policyn eller Suuntains integritetsskydd:
 
 ## Suuntain Privacy Policy (English)
 
-**Last Updated**: November 3, 2026
-**Effective Date**: November 3, 2026
+**Last Updated**: November 6, 2026
+**Effective Date**: November 6, 2026
 
 This privacy policy explains what the Suuntain iOS and Apple Watch apps do with your information.
 
@@ -334,10 +348,16 @@ Some features need the network. Each request goes directly from your device to t
 - **When**: You chose Thunderforest as the topographic map provider
 - **How to avoid it**: Choose another provider
 
+#### Kartverket (Norwegian Mapping Authority)
+
+- **What it sees**: Your IP address, the map area shown (map tiles), the app version
+- **When**: The topographic layer is shown on a map in Norway, with National maps as the topographic map provider
+- **How to avoid it**: Use another map layer or provider
+
 #### OpenTopoMap
 
 - **What it sees**: Your IP address, the map area shown (map tiles), the app version
-- **When**: The topographic layer is shown outside Finland, or you chose OpenTopoMap
+- **When**: The topographic layer is shown outside Finland and Norway, or you chose OpenTopoMap
 - **How to avoid it**: Use another map layer or provider
 
 #### Apple Maps
@@ -367,6 +387,7 @@ Some features need the network. Each request goes directly from your device to t
 Privacy policies:
 
 - [National Land Survey of Finland](https://www.maanmittauslaitos.fi/en/about-nls/organisation/data-protection-and-processing-personal-data)
+- [Kartverket](https://www.kartverket.no/om-kartverket/personvern)
 - [Thunderforest](https://www.thunderforest.com/privacy/)
 - [OpenTopoMap](https://opentopomap.org/about)
 - [Apple](https://www.apple.com/legal/privacy/)
@@ -444,8 +465,8 @@ Questions about this policy or Suuntain's privacy practices:
 
 ## Politique de confidentialité de Suuntain
 
-**Dernière mise à jour** : 3 novembre 2026
-**Date d'effet** : 3 novembre 2026
+**Dernière mise à jour** : 6 novembre 2026
+**Date d'effet** : 6 novembre 2026
 
 Cette politique de confidentialité explique ce que l'app Suuntain pour iPhone et Apple Watch fait de vos informations.
 
@@ -480,10 +501,16 @@ Certaines fonctions ont besoin du réseau. Chaque requête va directement de vot
 - **Quand**: Vous avez choisi Thunderforest comme fournisseur de la carte topographique
 - **Comment l'éviter**: Choisissez un autre fournisseur
 
+#### Kartverket (Autorité cartographique norvégienne)
+
+- **Ce qu'il voit**: Votre adresse IP, la zone de carte affichée (tuiles), la version de l'app
+- **Quand**: La couche topographique est affichée sur une carte en Norvège, avec Cartes nationales comme fournisseur de la carte topographique
+- **Comment l'éviter**: Utilisez une autre couche ou un autre fournisseur
+
 #### OpenTopoMap
 
 - **Ce qu'il voit**: Votre adresse IP, la zone de carte affichée (tuiles), la version de l'app
-- **Quand**: La couche topographique est affichée hors de Finlande, ou vous avez choisi OpenTopoMap
+- **Quand**: La couche topographique est affichée hors de Finlande et de Norvège, ou vous avez choisi OpenTopoMap
 - **Comment l'éviter**: Utilisez une autre couche ou un autre fournisseur
 
 #### Plans d'Apple
@@ -513,6 +540,7 @@ Certaines fonctions ont besoin du réseau. Chaque requête va directement de vot
 Politiques de confidentialité :
 
 - [Institut national de topographie de Finlande](https://www.maanmittauslaitos.fi/en/about-nls/organisation/data-protection-and-processing-personal-data)
+- [Kartverket](https://www.kartverket.no/om-kartverket/personvern)
 - [Thunderforest](https://www.thunderforest.com/privacy/)
 - [OpenTopoMap](https://opentopomap.org/about)
 - [Apple](https://www.apple.com/fr/legal/privacy/)

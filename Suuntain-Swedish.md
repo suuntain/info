@@ -70,7 +70,7 @@ Till Suuntain hör en Apple Watch-app, **Suuntain Mini**, som guidar dig till di
 - Kartan visar sträckan du senast har gått, svansen, som en streckad linje (10 minuter som standard). Svansen ritas från spåret, så den visas bara när "Spela in spår" är på. Svanslängden kan du ändra under Inställningar → Karta.
 - Lägg till en ny position genom att trycka på kartan.
 - Kartans lagerknapp byter kartlager: Terrängkarta, Apple-karta, Apple-satellit och Apple-satellit med etiketter. Välj de lager du vill använda under Inställningar → Karta.
-- Som terrängkarta kan du välja Lantmäteriverkets (MML) terrängkarta, OpenTopoMap eller Thunderforest Outdoors.
+- Som terrängkarta kan du välja Nationella kartor, OpenTopoMap eller Thunderforest Outdoors. Nationella kartor visar Lantmäteriverkets (MML) terrängkarta i Finland, Norges lantmäteris (Kartverket) karta i Norge och OpenTopoMap på andra håll.
 - Ovanpå Lantmäteriverkets terrängkarta kan du visa fastighetsgränser (röda linjer) och fastighetsbeteckningar (t.ex. 564-1-35-6).
 - Sökfältet längst upp ("Sök platser och ställen") söker både bland dina sparade destinationer och bland verkliga platser (i Apples kartdatabas).
 - Att trycka på ett sökresultat centrerar kartan på den platsen och visar en orange nål. Ett sökresultat kan sparas till destinationslistan med bokmärkesknappen.

@@ -68,7 +68,7 @@ Suuntain comes with an Apple Watch app, **Suuntain Mini**, which guides you to y
 - The map shows the distance you walked most recently, the tail, as a dashed line (10 minutes by default). The tail is drawn from the trail, so it is shown only when "Record trail" is on. You can change the tail length in Settings → Map.
 - Add a new location by tapping the map.
 - The map layer button switches the map layer: Topographic, Apple map, Apple satellite and Apple satellite with labels. Choose the layers you want to use in Settings → Map.
-- As the topographic map, you can choose the National Land Survey of Finland (MML) topographic map, OpenTopoMap or Thunderforest Outdoors.
+- As the topographic map, you can choose National maps, OpenTopoMap or Thunderforest Outdoors. National maps uses the National Land Survey of Finland (MML) topographic map in Finland, the Norwegian Mapping Authority (Kartverket) topographic map in Norway and OpenTopoMap elsewhere.
 - Over the National Land Survey of Finland topographic map you can show property boundaries (red lines) and property identifiers (e.g. 564-1-35-6).
 - The search bar at the top ("Search locations and places") searches both your saved locations and real-world places (in Apple's map database).
 - Tapping a search result centers the map on that place and drops an orange pin. A search result place can be saved to your location list with the bookmark button.
