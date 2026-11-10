@@ -3,11 +3,15 @@
 [Käyttöohje](finnish.html)
 [Guide d'utilisation](french.html)
 
+**Hitta rätt, bortom synen.**
+
 ## Översikt
 
 Suuntain är en iPhone-app som hjälper dig att navigera i naturen och lätt hitta olika destinationer.
 
 Appen berättar både avståndet och riktningen till den valda destinationen eller ruttvägpunkten.
+
+Telefonen kan ligga kvar i fickan, så att händerna är fria för den vita käppen, ledarhunden eller till exempel vandringsstavarna. Du behöver inte titta på skärmen.
 
 Appen är främst avsedd för blinda och synskadade användare, men kan förstås användas av alla som rör sig i naturen.
 

@@ -3,9 +3,13 @@
 [Användarguide](swedish.html)
 [Guide d'utilisation](french.html)
 
+**Näkemättä perille.**
+
 ## Yleistä
 
 Suuntain on iPhone-sovellus, joka auttaa liikkumaan luonnossa ja löytämään paikkoja helposti. Sovellus puhuu etäisyyden ja suunnan valittuun paikkaan tai reitin pisteeseen. 
+
+Puhelin voi olla taskussa, joten kädet jäävät vapaiksi valkoista keppiä, opaskoiraa tai vaikkapa kävelysauvoja varten. Näyttöä ei tarvitse katsoa.
 
 Sovellus on suunniteltu erityisesti sokeille ja näkövammaisille, mutta siitä on hyötyä kaikille luonnossa liikkujille.
 

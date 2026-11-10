@@ -3,9 +3,13 @@
 [Käyttöohje](finnish.html)
 [Användarguide](swedish.html)
 
+**Trouvez votre chemin, au-delà de la vue.**
+
 ## Vue d'ensemble
 
 Suuntain est une application iPhone qui vous aide à naviguer dans la nature et à trouver des endroits facilement. L'application annonce la distance et la direction vers un emplacement sélectionné ou un point de passage d'itinéraire.
+
+Le téléphone peut rester dans votre poche : vos mains restent libres pour la canne blanche, le chien guide ou encore les bâtons de marche. Inutile de regarder l'écran.
 
 L'application est conçue spécialement pour les utilisateurs aveugles et malvoyants, mais elle est utile pour quiconque se déplace dans la nature.
 

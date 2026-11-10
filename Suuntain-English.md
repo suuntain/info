@@ -3,9 +3,13 @@
 [Användarguide](swedish.html)
 [Guide d'utilisation](french.html)
 
+**Find your way, even beyond sight.**
+
 ## Overview
 
 Suuntain is an iPhone app that helps you navigate in nature and find places easily. The app speaks the distance and direction to a selected location or route waypoint.
+
+The phone can stay in your pocket, leaving your hands free for a white cane, a guide dog or, say, walking poles. You don't need to look at the screen.
 
 The app is designed especially for blind and visually impaired users, but it's useful for anyone moving in nature.
 
