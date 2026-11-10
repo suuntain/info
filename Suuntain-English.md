@@ -84,7 +84,7 @@ Suuntain comes with an Apple Watch app, **Suuntain Mini**, which guides you to y
 The main Settings page has a row for each group of settings. A row opens a page with the settings of that group.
 
 - **Guidance**: direction mode (12h clock, 24h clock or 8 directions), "Include direction word" (a coarse direction word in addition to the clock position), voice and speech speed.
-- **Announcements**: the location and route speech profiles and "Manage Profiles" (see "Speech Profiles"), Stopping: "Announce when you stop" and "Say “Stopped” and “Walking”" (see "Announcing When You Stop"), shake (see "Shake") and the U-turn proposal.
+- **Announcements**: the location and route speech profiles and "Manage Profiles" (see "Speech Profiles"), Stopping: "Announce when you stop" and "Say “Stopped” and “Walking”" (see "Announcing When You Stop"), shake (see "Shake"), the U-turn proposal and "Voice commands" (see "Voice Commands").
 - **Direction & GPS**:
   - "Use compass when slower than": when you move slower than this, Suuntain uses the phone's compass; when you move faster, it uses the GPS direction of travel. The default is "< 0,75 km/h".
   - "Start GPS when the app opens" (on by default).
@@ -114,6 +114,7 @@ The main Settings page has a row for each group of settings. A row opens a page 
 - **Announcing when you stop:** When you stop or turn on the spot, you hear the direction right away.
 - **Backup:** Save and restore locations and routes as a JSON file. Suuntain also makes a backup automatically once a day.
 - **Siri Commands:** Control the app with voice commands (e.g., "Suuntain, select location").
+- **Voice Commands:** Select a location or route on the Home tab by speaking (e.g., "location Home").
 
 ## Speech Profiles
 Suuntain speaks the distance and direction to a location or waypoint according to the speech profile. You can select a speech profile in Settings → Announcements → Announcement Profiles. Locations and routes can use different profiles. You can also edit existing profiles or create new ones ("Manage Profiles").
@@ -277,6 +278,37 @@ The "Simple Home" setting (Settings → App) shows only one list at a time on th
 - The name of the list is a menu where you choose a tag, "All locations" or "All routes". With VoiceOver you can swipe up or down on the list name to choose another list.
 - While a tag list is shown, "Add Location" gives the new location the same tag. You hear, for example, "Shop added, tag favorites".
 - If a location or route that isn't in the list shown is selected, it is shown at the top of the list so that you can deselect it.
+
+## Voice Commands
+With voice commands you select a location or route on the Home tab without scrolling through the list. The feature is designed especially for VoiceOver users.
+
+Turn it on:
+
+1. Turn on Settings → Announcements → Voice commands.
+2. Allow the microphone and speech recognition when Suuntain asks. If you don't allow them, the setting turns off again.
+
+Give a command:
+
+1. Tap the microphone button in the list header. With VoiceOver on, you can also do a two-finger double tap (Magic Tap) anywhere on the Home tab. This works in every Home view: Home: Locations, Home: Routes, tag lists and Simple Home.
+2. When you hear the chime, say the command.
+
+Commands:
+
+- "location" and the name of a location, for example "location Home": selects the location and deselects everything else. You hear "Home selected" and then the direction and distance.
+- "route" and the name of a route, for example "route Dog walk": selects the route and deselects the locations.
+- "save": saves your current position as a new location, like "Add Location". If Simple Home is showing a tag list, the new location gets that tag.
+- "stop": deselects the route and every location, so guidance stops.
+
+Notes:
+
+- You can say the name of the location or route, or its speech name after the slash. For example, you can select "Parking area / car park" by saying "location car park".
+- You can choose from the locations in Home: Locations (automatic locations only if they are selected), the car if "Show Car location" is on, and every route.
+- If Suuntain isn't sure, it asks, for example, "Did you mean location Home?". Answer "yes" or "no" after the chime.
+- If Suuntain doesn't hear or understand the command, you hear, for example, "Nothing heard", "Command not understood" or "Unknown location Home".
+- Another two-finger double tap or a tap on the microphone button while listening cancels the command ("Cancelled").
+- Say the commands in the app's language (English, Finnish, Swedish or French). Speech recognition works without a network connection if the phone supports it.
+- Voice commands are not Siri commands: they only work while Suuntain is open on the Home tab. Siri commands (for example "Suuntain, select location") also work from elsewhere.
+- While the setting is off, the VoiceOver two-finger double tap works as in other apps (for example, it plays or pauses music).
 
 ## Backups
 

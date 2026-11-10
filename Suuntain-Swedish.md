@@ -86,7 +86,7 @@ Till Suuntain hör en Apple Watch-app, **Suuntain Mini**, som guidar dig till di
 Inställningarnas huvudsida har en rad för varje grupp av inställningar. Raden öppnar en sida med gruppens inställningar.
 
 - **Vägledning**: riktningsläge (12h klocka, 24h klocka eller 8 riktningar), "Även 8 riktningar" (en ungefärlig riktning i ord utöver klockriktningen), röst och talhastighet.
-- **Utrop**: navigeringsprofiler för destinationer och rutter samt "Hantera profiler" (se "Navigeringsprofiler"), Stopp: "Meddela riktningen när du stannar" och "Säg ”Stannat” och ”I rörelse”" (se "Meddelande när du stannar"), skakning (se "Skakning") och förslag om U-svängar.
+- **Utrop**: navigeringsprofiler för destinationer och rutter samt "Hantera profiler" (se "Navigeringsprofiler"), Stopp: "Meddela riktningen när du stannar" och "Säg ”Stannat” och ”I rörelse”" (se "Meddelande när du stannar"), skakning (se "Skakning"), förslag om U-svängar och "Röstkommandon" (se "Röstkommandon").
 - **Riktning och GPS**:
   - "Använd kompass när långsammare än": när du rör dig långsammare än så använder Suuntain telefonens kompass, när du rör dig snabbare använder den GPS:ens färdriktning. Standard är "< 0,75 km/h".
   - "Starta GPS när appen öppnas" (på som standard).
@@ -116,6 +116,7 @@ Inställningarnas huvudsida har en rad för varje grupp av inställningar. Raden
 - **Meddelande när du stannar:** När du stannar eller vänder dig på stället hör du riktningen direkt.
 - **Säkerhetskopia:** Spara och återställ destinationer och rutter som en JSON-fil. Suuntain gör också en säkerhetskopia automatiskt en gång om dagen.
 - **Siri-kommandon:** Styr appen med röstkommandon (t.ex. "Suuntain, välj plats").
+- **Röstkommandon:** Välj en plats eller rutt på fliken Hem genom att tala (t.ex. "plats Hemma").
 
 ## Navigeringsprofiler
 
@@ -283,6 +284,37 @@ Inställningen "Enkel hemvy" (Inställningar → App) visar bara en lista i tage
 - Listans namn är en meny där du väljer en tagg, "Alla platser" eller "Alla rutter". Med VoiceOver kan du svepa uppåt eller nedåt på listans namn för att välja en annan lista.
 - När en tagglista visas får en ny destination som läggs till med "Lägg till plats" samma tagg. Du hör till exempel "Affär tillagd, tagg favoriter".
 - Om en destination eller rutt som inte hör till listan som visas är vald, visas den överst i listan så att du kan avmarkera den.
+
+## Röstkommandon
+Med röstkommandon väljer du en plats eller rutt på fliken Hem utan att bläddra i listan. Funktionen är utformad särskilt för VoiceOver-användare.
+
+Slå på:
+
+1. Slå på Inställningar → Utrop → Röstkommandon.
+2. Tillåt mikrofonen och taligenkänning när Suuntain frågar. Om du inte tillåter dem stängs inställningen av igen.
+
+Ge ett kommando:
+
+1. Tryck på mikrofonknappen i listans rubrikrad. När VoiceOver är på kan du också dubbeltrycka med två fingrar (Magic Tap) var som helst på fliken Hem. Det fungerar i alla hemvyer: Hem: Platser, Hem: Rutter, tagglistor och Enkel hemvy.
+2. När du hör signalen, säg kommandot.
+
+Kommandon:
+
+- "plats" och platsens namn, till exempel "plats Hemma": väljer platsen och avmarkerar allt annat. Du hör "Hemma vald" och sedan riktning och avstånd.
+- "rutt" och ruttens namn, till exempel "rutt Hundpromenad": väljer rutten och avmarkerar platserna.
+- "spara": sparar din nuvarande position som en ny plats, som "Lägg till plats". Om Enkel hemvy visar en tagglista får den nya platsen samma tagg.
+- "stoppa", "stopp" eller "sluta": avmarkerar rutten och alla platser, så att vägledningen slutar.
+
+Att tänka på:
+
+- Du kan säga platsens eller ruttens namn, eller dess talnamn efter snedstrecket. Till exempel kan du välja "Parkeringsplats / parkering" genom att säga "plats parkering".
+- Du kan välja bland platserna i Hem: Platser (automatiska platser bara om de är valda), bilen om "Visa bilens plats" är på, och alla rutter.
+- Om Suuntain inte är säker frågar den till exempel "Menade du plats Hemma?". Svara "ja" eller "nej" efter signalen.
+- Om Suuntain inte hör eller förstår kommandot hör du till exempel "Jag hörde ingenting", "Jag förstod inte kommandot" eller "Okänd plats Hemma".
+- Ett nytt dubbeltryck med två fingrar eller ett tryck på mikrofonknappen medan appen lyssnar avbryter kommandot ("Avbrutet").
+- Säg kommandona på appens språk (svenska, engelska, finska eller franska). Taligenkänningen fungerar utan nätverksanslutning om telefonen stöder det.
+- Röstkommandon är inte Siri-kommandon: de fungerar bara när Suuntain är öppen på fliken Hem. Siri-kommandon (till exempel "Suuntain, välj plats") fungerar även från andra ställen.
+- När inställningen är av fungerar VoiceOvers dubbeltryck med två fingrar som i andra appar (till exempel spelar eller pausar det musik).
 
 ## Säkerhetskopior
 

@@ -84,7 +84,7 @@ Suuntain est accompagnée d'une application Apple Watch, **Suuntain Mini**, qui 
 La page principale des Réglages comporte une ligne pour chaque groupe de réglages. Une ligne ouvre une page avec les réglages de ce groupe.
 
 - **Guidage** : mode de direction (Horloge 12h, Horloge 24h ou 8 directions), « Également 8 directions » (une direction approximative annoncée en mot en plus de la position sur le cadran), voix et vitesse de parole.
-- **Annonces** : les profils d'annonce des emplacements et des itinéraires et « Gérer les profils » (voir « Profils de guidage vocal »), Arrêt : « Annoncer la direction à l'arrêt » et « Dire “Arrêté” et “En marche” » (voir « Annonce à l'arrêt »), la secousse (voir « Secousse ») et la proposition de demi-tour.
+- **Annonces** : les profils d'annonce des emplacements et des itinéraires et « Gérer les profils » (voir « Profils de guidage vocal »), Arrêt : « Annoncer la direction à l'arrêt » et « Dire “Arrêté” et “En marche” » (voir « Annonce à l'arrêt »), la secousse (voir « Secousse »), la proposition de demi-tour et « Commandes vocales » (voir « Commandes vocales »).
 - **Direction et GPS** :
   - « Utiliser la boussole quand plus lent que » : si vous vous déplacez plus lentement, l'application utilise la boussole du téléphone ; si vous allez plus vite, elle utilise la direction de déplacement du GPS. La valeur par défaut est « < 0,75 km/h ».
   - « Démarrer le GPS à l'ouverture de l'app » (activé par défaut).
@@ -114,6 +114,7 @@ La page principale des Réglages comporte une ligne pour chaque groupe de régla
 - **Annonce à l'arrêt :** Lorsque vous vous arrêtez ou tournez sur place, vous entendez tout de suite la direction.
 - **Sauvegarde :** Sauvegarder et restaurer les emplacements et les itinéraires sous forme de fichier JSON. L'application fait aussi une sauvegarde automatique une fois par jour.
 - **Raccourcis Siri :** Contrôler l'application par commandes vocales (ex. : "Suuntain, sélectionner l'emplacement").
+- **Commandes vocales :** Sélectionner un lieu ou un itinéraire dans l'onglet Accueil en parlant (ex. : « lieu Maison »).
 
 ## Profils de guidage vocal
 Suuntain annonce la distance et la direction vers un emplacement ou un point de passage selon le profil de guidage vocal. Vous pouvez sélectionner un profil de guidage vocal dans Réglages → Annonces → Profils d'annonce. Les emplacements et les itinéraires peuvent utiliser des profils différents. Vous pouvez également modifier des profils existants ou en créer de nouveaux (« Gérer les profils »).
@@ -277,6 +278,37 @@ Le réglage « Accueil simplifié » (Réglages → Application) n'affiche qu'un
 - Le nom de la liste est un menu dans lequel vous choisissez un tag, « Tous les lieux » ou « Tous les itinéraires ». Avec VoiceOver, vous pouvez balayer vers le haut ou le bas sur le nom de la liste pour choisir une autre liste.
 - Lorsqu'une liste de tags est affichée, « Ajouter un lieu » attribue le même tag au nouvel emplacement. Vous entendez par exemple « Magasin ajouté, tag favoris ».
 - Si un emplacement ou un itinéraire sélectionné ne fait pas partie de la liste affichée, il apparaît en haut de la liste pour que vous puissiez le désélectionner.
+
+## Commandes vocales
+Les commandes vocales permettent de sélectionner un lieu ou un itinéraire dans l'onglet Accueil sans parcourir la liste. Cette fonction est conçue spécialement pour les utilisateurs de VoiceOver.
+
+Activation :
+
+1. Activez Réglages → Annonces → Commandes vocales.
+2. Autorisez le micro et la reconnaissance vocale lorsque Suuntain le demande. Si vous ne les autorisez pas, le réglage se désactive.
+
+Donner une commande :
+
+1. Touchez le bouton du micro dans l'en-tête de la liste. Lorsque VoiceOver est activé, vous pouvez aussi toucher deux fois avec deux doigts (Magic Tap) n'importe où dans l'onglet Accueil. Cela fonctionne dans toutes les vues de l'Accueil : Accueil : Lieux, Accueil : Itinéraires, listes de tags et Accueil simplifié.
+2. Lorsque vous entendez le signal sonore, dites la commande.
+
+Commandes :
+
+- « lieu » et le nom d'un lieu, par exemple « lieu Maison » : sélectionne le lieu et désélectionne tout le reste. Vous entendez « Maison sélectionné », puis la direction et la distance.
+- « itinéraire » et le nom d'un itinéraire, par exemple « itinéraire Promenade » : sélectionne l'itinéraire et désélectionne les lieux.
+- « enregistrer » ou « sauvegarder » : enregistre votre position actuelle comme nouveau lieu, comme « Ajouter un lieu ». Si l'Accueil simplifié affiche une liste de tags, le nouveau lieu reçoit ce tag.
+- « arrêter », « arrête » ou « stop » : désélectionne l'itinéraire et tous les lieux, le guidage s'arrête donc.
+
+Remarques :
+
+- Vous pouvez dire le nom du lieu ou de l'itinéraire, ou son nom parlé après la barre oblique. Par exemple, vous pouvez sélectionner « Parking du centre / parking » en disant « lieu parking ».
+- Vous pouvez choisir parmi les lieux d'Accueil : Lieux (les lieux automatiques seulement s'ils sont sélectionnés), la voiture si « Afficher l'emplacement de la voiture » est activé, et tous les itinéraires.
+- Si Suuntain n'est pas sûr, il demande par exemple « Vouliez-vous dire lieu Maison ? ». Répondez « oui » ou « non » après le signal sonore.
+- Si Suuntain n'entend pas ou ne comprend pas la commande, vous entendez par exemple « Je n'ai rien entendu », « Je n'ai pas compris la commande » ou « Lieu inconnu : Maison ».
+- Un nouveau toucher à deux doigts ou le bouton du micro pendant l'écoute annule la commande (« Annulé »).
+- Dites les commandes dans la langue de l'application (français, anglais, finnois ou suédois). La reconnaissance vocale fonctionne sans connexion réseau si le téléphone le permet.
+- Les commandes vocales ne sont pas des commandes Siri : elles ne fonctionnent que lorsque Suuntain est ouvert sur l'onglet Accueil. Les raccourcis Siri (par exemple « Suuntain, sélectionner l'emplacement ») fonctionnent aussi ailleurs.
+- Lorsque le réglage est désactivé, le toucher deux fois avec deux doigts de VoiceOver fonctionne comme dans les autres applications (par exemple, il lit ou met en pause la musique).
 
 ## Sauvegardes
 

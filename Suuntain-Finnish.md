@@ -84,7 +84,7 @@ Suuntaimen mukana tulee Apple Watch -sovellus **Suuntain Mini**, joka opastaa ta
 Asetusten pääsivulla on rivi jokaiselle asetusryhmälle. Rivi avaa sivun, jolla ryhmän asetukset ovat.
 
 - **Opastus**: suuntatapa (12h kello, 24h kello tai 8 suuntaa), "Lisäksi 8 suuntaa" (karkea suuntasana kellonsuunnan lisäksi), puheääni ja puheen nopeus.
-- **Puheilmoitukset**: paikan ja reitin puheprofiilit sekä "Muokkaa profiileja" (katso kohta "Puheprofiilit"), Pysähtyminen: "Puhu suunta pysähtyessä" ja "Sano ”Pysähtynyt” ja ”Liikkeellä”" (katso kohta "Puhe pysähtyessä"), ravistus (katso kohta "Ravistus") ja U-käännöksen ehdotus.
+- **Puheilmoitukset**: paikan ja reitin puheprofiilit sekä "Muokkaa profiileja" (katso kohta "Puheprofiilit"), Pysähtyminen: "Puhu suunta pysähtyessä" ja "Sano ”Pysähtynyt” ja ”Liikkeellä”" (katso kohta "Puhe pysähtyessä"), ravistus (katso kohta "Ravistus"), U-käännöksen ehdotus ja "Puhekomennot" (katso kohta "Puhekomennot").
 - **Suunta ja GPS**:
   - "Käytä kompassia kun hitaampi kuin": jos liikut tätä hitaammin, Suuntain käyttää puhelimen kompassia, jos kuljet nopeammin, Suuntain käyttää GPS:n kulkusuuntaa. Oletus on alle 0,75 km/h.
   - "Käynnistä GPS sovelluksen avautuessa" (oletuksena päällä).
@@ -114,6 +114,7 @@ Asetusten pääsivulla on rivi jokaiselle asetusryhmälle. Rivi avaa sivun, joll
 - **Puhe pysähtyessä:** Kun pysähdyt tai käännyt paikallasi, kuulet suunnan heti.
 - **Varmuuskopiointi:** Tallenna ja palauta paikat sekä reitit JSON-tiedostona. Suuntain tekee varmuuskopion myös automaattisesti kerran päivässä.
 - **Siri-komennot:** Ohjaa sovellusta äänikomennoilla (esim. "Suuntain, valitse paikka").
+- **Puhekomennot:** Valitse paikka tai reitti Koti-välilehdellä puhumalla (esim. "paikka Koti").
 
 ## Puheprofiilit
 Suuntain puhuu etäisyyden ja suunnan paikkaan tai reittipisteeseen puheprofiilin mukaan. Voit valita puheprofiilin kohdassa Asetukset → Puheilmoitukset → Puheprofiilit. Paikka ja reitti voivat käyttää eri profiilia. Voit myös muokata olemassa olevia profiileja tai luoda uusia ("Muokkaa profiileja").
@@ -277,6 +278,37 @@ Asetus "Yksinkertainen kotinäkymä" (Asetukset → Sovellus) näyttää Koti-v�
 - Listan nimi on valikko, josta valitset tunnisteen, "Kaikki paikat" tai "Kaikki reitit". VoiceOverilla voit pyyhkäistä listan nimen kohdalla ylös tai alas valitaksesi toisen listan.
 - Kun tunnistelista on näkyvissä, "Lisää paikka" antaa uudelle paikalle saman tunnisteen. Kuulet esimerkiksi "Kauppa lisätty, tunniste suosikit".
 - Jos valittuna on paikka tai reitti, joka ei kuulu näytettyyn listaan, se näkyy listan alussa, jotta voit poistaa valinnan.
+
+## Puhekomennot
+Puhekomennoilla valitset paikan tai reitin Koti-välilehdellä selaamatta listaa. Toiminto on tehty erityisesti VoiceOver-käyttäjille.
+
+Ota käyttöön:
+
+1. Kytke päälle Asetukset → Puheilmoitukset → Puhekomennot.
+2. Salli mikrofoni ja puheentunnistus, kun Suuntain kysyy. Jos et salli niitä, asetus kytkeytyy pois.
+
+Anna komento:
+
+1. Napauta mikrofonipainiketta listan otsikkorivillä. Kun VoiceOver on päällä, voit myös tehdä Koti-välilehdellä missä tahansa kahden sormen kaksoisnapautuksen (Magic Tap). Tämä toimii kaikissa kotinäkymissä: Koti: Paikat, Koti: Reitit, tunnistelistat ja Yksinkertainen kotinäkymä.
+2. Kun kuulet merkkiäänen, sano komento.
+
+Komennot:
+
+- "paikka" ja paikan nimi, esimerkiksi "paikka Koti": valitsee paikan ja poistaa muut valinnat. Kuulet "Koti valittu" ja sitten suunnan ja etäisyyden.
+- "reitti" ja reitin nimi, esimerkiksi "reitti Lenkki": valitsee reitin ja poistaa paikkojen valinnat.
+- "talleta" tai "tallenna": tallentaa nykyisen sijainnin uudeksi paikaksi kuten "Lisää paikka". Jos Yksinkertaisessa kotinäkymässä on näkyvissä tunnistelista, uusi paikka saa saman tunnisteen.
+- "lopeta" tai "pysäytä": poistaa reitin ja kaikkien paikkojen valinnan, joten opastus loppuu.
+
+Huomioita:
+
+- Nimeksi käy paikan tai reitin nimi tai sen puhenimi kauttaviivan jälkeen. Esimerkiksi paikan "Pysäköintipaikka / parkki" voit valita sanomalla "paikka parkki".
+- Valittavissa ovat Koti: Paikat -listan paikat (automaattiset paikat vain, jos ne on valittu), auto, jos "Näytä auton sijainti" on päällä, ja kaikki reitit.
+- Jos Suuntain ei ole varma, se kysyy esimerkiksi "Tarkoititko paikka Koti?". Vastaa merkkiäänen jälkeen "kyllä" tai "ei".
+- Jos Suuntain ei kuule tai ymmärrä komentoa, kuulet esimerkiksi "En kuullut mitään", "En ymmärtänyt komentoa" tai "En tunne paikkaa Koti".
+- Uusi kahden sormen kaksoisnapautus tai mikrofonipainike kuuntelun aikana peruu komennon ("Peruttu").
+- Sano komennot sovelluksen kielellä (suomi, ruotsi, ranska tai englanti). Puheentunnistus toimii ilman verkkoyhteyttä, jos puhelin tukee sitä.
+- Puhekomennot eivät ole Siri-komentoja: ne toimivat vain, kun Suuntain on auki Koti-välilehdellä. Siri-komennot (esimerkiksi "Suuntain, valitse paikka") toimivat myös muualta.
+- Kun asetus on pois päältä, VoiceOverin kahden sormen kaksoisnapautus toimii kuten muissa sovelluksissa (esimerkiksi toistaa tai keskeyttää musiikin).
 
 ## Varmuuskopiot
 
