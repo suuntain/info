@@ -1,5 +1,5 @@
 # Suuntain 2.0 – User Guide
-[Käyttöohje](finnish.html)
+[Käyttöohje](index.html)
 [Användarguide](swedish.html)
 [Guide d'utilisation](french.html)
 

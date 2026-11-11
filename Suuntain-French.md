@@ -1,6 +1,6 @@
 # Suuntain 2.0 – Guide d'utilisation
 [User Guide](english.html)
-[Käyttöohje](finnish.html)
+[Käyttöohje](index.html)
 [Användarguide](swedish.html)
 
 **Trouvez votre chemin, au-delà de la vue.**

@@ -1,6 +1,6 @@
 # Suuntain 2.0 – Användarguide
 [User Guide](english.html)
-[Käyttöohje](finnish.html)
+[Käyttöohje](index.html)
 [Guide d'utilisation](french.html)
 
 **Hitta rätt, bortom synen.**
