@@ -1,21 +1,44 @@
 /* Base styles (light mode) */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
   background-color: #f0f0f0;
   color: #222;
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  height: 100vh;
   text-align: left;
+  line-height: 1.5;
 }
 
 .container {
+  box-sizing: border-box;
+  max-width: 50rem;
+  margin: 0 auto;
   padding: 2rem;
   border-radius: 12px;
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow-wrap: break-word;
+}
+
+img, pre, table {
+  max-width: 100%;
+}
+
+pre {
+  overflow-x: auto;
+}
+
+/* Phones: smaller gutter, no card look */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+    border-radius: 0;
+    box-shadow: none;
+  }
 }
 
 /* Dark mode styles */
@@ -28,5 +51,13 @@ body {
   .container {
     background-color: #1e1e1e;
     box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  }
+
+  a {
+    color: #6cb4ff;
+  }
+
+  a:visited {
+    color: #c39bff;
   }
 }
